@@ -24,4 +24,9 @@
       <initValue>'C:\\Users\\shehs\\OneDrive\\Desktop\\GIT\\KatalonSporu\\Data Files\\Сверка ПБЭ для филиалов.xls'</initValue>
       <name>excelFilePathFilials</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>Test</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
