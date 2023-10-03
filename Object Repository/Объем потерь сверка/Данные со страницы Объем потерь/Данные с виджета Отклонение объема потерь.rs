@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Данные с виджета Отклонение объема потерь</name>
+   <tag></tag>
+   <elementGuidId>58b10408-aa90-462f-9184-7f815612b4d3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[44]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#highcharts-xz9lj6k-17 > svg.highcharts-root</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>6ec7915a-659f-4d45-aca3-e0c818362bac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>version</name>
+      <type>Main</type>
+      <value>1.1</value>
+      <webElementGuid>35b228cf-cd7f-4879-8c72-efec40464dec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>highcharts-root</value>
+      <webElementGuid>62bb8c57-e5e5-46fb-912b-d9b4564830d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>246ced5e-deec-4b3e-bbdf-ddf58ee37154</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>975</value>
+      <webElementGuid>4486d589-5104-4443-9c5b-d109a7e14193</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>432</value>
+      <webElementGuid>e0f06367-b3b4-4a88-b774-c629be242efe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 975 432</value>
+      <webElementGuid>dbb9395b-6cdf-4018-8dfa-f4871fec881d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения объема потерь1 515 801​1 515 801-225 824​-225 8242021/20222022/2023-500 0000500 0001 000 0001 500 0002 000 000</value>
+      <webElementGuid>3164acf2-0d02-46bd-a8f9-1ecb9998bd63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;highcharts-xz9lj6k-17&quot;)/svg[@class=&quot;highcharts-root&quot;]</value>
+      <webElementGuid>089814b8-6f51-4dde-885e-209a7774fc35</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[22]/following::*[name()='svg'][1]</value>
+      <webElementGuid>bddf7a7f-e5f9-4040-b3d1-1ed39ecee9dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Произошла ошибка при выполнении пользовательского кода'])[2]/following::*[name()='svg'][1]</value>
+      <webElementGuid>b4718571-f09b-4cac-9dd5-82621440e346</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[(text() = 'Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения объема потерь1 515 801​1 515 801-225 824​-225 8242021/20222022/2023-500 0000500 0001 000 0001 500 0002 000 000' or . = 'Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения объема потерь1 515 801​1 515 801-225 824​-225 8242021/20222022/2023-500 0000500 0001 000 0001 500 0002 000 000')]</value>
+      <webElementGuid>9c725877-ff6d-4b5c-9eaa-002c71716809</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

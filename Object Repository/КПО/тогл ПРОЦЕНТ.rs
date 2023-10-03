@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>тогл ПРОЦЕНТ</name>
+   <tag></tag>
+   <elementGuidId>fbc29dce-d6b5-4784-ba0a-bad1976140c1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='6235cec27cf8478bacd85dd35b022882']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#6235cec27cf8478bacd85dd35b022882 > div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a18675a6-8600-4b77-a111-56bac6d5a1c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;6235cec27cf8478bacd85dd35b022882&quot;)/div[1]</value>
+      <webElementGuid>41e29012-e64b-462b-8241-8ab2db1c030c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='6235cec27cf8478bacd85dd35b022882']/div</value>
+      <webElementGuid>fca644ff-a7bd-426b-88e1-324f7303e24a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[33]/div[2]/div/div</value>
+      <webElementGuid>87cc5c5c-6978-482d-a11b-34bb90ddbe06</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
