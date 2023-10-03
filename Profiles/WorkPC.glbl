@@ -15,8 +15,8 @@
       <name>excelPrognozDzo</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'1 кв., 2 кв., Июль 2023'</initValue>
+      <description>Периуд</description>
+      <initValue>'1 кв., 2 кв., Июль, Август 2023'</initValue>
       <name>period</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
