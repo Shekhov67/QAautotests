@@ -1045,6 +1045,22 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Центр и Приволжье(ГК)'))
 
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Мариэнерго'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Мариэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
+    oneAndScan = FirstStepAndScanErrors()
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Центр и Приволжье(ГК)'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Центр и Приволжье(ГК)'))
+
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Нижновэнерго'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
@@ -1082,6 +1098,22 @@ static def Testing2() {
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Тулэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
+    oneAndScan = FirstStepAndScanErrors()
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Центр и Приволжье(ГК)'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Центр и Приволжье(ГК)'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Удмуртэнерго'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Удмуртэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
