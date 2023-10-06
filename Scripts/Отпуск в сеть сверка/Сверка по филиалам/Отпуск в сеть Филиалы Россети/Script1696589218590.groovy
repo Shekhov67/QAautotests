@@ -29,18 +29,6 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Мородовэнерго'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Мородовэнерго'))
-
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
@@ -69,18 +57,6 @@ otpuskVSeti = findTestData('Test Data').getValue(2, 25)
 println(otpuskVSeti)
 
 selectDzo = SelectDzo()
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Оренбургэнерго'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Оренбургэнерго'))
 
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
@@ -111,18 +87,6 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Пензаэнерго'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Пензаэнерго'))
-
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
@@ -151,18 +115,6 @@ otpuskVSeti = findTestData('Test Data').getValue(2, 27)
 println(otpuskVSeti)
 
 selectDzo = SelectDzo()
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Самарские РС'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Самарские РС'))
 
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
@@ -193,18 +145,6 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Саратовские РС'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Саратовские РС'))
-
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
@@ -234,18 +174,6 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Ульяновские РС'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ульяновские РС'))
-
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
@@ -274,18 +202,6 @@ otpuskVSeti = findTestData('Test Data').getValue(2, 30)
 println(otpuskVSeti)
 
 selectDzo = SelectDzo()
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Волга'))
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Чувашэнерго'), 30)
-
-WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Чувашэнерго'))
 
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
