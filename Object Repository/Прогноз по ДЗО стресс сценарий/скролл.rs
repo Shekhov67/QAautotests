@@ -6,12 +6,12 @@
    <elementGuidId>05936262-842e-4736-9b4d-8f5fd3c6af9b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Прогноз на месяц')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#widget-header-707564f9aed94e22a446fd3396ebf472 > a.va-widget-header</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='widget-header-30f047cb33054dc788aacfc3536ef47c']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>39297339-6e40-479d-ae2d-37cd69b18a6d</webElementGuid>
+      <webElementGuid>6a1364c0-2fa6-466a-b095-a1ae18a0a429</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>va-widget-header</value>
-      <webElementGuid>5430a965-2872-48f6-850e-50d02a13dccf</webElementGuid>
+      <webElementGuid>0f1d9de5-31ed-400a-a98c-89f2e68557ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-bind</name>
       <type>Main</type>
       <value>text: title.text(), attr: title.linkEnabled() &amp;&amp; title.link().trim() ? { href: title.link().indexOf('http') == 0 ? title.link().trim() : '//' + title.link().trim() } : { href: false }, style: { 'text-align': title.textStyle.alignString(), color: title.textStyle.color(), 'font-size': title.textStyle.fontSize() + 'px', 'font-family': title.textStyle.fontFamily(), 'font-weight': title.textStyle.isBold() ? 'bold' : 'normal', 'font-style': title.textStyle.isItalic() ? 'italic' : 'normal', 'line-height': title.textStyle.lineHeight(), cursor: title.linkEnabled() ? 'pointer' : 'default' }</value>
-      <webElementGuid>e549c692-ee13-47eb-bedb-ca94ba5879d8</webElementGuid>
+      <webElementGuid>669a78ae-b405-418b-b307-0fcedc1cd0f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Организация </value>
-      <webElementGuid>d81c13d6-b25b-4db0-90e0-1982d937c5e5</webElementGuid>
+      <webElementGuid>69330403-5fec-4f44-844c-2f45cced8fe4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;widget-header-707564f9aed94e22a446fd3396ebf472&quot;)/a[@class=&quot;va-widget-header&quot;]</value>
-      <webElementGuid>14bfc3b8-a0b8-4435-a92b-15a971f9d4e6</webElementGuid>
+      <webElementGuid>bf20468c-26a5-4434-af27-c484f8de927e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='widget-header-707564f9aed94e22a446fd3396ebf472']/a</value>
-      <webElementGuid>6f26d5c8-9c27-4e7a-b50c-c9004ee8a53a</webElementGuid>
+      <webElementGuid>f5ac9cd4-f492-4641-964b-f1a09ed654ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Организация')]</value>
-      <webElementGuid>e8dffd02-3b36-438f-aa85-d423c0e9e0f2</webElementGuid>
+      <webElementGuid>b6b09c67-1b1f-44cb-b519-457395b1044e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[22]/following::a[1]</value>
-      <webElementGuid>99a18f98-cbb8-48be-9e8b-d103a240ed6b</webElementGuid>
+      <webElementGuid>337c9fee-5b12-4f2b-bf01-6ad2b3688478</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Динамическая синхронизация фильтров и виджетов'])[1]/following::a[1]</value>
-      <webElementGuid>628d2b5d-5809-4a78-bfdd-453b93065f5c</webElementGuid>
+      <webElementGuid>fb12adbe-d827-41d3-9f7e-06b35a993f55</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ПАО Россети - РаспредКомплекс - АО «Чеченэнерго»'])[1]/preceding::a[1]</value>
-      <webElementGuid>c435c40b-4bde-421d-83c2-55bb96a879dc</webElementGuid>
+      <webElementGuid>445cc044-1e9d-4140-aa0c-48092f70d601</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбранные значения'])[1]/preceding::a[1]</value>
-      <webElementGuid>a3ed5b61-018b-4540-b081-333e6017c019</webElementGuid>
+      <webElementGuid>456f1ac8-4626-48e7-b7f2-ea8bfe5de0aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Организация']/parent::*</value>
-      <webElementGuid>78985c0e-ce52-4657-bd2b-69221abfef6a</webElementGuid>
+      <webElementGuid>0e40b0da-7547-40f2-a67c-df7b3873f58b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[45]/div/a</value>
-      <webElementGuid>9d057e91-b14e-42df-b628-42b10d8bbdb5</webElementGuid>
+      <webElementGuid>4effcf3f-93ab-4e22-a0d2-61bb6587539b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[(text() = 'Организация ' or . = 'Организация ')]</value>
-      <webElementGuid>73f8554a-321d-4264-b359-284c567dee42</webElementGuid>
+      <webElementGuid>38d96bb9-ae60-43a0-b0bd-1c1abc8fd911</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

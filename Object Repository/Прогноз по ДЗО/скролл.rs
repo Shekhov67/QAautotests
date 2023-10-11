@@ -4,14 +4,23 @@
    <name>скролл</name>
    <tag></tag>
    <elementGuidId>58c6b177-ceb6-4cb7-abfd-adc45c28321c</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='widget-header-30f047cb33054dc788aacfc3536ef47c']/a</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>#widget-header-4310927579624a9e8d4d0ec28c73a3fc > a.va-widget-header</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = ' Прогноз на дату' or . = ' Прогноз на дату')]</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='widget-header-6b3d1ecac17845969e4b66cda4dd44e0']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +31,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>683961c1-11d6-4c2c-928e-2e0b36751e20</webElementGuid>
+      <webElementGuid>30f88699-b132-40f5-b89b-01b13203b84b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>va-widget-header</value>
-      <webElementGuid>c47df7bc-a9c5-4bbd-a265-9e43f8790c18</webElementGuid>
+      <webElementGuid>d22b5674-f0d1-4450-aade-4701cbd17a40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +47,7 @@
       <name>data-bind</name>
       <type>Main</type>
       <value>text: title.text(), attr: title.linkEnabled() &amp;&amp; title.link().trim() ? { href: title.link().indexOf('http') == 0 ? title.link().trim() : '//' + title.link().trim() } : { href: false }, style: { 'text-align': title.textStyle.alignString(), color: title.textStyle.color(), 'font-size': title.textStyle.fontSize() + 'px', 'font-family': title.textStyle.fontFamily(), 'font-weight': title.textStyle.isBold() ? 'bold' : 'normal', 'font-style': title.textStyle.isItalic() ? 'italic' : 'normal', 'line-height': title.textStyle.lineHeight(), cursor: title.linkEnabled() ? 'pointer' : 'default' }</value>
-      <webElementGuid>3a319a32-a02b-4b03-8d5d-a7cea34db33e</webElementGuid>
+      <webElementGuid>b432fb0a-9854-40d4-b2bd-9d06dad18f34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +55,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Прогноз на дату</value>
-      <webElementGuid>f9a63516-2338-4c30-b135-fdd076e0df2f</webElementGuid>
+      <webElementGuid>fb42f17b-54f8-4f64-869a-9c10edaaa30b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;widget-header-4310927579624a9e8d4d0ec28c73a3fc&quot;)/a[@class=&quot;va-widget-header&quot;]</value>
-      <webElementGuid>94840297-4cb0-4dc5-bdae-67fd2a2a89f5</webElementGuid>
+      <webElementGuid>c797590d-00a2-4369-83a3-68b54e7edb75</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +71,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='widget-header-4310927579624a9e8d4d0ec28c73a3fc']/a</value>
-      <webElementGuid>651003e5-daed-46d7-bf57-f84e0e79469c</webElementGuid>
+      <webElementGuid>2191b8fe-f9d7-4273-b8f7-7fc2de703112</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +79,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Прогноз на дату')]</value>
-      <webElementGuid>e3bea605-97b3-4ebf-a4a3-45be1580da20</webElementGuid>
+      <webElementGuid>d43720a3-5052-4db2-b0bc-262d6edf665f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[17]/following::a[1]</value>
-      <webElementGuid>c4ee0529-20d0-4d32-822b-ecf7637f1d89</webElementGuid>
+      <webElementGuid>c1f370dc-1a6d-41c3-8978-37f273311add</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ПАО Россети'])[7]/following::a[1]</value>
-      <webElementGuid>48b22830-15c4-4367-839a-25fb9b618335</webElementGuid>
+      <webElementGuid>f1750f50-d089-429b-8d4a-52492cf93a80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ноябрь'])[1]/preceding::a[1]</value>
-      <webElementGuid>f113b493-efb4-445e-b51c-2c72b65bf023</webElementGuid>
+      <webElementGuid>327b91bc-069a-4280-afc5-5f1b08b9fe5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Включить'])[3]/preceding::a[1]</value>
-      <webElementGuid>55988906-f7af-472d-933d-f7e246139792</webElementGuid>
+      <webElementGuid>143c8cca-e636-4b34-93cf-7425d4dc74a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +119,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Прогноз на дату']/parent::*</value>
-      <webElementGuid>1a5d564b-3d5e-43aa-8f10-8cc296abdf9e</webElementGuid>
+      <webElementGuid>f3d8bf87-8352-421a-a809-74d5d2c4abb2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +127,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[35]/div/a</value>
-      <webElementGuid>805f04cc-860a-4b45-8030-ba182cd1d738</webElementGuid>
+      <webElementGuid>1ff65053-9ab6-4504-aa36-514f00551b4e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +135,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[(text() = ' Прогноз на дату' or . = ' Прогноз на дату')]</value>
-      <webElementGuid>10861f0c-2f26-48f0-9caf-040eb3cf3752</webElementGuid>
+      <webElementGuid>85b3c77d-b405-4b49-93e7-76a61cce1d26</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
