@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='widget-header-fb5868a2c031466c9bc2eefd931a17ea']/a</value>
+         <value>//div[@id='widget-header-30f047cb33054dc788aacfc3536ef47c']/a</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>da7bf52c-363c-423f-9777-1de31cc53f4d</webElementGuid>
+      <webElementGuid>683961c1-11d6-4c2c-928e-2e0b36751e20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>va-widget-header</value>
-      <webElementGuid>4afefc45-5abf-4efe-8e08-5683c3a1b11e</webElementGuid>
+      <webElementGuid>c47df7bc-a9c5-4bbd-a265-9e43f8790c18</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-bind</name>
       <type>Main</type>
       <value>text: title.text(), attr: title.linkEnabled() &amp;&amp; title.link().trim() ? { href: title.link().indexOf('http') == 0 ? title.link().trim() : '//' + title.link().trim() } : { href: false }, style: { 'text-align': title.textStyle.alignString(), color: title.textStyle.color(), 'font-size': title.textStyle.fontSize() + 'px', 'font-family': title.textStyle.fontFamily(), 'font-weight': title.textStyle.isBold() ? 'bold' : 'normal', 'font-style': title.textStyle.isItalic() ? 'italic' : 'normal', 'line-height': title.textStyle.lineHeight(), cursor: title.linkEnabled() ? 'pointer' : 'default' }</value>
-      <webElementGuid>e04ea2bc-0735-43f5-9318-bd3b30632036</webElementGuid>
+      <webElementGuid>3a319a32-a02b-4b03-8d5d-a7cea34db33e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Прогноз на дату</value>
-      <webElementGuid>73557541-7c77-4ddd-a6e2-46c44f69f9cc</webElementGuid>
+      <webElementGuid>f9a63516-2338-4c30-b135-fdd076e0df2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;widget-header-4310927579624a9e8d4d0ec28c73a3fc&quot;)/a[@class=&quot;va-widget-header&quot;]</value>
-      <webElementGuid>d069ea9f-c6b2-46f2-a358-70452d532298</webElementGuid>
+      <webElementGuid>94840297-4cb0-4dc5-bdae-67fd2a2a89f5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='widget-header-4310927579624a9e8d4d0ec28c73a3fc']/a</value>
-      <webElementGuid>e1964495-b392-4a15-ac67-43f0a02f0f79</webElementGuid>
+      <webElementGuid>651003e5-daed-46d7-bf57-f84e0e79469c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Прогноз на дату')]</value>
-      <webElementGuid>a00ff93c-d9c2-46d3-9243-9b54c40dd488</webElementGuid>
+      <webElementGuid>e3bea605-97b3-4ebf-a4a3-45be1580da20</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[17]/following::a[1]</value>
-      <webElementGuid>a2862dfc-acdc-451e-b9d6-f352dcd07aaf</webElementGuid>
+      <webElementGuid>c4ee0529-20d0-4d32-822b-ecf7637f1d89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ПАО Россети'])[7]/following::a[1]</value>
-      <webElementGuid>1d39eb86-a650-4d6c-9cee-bf64ab5bb789</webElementGuid>
+      <webElementGuid>48b22830-15c4-4367-839a-25fb9b618335</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ноябрь'])[1]/preceding::a[1]</value>
-      <webElementGuid>dbc22fde-d16f-4733-861e-5276f10c3ad5</webElementGuid>
+      <webElementGuid>f113b493-efb4-445e-b51c-2c72b65bf023</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Включить'])[3]/preceding::a[1]</value>
-      <webElementGuid>212f3004-3380-42f1-b1d6-5995bc627375</webElementGuid>
+      <webElementGuid>55988906-f7af-472d-933d-f7e246139792</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Прогноз на дату']/parent::*</value>
-      <webElementGuid>d8e47419-0b70-4c2e-859c-161c89c8f242</webElementGuid>
+      <webElementGuid>1a5d564b-3d5e-43aa-8f10-8cc296abdf9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[35]/div/a</value>
-      <webElementGuid>76635275-f121-423d-8d5b-6284b71bfffa</webElementGuid>
+      <webElementGuid>805f04cc-860a-4b45-8030-ba182cd1d738</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[(text() = ' Прогноз на дату' or . = ' Прогноз на дату')]</value>
-      <webElementGuid>2dfb4eba-3c0b-4a68-8c2b-5e71e8de190a</webElementGuid>
+      <webElementGuid>10861f0c-2f26-48f0-9caf-040eb3cf3752</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

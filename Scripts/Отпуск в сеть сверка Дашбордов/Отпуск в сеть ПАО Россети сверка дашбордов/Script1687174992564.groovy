@@ -23,141 +23,139 @@ import org.apache.commons.lang3.StringUtils as StringUtils
 
 WebUI.openBrowser('')
 
-	'БЛОК РУКОВОДИТЕЛЕЙ'
-	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
+'БЛОК РУКОВОДИТЕЛЕЙ'
+WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
-	WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
-	WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 
-	WebUI.click(findTestObject('Общие в сеть/button_'))
+WebUI.click(findTestObject('Общие в сеть/button_'))
 
-	WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
 
-	WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
 
-	WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
-	def scan = ScanErrors()
+def scan = ScanErrors()
 
-	String a = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a1'))
+String a = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a1'))
 
-	println(a)
+println(a)
 
-	String a0 = a.replaceAll('\\s+', '')
+String a0 = a.replaceAll('\\s+', '')
 
-	println(a0)
+println(a0)
 
-	println(a0.length())
+println(a0.length())
 
-	int numA = a0.length()
+int numA = a0.length()
 
-	String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
+String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
-	println(a02)
+println(a02)
 
-	String a2 = a02.replaceAll('\\s+', '')
+String a2 = a02.replaceAll('\\s+', '')
 
-	println(a2)
+println(a2)
 
-	println(a2.length())
+println(a2.length())
 
-	int numA2 = a2.length()
+int numA2 = a2.length()
 
-	int numA02 = a2.length() * 2
+int numA02 = a2.length() * 2
 
-	println(numA02)
+println(numA02)
 
-	String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
 
-	println(a03)
+println(a03)
 
-	String a3 = a03.replaceAll('\\s+', '')
+String a3 = a03.replaceAll('\\s+', '')
 
-	println(a3)
+println(a3)
 
-	println(a3.length())
+println(a3.length())
 
-	int numA3 = a3.length()
+int numA3 = a3.length()
 
-	int numA03 = a3.length() * 4
+int numA03 = a3.length() * 4
 
-	println(numA03)
+println(numA03)
 
-	println(a0)
+println(a0)
 
-	println(a2)
+println(a2)
 
-	println(a3)
+println(a3)
 
-	'БАЛАНСЫ'
-	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
+'БАЛАНСЫ'
+WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-	WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
+WebUI.delay(10)
 
-	WebUI.delay(10)
+String b = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
 
-	String b = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
+println(b)
 
-	println(b)
+String b1 = b.replaceAll('\\D+', '')
 
-	String b1 = b.replaceAll('\\D+', '')
+println(b1)
 
-	println(b1)
+String numberB = StringUtils.substring(b1, 0, numA)
 
-	String numberB = StringUtils.substring(b1, 0, numA)
+println(numberB)
 
-	println(numberB)
+if (WebUI.verifyEqual(a0, numberB)) {
+    println('GOOD')
+} else {
+    String v = 'Виджет отпуск в сеть'
 
-	if (WebUI.verifyEqual(a0, numberB)) {
-		println('GOOD')
-	} else {
-		String v = 'Виджет отпуск в сеть'
+    def write = WriteToExcel(a0, numberB, v)
+}
 
-		def write = WriteToExcel(a0, numberB, v)
-	}
-	
-	String b02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
+String b02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
 
-	println(b02)
+println(b02)
 
-	String b2 = b02.replaceAll('\\D+', '')
+String b2 = b02.replaceAll('\\D+', '')
 
-	println(b2)
+println(b2)
 
-	String numberB2 = b2.substring(numA02).substring(0, numA2)
+String numberB2 = b2.substring(numA02).substring(0, numA2)
 
-	println(numberB2)
+println(numberB2)
 
-	if (WebUI.verifyEqual(a2, numberB2)) {
-		println('GOOD')
-	} else {
-		String v = 'Виджет отпуск в сеть'
+if (WebUI.verifyEqual(a2, numberB2)) {
+    println('GOOD')
+} else {
+    String v = 'Виджет отпуск в сеть'
 
-		def write = WriteToExcel(a2, numberB2, v)
-	}
-	
-	String b03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
+    def write = WriteToExcel(a2, numberB2, v)
+}
 
-	println(b03)
+String b03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
 
-	String b3 = b03.replaceAll('\\D+', '')
+println(b03)
 
-	println(b3)
+String b3 = b03.replaceAll('\\D+', '')
 
-	String numberB3 = b3.substring(numA03).substring(0, numA3)
+println(b3)
 
-	println(numberB3)
+String numberB3 = b3.substring(numA03).substring(0, numA3)
 
-	if (WebUI.verifyEqual(a3, numberB3)) {
-		println('GOOD')
-	} else {
-		String v = 'Виджет отпуск в сеть'
+println(numberB3)
 
-		def write = WriteToExcel(a3, numberB3, v)
-	}
-	
-	WebUI.closeBrowser()
+if (WebUI.verifyEqual(a3, numberB3)) {
+    println('GOOD')
+} else {
+    String v = 'Виджет отпуск в сеть'
+
+    def write = WriteToExcel(a3, numberB3, v)
+}
+
+WebUI.closeBrowser()
 
 static def WriteToExcel(def a, def b, def v) {
     String sheetName = 'List1'
@@ -182,17 +180,17 @@ static def WriteToExcel(def a, def b, def v) {
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, a)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, a)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, b)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, b)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, v)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, v)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, page)
 
     n = (n + 1)
 

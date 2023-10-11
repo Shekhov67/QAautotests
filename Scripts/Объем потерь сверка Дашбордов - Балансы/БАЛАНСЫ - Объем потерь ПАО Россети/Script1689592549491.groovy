@@ -111,8 +111,6 @@ println(OtkloneniyaBlock)
 
 WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
 
-WebUI.click(findTestObject('Объем потерь сверка - Балансы/убрать всё в фильтре ДАТА'))
-
 WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
 
 WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
