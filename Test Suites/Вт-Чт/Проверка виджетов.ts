@@ -14,14 +14,14 @@
    <testCaseLink>
       <guid>6b557ce3-1137-4fd1-b2b0-2792b133eee6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Объединенные тест-кейсы(ПРОВЕРКА ВИДЖЕТОВ)/КПО - ВСЕ ДЗО тогл МЛН(ВИДЖЕТЫ)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7396cfe2-70ad-4a84-b4b5-57910a69ab34</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Объединенные тест-кейсы(ПРОВЕРКА ВИДЖЕТОВ)/КПО - ВСЕ ДЗО тогл Процент(ВИДЖЕТЫ)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
