@@ -70,7 +70,7 @@ obemPoter = findTestData('Test Data').getValue(2, 6)
 
 println(obemPoter)
 
- percentPoter = findTestData('Test Data').getValue(3, 6)
+percentPoter = findTestData('Test Data').getValue(3, 6)
 
 println(percentPoter)
 
@@ -82,7 +82,7 @@ WebUI.click(findTestObject('Общие/Применить в фильтре ДЗ
 
 selectDate = SelectDate()
 
-write2 = WriteToExcel2( err = 'Сверка не прошла')
+write2 = WriteToExcel2(err = 'Сверка не прошла')
 
 path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
@@ -979,6 +979,12 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
 
@@ -1209,19 +1215,18 @@ static def WriteToExcel2(def err) {
 }
 
 static def Raspred() {
-	
-	
-	WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
-	
-	WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
-	
-	WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-	
-	WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
-	
-	WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
-	
-	WebUI.click(findTestObject('Объем потерь сверка/Выбрать РаспердКомплекс'))
-	
-	WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/Выбрать РаспердКомплекс'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 }
+
