@@ -23,11 +23,23 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 '1'
 openBrwsr = OpenBrowser()
 
-otpuskVSeti = findTestData('Test Data').getValue(2, 24)
+otpuskVSeti = findTestData('Test Data').getValue(2, 48)
 
 println(otpuskVSeti)
 
 selectDzo = SelectDzo()
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Урал(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Урал(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Пермэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Пермэнерго'))
 
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
@@ -52,11 +64,23 @@ WebUI.closeBrowser()
 '2'
 openBrwsr = OpenBrowser()
 
-otpuskVSeti = findTestData('Test Data').getValue(2, 25)
+otpuskVSeti = findTestData('Test Data').getValue(2, 49)
 
 println(otpuskVSeti)
 
 selectDzo = SelectDzo()
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Урал(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Урал(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Свердловэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Свердловэнерго'))
 
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 
@@ -81,127 +105,23 @@ WebUI.closeBrowser()
 '3'
 openBrwsr = OpenBrowser()
 
-otpuskVSeti = findTestData('Test Data').getValue(2, 26)
+otpuskVSeti = findTestData('Test Data').getValue(2, 50)
 
 println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Урал(ГК)'), 30)
 
-selectDate = SelectDate()
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Урал(ГК)'))
 
-pageDataString = WebUI.getText(findTestObject(path))
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Челябэнерго'), 30)
 
-println(pageDataString)
+WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-fileDataString = otpuskVSeti
-
-println(fileDataString)
-
-check = Check(pageString = pageDataString, fileString = fileDataString, path)
-
-scanErr = ScanErrors(page)
-
-WebUI.closeBrowser()
-
-'5'
-openBrwsr = OpenBrowser()
-
-otpuskVSeti = findTestData('Test Data').getValue(2, 27)
-
-println(otpuskVSeti)
-
-selectDzo = SelectDzo()
-
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
-
-selectDate = SelectDate()
-
-path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
-
-pageDataString = WebUI.getText(findTestObject(path))
-
-println(pageDataString)
-
-fileDataString = otpuskVSeti
-
-println(fileDataString)
-
-check = Check(pageString = pageDataString, fileString = fileDataString, path)
-
-scanErr = ScanErrors(page)
-
-WebUI.closeBrowser()
-
-'6'
-openBrwsr = OpenBrowser()
-
-otpuskVSeti = findTestData('Test Data').getValue(2, 28)
-
-println(otpuskVSeti)
-
-selectDzo = SelectDzo()
-
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
-
-selectDate = SelectDate()
-
-path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
-
-pageDataString = WebUI.getText(findTestObject(path))
-
-println(pageDataString)
-
-fileDataString = otpuskVSeti
-
-println(fileDataString)
-
-check = Check(pageString = pageDataString, fileString = fileDataString, path)
-
-scanErr = ScanErrors(page)
-
-WebUI.closeBrowser()
-
-'7'
-openBrwsr = OpenBrowser()
-
-otpuskVSeti = findTestData('Test Data').getValue(2, 29)
-
-println(otpuskVSeti)
-
-selectDzo = SelectDzo()
-
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
-
-selectDate = SelectDate()
-
-path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
-
-pageDataString = WebUI.getText(findTestObject(path))
-
-println(pageDataString)
-
-fileDataString = otpuskVSeti
-
-println(fileDataString)
-
-check = Check(pageString = pageDataString, fileString = fileDataString, path)
-
-scanErr = ScanErrors(page)
-
-WebUI.closeBrowser()
-
-'8'
-openBrwsr = OpenBrowser()
-
-otpuskVSeti = findTestData('Test Data').getValue(2, 30)
-
-println(otpuskVSeti)
-
-selectDzo = SelectDzo()
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Челябэнерго'))
 
 WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
 

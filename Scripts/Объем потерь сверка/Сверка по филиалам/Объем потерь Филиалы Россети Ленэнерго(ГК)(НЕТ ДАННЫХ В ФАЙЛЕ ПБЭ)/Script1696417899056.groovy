@@ -51,38 +51,33 @@ selectDate = SelectDate()
 
 scanErr = ScannErrors(path = 'Нет данных')
 
-if(WebUI.verifyTextNotPresent('нет данных', true) == true) {
-	
-	print('Сверка с ПБЭ')
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	fileDataString = obemPoter
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	fileDataString = percentPoter
-	
-	checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-	
-}else {
-	
-	print('Данные не отображются')
-	
-	WebUI.closeBrowser()
-	
-}
+if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
+    print('Сверка с ПБЭ')
 
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    fileDataString = obemPoter
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    fileDataString = percentPoter
+
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+} else {
+    print('Данные не отображются')
+
+    WebUI.closeBrowser()
+}
 
 WebUI.deleteAllCookies()
 
@@ -119,38 +114,33 @@ selectDate = SelectDate()
 
 scanErr = ScannErrors(path = 'Нет данных')
 
-if(WebUI.verifyTextNotPresent('нет данных', true) == true) {
-	
-	print('Сверка с ПБЭ')
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	fileDataString = obemPoter
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	fileDataString = percentPoter
-	
-	checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-	
-}else {
-	
-	print('Данные не отображются')
-	
-	WebUI.closeBrowser()
-	
-}
+if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
+    print('Сверка с ПБЭ')
 
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    fileDataString = obemPoter
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    fileDataString = percentPoter
+
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+} else {
+    print('Данные не отображются')
+
+    WebUI.closeBrowser()
+}
 
 WebUI.deleteAllCookies()
 
@@ -187,43 +177,37 @@ selectDate = SelectDate()
 
 scanErr = ScannErrors(path = 'Нет данных')
 
-if(WebUI.verifyTextNotPresent('нет данных', true) == true) {
-	
-	print('Сверка с ПБЭ')
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	fileDataString = obemPoter
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	fileDataString = percentPoter
-	
-	checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-	
-}else {
-	
-	print('Данные не отображются')
-	
-	WebUI.closeBrowser()
-	
-}
+if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
+    print('Сверка с ПБЭ')
 
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    fileDataString = obemPoter
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    fileDataString = percentPoter
+
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+} else {
+    print('Данные не отображются')
+
+    WebUI.closeBrowser()
+}
 
 WebUI.deleteAllCookies()
 
 WebUI.closeBrowser()
-
 
 '4'
 start = OpenBrowser()
@@ -256,43 +240,37 @@ selectDate = SelectDate()
 
 scanErr = ScannErrors(path = 'Нет данных')
 
-if(WebUI.verifyTextNotPresent('нет данных', true) == true) {
-	
-	print('Сверка с ПБЭ')
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	fileDataString = obemPoter
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	fileDataString = percentPoter
-	
-	checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-	
-}else {
-	
-	print('Данные не отображются')
-	
-	WebUI.closeBrowser()
-	
-}
+if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
+    print('Сверка с ПБЭ')
 
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    fileDataString = obemPoter
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    fileDataString = percentPoter
+
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+} else {
+    print('Данные не отображются')
+
+    WebUI.closeBrowser()
+}
 
 WebUI.deleteAllCookies()
 
 WebUI.closeBrowser()
-
 
 '5'
 start = OpenBrowser()
@@ -325,38 +303,33 @@ selectDate = SelectDate()
 
 scanErr = ScannErrors(path = 'Нет данных')
 
-if(WebUI.verifyTextNotPresent('нет данных', true) == true) {
-	
-	print('Сверка с ПБЭ')
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	fileDataString = obemPoter
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	fileDataString = percentPoter
-	
-	checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-	
-}else {
-	
-	print('Данные не отображются')
-	
-	WebUI.closeBrowser()
-	
-}
+if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
+    print('Сверка с ПБЭ')
 
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    fileDataString = obemPoter
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+    pageDataString = WebUI.getText(findTestObject(path))
+
+    fileDataString = percentPoter
+
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+} else {
+    print('Данные не отображются')
+
+    WebUI.closeBrowser()
+}
 
 WebUI.deleteAllCookies()
 
@@ -417,20 +390,26 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
 
 static def ScannErrors(def path) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel2( def page = 'нет данных', path)
+        def write = WriteToExcel2(def page = 'нет данных', path)
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel2( def page = 'Ошибка запроса данных', path)
+        def write = WriteToExcel2(def page = 'Ошибка запроса данных', path)
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel2( def page = 'Произошла ошибка при выполнении пользовательского кода', path)
+        def write = WriteToExcel2(def page = 'Произошла ошибка при выполнении пользовательского кода', path)
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel2( def page = 'У виджета нет данных', path)
+        def write = WriteToExcel2(def page = 'У виджета нет данных', path)
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel2( def page = 'Некорректные фильтры', path)
+        def write = WriteToExcel2(def page = 'Некорректные фильтры', path)
     }
 }
 
@@ -552,8 +531,8 @@ static def WriteToExcel(def file, def page, def path) {
     n = (n + 1)
 
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePathFilials, workbook01)
-	
-	WebUI.closeBrowser()
+
+    WebUI.closeBrowser()
 }
 
 static def WriteToExcel2(def err, def page) {
@@ -583,8 +562,8 @@ static def WriteToExcel2(def err, def page) {
         ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
         ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
-		
-		ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
+
+        ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
 
         n = (n + 1)
 
