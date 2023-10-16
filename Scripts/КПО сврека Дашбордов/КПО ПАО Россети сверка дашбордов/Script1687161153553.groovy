@@ -121,6 +121,14 @@ WebUI.click(findTestObject('КПО для раздела Выручка/Июль
 
 WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/скролл'), 30)
 
+WebUI.click(findTestObject('КПО/Июль'))
+
+WebUI.scrollToElement(findTestObject('КПО/Август'), 30)
+
+WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+WebUI.click(findTestObject('КПО/Август'))
+
 WebUI.click(findTestObject('КПО для раздела Выручка/div_entrdate'))
 
 WebUI.delay(5)
