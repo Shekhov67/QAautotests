@@ -74,11 +74,4 @@
       <testCaseId>Test Cases/Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Юг(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>ececd943-dad1-45e2-9c3e-e065e35b8cd1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
