@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -110,7 +110,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -173,7 +173,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -236,7 +236,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -299,7 +299,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -362,7 +362,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -425,7 +425,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -488,7 +488,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -551,7 +551,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 scanErr = ScannErrors(path = 'Нет данных')
 
@@ -613,42 +613,6 @@ static def SelectDzo() {
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
     WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
-}
-
-static def SelectDate() {
-    WebUI.click(findTestObject('Общие/Фильтр Дата'))
-
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('Общие/Фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/раскрыть 3 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
 
 static def ScannErrors(def path) {
