@@ -176,6 +176,9 @@ static def varianttFilter() {
 }
 
 static def WriteToExcel(def page) {
+	
+	String togle ='Переключатель АБС.'
+	
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -348,65 +351,7 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2023'))
 
-    def selectMouth2023 = SelectMouth2023()
-}
-
-static def SelectMouth2023() {
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Январь'))
-
-    def variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Февраль'))
-
-    variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Март'))
-
-    variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Апрель'))
-
-    variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Май'))
-
-    variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Июнь'))
-
-    variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Июль'), 30)
-
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Июль'))
-
-    variant = varianttFilter()
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Август'), 30)
-
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Август'))
-
-    variant = varianttFilter()
+    WebUI.callTestCase(findTestCase('Тестовые тесты/Фильтр дата в прогнозе по ДЗО'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 static def SelectMouth() {

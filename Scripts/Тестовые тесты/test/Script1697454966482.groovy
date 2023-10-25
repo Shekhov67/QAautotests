@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -17,12 +16,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.nio.file.Path as Path
-import java.nio.file.Paths as Paths
-import java.util.Date as Date
-import java.text.SimpleDateFormat as SimpleDateFormat
-import java.util.Calendar as Calendar
-import newpack.pack as pack
-
-CustomKeywords.'newpack.Test.hello'()
 
