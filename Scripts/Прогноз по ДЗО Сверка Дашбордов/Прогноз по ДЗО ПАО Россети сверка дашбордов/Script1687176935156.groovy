@@ -56,11 +56,11 @@ def Test(def run, def todaysDate, def widget) {
 
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Август'), 30)
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Сентябрь'), 30)
 
     WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 
@@ -261,11 +261,11 @@ def Test(def run, def todaysDate, def widget) {
 
     WebUI.click(findTestObject('Прогноз по ДЗО стресс сценарий/Фильтр Месяц'))
 
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО стресс сценарий/Август'), 30)
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Сентябрь'), 30)
 
     WebUI.scrollToElement(findTestObject('Прогноз по ДЗО стресс сценарий/скролл'), 30)
 
-    WebUI.click(findTestObject('Прогноз по ДЗО стресс сценарий/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Прогноз по ДЗО стресс сценарий/Фильтр Составляющая плана'))
 

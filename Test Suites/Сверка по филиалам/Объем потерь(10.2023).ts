@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0395eed3-83f5-4c60-8382-b81205f0d8b2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Ленэнерго(ГК)(НЕТ ДАННЫХ В ФАЙЛЕ ПБЭ)</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>76a74d7c-6694-4f6e-9498-6271fa3c02fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

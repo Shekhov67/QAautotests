@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Отпуск в сеть Филиалы Россети</name>
+   <name>Фильтр дата в прогнозе по ДЗО</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f846a316-4fcb-46d3-a86e-f55c07789de4</testCaseGuid>
+   <testCaseGuid>8c8beae2-ca28-4ca0-99be-fa2e521882e6</testCaseGuid>
 </TestCaseEntity>
