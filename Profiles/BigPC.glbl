@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Сверка ПБЭ для филиалов</description>
-      <initValue>'C:\\Users\\shehs\\OneDrive\\Desktop\\Автотетсы\\QAautotests\\Data Files\\Сверка ПБЭ для филиалов.xls'</initValue>
+      <initValue>'C:\\Users\\shehs\\OneDrive\\Desktop\\Автотетсы\\QAautotests\\Data Files\\Общий файл.xls'</initValue>
       <name>excelFilePathFilials</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
