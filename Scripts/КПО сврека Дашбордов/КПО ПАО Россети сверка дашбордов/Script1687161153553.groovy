@@ -68,6 +68,8 @@ WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'
 
 WebUI.click(findTestObject('КПО/Август'))
 
+WebUI.click(findTestObject('КПО/Сентябрь'))
+
 WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
 WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -130,6 +132,8 @@ WebUI.scrollToElement(findTestObject('КПО для раздела Выручк�
 WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/скролл'), 30)
 
 WebUI.click(findTestObject('КПО для раздела Выручка/div_aug'))
+
+WebUI.click(findTestObject('КПО для раздела Выручка/div_sept'))
 
 WebUI.click(findTestObject('КПО для раздела Выручка/div_entrdate'))
 

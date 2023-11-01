@@ -1255,6 +1255,12 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('КПО/Август'))
 
+    WebUI.scrollToElement(findTestObject('КПО/Сентябрь'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Сентябрь'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.deleteAllCookies()

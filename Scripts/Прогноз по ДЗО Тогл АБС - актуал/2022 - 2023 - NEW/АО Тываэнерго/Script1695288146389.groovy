@@ -177,6 +177,8 @@ static def varianttFilter() {
 
 static def WriteToExcel(def page) {
     String sheetName = 'List1'
+	
+	String togle = 'переключатель на абс'
 
     def data = findTestData('Test Data')
 
