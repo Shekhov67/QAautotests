@@ -198,6 +198,8 @@ fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
+def test1 = Test1(check, checkPercents)
+
 scanErr = ScannErrors(path)
 
 WebUI.deleteAllCookies()
@@ -351,6 +353,8 @@ fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
+test1 = Test1(check, checkPercents)
+
 scanErr = ScannErrors(path)
 
 WebUI.deleteAllCookies()
@@ -401,6 +405,8 @@ pageDataString = WebUI.getText(findTestObject(path))
 fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+ test1 = Test1(check, checkPercents)
 
 scanErr = ScannErrors(path)
 
@@ -453,6 +459,8 @@ fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
+ test1 = Test1(check, checkPercents)
+
 scanErr = ScannErrors(path)
 
 WebUI.deleteAllCookies()
@@ -503,6 +511,8 @@ pageDataString = WebUI.getText(findTestObject(path))
 fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+ test1 = Test1(check, checkPercents)
 
 scanErr = ScannErrors(path)
 
@@ -657,6 +667,8 @@ fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
+ test1 = Test1(check, checkPercents)
+
 scanErr = ScannErrors(path)
 
 WebUI.deleteAllCookies()
@@ -765,6 +777,8 @@ fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
+ test1 = Test1(check, checkPercents)
+
 scanErr = ScannErrors(path)
 
 WebUI.deleteAllCookies()
@@ -816,6 +830,8 @@ fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
+ test1 = Test1(check, checkPercents)
+
 scanErr = ScannErrors(path)
 
 WebUI.deleteAllCookies()
@@ -866,6 +882,8 @@ pageDataString = WebUI.getText(findTestObject(path))
 fileDataString = percentPoter
 
 checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+ test1 = Test1(check, checkPercents)
 
 scanErr = ScannErrors(path)
 
@@ -1228,5 +1246,21 @@ static def Raspred() {
     WebUI.click(findTestObject('Объем потерь сверка/Выбрать РаспердКомплекс'))
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+}
+
+static def Test1(def check, def checkPercents) {
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), [:], 
+            FailureHandling.CONTINUE_ON_FAILURE)
+    } else if (checkPercents == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), [:], 
+            FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+    }
 }
 

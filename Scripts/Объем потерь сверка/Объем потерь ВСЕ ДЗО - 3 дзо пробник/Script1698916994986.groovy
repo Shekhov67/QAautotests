@@ -112,19 +112,7 @@ checkPercents = CheckPercents(pageString = pageDataString, fileString = fileData
 
 println(checkPercents)
 
-if (check == false) {
-    println('Start filial')
-
-    WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), [:], 
-        FailureHandling.CONTINUE_ON_FAILURE)
-} else if (checkPercents == false) {
-    println('Start filial')
-
-    WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), [:], 
-        FailureHandling.CONTINUE_ON_FAILURE)
-} else {
-    println('End case DZO')
-}
+def test1 = Test1(check, checkPercents)
 
 scanErr = ScannErrors(path)
 
@@ -511,3 +499,20 @@ static def Raspred() {
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 }
 
+static def Test1(check, checkPercents) {
+	
+	if (check == false) {
+		println('Start filial')
+	
+		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), [:],
+			FailureHandling.CONTINUE_ON_FAILURE)
+	} else if (checkPercents == false) {
+		println('Start filial')
+	
+		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), [:],
+			FailureHandling.CONTINUE_ON_FAILURE)
+	} else {
+		println('End case DZO')
+	}
+	
+}
