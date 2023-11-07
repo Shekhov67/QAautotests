@@ -23,11 +23,11 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 '0'
 def start = OpenBrowser()
 
-String obemPoter = findTestData('Test Data').getValue(2, 17)
+String obemPoter = findTestData('Test Data').getValue(2, 87)
 
 println(obemPoter)
 
-String percentPoter = findTestData('Test Data').getValue(3, 17)
+String percentPoter = findTestData('Test Data').getValue(3, 87)
 
 println(percentPoter)
 
@@ -66,11 +66,11 @@ WebUI.closeBrowser()
 '1'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 6)
+obemPoter = findTestData('Test Data').getValue(2, 76)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 6)
+percentPoter = findTestData('Test Data').getValue(3, 76)
 
 println(percentPoter)
 
@@ -113,11 +113,11 @@ WebUI.closeBrowser()
 '2'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 11)
+obemPoter = findTestData('Test Data').getValue(2, 81)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 11)
+percentPoter = findTestData('Test Data').getValue(3, 81)
 
 println(percentPoter)
 
@@ -160,11 +160,11 @@ WebUI.closeBrowser()
 '3\r\n'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 3)
+obemPoter = findTestData('Test Data').getValue(2, 73)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 3)
+percentPoter = findTestData('Test Data').getValue(3, 73)
 
 println(percentPoter)
 
@@ -207,11 +207,11 @@ WebUI.closeBrowser()
 '4'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 12)
+obemPoter = findTestData('Test Data').getValue(2, 82)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 12)
+percentPoter = findTestData('Test Data').getValue(3, 82)
 
 println(percentPoter)
 
@@ -258,11 +258,11 @@ WebUI.closeBrowser()
 '5'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 14)
+obemPoter = findTestData('Test Data').getValue(2, 84)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 14)
+percentPoter = findTestData('Test Data').getValue(3, 84)
 
 println(percentPoter)
 
@@ -309,11 +309,11 @@ WebUI.closeBrowser()
 '6'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 13)
+obemPoter = findTestData('Test Data').getValue(2, 83)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 13)
+percentPoter = findTestData('Test Data').getValue(3, 83)
 
 println(percentPoter)
 
@@ -360,11 +360,11 @@ WebUI.closeBrowser()
 '7'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 10)
+obemPoter = findTestData('Test Data').getValue(2, 80)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 10)
+percentPoter = findTestData('Test Data').getValue(3, 80)
 
 println(percentPoter)
 
@@ -411,11 +411,11 @@ WebUI.closeBrowser()
 '8'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 4)
+obemPoter = findTestData('Test Data').getValue(2, 74)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 4)
+percentPoter = findTestData('Test Data').getValue(3, 74)
 
 println(percentPoter)
 
@@ -462,11 +462,11 @@ WebUI.closeBrowser()
 '9'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 5)
+obemPoter = findTestData('Test Data').getValue(2, 75)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 5)
+percentPoter = findTestData('Test Data').getValue(3, 75)
 
 println(percentPoter)
 
@@ -513,11 +513,11 @@ WebUI.closeBrowser()
 '10'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 7)
+obemPoter = findTestData('Test Data').getValue(2, 77)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 7)
+percentPoter = findTestData('Test Data').getValue(3, 77)
 
 println(percentPoter)
 
@@ -564,11 +564,11 @@ WebUI.closeBrowser()
 '11'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 15)
+obemPoter = findTestData('Test Data').getValue(2, 85)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 15)
+percentPoter = findTestData('Test Data').getValue(3, 85)
 
 println(percentPoter)
 
@@ -615,11 +615,11 @@ WebUI.closeBrowser()
 '12'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 8)
+obemPoter = findTestData('Test Data').getValue(2, 78)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 8)
+percentPoter = findTestData('Test Data').getValue(3, 78)
 
 println(percentPoter)
 
@@ -666,11 +666,11 @@ WebUI.closeBrowser()
 '13'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 18)
+obemPoter = findTestData('Test Data').getValue(2, 88)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 18)
+percentPoter = findTestData('Test Data').getValue(3, 88)
 
 println(percentPoter)
 
@@ -723,11 +723,11 @@ WebUI.closeBrowser()
 '14'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 1)
+obemPoter = findTestData('Test Data').getValue(2, 71)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 1)
+percentPoter = findTestData('Test Data').getValue(3, 71)
 
 println(percentPoter)
 
@@ -774,11 +774,11 @@ WebUI.closeBrowser()
 '15'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 2)
+obemPoter = findTestData('Test Data').getValue(2, 72)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 2)
+percentPoter = findTestData('Test Data').getValue(3, 72)
 
 println(percentPoter)
 
@@ -825,11 +825,11 @@ WebUI.closeBrowser()
 '16'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 9)
+obemPoter = findTestData('Test Data').getValue(2, 79)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 9)
+percentPoter = findTestData('Test Data').getValue(3, 79)
 
 println(percentPoter)
 
@@ -876,11 +876,11 @@ WebUI.closeBrowser()
 '17'
 start = OpenBrowser()
 
-obemPoter = findTestData('Test Data').getValue(2, 16)
+obemPoter = findTestData('Test Data').getValue(2, 86)
 
 println(obemPoter)
 
-percentPoter = findTestData('Test Data').getValue(3, 16)
+percentPoter = findTestData('Test Data').getValue(3, 86)
 
 println(percentPoter)
 
