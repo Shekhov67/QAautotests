@@ -15,7 +15,7 @@
       <guid>a2ab666b-9a66-4668-9ce1-df091a52b6b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Объем потерь сверка/Объем потерь ВСЕ ДЗО</testCaseId>
+      <testCaseId>Test Cases/Объем потерь сверка/Объем потерь ВСЕ ДЗО - с проверкой филиалов</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

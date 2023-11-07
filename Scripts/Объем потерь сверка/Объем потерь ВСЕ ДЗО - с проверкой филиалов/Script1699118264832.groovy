@@ -20,7 +20,7 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-def test1 = Test1()
+//def test1 = Test1()
 
 def test2 = Test2()
 
