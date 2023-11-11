@@ -143,8 +143,7 @@ if (check == false) {
 
     WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Волга'), [:], 
         FailureHandling.CONTINUE_ON_FAILURE)
-} else{
-	
+} else {
     println('End case DZO')
 
     scanErr = ScanErrors(page)
@@ -265,7 +264,7 @@ if (check == false) {
 } else {
     println('End case DZO')
 
-	scanErr = ScanErrors(page)
+    scanErr = ScanErrors(page)
 
     WebUI.deleteAllCookies()
 
@@ -313,7 +312,7 @@ if (check == false) {
 } else {
     println('End case DZO')
 
-	scanErr = ScanErrors(page)
+    scanErr = ScanErrors(page)
 
     WebUI.deleteAllCookies()
 
@@ -361,7 +360,7 @@ if (check == false) {
 } else {
     println('End case DZO')
 
-	scanErr = ScanErrors(page)
+    scanErr = ScanErrors(page)
 
     WebUI.deleteAllCookies()
 
@@ -816,6 +815,12 @@ static def SelectDate() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Сентябрь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
 }

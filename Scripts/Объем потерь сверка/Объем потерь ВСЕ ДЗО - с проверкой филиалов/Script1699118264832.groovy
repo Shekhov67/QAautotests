@@ -21,7 +21,6 @@ import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
 //def test1 = Test1()
-
 def test2 = Test2()
 
 static def OpenBrowser() {
@@ -85,6 +84,12 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
 
@@ -120,10 +125,11 @@ static def Check(def pageString, def fileString, def path) {
     }
     
     if (WebUI.verifyEqual(page1, file) == true) {
-		return true
+        return true
     } else {
         def write = WriteToExcel(file, page, path)
-		return false
+
+        return false
     }
 }
 
@@ -167,10 +173,11 @@ static def CheckPercents(def pageString, def fileString, def path) {
     println(file)
 
     if (WebUI.verifyEqual(page, file) == true) {
-		return true
+        return true
     } else {
         def write = WriteToExcel(file, page, path)
-		return false
+
+        return false
     }
 }
 
@@ -525,15 +532,14 @@ static def Test1() {
             FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-   
     '4'
     start = OpenBrowser()
 
@@ -693,16 +699,14 @@ static def Test1() {
             [:], FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-
-
     '7'
     start = OpenBrowser()
 
@@ -760,16 +764,14 @@ static def Test1() {
             [:], FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-
-
     '8'
     start = OpenBrowser()
 
@@ -827,15 +829,13 @@ static def Test1() {
             [:], FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
-    }
-    
 
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 static def Test2() {
@@ -889,25 +889,21 @@ static def Test2() {
 
         WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
             [:], FailureHandling.CONTINUE_ON_FAILURE)
-		
     } else if (checkPercents == false) {
         println('Start filial')
 
         WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
             [:], FailureHandling.CONTINUE_ON_FAILURE)
-		
     } else {
         println('End case DZO')
-		
-		def scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
-		
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-
     '10'
     start = OpenBrowser()
 
@@ -953,7 +949,7 @@ static def Test2() {
 
     checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
-     def scanErr = ScannErrors(path)
+    def scanErr = ScannErrors(path)
 
     WebUI.deleteAllCookies()
 
@@ -1067,16 +1063,14 @@ static def Test2() {
             [:], FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-   
-
     '13'
     start = OpenBrowser()
 
@@ -1191,15 +1185,14 @@ static def Test2() {
             FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
-
-
+    
     '15'
     start = OpenBrowser()
 
@@ -1257,16 +1250,14 @@ static def Test2() {
             [:], FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-
-
     '16'
     start = OpenBrowser()
 
@@ -1324,16 +1315,14 @@ static def Test2() {
             FailureHandling.CONTINUE_ON_FAILURE)
     } else {
         println('End case DZO')
-		
-		scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
+
+        scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
     }
     
-
-
     '17'
     start = OpenBrowser()
 
