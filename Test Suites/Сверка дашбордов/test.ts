@@ -29,21 +29,7 @@
       <guid>13db24de-4af0-48e2-8d2b-5dc3d207d209</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь АО Тываэнерго</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f54ca7e2-0988-423c-b78a-544dfe7c42c3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь АО Чеченэнерго</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>42643108-f3c5-49dc-90f6-79592f267a9e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь Россети Волга</testCaseId>
+      <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь - ВСЕ ДЗО</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
