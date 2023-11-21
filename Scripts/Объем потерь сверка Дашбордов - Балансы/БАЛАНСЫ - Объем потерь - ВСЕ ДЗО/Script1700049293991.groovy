@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -17,9 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.nio.file.Path as Path
-import java.nio.file.Paths as Paths
-import org.apache.commons.lang3.StringUtils as StringUtils
+import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
+import java.util.Date as Date
+import java.text.SimpleDateFormat as SimpleDateFormat
 
 def test1 = Test1()
 
@@ -51,23 +50,7 @@ def test14 = Test14()
 
 def test15 = Test15()
 
-def test16 = Test16( ////////////////////////////////////
-    ) ////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
-////////////////////////////////////
+def test16 = Test16() 
 
 static def WriteToExcel(def widget, def year, def month) {
     String sheetName = 'List1'
@@ -83,6 +66,15 @@ static def WriteToExcel(def widget, def year, def month) {
     String dashboardName = 'Объем потерь'
 
     String page = 'Данные не  совпадают'
+	
+	Date d = new Date()
+	
+	SimpleDateFormat format1
+	
+	format1 = new SimpleDateFormat('dd.MM.yyyy')
+	
+	String date = format1.format(d)
+	
 
     def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
 
@@ -99,6 +91,8 @@ static def WriteToExcel(def widget, def year, def month) {
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
+	
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
 
     n = (n + 1)
 
