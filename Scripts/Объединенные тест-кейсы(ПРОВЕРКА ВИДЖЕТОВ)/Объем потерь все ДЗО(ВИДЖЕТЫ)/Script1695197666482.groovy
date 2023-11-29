@@ -33,14 +33,19 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 WebUI.click(findTestObject('Общие/button_'))
 
 //def selectDate = SelectDate()
-
 def actualDate = ActualDate()
 
 def testing1 = Testing1()
 
 def testing2 = Testing2()
 
-WebUI.closeBrowser()
+WebUI.closeBrowser() //в соответствии с текущим месяцем выбирать дату для сравнения
+// Возвращает текущую дату
+//Дата для сравнения
+// Возвращает текущую дату
+//Дата для сравнения
+// Возвращает текущую дату
+//Дата для сравнения
 
 static def Testing1() {
     def oneAndScan = FirstStepAndScanErrors()
@@ -1649,475 +1654,480 @@ static def WriteToExcel(def page) {
 }
 
 static def ActualDate() {
-	
-	Date d = new Date()
-	
-	SimpleDateFormat format1
-	
-	format1 = new SimpleDateFormat('MM')//в соответствии с текущим месяцем выбирать дату для сравнения
-	
-	String dateMouth = format1.format(d)
-	println(dateMouth)
-	
+    Date d = new Date()
 
-if(dateMouth=="10") {
-	
-	SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd")
-	Date date1 = new Date() // Возвращает текущую дату
-	Date date2 = new Date(-1900+2023,10-1,28)//Дата для сравнения
-	println(date1)
-	println(date2)
-	
-	String formatted1 = formatter.format(date1);
-	String formatted2 = formatter.format(date2);
-	
-	if(date1.equals(date2)) {
-		println("Обе даты равны")
-		println('значит добавить месяц')
-		
-	   WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-	   WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}else if(date1.after(date2)) {
-		
-		println(String.format(formatted1 + " идет после " + formatted2))
-		
-		println('значит добавить месяц')
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	   
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-			
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		 WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}else{
-		println(String.format(formatted1 + " приходит раньше " + formatted2))
-		
-		println('значит не менять месяц')
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-	}
-}else if(dateMouth=="11") {
-			
-		
-	SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd")
-	Date date1 = new Date() // Возвращает текущую дату
-	Date date2 = new Date(-1900+2023,11-1,28)//Дата для сравнения
-	println(date1)
-	println(date2)
-	
-	String formatted1 = formatter.format(date1);
-	String formatted2 = formatter.format(date2);
-	
-	if(date1.equals(date2)) {
-		println("Обе даты равны")
-		println('значит добавить месяц')
-		
-	   WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-	   WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
-		
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}else if(date1.after(date2)) {
-		
-		println(String.format(formatted1 + " идет после " + formatted2))
-		
-		println('значит добавить месяц')
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	   
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-			
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}else{
-		println(String.format(formatted1 + " приходит раньше " + formatted2))
-		
-		println('значит не менять месяц')
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+    SimpleDateFormat format1
 
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}
-	}else if(dateMouth=="12") {
-	
-		SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd")
-		Date date1 = new Date() // Возвращает текущую дату
-		Date date2 = new Date(-1900+2023,12-1,28)//Дата для сравнения
-		println(date1)
-		println(date2)
-	
-		String formatted1 = formatter.format(date1);
-		String formatted2 = formatter.format(date2);
-	
-		if(date1.equals(date2)) {
-			println("Обе даты равны")
-		println('значит добавить месяц')
-		
-	   WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-	   WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}else if(date1.after(date2)) {
-		
-		println(String.format(formatted1 + " идет после " + formatted2))
-		
-		println('значит добавить месяц')
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	   
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-			
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-			
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-	
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		 WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-		
-	}else{
-		println(String.format(formatted1 + " приходит раньше " + formatted2))
-		
-		println('значит не менять месяц')
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
-	
-		WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-		
-		WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-	}
-	}
+    format1 = new SimpleDateFormat('MM')
 
+    String dateMouth = format1.format(d)
+
+    println(dateMouth)
+
+    if (dateMouth == '10') {
+        SimpleDateFormat formatter = new SimpleDateFormat('YYYY-MM-dd')
+
+        Date date1 = new Date()
+
+        Date date2 = new Date(-1900 + 2023, 10 - 1, 28)
+
+        println(date1)
+
+        println(date2)
+
+        String formatted1 = formatter.format(date1)
+
+        String formatted2 = formatter.format(date2)
+
+        if (date1.equals(date2)) {
+            println('Обе даты равны')
+
+            println('значит добавить месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        } else if (date1.after(date2)) {
+            println(String.format((formatted1 + ' идет после ') + formatted2))
+
+            println('значит добавить месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        } else {
+            println(String.format((formatted1 + ' приходит раньше ') + formatted2))
+
+            println('значит не менять месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        }
+    } else if (dateMouth == '11') {
+        SimpleDateFormat formatter = new SimpleDateFormat('YYYY-MM-dd')
+
+        Date date1 = new Date()
+
+        Date date2 = new Date(-1900 + 2023, 11 - 1, 28)
+
+        println(date1)
+
+        println(date2)
+
+        String formatted1 = formatter.format(date1)
+
+        String formatted2 = formatter.format(date2)
+
+        if (date1.equals(date2)) {
+            println('Обе даты равны')
+
+            println('значит добавить месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        } else if (date1.after(date2)) {
+            println(String.format((formatted1 + ' идет после ') + formatted2))
+
+            println('значит добавить месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        } else {
+            println(String.format((formatted1 + ' приходит раньше ') + formatted2))
+
+            println('значит не менять месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        }
+    } else if (dateMouth == '12') {
+        SimpleDateFormat formatter = new SimpleDateFormat('YYYY-MM-dd')
+
+        Date date1 = new Date()
+
+        Date date2 = new Date(-1900 + 2023, 12 - 1, 28)
+
+        println(date1)
+
+        println(date2)
+
+        String formatted1 = formatter.format(date1)
+
+        String formatted2 = formatter.format(date2)
+
+        if (date1.equals(date2)) {
+            println('Обе даты равны')
+
+            println('значит добавить месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        } else if (date1.after(date2)) {
+            println(String.format((formatted1 + ' идет после ') + formatted2))
+
+            println('значит добавить месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        } else {
+            println(String.format((formatted1 + ' приходит раньше ') + formatted2))
+
+            println('значит не менять месяц')
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+
+            WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+            WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+        }
+    }
 }
-
 

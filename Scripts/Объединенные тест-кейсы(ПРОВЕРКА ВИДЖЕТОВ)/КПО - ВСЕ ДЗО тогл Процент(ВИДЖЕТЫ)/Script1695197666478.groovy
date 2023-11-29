@@ -1245,21 +1245,15 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
 
-    WebUI.click(findTestObject('КПО/раскрыть 3 квартал 23'))
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
 
-    WebUI.click(findTestObject('КПО/Июль'))
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Август'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/Август'))
-
-    WebUI.scrollToElement(findTestObject('КПО/Сентябрь'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/Сентябрь'))
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 

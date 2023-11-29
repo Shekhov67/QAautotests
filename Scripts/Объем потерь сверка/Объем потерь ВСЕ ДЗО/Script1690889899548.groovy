@@ -990,15 +990,15 @@ static def SelectDate() {
 
 static def ScannErrors(def path) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'нет данных', path)
+        def write = WriteToExcel2(def err = 'нет данных')
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Ошибка запроса данных', path)
+        def write = WriteToExcel2(def err = 'Ошибка запроса данных')
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Произошла ошибка при выполнении пользовательского кода', path)
+        def write = WriteToExcel2(def err = 'Произошла ошибка при выполнении пользовательского кода')
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'У виджета нет данных', path)
+        def write = WriteToExcel2(def err = 'У виджета нет данных')
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Некорректные фильтры', path)
+        def write = WriteToExcel2(def err = 'Некорректные фильтры')
     }
 }
 
@@ -1021,7 +1021,7 @@ static def Check(def pageString, def fileString, def path) {
     
     if (WebUI.verifyEqual(page1, file) == true) {
     } else {
-        def write = WriteToExcel(file, page, path)
+        def write = WriteToExcel(file, page, path, def typeDate = 'Объем потерь')
     }
 }
 
@@ -1066,11 +1066,11 @@ static def CheckPercents(def pageString, def fileString, def path) {
 
     if (WebUI.verifyEqual(page, file) == true) {
     } else {
-        def write = WriteToExcel(file, page, path)
+        def write = WriteToExcel(file, page, path, def typeDate = 'Уровень потерь')
     }
 }
 
-static def WriteToExcel(def file, def page, def path) {
+static def WriteToExcel(def file, def page, def path, def typeDate) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -1086,12 +1086,15 @@ static def WriteToExcel(def file, def page, def path) {
     println(n)
 
     println(path)
+	
 
     path = path.replaceAll('Объем потерь сверка/Данные со страницы Объем потерь/', '')
 
     String dZO = WebUI.getText(findTestObject('Общие/Фильтр ДЗО'))
 
     println(dZO)
+	
+	println(typeDate)
 
     Date d = new Date()
 
@@ -1116,6 +1119,8 @@ static def WriteToExcel(def file, def page, def path) {
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
+	
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, typeDate)
 
     n = (n + 1)
 
@@ -1155,62 +1160,6 @@ static def WriteToExcel2(def err) {
         ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 
         WebUI.closeBrowser()
-    } else {
-        if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
-
-            n = (n + 1)
-
-            ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-        } else {
-            if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
-
-                n = (n + 1)
-
-                ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-            } else {
-                if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
-
-                    n = (n + 1)
-
-                    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                } else {
-                    if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
-
-                        n = (n + 1)
-
-                        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                    }
-                }
-            }
-        }
     }
 }
 
