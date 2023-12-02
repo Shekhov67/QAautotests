@@ -76,8 +76,7 @@ def test17 = Test17()
 def test18 = Test18()
 
 static def SelectDate() {
-	'Готовая функция'
-
+    'Готовая функция'
     WebUI.click(findTestObject('Общие в сеть/Фильтр Дата'))
 
     WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре Дата'))
@@ -108,9 +107,8 @@ static def SelectDate() {
 }
 
 static def SelectDateBalanc() {
-	'не готова надо добавить дату'
-	WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-	
+    'не готова надо добавить дату'
+    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 }
 
 static def WriteToExcel(def a, def b, def v) {
@@ -332,8 +330,6 @@ static def Test1() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.delay(10)
 
     String b = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
@@ -483,8 +479,6 @@ static def Test2() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -645,8 +639,6 @@ static def Test3() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -811,8 +803,6 @@ static def Test4() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -982,8 +972,6 @@ static def Test5() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -1151,8 +1139,6 @@ static def Test6() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -1322,8 +1308,6 @@ static def Test7() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -1491,8 +1475,6 @@ static def Test8() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -1662,8 +1644,6 @@ static def Test9() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -1831,8 +1811,6 @@ static def Test10() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -2002,8 +1980,6 @@ static def Test11() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -2171,8 +2147,6 @@ static def Test12() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -2342,8 +2316,6 @@ static def Test13() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -2511,8 +2483,6 @@ static def Test14() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -2682,8 +2652,6 @@ static def Test15() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -2851,8 +2819,6 @@ static def Test16() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
@@ -3022,8 +2988,6 @@ static def Test17() {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
@@ -3183,8 +3147,6 @@ static def Test18() {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/убрать выделеные в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
 

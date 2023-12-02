@@ -16,12 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Для фильтра даты</description>
-      <initValue>'1 кв., 2 кв., Июль, Август  2023'</initValue>
+      <initValue>'1 кв., 2 кв., Июль, Август, Сентябрь  2023'</initValue>
       <name>period</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Сверка ПБЭ для филиалов</description>
-      <initValue>'C:\\Users\\shekhov-aa\\Desktop\\Автотесты\\QAautotest\\Data Files\\Сверка ПБЭ для филиалов.xls'</initValue>
+      <initValue>'C:\\Users\\shekhov-aa\\Desktop\\Автотесты\\QAautotest\\Data Files\\Общий файл.xls'</initValue>
       <name>excelFilePathFilials</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

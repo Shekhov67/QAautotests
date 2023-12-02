@@ -180,6 +180,8 @@ static def WriteToExcel(def page) {
 	String togle ='Переключатель АБС.'
 	
     String sheetName = 'List1'
+	
+	String togle = 'переключатель на абс'
 
     def data = findTestData('Test Data')
 
