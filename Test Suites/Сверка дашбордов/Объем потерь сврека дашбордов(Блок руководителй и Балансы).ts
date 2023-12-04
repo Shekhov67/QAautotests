@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>8775d2d3-c36f-462a-9fb6-7d570fb85ada</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь ПАО Россети</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

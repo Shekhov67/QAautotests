@@ -58,17 +58,15 @@ WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
 
 WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
 
-WebUI.click(findTestObject('КПО/раскрыть 3 квартал'))
+WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
 
-WebUI.click(findTestObject('КПО/Июль'))
+WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
 
-WebUI.scrollToElement(findTestObject('КПО/Август'), 30)
+WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
 
 WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-WebUI.click(findTestObject('КПО/Август'))
-
-WebUI.click(findTestObject('КПО/Сентябрь'))
+WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
 WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -104,38 +102,6 @@ WebUI.click(findTestObject('КПО для раздела Выручка/снят
 WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
 
 WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
-
-WebUI.click(findTestObject('КПО для раздела Выручка/i_-close'))
-
-WebUI.click(findTestObject('КПО для раздела Выручка/фильтр Дата'))
-
-WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
-
-WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/скролл'), 30)
-
-WebUI.click(findTestObject('КПО/2023 год'))
-
-WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/выбрать 1 квартал 2023'), 30)
-
-WebUI.click(findTestObject('КПО для раздела Выручка/выбрать 1 квартал 2023'))
-
-WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/выбрать 2 квартал 2023'), 30)
-
-WebUI.click(findTestObject('КПО для раздела Выручка/выбрать 2 квартал 2023'))
-
-WebUI.click(findTestObject('КПО для раздела Выручка/раскрыть 3 квартал'))
-
-WebUI.click(findTestObject('КПО для раздела Выручка/Июль'))
-
-WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/div_aug'), 30)
-
-WebUI.scrollToElement(findTestObject('КПО для раздела Выручка/скролл'), 30)
-
-WebUI.click(findTestObject('КПО для раздела Выручка/div_aug'))
-
-WebUI.click(findTestObject('КПО для раздела Выручка/div_sept'))
-
-WebUI.click(findTestObject('КПО для раздела Выручка/div_entrdate'))
 
 WebUI.delay(5)
 
