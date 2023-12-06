@@ -21,6 +21,7 @@ import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
 def test1 = Test1()
+
 def test2 = Test2()
 
 static def OpenBrowser() {
@@ -74,21 +75,15 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/раскрыть 3 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать 3 квартал'))
 
-    WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
@@ -191,15 +186,14 @@ static def WriteToExcel(def file, def page, def path, def typeDate) {
     println(n)
 
     println(path)
-	
 
     path = path.replaceAll('Объем потерь сверка/Данные со страницы Объем потерь/', '')
 
     String dZO = WebUI.getText(findTestObject('Общие/Фильтр ДЗО'))
 
     println(dZO)
-	
-	println(typeDate)
+
+    println(typeDate)
 
     Date d = new Date()
 
@@ -224,8 +218,8 @@ static def WriteToExcel(def file, def page, def path, def typeDate) {
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
-	
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, typeDate)
+
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, typeDate)
 
     n = (n + 1)
 
@@ -283,7 +277,6 @@ static def Raspred() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 }
-
 
 static def Test1() {
     '0'
