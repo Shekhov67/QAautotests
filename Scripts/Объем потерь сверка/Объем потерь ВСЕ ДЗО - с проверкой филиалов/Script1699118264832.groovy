@@ -120,8 +120,13 @@ static def Check(def pageString, def fileString, def path) {
     }
     
     if (WebUI.verifyEqual(page1, file) == true) {
+		return true
+		
     } else {
+		
         def write = WriteToExcel(file, page, path, def typeDate = 'Объем потерь')
+		
+		return false
     }
 }
 
@@ -165,8 +170,13 @@ static def CheckPercents(def pageString, def fileString, def path) {
     println(file)
 
     if (WebUI.verifyEqual(page, file) == true) {
+		
+		return true
+		
     } else {
         def write = WriteToExcel(file, page, path, def typeDate = 'Уровень потерь')
+		
+		return false
     }
 }
 

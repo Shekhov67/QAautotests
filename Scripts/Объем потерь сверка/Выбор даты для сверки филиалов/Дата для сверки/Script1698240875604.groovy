@@ -45,21 +45,15 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/раскрыть 3 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать 3 квартал'))
 
-    WebUI.click(findTestObject('Общие в сеть/Объем потерь сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }

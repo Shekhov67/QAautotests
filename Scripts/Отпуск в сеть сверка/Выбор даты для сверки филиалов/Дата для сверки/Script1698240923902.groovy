@@ -45,21 +45,15 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 2 квартал 2023'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/раскрыть 3 квартал 2023'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 3 квартал 2023'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать июль'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/раскрыть 4 квартал 2023'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Август'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), 0)
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Сентябрь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
 }
