@@ -853,13 +853,14 @@ static def Check(def pageString, def fileString, def path) {
     if (WebUI.verifyEqual(page1, file) == true) {
         return true
     } else {
-        def write = WriteToExcel(file, page, path)
+		
+        def write = WriteToExcel(file, page, def typeData = 'Отпуск в сеть', path)
 
         return false
     }
 }
 
-static def WriteToExcel(def file, def page, def path) {
+static def WriteToExcel(def file, def page, def typeData = 'Отпуск в сеть', def path) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -897,8 +898,10 @@ static def WriteToExcel(def file, def page, def path) {
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
+	
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, typeData)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
 
     n = (n + 1)
 
