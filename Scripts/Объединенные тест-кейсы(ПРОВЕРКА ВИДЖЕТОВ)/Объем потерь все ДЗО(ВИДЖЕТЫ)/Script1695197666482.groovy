@@ -32,16 +32,16 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 
 WebUI.click(findTestObject('Общие/button_'))
 
-//def selectDate = SelectDate()
-def actualDate = ActualDate()
+def selectDate = SelectDate()
+//def actualDate = ActualDate()
 
 def testing1 = Testing1()
 
 def testing2 = Testing2()
 
-WebUI.closeBrowser() //в соответствии с текущим месяцем выбирать дату для сравнения
-// Возвращает текущую дату
-//Дата для сравнения
+WebUI.closeBrowser( //в соответствии с текущим месяцем выбирать дату для сравнения
+    // Возвращает текущую дату
+    ) //Дата для сравнения
 // Возвращает текущую дату
 //Дата для сравнения
 // Возвращает текущую дату
@@ -1460,7 +1460,7 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
@@ -1468,17 +1468,15 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать 3 квартал'))
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/3 квартал 23 раскрыть'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'))
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
