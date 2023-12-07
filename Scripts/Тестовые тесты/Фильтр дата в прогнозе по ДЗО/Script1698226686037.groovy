@@ -90,33 +90,43 @@ variant = varianttFilter()
 
 WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
-	WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Сентябрь'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Сентябрь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-	WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'))
+WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'))
 
-	variant = varianttFilter()
+variant = varianttFilter()
 
-	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
-	WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Октябрь'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Октябрь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-	WebUI.click(findTestObject('Прогноз по ДЗО/Октябрь'))
+WebUI.click(findTestObject('Прогноз по ДЗО/Октябрь'))
 
-	variant = varianttFilter()
+variant = varianttFilter()
 
-	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
-	WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ноябрь'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ноябрь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-	WebUI.click(findTestObject('Прогноз по ДЗО/Ноябрь'))
+WebUI.click(findTestObject('Прогноз по ДЗО/Ноябрь'))
 
-	variant = varianttFilter()
+variant = varianttFilter()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Декабрь'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Декабрь'))
+
+variant = varianttFilter()
 
 static def varianttFilter() {
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
