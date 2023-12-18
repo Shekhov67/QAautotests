@@ -148,7 +148,7 @@ static def WriteToExcel2(def page) {
 
     def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-    if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
+    
         ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
         ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
@@ -162,63 +162,7 @@ static def WriteToExcel2(def page) {
         ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 
         WebUI.closeBrowser()
-    } else {
-        if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-            n = (n + 1)
-
-            ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-        } else {
-            if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-                n = (n + 1)
-
-                ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-            } else {
-                if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-                    n = (n + 1)
-
-                    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                } else {
-                    if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-                        n = (n + 1)
-
-                        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                    }
-                }
-            }
-        }
-    }
+   
 }
 
 static def Test1() {

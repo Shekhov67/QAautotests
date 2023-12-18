@@ -101,8 +101,6 @@ WebUI.click(findTestObject('КПО для раздела Выручка/снят
 
 WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
 
-WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
-
 WebUI.delay(5)
 
 String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))

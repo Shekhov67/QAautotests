@@ -45,53 +45,35 @@ WebUI.click(findTestObject('Общие/Применить в фильтре ДЗ
 
 String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
 
-a = a.replaceAll('\\s+', '')
-
 println(a)
 
-String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)2'))
+String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
 
-b = b.replaceAll('\\s+', '')
 
-String ObemPoterBlock = a + b
-
-println(ObemPoterBlock)
-
-String c = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
-
-c = c.replaceAll('\\.', '')
-
-println(c)
-
-String d = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)2'))
-
-d = d.replaceAll('\\.', '')
+/*d = d.replaceAll('\\.', '')
 
 String UrovenPoterBlock = c + d
 
-println(UrovenPoterBlock)
-
+println(UrovenPoterBlock)*/
 String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
 
 println(e)
 
-e = e.substring(0, e.indexOf('2022/2023'))
+/*e = e.substring(0, e.indexOf('2022/2023'))
 
-e = e.replaceAll('\\D+', '')
-
+e = e.replaceAll('\\D+', '')*/
 println(e)
 
-int i = e.length() / 2
+/*int i = e.length() / 2
 
 e = e.substring(0, i)
 
-println(e)
-
+println(e)*/
 String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
 
 println(f)
 
-f = f.substring(0, f.indexOf('2022/2023'))
+/*f = f.substring(0, f.indexOf('2022/2023'))
 
 println(f)
 
@@ -107,23 +89,16 @@ println(f)
 
 String OtkloneniyaBlock = e + f
 
-println(OtkloneniyaBlock)
-
+println(OtkloneniyaBlock)*/
 WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
-
-WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
-
-WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
-
-WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
 WebUI.delay(10)
 
-String page = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
+String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
 
-println(page)
+println(a1)
 
-page = page.replaceAll('\\D+', '')
+/*page = page.replaceAll('\\D+', '')
 
 i = ((2 * a.length()) + b.length())
 
@@ -135,13 +110,12 @@ String b1 = page.substring(i1, i)
 
 String ObemPoterBalances = a1 + b1
 
-println(ObemPoterBalances)
+println(ObemPoterBalances)*/
+String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
 
-page = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
+println(b1)
 
-println(page)
-
-page = page.replaceAll('\\.', '')
+/*page = page.replaceAll('\\.', '')
 
 page = page.replaceAll('\\D+', '')
 
@@ -157,36 +131,25 @@ String d1 = page.substring(i1, i)
 
 String UrovenPoterBalances = c1 + d1
 
-println(UrovenPoterBalances)
-
+println(UrovenPoterBalances)*/
 String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
 
 println(e1)
 
-e1 = e1.replaceAll('\\D+', '')
-
-println(e1)
-
-e1 = e1.substring(0, e.length())
-
-println(e1)
-
+//e1 = e1.replaceAll('\\D+', '')
+//println(e1)
+//e1 = e1.substring(0, e.length())
+//println(e1)
 String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
 
 println(f1)
 
-f1 = f1.replaceAll('\\D+', '')
-
-println(f1)
-
-f1 = f1.substring(0, f.length())
-
-println(f1)
-
-String OtkloneniyaBalances = e1 + f1
-
-println(OtkloneniyaBalances)
-
+//f1 = f1.replaceAll('\\D+', '')
+//println(f1)
+//f1 = f1.substring(0, f.length())
+//println(f1)
+//String OtkloneniyaBalances = e1 + f1
+//println(OtkloneniyaBalances)
 ////////////////////////////////////
 if (WebUI.verifyEqual(a, a1)) {
     println('GOOD')
@@ -208,25 +171,9 @@ if (WebUI.verifyEqual(b, b1)) {
     WriteToExcel(widget, year, month)
 }
 
-if (WebUI.verifyEqual(c, c1)) {
-    println('GOOD')
-} else {
-    year = '2022'
 
-    widget = 'Уровень потерь'
 
-    WriteToExcel(widget, year, month)
-}
 
-if (WebUI.verifyEqual(d, d1)) {
-    println('GOOD')
-} else {
-    year = '2023'
-
-    widget = 'Уровень потерь'
-
-    WriteToExcel(widget, year, month)
-}
 
 if (WebUI.verifyEqual(e, e1)) {
     println('GOOD')

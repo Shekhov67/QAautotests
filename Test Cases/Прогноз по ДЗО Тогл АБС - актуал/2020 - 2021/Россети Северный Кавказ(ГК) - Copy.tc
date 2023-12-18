@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>АО Тываэнерго - Copy</name>
+   <name>Россети Северный Кавказ(ГК) - Copy</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d54d86e6-7c72-4a3b-9373-db97e7d5091f</testCaseGuid>
+   <testCaseGuid>f64a1821-0ddf-41db-bb54-d016a57fcb27</testCaseGuid>
 </TestCaseEntity>

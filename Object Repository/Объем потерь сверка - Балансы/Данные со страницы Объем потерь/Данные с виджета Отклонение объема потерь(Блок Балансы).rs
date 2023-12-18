@@ -6,12 +6,12 @@
    <elementGuidId>7e74dbba-2cfa-4561-bea4-e22b65553b71</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>svg.highcharts-root</value>
+         <key>XPATH</key>
+         <value>//div[22]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[17]/following::*[name()='svg'][1]</value>
+         <key>CSS</key>
+         <value>svg.highcharts-root</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>d9082255-f1ae-484a-b793-cd640061d5d5</webElementGuid>
+      <webElementGuid>9aadab51-f00f-4927-882e-2afbe1e4cf1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>version</name>
       <type>Main</type>
       <value>1.1</value>
-      <webElementGuid>0b229d34-f38a-4cfd-a786-f468a6840687</webElementGuid>
+      <webElementGuid>dac8bd8a-fc5c-4150-8829-f3552ecfde6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>highcharts-root</value>
-      <webElementGuid>02e8011d-afe4-45bd-94ec-e7748dd5ca5e</webElementGuid>
+      <webElementGuid>f00107b6-b772-4c52-8416-f58432e62202</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>c4d47184-f9d7-4053-9823-49cf3ab97bc6</webElementGuid>
+      <webElementGuid>b8908313-0fd2-42f8-8ee8-c70e4e3fbc4c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>width</name>
       <type>Main</type>
       <value>890</value>
-      <webElementGuid>7cf755f4-af31-4ad2-bc60-2296697eb22d</webElementGuid>
+      <webElementGuid>a0464688-859b-454a-b1b2-eb13be56104d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>height</name>
       <type>Main</type>
       <value>420</value>
-      <webElementGuid>4fd34472-3fe9-41f1-b00a-864f9ffe344c</webElementGuid>
+      <webElementGuid>d9e36ead-5caf-41e2-8234-eac51e5b6aaa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 890 420</value>
-      <webElementGuid>08afdaf8-695c-44b9-a5ec-fd979c56c94c</webElementGuid>
+      <webElementGuid>528f4e39-2f1c-40f6-9d0b-80c33dad092e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Created with Highcharts 9.0.1153 017​153 0172022 год0 25 50 75 100 125 150 175 2022: 153 017</value>
-      <webElementGuid>40bfc4df-0b02-47b9-a431-74ff457501d3</webElementGuid>
+      <webElementGuid>bf94b503-0c68-4f57-ae6a-8b9406295833</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;highcharts-q0em2wy-170&quot;)/svg[@class=&quot;highcharts-root&quot;]</value>
-      <webElementGuid>003da89e-d0d8-45e8-aaa9-7c0ab3c86794</webElementGuid>
+      <webElementGuid>39078b86-18a5-4530-996a-42d6ad7958bd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Объем потерь по АО «Тываэнерго» за 2022 год'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>f7f94149-04f1-4ee9-8ae4-600adbc21668</webElementGuid>
+      <webElementGuid>9c673a24-6ca5-48e3-8c63-8aa2dead66df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[17]/following::*[name()='svg'][1]</value>
-      <webElementGuid>d422f138-5141-45d4-8f82-2988752f4684</webElementGuid>
+      <webElementGuid>9c5bd46f-de9a-4a5b-86ff-0a6b237f0f82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//svg[(text() = 'Created with Highcharts 9.0.1153 017​153 0172022 год0 25 50 75 100 125 150 175 2022: 153 017' or . = 'Created with Highcharts 9.0.1153 017​153 0172022 год0 25 50 75 100 125 150 175 2022: 153 017')]</value>
-      <webElementGuid>41b267fe-496a-4692-9470-9596b6e774b4</webElementGuid>
+      <webElementGuid>e6ea364c-27db-4866-bc08-1b90ea39d2b8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

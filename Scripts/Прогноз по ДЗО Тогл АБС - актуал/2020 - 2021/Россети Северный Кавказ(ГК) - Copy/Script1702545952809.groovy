@@ -17,14 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
-import java.util.HashMap as HashMap
-import java.util.Map as Map
-import java.util.Date as Date
-import java.text.SimpleDateFormat as SimpleDateFormat
 
 def openBrowser = OpenBrowser()
 
-WebUI.click(findTestObject('Прогноз по ДЗО/тогл на МЛН'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 
@@ -38,7 +33,17 @@ WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россет
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
 
-WebUI.click(findTestObject('Прогноз по ДЗО/выбрать АО Тываэнерго'))
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ингушэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Ингушэнерго'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
 
@@ -48,7 +53,37 @@ WebUI.closeBrowser()
 
 openBrowser = OpenBrowser()
 
-WebUI.click(findTestObject('Прогноз по ДЗО/тогл на МЛН'))
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Каббалкэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Каббалкэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
 
 WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 
@@ -62,17 +97,87 @@ WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россет
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
 
-WebUI.click(findTestObject('Прогноз по ДЗО/АО Тываэнерго'))
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'), 30)
 
-WebUI.click(findTestObject('Прогноз по ДЗО/АО Тываэнерго(2 уровень)'))
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Карачаево-Черкескэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Карачаево-Черкескэнерго'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
-WebUI.closeBrowser( //////////////Запись даты
-    ///////////////
-    )
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Севкавказэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Севкавказэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Северный-Кавказ(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ставропольэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Ставропольэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
 
 static def ScanErrors() {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
@@ -89,98 +194,94 @@ static def ScanErrors() {
 }
 
 static def varianttFilter() {
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Отпуск из сети'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Отпуск из сети'))
 
-    def scan = ScanErrors()
+	def scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Факт'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Факт'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Отпуск из сети'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Отпуск из сети'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать КПО'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать КПО'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Факт'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Факт'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать КПО'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать КПО'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/План СУ'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/План СУ'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Отпуск из сети'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Отпуск из сети'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/План СУ'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/План СУ'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр КПО(Отпуск из сети)'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать КПО'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать КПО'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/ВСЕ в фильтре КПО'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/ВСЕ в фильтре КПО'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Факт'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Факт'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/План СУ'))
+	WebUI.click(findTestObject('Прогноз по ДЗО/План СУ'))
 
-    scan = ScanErrors()
+	scan = ScanErrors()
 
-    'очистить куки'
-    WebUI.deleteAllCookies()
+	'очистить куки'
+	WebUI.deleteAllCookies()
 
-    println('End function')
+	println('End function')
 }
 
 static def WriteToExcel(def page) {
-	
-	String togle ='Переключатель АБС.'
-	
     String sheetName = 'List1'
-	
 
     def data = findTestData('Test Data')
 
@@ -204,17 +305,9 @@ static def WriteToExcel(def page) {
 
     println(kpo)
 
+    String togle = 'переключатель на абс.'
+
     String dashboardName = 'Прогноз по ДЗО'
-
-    Date d = new Date()
-
-    SimpleDateFormat format1
-
-    format1 = new SimpleDateFormat('dd.MM.yyyy')
-
-    String date = format1.format(d)
-
-    println(date)
 
     def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelPrognozDzo)
 
@@ -237,8 +330,6 @@ static def WriteToExcel(def page) {
 
         ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, togle)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 8, date)
-
         n = (n + 1)
 
         ExcelKeywords.saveWorkbook(GlobalVariable.excelPrognozDzo, workbook01)
@@ -259,8 +350,6 @@ static def WriteToExcel(def page) {
             ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, page)
 
             ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, togle)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 8, date)
 
             n = (n + 1)
 
@@ -283,8 +372,6 @@ static def WriteToExcel(def page) {
 
                 ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, togle)
 
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 8, date)
-
                 n = (n + 1)
 
                 ExcelKeywords.saveWorkbook(GlobalVariable.excelPrognozDzo, workbook01)
@@ -305,8 +392,6 @@ static def WriteToExcel(def page) {
                     ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, page)
 
                     ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, togle)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 8, date)
 
                     n = (n + 1)
 
@@ -329,8 +414,6 @@ static def WriteToExcel(def page) {
 
                         ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, togle)
 
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 8, date)
-
                         n = (n + 1)
 
                         ExcelKeywords.saveWorkbook(GlobalVariable.excelPrognozDzo, workbook01)
@@ -344,15 +427,15 @@ static def WriteToExcel(def page) {
 static def SelectDate() {
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Год'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2022'))
+    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2020'))
 
     def selectMouth = SelectMouth()
 
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Год'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2023'))
+    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2021'))
 
-    WebUI.callTestCase(findTestCase('Тестовые тесты/Фильтр дата в прогнозе по ДЗО'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    selectMouth = SelectMouth()
 }
 
 static def SelectMouth() {
@@ -465,5 +548,7 @@ static def OpenBrowser() {
             1, 1))
 
     WebUI.click(findTestObject('Object Repository/Прогноз по ДЗО/button_'))
+
+    WebUI.click(findTestObject('Прогноз по ДЗО/тогл на МЛН'))
 }
 

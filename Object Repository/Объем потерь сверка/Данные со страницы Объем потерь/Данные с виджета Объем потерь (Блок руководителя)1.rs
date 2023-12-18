@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[34]/div[2]/div/div/div/div/span</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[8]/following::div[5]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>306cda1e-df01-46f2-9494-b369ec7f3d96</webElementGuid>
+      <webElementGuid>7c432e68-04a5-4c8c-a681-f4c3e2995ffe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>data-z-index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>3005ebca-82cd-4ecb-95fb-cc8adad28ab9</webElementGuid>
+      <webElementGuid>7796ca27-fd7c-4764-baf2-739df9b1b350</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>932 610 </value>
-      <webElementGuid>5100c962-de95-4215-b0a9-fc838d304e7e</webElementGuid>
+      <webElementGuid>760185ab-a8a1-4282-97b3-e542c34ccf9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;highcharts-qfvlkfr-24&quot;)/div[@class=&quot;highcharts-data-labels highcharts-series-0 highcharts-column-series highcharts-tracker highcharts-series-hover&quot;]/div[@class=&quot;highcharts-label highcharts-data-label highcharts-data-label-color-undefined highcharts-tracker highcharts-drilldown-data-label&quot;]/span[1]</value>
-      <webElementGuid>2cf85c80-8f52-4502-a69c-2613ac2ec591</webElementGuid>
+      <webElementGuid>6aa02353-023f-4fd6-8515-3a8f74b7f5ff</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='highcharts-qfvlkfr-24']/div/div/span</value>
-      <webElementGuid>784e10ea-3231-4f19-ab55-de596b2a9a4e</webElementGuid>
+      <webElementGuid>695924a2-eac5-41df-a94e-8fb43f9e2e11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Created with Highcharts 9.0.1'])[1]/following::span[1]</value>
-      <webElementGuid>5db83a74-5f57-4c12-8d18-c96126b946a4</webElementGuid>
+      <webElementGuid>3b2a5ffb-279e-4c6f-9159-8464647a2544</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Объем потерь'])[1]/following::span[1]</value>
-      <webElementGuid>f2116236-aa5a-4d96-8150-8009c56a7aad</webElementGuid>
+      <webElementGuid>60a5b51f-7543-4f1e-ab37-3f87bede80e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[18]/preceding::span[1]</value>
-      <webElementGuid>bd4bec6d-f5e8-47fc-9238-b223ec38d011</webElementGuid>
+      <webElementGuid>9a64d629-64c6-459e-9aea-f51f5148b5e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Уровень потерь'])[1]/preceding::span[1]</value>
-      <webElementGuid>c4c66158-a16c-4f04-8f1e-6d428ceb6e85</webElementGuid>
+      <webElementGuid>df2924fe-29f1-448f-8578-1fb640812602</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='932 610']/parent::*</value>
-      <webElementGuid>b8d9bc3d-e96a-471b-beb5-f96b881788e6</webElementGuid>
+      <webElementGuid>34ce101b-a5bd-44eb-933b-aba2cc6663e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[34]/div[2]/div/div/div/div/span</value>
-      <webElementGuid>4ba6f80b-c7dc-408e-a802-154706c52a63</webElementGuid>
+      <webElementGuid>0f1b80ec-2984-41ef-8468-5eed7e1c6a4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '932 610 ' or . = '932 610 ')]</value>
-      <webElementGuid>4ffb271a-2116-43e6-9e1d-bf6278fc6482</webElementGuid>
+      <webElementGuid>b47adc0e-3a38-4987-9d86-31cf2d670d24</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

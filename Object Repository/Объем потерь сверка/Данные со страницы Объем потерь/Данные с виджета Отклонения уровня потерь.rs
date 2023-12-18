@@ -6,12 +6,12 @@
    <elementGuidId>b3aa8412-27f9-47ea-9d53-56975c310a05</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#highcharts-xz9lj6k-26 > svg.highcharts-root</value>
+         <key>XPATH</key>
+         <value>//div[24]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[23]/following::*[name()='svg'][1]</value>
+         <key>CSS</key>
+         <value>#highcharts-xz9lj6k-26 > svg.highcharts-root</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>201f4181-2a66-46c3-96f9-67b4035ef00c</webElementGuid>
+      <webElementGuid>383dfb13-f525-4dd6-9998-7525209faa0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>version</name>
       <type>Main</type>
       <value>1.1</value>
-      <webElementGuid>13324e0b-b972-42a3-a6f7-e49a9c553f1f</webElementGuid>
+      <webElementGuid>90caaf49-c057-4a52-a6d4-28df1dc1ccf8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>highcharts-root</value>
-      <webElementGuid>c6cf8b77-828c-47f3-b674-b4985a7c78e8</webElementGuid>
+      <webElementGuid>760ca454-4258-46fd-8b75-8e421b63625e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>103d0fd4-06d6-4289-9516-6869493af390</webElementGuid>
+      <webElementGuid>fc0df9a9-102e-4d08-be8c-d4684180677a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>width</name>
       <type>Main</type>
       <value>975</value>
-      <webElementGuid>14d7f739-01a0-475c-8004-32b9e1ed215e</webElementGuid>
+      <webElementGuid>36e5f435-e089-41df-b65d-6e6d002eca7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>height</name>
       <type>Main</type>
       <value>474</value>
-      <webElementGuid>be4345e2-0115-4d76-9a69-eb237c7030a3</webElementGuid>
+      <webElementGuid>ff11390d-c0c5-41a6-8a1e-08d9adecf9df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 975 474</value>
-      <webElementGuid>c6ff7b6d-63cf-4667-aa4a-c83c50919a4f</webElementGuid>
+      <webElementGuid>9d720b35-5285-43e0-9f3b-2bdc396aec70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Created with Highcharts 9.0.1●● Отклонения, п.п.п.п.Отклонения уровня потерь0.19​0.19-0.01​-0.012021/20222022/2023-0.0500.050.10.150.2</value>
-      <webElementGuid>72d73614-fcbb-4e4a-a779-3c76818141e2</webElementGuid>
+      <webElementGuid>0d0194f1-7ec3-4f12-ba72-0a48688ef696</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;highcharts-xz9lj6k-26&quot;)/svg[@class=&quot;highcharts-root&quot;]</value>
-      <webElementGuid>6b33a198-27ed-4f84-89df-a8d2c8716d89</webElementGuid>
+      <webElementGuid>ded97ee0-5611-4548-a73f-0ac727d299cd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[23]/following::*[name()='svg'][1]</value>
-      <webElementGuid>7e937dd9-a80d-4cb4-98b0-30fc982f89f7</webElementGuid>
+      <webElementGuid>5739341b-8e90-4ad4-8b14-0b9880614607</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Отклонение:'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>ea0d602f-5d51-4b39-94ce-2db8a57a36fb</webElementGuid>
+      <webElementGuid>c001eb14-7de7-4114-9786-d0da6cd53575</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//svg[(text() = 'Created with Highcharts 9.0.1●● Отклонения, п.п.п.п.Отклонения уровня потерь0.19​0.19-0.01​-0.012021/20222022/2023-0.0500.050.10.150.2' or . = 'Created with Highcharts 9.0.1●● Отклонения, п.п.п.п.Отклонения уровня потерь0.19​0.19-0.01​-0.012021/20222022/2023-0.0500.050.10.150.2')]</value>
-      <webElementGuid>5fea8304-86df-4f1a-84c4-afd61dcde2db</webElementGuid>
+      <webElementGuid>f245e7a4-6e3c-4048-b980-4b29f39297f9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
