@@ -6,12 +6,12 @@
    <elementGuidId>c2d576a9-107e-42ed-ab45-c371f2825f1e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='widget-header-5b695520ec3542ddafc9b4410a15dece']/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#widget-header-5b695520ec3542ddafc9b4410a15dece > a.va-widget-header</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='widget-header-6a78deb2fc8e416b84939195b00f5c43']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>a59b219f-c906-49d3-88a3-d6a285009823</webElementGuid>
+      <webElementGuid>c6c220a6-795b-40c6-9ca4-6e28bcb68a02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>va-widget-header</value>
-      <webElementGuid>d1ca38ed-0637-430f-906f-de542ec82b86</webElementGuid>
+      <webElementGuid>80e6f407-aa8b-4403-a356-e82fc2e19491</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-bind</name>
       <type>Main</type>
       <value>text: title.text(), attr: title.linkEnabled() &amp;&amp; title.link().trim() ? { href: title.link().indexOf('http') == 0 ? title.link().trim() : '//' + title.link().trim() } : { href: false }, style: { 'text-align': title.textStyle.alignString(), color: title.textStyle.color(), 'font-size': title.textStyle.fontSize() + 'px', 'font-family': title.textStyle.fontFamily(), 'font-weight': title.textStyle.isBold() ? 'bold' : 'normal', 'font-style': title.textStyle.isItalic() ? 'italic' : 'normal', 'line-height': title.textStyle.lineHeight(), cursor: title.linkEnabled() ? 'pointer' : 'default' }</value>
-      <webElementGuid>4abed0ee-34e2-4970-8fbd-b83e7825a208</webElementGuid>
+      <webElementGuid>11ceb7c1-d310-4a1d-bfd8-8cc6fe719d4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Дата </value>
-      <webElementGuid>ba0e345b-4441-48f8-b5ca-d46f60340f5a</webElementGuid>
+      <webElementGuid>efe7e59e-a6e7-44ce-a219-23d9c1f4964f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;widget-header-5b695520ec3542ddafc9b4410a15dece&quot;)/a[@class=&quot;va-widget-header&quot;]</value>
-      <webElementGuid>b705cc25-2561-4aca-a757-52295e0c5a14</webElementGuid>
+      <webElementGuid>f25106c7-c558-4cae-ab08-4345e9ad8bdd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='widget-header-5b695520ec3542ddafc9b4410a15dece']/a</value>
-      <webElementGuid>8266bd12-e8e7-45a4-a4f9-bc638348b0df</webElementGuid>
+      <webElementGuid>1e0cbcdc-748d-422c-b933-9477f1b40400</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Дата')]</value>
-      <webElementGuid>60236fbb-5202-4edb-ac08-2edbc66bfe5d</webElementGuid>
+      <webElementGuid>ec2bc5d3-1c41-4405-bbc7-cf498122d69c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[5]/following::a[1]</value>
-      <webElementGuid>d7683ed0-9b1c-4fde-9fb3-c4d5302e1591</webElementGuid>
+      <webElementGuid>afc679c5-8977-468e-b707-4f2a296dbc08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Применить'])[4]/following::a[1]</value>
-      <webElementGuid>b9b7239d-3b90-4b81-beaa-3401cdea98b2</webElementGuid>
+      <webElementGuid>c4f4b8c8-0e01-47ca-965c-6bd8e91a2735</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Все'])[3]/preceding::a[1]</value>
-      <webElementGuid>87aa042a-5793-4057-9792-24fcc8f454f5</webElementGuid>
+      <webElementGuid>a7f2aabb-393d-4714-9008-e3255c94e3d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбранные значения'])[5]/preceding::a[1]</value>
-      <webElementGuid>1876a069-0c44-4111-9344-15f7e568574d</webElementGuid>
+      <webElementGuid>51c6ba60-acb2-4713-8adb-809e682a7750</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Дата']/parent::*</value>
-      <webElementGuid>4ce79a2e-c093-4d1b-b2e4-b68442c4e13e</webElementGuid>
+      <webElementGuid>54686413-729e-4d7c-822a-30397a62a718</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div/a</value>
-      <webElementGuid>1615d94b-143d-4aeb-981e-788f1f936bdf</webElementGuid>
+      <webElementGuid>25e672d6-b9ba-49eb-8902-25e5b472685f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[(text() = 'Дата ' or . = 'Дата ')]</value>
-      <webElementGuid>43ef35ce-72f1-4b69-a910-05cfc1dfd0c8</webElementGuid>
+      <webElementGuid>61e525db-1dd1-490b-b153-0f36dec6e4a9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

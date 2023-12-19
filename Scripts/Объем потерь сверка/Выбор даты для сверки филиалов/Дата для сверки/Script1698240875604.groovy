@@ -23,13 +23,9 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 def selectDate = SelectDate()
 
 static def SelectDate() {
-    WebUI.click(findTestObject('Общие/Фильтр Дата'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('Общие/Фильтр Дата'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
 
