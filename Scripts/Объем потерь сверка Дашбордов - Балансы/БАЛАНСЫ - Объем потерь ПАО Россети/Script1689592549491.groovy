@@ -49,47 +49,16 @@ println(a)
 
 String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
 
+println(b)
 
-/*d = d.replaceAll('\\.', '')
-
-String UrovenPoterBlock = c + d
-
-println(UrovenPoterBlock)*/
 String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
 
 println(e)
 
-/*e = e.substring(0, e.indexOf('2022/2023'))
-
-e = e.replaceAll('\\D+', '')*/
-println(e)
-
-/*int i = e.length() / 2
-
-e = e.substring(0, i)
-
-println(e)*/
 String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
 
 println(f)
 
-/*f = f.substring(0, f.indexOf('2022/2023'))
-
-println(f)
-
-f = f.replaceAll('\\D+', '')
-
-println(f)
-
-i = (f.length() / 2)
-
-f = f.substring(0, i)
-
-println(f)
-
-String OtkloneniyaBlock = e + f
-
-println(OtkloneniyaBlock)*/
 WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
 
 WebUI.delay(10)
@@ -98,102 +67,20 @@ String a1 = WebUI.getText(findTestObject('Объем потерь сверка -
 
 println(a1)
 
-/*page = page.replaceAll('\\D+', '')
-
-i = ((2 * a.length()) + b.length())
-
-String a1 = page.substring(0, a.length())
-
-int i1 = 2 * a.length()
-
-String b1 = page.substring(i1, i)
-
-String ObemPoterBalances = a1 + b1
-
-println(ObemPoterBalances)*/
 String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
 
 println(b1)
 
-/*page = page.replaceAll('\\.', '')
-
-page = page.replaceAll('\\D+', '')
-
-println(page)
-
-i = ((2 * c.length()) + d.length())
-
-String c1 = page.substring(0, c.length())
-
-i1 = (2 * c.length())
-
-String d1 = page.substring(i1, i)
-
-String UrovenPoterBalances = c1 + d1
-
-println(UrovenPoterBalances)*/
 String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
 
 println(e1)
 
-//e1 = e1.replaceAll('\\D+', '')
-//println(e1)
-//e1 = e1.substring(0, e.length())
-//println(e1)
 String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
 
 println(f1)
 
-//f1 = f1.replaceAll('\\D+', '')
-//println(f1)
-//f1 = f1.substring(0, f.length())
-//println(f1)
-//String OtkloneniyaBalances = e1 + f1
-//println(OtkloneniyaBalances)
-////////////////////////////////////
-if (WebUI.verifyEqual(a, a1)) {
-    println('GOOD')
-} else {
-    year = '2022'
-
-    widget = 'Объем потерь'
-
-    WriteToExcel(widget, year, month)
-}
-
-if (WebUI.verifyEqual(b, b1)) {
-    println('GOOD')
-} else {
-    year = '2023'
-
-    widget = 'Объем потерь'
-
-    WriteToExcel(widget, year, month)
-}
-
-
-
-
-
-if (WebUI.verifyEqual(e, e1)) {
-    println('GOOD')
-} else {
-    year = '2022/2023'
-
-    widget = 'Отклонение объема потерь'
-
-    WriteToExcel(widget, year, month)
-}
-
-if (WebUI.verifyEqual(f, f1)) {
-    println('GOOD')
-} else {
-    year = '2022/2023'
-
-    widget = 'Отклонение уровня потерь'
-
-    WriteToExcel(widget, year, month)
-}
+def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
+    def f01 = f1)
 
 WebUI.closeBrowser()
 
@@ -231,5 +118,55 @@ static def WriteToExcel(def widget, def year, def month) {
     n = (n + 1)
 
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
+}
+
+static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e01, def f01) {
+    if (WebUI.verifyEqual(a0, a01)) {
+        println('GOOD')
+    } else {
+        String year = '2022'
+
+        String widget = 'Объем потерь'
+
+        String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+
+        WriteToExcel(widget, year, month)
+    }
+    
+    if (WebUI.verifyEqual(b0, b01)) {
+        println('GOOD')
+    } else {
+        String year = '2023'
+
+        String widget = 'Уровень потерь'
+		
+		String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+
+        WriteToExcel(widget, year, month)
+    }
+    
+    if (WebUI.verifyEqual(e0, e01)) {
+        println('GOOD')
+    } else {
+        String year = '2022/2023'
+
+        String widget = 'Отклонение объема потерь'
+		
+		String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+
+        WriteToExcel(widget, year, month)
+    }
+    
+    if (WebUI.verifyEqual(f0, f01)) {
+        println('GOOD')
+    } else {
+        String year = '2022/2023'
+
+        String widget = 'Отклонение уровня потерь'
+		
+		String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+
+        WriteToExcel(widget, year, month)
+    }
 }
 
