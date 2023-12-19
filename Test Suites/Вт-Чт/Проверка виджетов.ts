@@ -14,21 +14,21 @@
    <testCaseLink>
       <guid>6b557ce3-1137-4fd1-b2b0-2792b133eee6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Объединенные тест-кейсы(ПРОВЕРКА ВИДЖЕТОВ)/КПО - ВСЕ ДЗО тогл МЛН(ВИДЖЕТЫ)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7396cfe2-70ad-4a84-b4b5-57910a69ab34</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Объединенные тест-кейсы(ПРОВЕРКА ВИДЖЕТОВ)/КПО - ВСЕ ДЗО тогл Процент(ВИДЖЕТЫ)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6a042212-213a-4779-8d4d-2bdbc87ecee2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Объединенные тест-кейсы(ПРОВЕРКА ВИДЖЕТОВ)/Объем потерь все ДЗО(ВИДЖЕТЫ)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

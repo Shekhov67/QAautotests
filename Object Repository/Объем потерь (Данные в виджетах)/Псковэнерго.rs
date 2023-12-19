@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='15a3ac82ffcc4d5f9935cd07ff1d48e7']/div/div[2]/div[3]/ul/li/ul/li[2]/ul/li[8]/ul/li[13]/div/div</value>
+         <value>//*/text()[normalize-space(.)='Псковэнерго']/parent::*</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>56ef3108-0451-4cf5-8d24-23384f52b68f</webElementGuid>
+      <webElementGuid>723aec1e-910c-4301-9c60-4888b1f4fdcb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-list-item-text</value>
-      <webElementGuid>1ea1016c-07f1-4f9c-915c-29a28034cac1</webElementGuid>
+      <webElementGuid>ae2877da-529d-4df0-bc4a-b8c653ac3b01</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Псковэнерго</value>
-      <webElementGuid>b4529497-41eb-4b9e-a8ae-0c1026115707</webElementGuid>
+      <webElementGuid>c4a9d036-7cf4-4616-aea2-83111b06c0bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;15a3ac82ffcc4d5f9935cd07ff1d48e7&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
-      <webElementGuid>5a202340-91a8-4410-a567-a094504af641</webElementGuid>
+      <webElementGuid>43589c93-fedc-414d-92bc-c82795e45d2c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='15a3ac82ffcc4d5f9935cd07ff1d48e7']/div/div[2]/div[3]/ul/li/ul/li[2]/ul/li[8]/ul/li[13]/div/div</value>
-      <webElementGuid>ce748fcd-8b1e-475c-b424-178fa420c98e</webElementGuid>
+      <webElementGuid>440966b3-d26e-489b-97a7-f77f6907b6d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Псковский филиал'])[1]/following::div[2]</value>
-      <webElementGuid>724b27fd-3279-404f-b493-609818234ab1</webElementGuid>
+      <webElementGuid>a6b1ab4a-aca4-4f66-953b-f695d27b3d94</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Новгородэнерго'])[1]/following::div[4]</value>
-      <webElementGuid>ba36e33c-2b48-4777-b8ec-868928720d46</webElementGuid>
+      <webElementGuid>6a044bde-005a-47ac-a487-abb1968456e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Резерв'])[1]/preceding::div[1]</value>
-      <webElementGuid>8ad40333-f01c-4a60-867e-e826f97c53da</webElementGuid>
+      <webElementGuid>074bf60d-e7e4-4c51-993d-a7b27db7ac9f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='филиал в Республике Коми'])[1]/preceding::div[3]</value>
-      <webElementGuid>6f6e097a-fba6-4646-ae80-1c0001c6cec0</webElementGuid>
+      <webElementGuid>51503420-822b-466f-baed-856687f5320f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Псковэнерго']/parent::*</value>
-      <webElementGuid>46af521a-04e5-4a8c-8752-6055b4313b51</webElementGuid>
+      <webElementGuid>9f410dc7-60d5-49a9-8c60-afc3d3d27dbb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[8]/ul/li[13]/div/div</value>
-      <webElementGuid>cda0b6b7-adee-4a71-879d-41a29b1f989e</webElementGuid>
+      <webElementGuid>5eff64f2-18d7-4f7d-99f2-6ac2745e40ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Псковэнерго' or . = 'Псковэнерго')]</value>
-      <webElementGuid>4e14cf60-38e7-4489-9c32-5201256a0eb6</webElementGuid>
+      <webElementGuid>17249b0b-8e6c-41d7-9638-ee24157efa11</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

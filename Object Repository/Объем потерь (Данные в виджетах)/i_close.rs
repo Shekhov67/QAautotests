@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='5b695520ec3542ddafc9b4410a15dece']/div/div/i[2]</value>
+         <value>//div[@id='6a78deb2fc8e416b84939195b00f5c43']/div/div/i[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>6589bb56-5fcd-4f07-9450-e97489dd3c54</webElementGuid>
+      <webElementGuid>adb72c7c-8bf5-4bc7-87d8-c94cb54ac54a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fa fa-times rb-filter-header-close</value>
-      <webElementGuid>2505d28d-d3e8-4fbd-80b6-ad58693f0e20</webElementGuid>
+      <webElementGuid>48987d56-422c-48cd-8f16-f37a2cc1cc24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Очистить все выбранные значения</value>
-      <webElementGuid>2d86e6aa-1823-46cf-9e7c-e4bea0b64f1d</webElementGuid>
+      <webElementGuid>129ab563-1e4c-49e9-9524-225e3e919c50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;5b695520ec3542ddafc9b4410a15dece&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-header-container&quot;]/i[@class=&quot;fa fa-times rb-filter-header-close&quot;]</value>
-      <webElementGuid>13d8124a-7edf-4ac8-91be-d142b62a63b7</webElementGuid>
+      <webElementGuid>4d948523-84f3-4d30-a418-4555927059c8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='5b695520ec3542ddafc9b4410a15dece']/div/div/i[2]</value>
-      <webElementGuid>bd3fe5d3-1139-4cde-9410-7b630099a875</webElementGuid>
+      <webElementGuid>23bbcf59-6fa2-4e4c-adfe-86305c4769d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div[2]/div/div/div/i[2]</value>
-      <webElementGuid>0c3f6b92-e32b-43e7-8833-72f0c1c3821e</webElementGuid>
+      <webElementGuid>b322987b-6a35-4bfb-8f23-d4bf8fa37a56</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//i[@title = 'Очистить все выбранные значения']</value>
-      <webElementGuid>99c072d0-dc1e-47fe-a8f9-f892d90416fb</webElementGuid>
+      <webElementGuid>a8766a8b-76a4-475f-b6ee-b37e768eebb6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
