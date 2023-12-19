@@ -53,13 +53,9 @@ static def SelectDzo() {
 }
 
 static def SelectDate() {
-    WebUI.click(findTestObject('Общие/Фильтр Дата'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/i_close'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('Общие/Фильтр Дата'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
 
@@ -308,8 +304,7 @@ static def Test1() {
 
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
-
+    def pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
     println(pageDataString)
 
     def fileDataString = obemPoter
@@ -320,7 +315,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -355,7 +350,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -367,7 +362,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -402,7 +397,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -414,7 +409,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+	pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -449,7 +444,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -461,7 +456,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -514,7 +509,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -526,7 +521,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -565,7 +560,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -577,7 +572,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -616,7 +611,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -628,7 +623,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -681,7 +676,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -693,7 +688,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -746,7 +741,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -758,7 +753,7 @@ static def Test1() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -813,7 +808,7 @@ static def Test2() {
 
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    def pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -825,7 +820,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -878,7 +873,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -890,7 +885,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -929,7 +924,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -941,7 +936,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -980,7 +975,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -992,7 +987,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -1051,7 +1046,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -1063,7 +1058,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -1102,7 +1097,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -1114,7 +1109,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -1167,7 +1162,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -1179,7 +1174,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -1232,7 +1227,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -1244,7 +1239,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
@@ -1297,7 +1292,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
 
     println(pageDataString)
 
@@ -1309,7 +1304,7 @@ static def Test2() {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path))
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
 
     fileDataString = percentPoter
 
