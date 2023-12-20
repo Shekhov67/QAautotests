@@ -26,6 +26,7 @@ def test4 = VyruchkaVseToggleProc( //def test5 = VyruchkaOneToggleProc()
     ) //def test6 = VyruchkaTwoToggleProc()
 
 static def VyruchkaVseToggleMln() {
+	
     WebUI.openBrowser('')
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
@@ -85,13 +86,8 @@ static def VyruchkaVseToggleMln() {
 
     WebUI.delay(5)
 
-<<<<<<< HEAD
 
-
-println(a)
-=======
     String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
->>>>>>> branch 'master' of https://github.com/Shekhov67/QAautotests.git
 
     String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
 
