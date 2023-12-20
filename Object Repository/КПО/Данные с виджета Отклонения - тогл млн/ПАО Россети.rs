@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>тогл ПРОЦЕНТ</name>
+   <name>ПАО Россети</name>
    <tag></tag>
-   <elementGuidId>fbc29dce-d6b5-4784-ba0a-bad1976140c1</elementGuidId>
+   <elementGuidId>74ec2545-1dd9-4641-ad7d-94f1c4c5eb71</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='6235cec27cf8478bacd85dd35b022882']/div</value>
+         <value>//div[25]/div[2]/div/div/div/div/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#6235cec27cf8478bacd85dd35b022882 > div</value>
+         <value>#5195de9ab2cf459e8c675d3617047a56 > div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,30 +22,30 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>e9454a7f-900a-4546-a3bc-a39d4194cf08</webElementGuid>
+      <webElementGuid>d3d3c356-54c2-416c-8807-1d2e7129a35e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;6235cec27cf8478bacd85dd35b022882&quot;)/div[1]</value>
-      <webElementGuid>2ce169ed-734a-4a87-ba6e-67caad110dcd</webElementGuid>
+      <value>id(&quot;5195de9ab2cf459e8c675d3617047a56&quot;)/div[1]</value>
+      <webElementGuid>2767f876-273d-4d27-ad24-7deb873ad6e5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='6235cec27cf8478bacd85dd35b022882']/div</value>
-      <webElementGuid>b0e6146a-1b44-4c35-8ce0-53e864a76252</webElementGuid>
+      <value>//div[@id='5195de9ab2cf459e8c675d3617047a56']/div</value>
+      <webElementGuid>1adbe746-09a0-40bc-972c-02682ad9a4bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[33]/div[2]/div/div</value>
-      <webElementGuid>0c059339-28f0-4207-9f74-1b9ad2280f83</webElementGuid>
+      <value>//div[9]/div[2]/div/div</value>
+      <webElementGuid>40025c54-b471-4ed3-aa49-cd541e6bca82</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

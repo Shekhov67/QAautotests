@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='5b4ea4ba3c1f4b32acae4645f7b11e32']/div/div[2]/div[4]/ul/li[2]/div/i</value>
+         <value>//*/text()[normalize-space(.)='Объёмы реализации передачи э/э']/parent::*</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>32bca39b-0dd8-46ee-9661-534c259b83e2</webElementGuid>
+      <webElementGuid>bbca823b-1f6d-4434-91bb-9ed28409332e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fa fa-square-o rb-filter-list-item-icon</value>
-      <webElementGuid>d1b5efe0-f4f6-42c5-adb5-635a4415d670</webElementGuid>
+      <webElementGuid>e72623f4-8ced-4b6d-9349-8a0328baef0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;5b4ea4ba3c1f4b32acae4645f7b11e32&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/i[@class=&quot;fa fa-square-o rb-filter-list-item-icon&quot;]</value>
-      <webElementGuid>744b83cb-f4e2-40a7-aee0-dcebff0f26a6</webElementGuid>
+      <webElementGuid>851d3c2a-0515-4846-9520-8cefb9e2d3d2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='5b4ea4ba3c1f4b32acae4645f7b11e32']/div/div[2]/div[4]/ul/li[2]/div/i</value>
-      <webElementGuid>d6c737f5-19fc-4834-90ee-d9c04bfbed37</webElementGuid>
+      <webElementGuid>7ac547b3-fee5-4dbb-8680-0233aca197e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +53,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/ul/li[2]/div/i</value>
-      <webElementGuid>ca16e8ca-7edb-447e-9222-e786c0af3b61</webElementGuid>
+      <webElementGuid>ec29dfa9-e512-407a-a1dc-72cffef0c8ac</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
