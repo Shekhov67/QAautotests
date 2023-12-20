@@ -20,7 +20,7 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 
 def test1 = VyruchkaVseToggleMln()
 
-//def test2 = VyruchkaOneToggleMln()
+//def test2 = VyruchkaOneToggleMln()//
 //def test3 = VyruchkaTwoToggleMln()
 def test4 = VyruchkaVseToggleProc( //def test5 = VyruchkaOneToggleProc()
     ) //def test6 = VyruchkaTwoToggleProc()
