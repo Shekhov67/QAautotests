@@ -18,106 +18,1676 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 
-' '
-WebUI.openBrowser('')
+def test1 = VyruchkaVseToggleMln()
 
-'БЛОК РУКОВОДИТЕЛЕЙ'
-WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
+//def test2 = VyruchkaOneToggleMln()
+//def test3 = VyruchkaTwoToggleMln()
+def test4 = VyruchkaVseToggleProc( //def test5 = VyruchkaOneToggleProc()
+    ) //def test6 = VyruchkaTwoToggleProc()
 
-WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
+static def VyruchkaVseToggleMln() {
+    WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
+    'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
 
-WebUI.click(findTestObject('КПО/фильтр Выручка'))
+    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
 
-WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
+    WebUI.click(findTestObject('Object Repository/КПО/button_'))
 
-WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
+    WebUI.click(findTestObject('КПО/фильтр Выручка'))
 
-WebUI.click(findTestObject('КПО/фильтр Дата'))
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
 
-WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+    WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
 
-WebUI.click(findTestObject('КПО/фильтр Дата'))
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
 
-WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
-WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
 
-WebUI.click(findTestObject('КПО/2023 год'))
+    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
 
-WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+    WebUI.click(findTestObject('КПО/2023 год'))
 
-WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
 
-WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
 
-WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
+    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
 
-WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
 
-WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
 
-WebUI.click(findTestObject('КПО/Октябрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
 
-WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
-WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
-WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
-WebUI.delay(5)
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
 
-String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
-String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
+    WebUI.delay(5)
 
-println(a)
+    String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
 
-println(a1)
+    String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
 
-'ВЫРУЧКА'
-WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+    String c = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
 
-WebUI.delay(15)
+    String d = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/CentIPriv'))
 
-if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
-    WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    String e = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Centr'))
+
+    String f = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/chech'))
+
+    String g = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/kub'))
+
+    String m = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/len'))
+
+    String n = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/mo'))
+
+    String o = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/sevKaz'))
+
+    String p = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/SevZap'))
+
+    String r = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Sibir'))
+
+    String s = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Tomsk'))
+
+    String t = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Tumen'))
+
+    String u = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/tuv'))
+
+    String y = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Ug'))
+
+    String z = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Ural'))
+
+    String x = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/volg'))
+
+    String w = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/Yantar'))
+
+    println(a)
+
+    println(a1)
+
+    println(c)
+
+    'ВЫРУЧКА'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+
+    WebUI.delay(15)
+
+    if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
+        WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    }
+    
+    WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+
+    String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+
+    String с1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
+
+    String d1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/CentIPriv'))
+
+    String e1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Centr'))
+
+    String f1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/chech'))
+
+    String g1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/kub'))
+
+    String m1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/len'))
+
+    String n1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/mo'))
+
+    String o1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/sevKaz'))
+
+    String p1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/SevZap'))
+
+    String r1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Sibir'))
+
+    String s1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tomsk'))
+
+    String t1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tumen'))
+
+    String u1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/tuv'))
+
+    String y1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ug'))
+
+    String z1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ural'))
+
+    String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/volg'))
+
+    String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Yantar'))
+
+    println(b)
+
+    println(b1)
+
+    println(с1)
+
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(c, с1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(d, d1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(e, e1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(f, f1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(g, g1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(m, m1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(n, n1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(o, o1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(p, p1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(r, r1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(s, s1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(t, t1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(u, u1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(y, y1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(z, z1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(x, x1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(w, w1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    WebUI.closeBrowser()
 }
 
-WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+static def VyruchkaOneToggleMln() {
+    WebUI.openBrowser('')
 
-WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+    'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
 
-WebUI.delay(5)
+    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
 
-String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+    WebUI.click(findTestObject('Object Repository/КПО/button_'))
 
-String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+    WebUI.click(findTestObject('КПО/фильтр Выручка'))
 
-println(b)
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
 
-println(b1)
+    WebUI.click(findTestObject('КПО/выбрать Объем Электроэнергии'))
 
-if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
-    println('GOOD')
-} else {
-    def write = WriteToExcel()
+    WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/2023 год'))
+
+    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
+
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
+
+    String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
+
+    String c = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
+
+    String d = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/CentIPriv'))
+
+    String e = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Centr'))
+
+    String f = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/chech'))
+
+    String g = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/kub'))
+
+    String m = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/len'))
+
+    String n = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/mo'))
+
+    String o = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/sevKaz'))
+
+    String p = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/SevZap'))
+
+    String r = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Sibir'))
+
+    String s = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tomsk'))
+
+    String t = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tumen'))
+
+    String u = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/tuv'))
+
+    String y = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ug'))
+
+    String z = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ural'))
+
+    String x = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/volg'))
+
+    String w = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Yantar'))
+
+    println(a)
+
+    println(a1)
+
+    println(c)
+
+    'ВЫРУЧКА'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+
+    WebUI.delay(15)
+
+    if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
+        WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    }
+    
+    WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+
+    String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+
+    String с1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
+
+    String d1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/CentIPriv'))
+
+    String e1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Centr'))
+
+    String f1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/chech'))
+
+    String g1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/kub'))
+
+    String m1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/len'))
+
+    String n1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/mo'))
+
+    String o1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/sevKaz'))
+
+    String p1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/SevZap'))
+
+    String r1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Sibir'))
+
+    String s1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tomsk'))
+
+    String t1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tumen'))
+
+    String u1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/tuv'))
+
+    String y1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ug'))
+
+    String z1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ural'))
+
+    String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/volg'))
+
+    String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Yantar'))
+
+    println(b)
+
+    println(b1)
+
+    println(с1)
+
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(c, с1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(d, d1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(e, e1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(f, f1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(g, g1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(m, m1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(n, n1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(o, o1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(p, p1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(r, r1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(s, s1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(t, t1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(u, u1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(y, y1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(z, z1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(x, x1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(w, w1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    WebUI.closeBrowser()
 }
 
-WebUI.closeBrowser()
+static def VyruchkaTwoToggleMln() {
+    WebUI.openBrowser('')
+
+    'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+
+    WebUI.click(findTestObject('КПО/фильтр Выручка'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/выбрать Объем реалицаии передачи ээ'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/2023 год'))
+
+    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
+
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
+
+    String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
+
+    String c = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
+
+    String d = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/CentIPriv'))
+
+    String e = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Centr'))
+
+    String f = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/chech'))
+
+    String g = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/kub'))
+
+    String m = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/len'))
+
+    String n = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/mo'))
+
+    String o = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/sevKaz'))
+
+    String p = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/SevZap'))
+
+    String r = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Sibir'))
+
+    String s = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tomsk'))
+
+    String t = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tumen'))
+
+    String u = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/tuv'))
+
+    String y = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ug'))
+
+    String z = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ural'))
+
+    String x = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/volg'))
+
+    String w = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Yantar'))
+
+    println(a)
+
+    println(a1)
+
+    println(c)
+
+    'ВЫРУЧКА'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+
+    WebUI.delay(15)
+
+    if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
+        WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    }
+    
+    WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+
+    String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+
+    String с1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
+
+    String d1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/CentIPriv'))
+
+    String e1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Centr'))
+
+    String f1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/chech'))
+
+    String g1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/kub'))
+
+    String m1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/len'))
+
+    String n1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/mo'))
+
+    String o1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/sevKaz'))
+
+    String p1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/SevZap'))
+
+    String r1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Sibir'))
+
+    String s1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tomsk'))
+
+    String t1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tumen'))
+
+    String u1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/tuv'))
+
+    String y1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ug'))
+
+    String z1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ural'))
+
+    String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/volg'))
+
+    String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Yantar'))
+
+    println(b)
+
+    println(b1)
+
+    println(с1)
+
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(c, с1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(d, d1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(e, e1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(f, f1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(g, g1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(m, m1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(n, n1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(o, o1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(p, p1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(r, r1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(s, s1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(t, t1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(u, u1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(y, y1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(z, z1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(x, x1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(w, w1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    WebUI.closeBrowser()
+}
+
+static def VyruchkaVseToggleProc() {
+    WebUI.openBrowser('')
+
+    'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+
+    WebUI.click(findTestObject('КПО/тогл ПРОЦЕНТ'))
+
+    WebUI.click(findTestObject('КПО/фильтр Выручка'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/2023 год'))
+
+    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
+
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
+
+    String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
+
+    String c = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
+
+    String d = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/CentIPriv'))
+
+    String e = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Centr'))
+
+    String f = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/chech'))
+
+    String g = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/kub'))
+
+    String m = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/len'))
+
+    String n = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/mo'))
+
+    String o = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/sevKaz'))
+
+    String p = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/SevZap'))
+
+    String r = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Sibir'))
+
+    String s = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tomsk'))
+
+    String t = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tumen'))
+
+    String u = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/tuv'))
+
+    String y = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ug'))
+
+    String z = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ural'))
+
+    String x = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/volg'))
+
+    String w = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Yantar'))
+
+    println(a)
+
+    println(a1)
+
+    println(c)
+
+    'ВЫРУЧКА'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+
+    WebUI.delay(15)
+
+    if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
+        WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    }
+    
+    WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/ТОГЛ НА ПРОЦЕНТ'))
+
+    WebUI.delay(5)
+
+    String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+
+    String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+
+    String с1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
+
+    String d1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/CentIPriv'))
+
+    String e1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Centr'))
+
+    String f1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/chech'))
+
+    String g1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/kub'))
+
+    String m1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/len'))
+
+    String n1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/mo'))
+
+    String o1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/sevKaz'))
+
+    String p1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/SevZap'))
+
+    String r1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Sibir'))
+
+    String s1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Tomsk'))
+
+    String t1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Tumen'))
+
+    String u1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/tuv'))
+
+    String y1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Ug'))
+
+    String z1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Ural'))
+
+    String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/volg'))
+
+    String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/Yantar'))
+
+    println(b)
+
+    println(b1)
+
+    println(с1)
+
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(c, с1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(d, d1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(e, e1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(f, f1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(g, g1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(m, m1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(n, n1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(o, o1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(p, p1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(r, r1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(s, s1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(t, t1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(u, u1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(y, y1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(z, z1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(x, x1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(w, w1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    WebUI.closeBrowser()
+}
+
+static def VyruchkaOneToggleProc() {
+    WebUI.openBrowser('')
+
+    'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+
+    WebUI.click(findTestObject('КПО/фильтр Выручка'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/выбрать Объем Электроэнергии'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/2023 год'))
+
+    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
+
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
+
+    String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
+
+    String c = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
+
+    String d = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/CentIPriv'))
+
+    String e = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Centr'))
+
+    String f = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/chech'))
+
+    String g = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/kub'))
+
+    String m = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/len'))
+
+    String n = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/mo'))
+
+    String o = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/sevKaz'))
+
+    String p = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/SevZap'))
+
+    String r = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Sibir'))
+
+    String s = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tomsk'))
+
+    String t = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tumen'))
+
+    String u = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/tuv'))
+
+    String y = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ug'))
+
+    String z = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ural'))
+
+    String x = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/volg'))
+
+    String w = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Yantar'))
+
+    println(a)
+
+    println(a1)
+
+    println(c)
+
+    'ВЫРУЧКА'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+
+    WebUI.delay(15)
+
+    if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
+        WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    }
+    
+    WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+
+    String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+
+    String с1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
+
+    String d1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/CentIPriv'))
+
+    String e1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Centr'))
+
+    String f1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/chech'))
+
+    String g1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/kub'))
+
+    String m1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/len'))
+
+    String n1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/mo'))
+
+    String o1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/sevKaz'))
+
+    String p1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/SevZap'))
+
+    String r1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Sibir'))
+
+    String s1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tomsk'))
+
+    String t1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Tumen'))
+
+    String u1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/tuv'))
+
+    String y1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ug'))
+
+    String z1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Ural'))
+
+    String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/volg'))
+
+    String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/Yantar'))
+
+    println(b)
+
+    println(b1)
+
+    println(с1)
+
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(c, с1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(d, d1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(e, e1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(f, f1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(g, g1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(m, m1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(n, n1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(o, o1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(p, p1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(r, r1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(s, s1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(t, t1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(u, u1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(y, y1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(z, z1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(x, x1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(w, w1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    WebUI.closeBrowser()
+}
+
+static def VyruchkaTwoToggleProc() {
+    WebUI.openBrowser('')
+
+    'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+
+    WebUI.click(findTestObject('КПО/фильтр Выручка'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/выбрать Объем реалицаии передачи ээ'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/2023 год'))
+
+    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
+
+    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
+
+    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
+
+    String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
+
+    String c = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
+
+    String d = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/CentIPriv'))
+
+    String e = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Centr'))
+
+    String f = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/chech'))
+
+    String g = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/kub'))
+
+    String m = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/len'))
+
+    String n = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/mo'))
+
+    String o = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/sevKaz'))
+
+    String p = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/SevZap'))
+
+    String r = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Sibir'))
+
+    String s = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tomsk'))
+
+    String t = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Tumen'))
+
+    String u = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/tuv'))
+
+    String y = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ug'))
+
+    String z = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Ural'))
+
+    String x = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/volg'))
+
+    String w = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/Yantar'))
+
+    println(a)
+
+    println(a1)
+
+    println(c)
+
+    'ВЫРУЧКА'
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
+
+    WebUI.delay(15)
+
+    if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
+        WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
+    }
+    
+    WebUI.click(findTestObject('КПО для раздела Выручка/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/снять выделения в ДЗО'))
+
+    WebUI.click(findTestObject('КПО для раздела Выручка/применить в фильтре ДЗО'))
+
+    WebUI.delay(5)
+
+    String b = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета факт'))
+
+    String b1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета ПЛАН'))
+
+    String c1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/ПАО Россети'))
+
+    String d1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/CentIPriv'))
+
+    String e1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Centr'))
+
+    String f1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/chech'))
+
+    String g1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/kub'))
+
+    String m1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/len'))
+
+    String n1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/mo'))
+
+    String o1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/sevKaz'))
+
+    String p1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/SevZap'))
+
+    String r1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Sibir'))
+
+    String s1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Tomsk'))
+
+    String t1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Tumen'))
+
+    String u1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/tuv'))
+
+    String y1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Ug'))
+
+    String z1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Ural'))
+
+    String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/volg'))
+
+    String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Yantar'))
+
+
+
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(c, c1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(d, d1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(e, e1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(f, f1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(g, g1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(m, m1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(n, n1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(o, o1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(p, p1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(r, r1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(s, s1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(t, t1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(u, u1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(y, y1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(z, z1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(x, x1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    if (WebUI.verifyEqual(w, w1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel()
+    }
+    
+    WebUI.closeBrowser()
+}
 
 static def WriteToExcel() {
     String sheetName = 'List1'
