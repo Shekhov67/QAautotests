@@ -82,6 +82,8 @@ String a = WebUI.getText(findTestObject('КПО/Данные с виджета �
 
 String a1 = WebUI.getText(findTestObject('КПО/Данные с виджета ПЛАН1'))
 
+
+
 println(a)
 
 println(a1)
