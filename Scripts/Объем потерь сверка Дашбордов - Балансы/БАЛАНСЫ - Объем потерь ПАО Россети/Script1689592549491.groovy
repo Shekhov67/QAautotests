@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -17,74 +16,84 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.nio.file.Path as Path
-import java.nio.file.Paths as Paths
-import org.apache.commons.lang3.StringUtils as StringUtils
+import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
+import java.util.Date as Date
+import java.text.SimpleDateFormat as SimpleDateFormat
 
-String widget
+def test1 = Test1()
 
-String year
 
-String month = GlobalVariable.period
+static def Test1() {
+	
+	String widget
+	
+	String year
+	
+	String month = GlobalVariable.period
+	
+	WebUI.openBrowser('')
+	
+	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
+	
+	WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+	
+	WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	
+	WebUI.click(findTestObject('Общие/button_'))
+	
+	WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+	
+	WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+	
+	WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+	
+	WebUI.delay(10)
+	
+	String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
+	
+	println(a)
+	
+	String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
+	
+	println(b)
+	
+	String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
+	
+	println(e)
+	
+	String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
+	
+	println(f)
+	
+	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+	
+	WebUI.delay(10)
+	
+	String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
+	
+	println(a1)
+	
+	String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
+	
+	println(b1)
+	
+	String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
+	
+	println(e1)
+	
+	String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
+	
+	println(f1)
+	
+	def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1,
+		def f01 = f1)
+	
+	WebUI.closeBrowser()
+	
+	
+}
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
-
-WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-
-WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-
-WebUI.click(findTestObject('Общие/button_'))
-
-WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
-
-WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
-
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-
-String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
-
-println(a)
-
-String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
-
-println(b)
-
-String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
-
-println(e)
-
-String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
-
-println(f)
-
-WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
-
-WebUI.delay(10)
-
-String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
-
-println(a1)
-
-String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
-
-println(b1)
-
-String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
-
-println(e1)
-
-String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
-
-println(f1)
-
-def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
-    def f01 = f1)
-
-WebUI.closeBrowser()
-
-static def WriteToExcel(def widget, def year, def month) {
+static def WriteToExcel(def widget, def month) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -93,7 +102,15 @@ static def WriteToExcel(def widget, def year, def month) {
 
     String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
 
-    println(year)
+	Date d = new Date()
+	
+	SimpleDateFormat format1
+	
+	format1 = new SimpleDateFormat('dd.MM.yyyy')
+	
+	String date = format1.format(d)
+	
+	println(date)
 
     String dashboardName = 'Объем потерь'
 
@@ -111,9 +128,9 @@ static def WriteToExcel(def widget, def year, def month) {
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, month)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
 
     n = (n + 1)
 
@@ -124,49 +141,49 @@ static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e0
     if (WebUI.verifyEqual(a0, a01)) {
         println('GOOD')
     } else {
-        String year = '2022'
+        
 
-        String widget = 'Объем потерь'
+        String widget = 'Виджет: Объем потерь'
 
         String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
 
-        WriteToExcel(widget, year, month)
+        WriteToExcel(widget, month)
     }
     
     if (WebUI.verifyEqual(b0, b01)) {
         println('GOOD')
     } else {
-        String year = '2023'
+        
 
-        String widget = 'Уровень потерь'
+        String widget = 'Виджет: Уровень потерь'
 		
 		String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
 
-        WriteToExcel(widget, year, month)
+        WriteToExcel(widget, month)
     }
     
     if (WebUI.verifyEqual(e0, e01)) {
         println('GOOD')
     } else {
-        String year = '2022/2023'
+        
 
-        String widget = 'Отклонение объема потерь'
+        String widget = 'Виджет: Отклонение объема потерь'
 		
 		String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
 
-        WriteToExcel(widget, year, month)
+        WriteToExcel(widget, month)
     }
     
     if (WebUI.verifyEqual(f0, f01)) {
         println('GOOD')
     } else {
-        String year = '2022/2023'
+        
 
-        String widget = 'Отклонение уровня потерь'
+        String widget = 'Виджет: Отклонение уровня потерь'
 		
 		String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
 
-        WriteToExcel(widget, year, month)
+        WriteToExcel(widget, month)
     }
 }
 
