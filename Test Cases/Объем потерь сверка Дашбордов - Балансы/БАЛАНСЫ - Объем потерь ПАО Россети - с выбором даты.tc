@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>БАЛАНСЫ - Объем потерь ПАО Россети - с выбором даты</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>23d00f2b-b880-448a-b9ba-c4ee908b9bd4</testCaseGuid>
-</TestCaseEntity>
