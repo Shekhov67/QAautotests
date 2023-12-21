@@ -52,6 +52,8 @@ def test15 = Test15()
 
 def test16 = Test16()
 
+def test16 = Test17()
+
 static def Test1() {
     String widget
 
@@ -263,6 +265,16 @@ static def Test3() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Волга'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -282,6 +294,22 @@ static def Test3() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Волга'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -330,6 +358,20 @@ static def Test4() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Кубань'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -349,6 +391,26 @@ static def Test4() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Кубань'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -397,6 +459,20 @@ static def Test5() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Росссети Ленэнерго(ГК)'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -416,6 +492,26 @@ static def Test5() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Росссети Ленэнерго(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -464,6 +560,20 @@ static def Test6() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Московский регион'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -483,6 +593,26 @@ static def Test6() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Московский регион'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -531,6 +661,20 @@ static def Test7() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Северный Кавказ(ГК)'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -550,6 +694,26 @@ static def Test7() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Северный Кавказ(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -598,6 +762,20 @@ static def Test8() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Северо-Запад'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -617,6 +795,26 @@ static def Test8() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Северо-Запад'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -665,6 +863,20 @@ static def Test9() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Сибирь(ГК)'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -684,6 +896,26 @@ static def Test9() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Сибирь(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -732,6 +964,20 @@ static def Test10() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Томск'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -751,6 +997,26 @@ static def Test10() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Томск'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -799,6 +1065,20 @@ static def Test11() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Тюмень'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -818,6 +1098,26 @@ static def Test11() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Северо-Запад'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Тюмень'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -866,6 +1166,20 @@ static def Test12() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Урал(ГК)'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -885,6 +1199,26 @@ static def Test12() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Урал(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -933,6 +1267,16 @@ static def Test13() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/Магистральные сети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/Россети ФСК ЕЭС'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -952,6 +1296,22 @@ static def Test13() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/Магистральные сети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети ФСК ЕЭС'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -1000,6 +1360,20 @@ static def Test14() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -1019,6 +1393,26 @@ static def Test14() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Центр'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -1067,6 +1461,20 @@ static def Test15() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр и Приволжье(ГК)'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -1086,6 +1494,26 @@ static def Test15() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Центр и Приволжье(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
@@ -1134,6 +1562,20 @@ static def Test16() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Юг(ГК)'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
     WebUI.delay(10)
 
     String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
@@ -1153,6 +1595,127 @@ static def Test16() {
     println(f)
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Юг(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.delay(10)
+
+    String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
+
+    println(a1)
+
+    String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
+
+    println(b1)
+
+    String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
+
+    println(e1)
+
+    String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
+
+    println(f1)
+
+    def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
+        def f01 = f1)
+
+    WebUI.closeBrowser()
+}
+
+static def Test17() {
+    String widget
+
+    String year
+
+    String month = GlobalVariable.period
+
+    WebUI.openBrowser('')
+
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
+
+    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.click(findTestObject('Общие/button_'))
+
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Общие/скролл до фильтра дата'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Янтарь'))
+
+    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+
+    WebUI.delay(10)
+
+    String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
+
+    println(a)
+
+    String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
+
+    println(b)
+
+    String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
+
+    println(e)
+
+    String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
+
+    println(f)
+
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/снять выделенные в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+
+    WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка - Балансы/scr - Балансы'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/выбрать Россети Янтарь'))
+
+    WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
     WebUI.delay(10)
 
