@@ -52,7 +52,7 @@ def test15 = Test15()
 
 def test16 = Test16()
 
-def test16 = Test17()
+def test17 = Test17()
 
 static def Test1() {
     String widget
