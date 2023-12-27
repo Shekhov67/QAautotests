@@ -27,17 +27,12 @@ def test4 = VyruchkaVseToggleProc4()
 //def test5 = VyruchkaOneToggleProc5()
 //def test6 = VyruchkaTwoToggleProc6()
 
-<<<<<<< HEAD
-//def test2 = VyruchkaOneToggleMln()
-//def test3 = VyruchkaTwoToggleMln()
-def test4 = VyruchkaVseToggleProc( //def test5 = VyruchkaOneToggleProc()
-    ) //def test6 = VyruchkaTwoToggleProc()
 
-static def VyruchkaVseToggleMln() {
+
 	
-=======
+
 static def VyruchkaVseToggleMln1() {
->>>>>>> branch 'master' of https://github.com/Shekhov67/QAautotests.git
+
     WebUI.openBrowser('')
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
@@ -1751,4 +1746,5 @@ static def WriteToExcel( widget) {
 
     WebUI.acceptAlert()
 }
+
 

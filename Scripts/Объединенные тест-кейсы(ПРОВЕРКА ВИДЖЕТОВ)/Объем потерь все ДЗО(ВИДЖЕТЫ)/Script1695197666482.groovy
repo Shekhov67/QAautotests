@@ -33,16 +33,16 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 WebUI.click(findTestObject('Общие/button_'))
 
 def selectDate = SelectDate()
-//def actualDate = ActualDate()
 
+//def actualDate = ActualDate()
 def testing1 = Testing1()
 
 def testing2 = Testing2()
 
 WebUI.closeBrowser( //в соответствии с текущим месяцем выбирать дату для сравнения
     // Возвращает текущую дату
-    ) //Дата для сравнения
-// Возвращает текущую дату
+    //Дата для сравнения
+    ) // Возвращает текущую дату
 //Дата для сравнения
 // Возвращает текущую дату
 //Дата для сравнения
@@ -1478,6 +1478,8 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
 
@@ -1508,8 +1510,6 @@ static def WriteToExcel(def page) {
 
     println(year)
 
-   
-
     String dashboardName = 'Объем потерь'
 
     Date d = new Date()
@@ -1526,21 +1526,19 @@ static def WriteToExcel(def page) {
 
     def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-   
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, date)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, date)
 
-        n = (n + 1)
+    n = (n + 1)
 
-        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-    
+    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 }
 
 static def ActualDate() {
