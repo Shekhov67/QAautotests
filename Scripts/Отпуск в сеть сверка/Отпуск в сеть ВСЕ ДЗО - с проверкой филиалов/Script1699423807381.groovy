@@ -816,6 +816,8 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ноябрь 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
 }
 
@@ -853,7 +855,6 @@ static def Check(def pageString, def fileString, def path) {
     if (WebUI.verifyEqual(page1, file) == true) {
         return true
     } else {
-		
         def write = WriteToExcel(file, page, def typeData = 'Отпуск в сеть', path)
 
         return false
@@ -887,21 +888,25 @@ static def WriteToExcel(def file, def page, def typeData = 'Отпуск в се
 
     println(dZO)
 
-    String year = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
+    String filtrYear = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
+
+    String year = '2023'
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, file)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, typeData)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, file)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
-	
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, typeData)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, filtrYear)
+
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, year)
+
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, date)
 
     n = (n + 1)
 

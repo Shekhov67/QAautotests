@@ -21,18 +21,13 @@ import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
 def test1 = VyruchkaVseToggleMln1()
+
 //def test2 = VyruchkaOneToggleMln2()
 //def test3 = VyruchkaTwoToggleMln3()
-def test4 = VyruchkaVseToggleProc4() 
-//def test5 = VyruchkaOneToggleProc5()
+def test4 = VyruchkaVseToggleProc4() //def test5 = VyruchkaOneToggleProc5()
 //def test6 = VyruchkaTwoToggleProc6()
 
-
-
-	
-
 static def VyruchkaVseToggleMln1() {
-
     WebUI.openBrowser('')
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
@@ -82,6 +77,8 @@ static def VyruchkaVseToggleMln1() {
 
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
+    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -91,7 +88,6 @@ static def VyruchkaVseToggleMln1() {
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
     WebUI.delay(5)
-
 
     String a = WebUI.getText(findTestObject('КПО/Данные с виджета факт1'))
 
@@ -360,6 +356,8 @@ static def VyruchkaOneToggleMln2() {
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -639,6 +637,8 @@ static def VyruchkaTwoToggleMln3() {
 
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
+    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -917,6 +917,8 @@ static def VyruchkaVseToggleProc4() {
 
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
+    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -1034,7 +1036,7 @@ static def VyruchkaVseToggleProc4() {
 
     println(с1)
 
-       if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
         println('GOOD')
     } else {
         def write = WriteToExcel(String widget = 'Виджет: ВЫполнение плановых показателй')
@@ -1196,6 +1198,8 @@ static def VyruchkaOneToggleProc5() {
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -1475,6 +1479,8 @@ static def VyruchkaTwoToggleProc6() {
 
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
+    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -1583,8 +1589,6 @@ static def VyruchkaTwoToggleProc6() {
     String x1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/volg'))
 
     String w1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процентс/Yantar'))
-
-
 
     if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
         println('GOOD')
@@ -1697,7 +1701,7 @@ static def VyruchkaTwoToggleProc6() {
     WebUI.closeBrowser()
 }
 
-static def WriteToExcel( widget) {
+static def WriteToExcel(def widget) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -1713,16 +1717,16 @@ static def WriteToExcel( widget) {
     String dashboardName = 'Котловой полезный отпуск'
 
     String page = 'Данные не  совпадают'
-	
-	Date d = new Date()
-	
-	SimpleDateFormat format1
-	
-	format1 = new SimpleDateFormat('dd.MM.yyyy')
-	
-	String date = format1.format(d)
-	
-	println(date)
+
+    Date d = new Date()
+
+    SimpleDateFormat format1
+
+    format1 = new SimpleDateFormat('dd.MM.yyyy')
+
+    String date = format1.format(d)
+
+    println(date)
 
     def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
 
@@ -1735,10 +1739,10 @@ static def WriteToExcel( widget) {
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-	
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, widget)
-	
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
+
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, widget)
+
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
 
     n = (n + 1)
 
@@ -1746,5 +1750,4 @@ static def WriteToExcel( widget) {
 
     WebUI.acceptAlert()
 }
-
 
