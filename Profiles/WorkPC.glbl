@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Для фильтра даты</description>
-      <initValue>'1 кв., 2 кв., Июль, Август, Сентябрь  2023'</initValue>
+      <initValue>'1 кв., 2 кв.,3кв, Октябрь, Ноябрь 2021, 2022, 2023'</initValue>
       <name>period</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

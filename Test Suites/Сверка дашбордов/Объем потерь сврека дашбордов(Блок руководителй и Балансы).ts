@@ -19,10 +19,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c4acb53e-2ad8-4ca5-a596-1fd051893f39</guid>
+      <guid>d942ea79-dd0c-42d3-9b36-3c1c4dbb9661</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь - ВСЕ ДЗО</testCaseId>
+      <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь Все ДЗО ver.2.0</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

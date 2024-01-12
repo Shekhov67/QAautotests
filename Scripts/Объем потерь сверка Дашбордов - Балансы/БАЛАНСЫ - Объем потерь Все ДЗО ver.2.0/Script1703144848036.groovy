@@ -57,6 +57,8 @@ def test17 = Test17()
 static def Test1() {
     String widget
 
+    String dZO
+
     String year
 
     String month = GlobalVariable.period
@@ -74,8 +76,6 @@ static def Test1() {
     WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
 
     WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 
@@ -125,6 +125,10 @@ static def Test1() {
 
     WebUI.click(findTestObject('Объем потерь сверка - Балансы/применить в фильтре ДЗО- Балансы'))
 
+    dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    println(dZO)
+
     WebUI.delay(10)
 
     String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
@@ -145,12 +149,12 @@ static def Test1() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test2() {
     String widget
+
+    String dZO
 
     String year
 
@@ -238,12 +242,12 @@ static def Test2() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test3() {
     String widget
+
+    String dZO
 
     String year
 
@@ -331,12 +335,12 @@ static def Test3() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test4() {
     String widget
+
+    String dZO
 
     String year
 
@@ -432,12 +436,12 @@ static def Test4() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test5() {
     String widget
+
+    String dZO
 
     String year
 
@@ -533,12 +537,12 @@ static def Test5() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test6() {
     String widget
+
+    String dZO
 
     String year
 
@@ -634,12 +638,12 @@ static def Test6() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test7() {
     String widget
+
+    String dZO
 
     String year
 
@@ -735,12 +739,12 @@ static def Test7() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test8() {
     String widget
+
+    String dZO
 
     String year
 
@@ -836,12 +840,12 @@ static def Test8() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test9() {
     String widget
+
+    String dZO
 
     String year
 
@@ -937,12 +941,12 @@ static def Test9() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test10() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1038,12 +1042,12 @@ static def Test10() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test11() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1139,12 +1143,12 @@ static def Test11() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test12() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1240,12 +1244,12 @@ static def Test12() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test13() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1333,12 +1337,12 @@ static def Test13() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test14() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1434,12 +1438,12 @@ static def Test14() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test15() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1535,12 +1539,12 @@ static def Test15() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test16() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1636,12 +1640,12 @@ static def Test16() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
 static def Test17() {
     String widget
+
+    String dZO
 
     String year
 
@@ -1737,18 +1741,20 @@ static def Test17() {
 
     def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
         def f01 = f1)
-
-    WebUI.closeBrowser()
 }
 
-static def WriteToExcel(def widget, def month) {
+static def WriteToExcel(def widget, def dZO) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
 
     int n = data.getRowNumbers() + 1
 
-    String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+    String dzo = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+    println(dzo)
+
+    String month = GlobalVariable.period
 
     Date d = new Date()
 
@@ -1757,6 +1763,8 @@ static def WriteToExcel(def widget, def month) {
     format1 = new SimpleDateFormat('dd.MM.yyyy')
 
     String date = format1.format(d)
+
+    println(dZO)
 
     println(date)
 
@@ -1788,12 +1796,18 @@ static def WriteToExcel(def widget, def month) {
 static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e01, def f01) {
     if (WebUI.verifyEqual(a0, a01)) {
         println('GOOD')
+
+        String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
+
+        println(dZO)
     } else {
         String widget = 'Виджет: Объем потерь'
 
-        String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+        String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
 
-        WriteToExcel(widget, month)
+        println(dZO)
+
+        WriteToExcel(widget, dZO)
     }
     
     if (WebUI.verifyEqual(b0, b01)) {
@@ -1801,9 +1815,9 @@ static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e0
     } else {
         String widget = 'Виджет: Уровень потерь'
 
-        String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+        String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
 
-        WriteToExcel(widget, month)
+        WriteToExcel(widget, dZO)
     }
     
     if (WebUI.verifyEqual(e0, e01)) {
@@ -1811,9 +1825,9 @@ static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e0
     } else {
         String widget = 'Виджет: Отклонение объема потерь'
 
-        String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+        String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
 
-        WriteToExcel(widget, month)
+        WriteToExcel(widget, dZO)
     }
     
     if (WebUI.verifyEqual(f0, f01)) {
@@ -1821,9 +1835,11 @@ static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e0
     } else {
         String widget = 'Виджет: Отклонение уровня потерь'
 
-        String month = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильтр Дата'))
+        String dZO = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/фильр ДЗО'))
 
-        WriteToExcel(widget, month)
+        WriteToExcel(widget, dZO)
     }
+    
+    WebUI.closeBrowser()
 }
 
