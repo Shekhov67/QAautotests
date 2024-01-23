@@ -231,54 +231,6 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/АО ЦЕК'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/АО ЦЕК'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/АО Курортэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/АО Курортэнерго'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/АО СПБ ЭС'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/АО СПБ ЭС'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Ленэнерго(ГК)'))
-
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/ПАО Россети Ленэнерго'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
@@ -340,22 +292,6 @@ static def Testing1() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать Россети Северный Кавказ(ГК)'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северный Кавказ(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северный Кавказ(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/АО Дагестанская сетевая компания'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/АО Дагестанская сетевая компания'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
@@ -483,38 +419,7 @@ static def Testing1() {
 
     dzoScan = DzoAndScan()
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Архэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Архэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Вологдаэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Вологдаэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
+    
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
@@ -542,54 +447,6 @@ static def Testing1() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Карельский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Карелэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Карелэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Колэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Колэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Комиэнергго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Комиэнергго'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
@@ -633,43 +490,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Новгородэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Новгородэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Псковский филиал'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Псковский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Псковэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Псковэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
@@ -741,43 +566,11 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Сибирь (ГК)'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/ГАЭС'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/ГАЭС'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Сибирь (ГК)'))
-
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Красноярскэнерго'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Красноярскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Сибирь (ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Кузбасэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Кузбасэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
@@ -1174,22 +967,6 @@ static def Testing2() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать Россети Центр и Приволжье(ГК)'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-    dzoScan = DzoAndScan()
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Центр и Приволжье(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Россети Центр и Приволжье(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/АО Свет'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/АО Свет'))
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
