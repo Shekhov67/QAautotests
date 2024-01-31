@@ -419,7 +419,6 @@ static def Testing1() {
 
     dzoScan = DzoAndScan()
 
-    
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
@@ -1277,6 +1276,8 @@ static def SelectDate() {
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ноябрь 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }

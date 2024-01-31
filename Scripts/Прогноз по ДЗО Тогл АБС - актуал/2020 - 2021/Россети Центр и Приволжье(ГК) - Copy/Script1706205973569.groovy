@@ -20,6 +20,10 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 
 def openBrowser = OpenBrowser()
 
+
+
+
+
 WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
@@ -32,11 +36,17 @@ WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россет
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
 
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Янтарь'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'), 30)
 
 WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Россети Янтарь'))
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Кировэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Кировэнерго'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
 
@@ -58,17 +68,145 @@ WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россет
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
 
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Янтарь'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'), 30)
 
 WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-WebUI.click(findTestObject('Прогноз по ДЗО/Россети Янтарь'))
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'))
 
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Янтарь'), 30)
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Мариэнерго'), 30)
 
 WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-WebUI.click(findTestObject('Прогноз по ДЗО/Янтарь'))
+WebUI.click(findTestObject('Прогноз по ДЗО/Мариэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Нижновэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Нижновэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Рязаньэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Рязаньэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Тулэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Тулэнерго'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+selectDate = SelectDate()
+
+WebUI.closeBrowser()
+
+openBrowser = OpenBrowser()
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
+
+WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
+
+WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Россети Центр и Приволжье(ГК)'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Удмуртэнерго'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+WebUI.click(findTestObject('Прогноз по ДЗО/Удмуртэнерго'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
 

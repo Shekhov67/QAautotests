@@ -24,8 +24,9 @@ def test1 = VyruchkaVseToggleMln1()
 
 //def test2 = VyruchkaOneToggleMln2()
 //def test3 = VyruchkaTwoToggleMln3()
-def test4 = VyruchkaVseToggleProc4() //def test5 = VyruchkaOneToggleProc5()
-//def test6 = VyruchkaTwoToggleProc6()
+def test4 = VyruchkaVseToggleProc4( //def test5 = VyruchkaOneToggleProc5()
+    //def test6 = VyruchkaTwoToggleProc6()
+    )
 
 static def VyruchkaVseToggleMln1() {
     WebUI.openBrowser('')
@@ -78,6 +79,8 @@ static def VyruchkaVseToggleMln1() {
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
     WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/Декабрь 2023'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -918,6 +921,8 @@ static def VyruchkaVseToggleProc4() {
     WebUI.click(findTestObject('КПО/Октябрь 2023'))
 
     WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+
+    WebUI.click(findTestObject('КПО/Декабрь 2023'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
