@@ -425,7 +425,7 @@ static def Test2() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -445,7 +445,7 @@ static def Test2() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -465,7 +465,7 @@ static def Test2() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -589,7 +589,7 @@ static def Test3() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -609,7 +609,7 @@ static def Test3() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -629,7 +629,7 @@ static def Test3() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -753,7 +753,7 @@ static def Test4() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -773,7 +773,7 @@ static def Test4() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -793,7 +793,7 @@ static def Test4() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -925,7 +925,7 @@ static def Test5() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -945,7 +945,7 @@ static def Test5() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -965,7 +965,7 @@ static def Test5() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -1097,7 +1097,7 @@ static def Test6() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -1117,7 +1117,7 @@ static def Test6() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -1137,7 +1137,7 @@ static def Test6() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -1269,7 +1269,7 @@ static def Test7() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -1289,7 +1289,7 @@ static def Test7() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -1309,7 +1309,7 @@ static def Test7() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -1441,7 +1441,7 @@ static def Test8() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -1461,7 +1461,7 @@ static def Test8() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -1481,7 +1481,7 @@ static def Test8() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -1613,7 +1613,7 @@ static def Test9() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -1633,7 +1633,7 @@ static def Test9() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -1653,7 +1653,7 @@ static def Test9() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -1785,7 +1785,7 @@ static def Test10() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -1805,7 +1805,7 @@ static def Test10() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -1825,7 +1825,7 @@ static def Test10() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -1957,7 +1957,7 @@ static def Test11() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -1977,7 +1977,7 @@ static def Test11() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -1997,7 +1997,7 @@ static def Test11() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -2129,7 +2129,7 @@ static def Test12() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -2149,7 +2149,7 @@ static def Test12() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -2169,7 +2169,7 @@ static def Test12() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -2301,7 +2301,7 @@ static def Test13() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -2321,7 +2321,7 @@ static def Test13() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -2341,7 +2341,7 @@ static def Test13() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -2467,7 +2467,7 @@ static def Test14() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -2487,7 +2487,7 @@ static def Test14() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -2507,7 +2507,7 @@ static def Test14() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -2639,7 +2639,7 @@ static def Test15() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -2659,7 +2659,7 @@ static def Test15() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -2679,7 +2679,7 @@ static def Test15() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -2811,7 +2811,7 @@ static def Test16() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -2831,7 +2831,7 @@ static def Test16() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -2851,7 +2851,7 @@ static def Test16() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -2983,7 +2983,7 @@ static def Test17() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -3003,7 +3003,7 @@ static def Test17() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -3023,7 +3023,7 @@ static def Test17() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }
@@ -3155,7 +3155,7 @@ static def Test18() {
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
@@ -3175,7 +3175,7 @@ static def Test18() {
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a2, numberB2, v)
     }
@@ -3195,7 +3195,7 @@ static def Test18() {
     if (WebUI.verifyEqual(a3, numberB3)) {
         println('GOOD')
     } else {
-        String v = 'Виджет отпуск в сеть'
+        String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a3, numberB3, v)
     }

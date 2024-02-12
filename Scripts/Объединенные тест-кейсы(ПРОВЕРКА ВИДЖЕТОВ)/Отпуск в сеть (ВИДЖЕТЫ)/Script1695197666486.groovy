@@ -24,6 +24,8 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 WebUI.openBrowser('')
 
+WebUI.refresh()
+
 WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
 WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))

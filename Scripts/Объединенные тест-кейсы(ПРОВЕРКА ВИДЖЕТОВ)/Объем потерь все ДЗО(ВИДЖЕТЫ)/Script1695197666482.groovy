@@ -24,6 +24,8 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 WebUI.openBrowser('')
 
+WebUI.refresh()
+
 WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
 WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -43,9 +45,9 @@ WebUI.closeBrowser( //в соответствии с текущим месяце
     // Возвращает текущую дату
     //Дата для сравнения
     // Возвращает текущую дату
+    //Дата для сравнения
+    // Возвращает текущую дату
     ) //Дата для сравнения
-// Возвращает текущую дату
-//Дата для сравнения
 
 static def Testing1() {
     def oneAndScan = FirstStepAndScanErrors()
@@ -183,70 +185,6 @@ static def Testing1() {
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Росссети Ленэнерго(ГК)'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-
-    oneAndScan = FirstStepAndScanErrors()
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/АО ЦЕК'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО ЦЕК'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-
-    oneAndScan = FirstStepAndScanErrors()
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/АО Курортэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО Курортэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-
-    oneAndScan = FirstStepAndScanErrors()
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/АО СПБ ЭС'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО СПБ ЭС'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-
-    oneAndScan = FirstStepAndScanErrors()
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети Ленэнерго(ГК)'))
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/ПАО Россети Ленэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/ПАО Россети Ленэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 

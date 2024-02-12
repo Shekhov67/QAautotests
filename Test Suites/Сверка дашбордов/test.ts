@@ -28,8 +28,15 @@
    <testCaseLink>
       <guid>13db24de-4af0-48e2-8d2b-5dc3d207d209</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь - ВСЕ ДЗО</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ca051b77-2cf8-4b90-be5e-802da1ed9555</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/КПО сврека Дашбордов/КПО ПАО Россети сверка дашбордов</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
