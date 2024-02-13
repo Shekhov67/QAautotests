@@ -65,6 +65,8 @@ static def Test1() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -162,6 +164,8 @@ static def Test2() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -255,6 +259,8 @@ static def Test3() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -347,6 +353,8 @@ static def Test4() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
@@ -449,6 +457,8 @@ static def Test5() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -549,6 +559,8 @@ static def Test6() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
@@ -651,6 +663,8 @@ static def Test7() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -751,6 +765,8 @@ static def Test8() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
@@ -853,6 +869,8 @@ static def Test9() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -953,6 +971,8 @@ static def Test10() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
@@ -1055,6 +1075,8 @@ static def Test11() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -1155,6 +1177,8 @@ static def Test12() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
@@ -1257,6 +1281,8 @@ static def Test13() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -1349,6 +1375,8 @@ static def Test14() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
@@ -1451,6 +1479,8 @@ static def Test15() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -1552,6 +1582,8 @@ static def Test16() {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -1652,6 +1684,8 @@ static def Test17() {
     String month = GlobalVariable.period
 
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 

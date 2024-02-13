@@ -41,6 +41,8 @@ def Test(def run, def todaysDate, def widget) {
 
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 12))
 

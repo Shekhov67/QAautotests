@@ -28,6 +28,8 @@ def test2 = Test2()
 static def OpenBrowser() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))

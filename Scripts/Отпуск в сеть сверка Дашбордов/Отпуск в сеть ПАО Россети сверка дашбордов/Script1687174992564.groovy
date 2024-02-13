@@ -23,6 +23,8 @@ import org.apache.commons.lang3.StringUtils as StringUtils
 
 WebUI.openBrowser('')
 
+WebUI.refresh()
+
 'БЛОК РУКОВОДИТЕЛЕЙ'
 WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 

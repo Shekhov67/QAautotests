@@ -56,7 +56,8 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0, 
+        obemPoter.length())
 
     println(pageDataString)
 
@@ -68,7 +69,8 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+        0, percentPoter.length())
 
     fileDataString = percentPoter
 
@@ -119,7 +121,8 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0, 
+        obemPoter.length())
 
     println(pageDataString)
 
@@ -131,7 +134,8 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+        0, percentPoter.length())
 
     fileDataString = percentPoter
 
@@ -182,7 +186,8 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+','').substring(0, obemPoter.length() )
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0, 
+        obemPoter.length())
 
     println(pageDataString)
 
@@ -194,7 +199,8 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+','').substring(0, percentPoter.length() )
+    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+        0, percentPoter.length())
 
     fileDataString = percentPoter
 
@@ -211,6 +217,8 @@ WebUI.closeBrowser()
 
 static def OpenBrowser() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 

@@ -260,6 +260,8 @@ static def WriteToExcel2(def page) {
 static def Test1() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -397,6 +399,8 @@ static def Test1() {
 
 static def Test2() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -558,6 +562,8 @@ static def Test2() {
 static def Test3() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -717,6 +723,8 @@ static def Test3() {
 
 static def Test4() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -886,6 +894,8 @@ static def Test4() {
 static def Test5() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -1053,6 +1063,8 @@ static def Test5() {
 
 static def Test6() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -1222,6 +1234,8 @@ static def Test6() {
 static def Test7() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -1389,6 +1403,8 @@ static def Test7() {
 
 static def Test8() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -1558,6 +1574,8 @@ static def Test8() {
 static def Test9() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -1725,6 +1743,8 @@ static def Test9() {
 
 static def Test10() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -1894,6 +1914,8 @@ static def Test10() {
 static def Test11() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -2061,6 +2083,8 @@ static def Test11() {
 
 static def Test12() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -2230,6 +2254,8 @@ static def Test12() {
 static def Test13() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -2397,6 +2423,8 @@ static def Test13() {
 
 static def Test14() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -2566,6 +2594,8 @@ static def Test14() {
 static def Test15() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -2733,6 +2763,8 @@ static def Test15() {
 
 static def Test16() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -2902,6 +2934,8 @@ static def Test16() {
 static def Test17() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -3069,6 +3103,8 @@ static def Test17() {
 
 static def Test18() {
     WebUI.openBrowser('')
+
+    WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))

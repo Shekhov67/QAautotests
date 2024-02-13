@@ -310,6 +310,8 @@ WebUI.closeBrowser()
 static def OpenBrowser() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
     WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -373,55 +375,55 @@ static def Check(def pageString, def fileString, def path) {
 }
 
 static def WriteToExcel(def file, def page, def typeData = 'Отпуск в сеть', def path) {
-	String sheetName = 'List1'
+    String sheetName = 'List1'
 
-	def data = findTestData('Test Data')
+    def data = findTestData('Test Data')
 
-	int n = data.getRowNumbers() + 1
+    int n = data.getRowNumbers() + 1
 
-	String dashboardName = 'Отпуск в сеть'
+    String dashboardName = 'Отпуск в сеть'
 
-	Date d = new Date()
+    Date d = new Date()
 
-	SimpleDateFormat format1
+    SimpleDateFormat format1
 
-	format1 = new SimpleDateFormat('dd.MM.yyyy')
+    format1 = new SimpleDateFormat('dd.MM.yyyy')
 
-	String date = format1.format(d)
+    String date = format1.format(d)
 
-	println(date)
+    println(date)
 
-	def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
+    def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
 
-	def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
+    def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-	String dZO = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
+    String dZO = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-	println(dZO)
+    println(dZO)
 
-	String filtrYear = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
-	
-	String year = '2023'
+    String filtrYear = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+    String year = '2023'
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-	
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, typeData)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, file)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, typeData)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, filtrYear)
-	
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, file)
 
-	ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, date)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
 
-	n = (n + 1)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, filtrYear)
 
-	ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, year)
+
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, date)
+
+    n = (n + 1)
+
+    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 }
 
 static def WriteToExcel2(def err) {

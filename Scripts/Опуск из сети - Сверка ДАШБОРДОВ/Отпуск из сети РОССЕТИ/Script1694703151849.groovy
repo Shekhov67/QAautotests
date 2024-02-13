@@ -173,6 +173,8 @@ static def WriteToExcel2(def page) {
 static def Test1() {
     WebUI.openBrowser('')
 
+    WebUI.refresh()
+
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 7))
 
