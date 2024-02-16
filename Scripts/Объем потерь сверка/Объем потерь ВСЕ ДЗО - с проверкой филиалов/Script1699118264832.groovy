@@ -26,21 +26,35 @@ def test1 = Test1()
 def test2 = Test2()
 
 static def OpenBrowser() {
+	
     WebUI.openBrowser('')
 
-    WebUI.refresh()
-
-    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
-
-    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.click(findTestObject('Общие/button_'))
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
 
     WebUI.delay(10)
-}
 
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+		
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.delay(10)
+    } else {
+		
+        WebUI.refresh()
+		
+		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+		
+		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+		
+		WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
+    
+    
+}
 static def SelectDzo() {
     WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
 

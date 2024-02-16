@@ -57,4 +57,3 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
 }
-

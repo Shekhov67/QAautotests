@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='c5885e95e1fa4f14af13381f330fe5a5']/div/div/div</value>
+         <value>//div[@id='f3be791022124236a2a450289f7e4952']/div/div/div</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>6409409b-757b-47ea-b5ae-5f889638990b</webElementGuid>
+      <webElementGuid>38315fdc-5443-4b1a-b265-3315632ca4e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-header-text</value>
-      <webElementGuid>18f049f0-9a67-4d4e-8c60-ff003be3a2ab</webElementGuid>
+      <webElementGuid>8ecf0a6f-316e-4819-9392-bde985d58a16</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ПАО Россети - РаспредКомплекс</value>
-      <webElementGuid>5e21dea7-dae9-401f-bf95-70d34b4ac2c4</webElementGuid>
+      <webElementGuid>36ffaf67-6396-4729-b4a1-a59f712054f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;15a3ac82ffcc4d5f9935cd07ff1d48e7&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-header-container&quot;]/div[@class=&quot;rb-filter-header-text&quot;]</value>
-      <webElementGuid>91fd1bce-73a1-46c5-9641-717bbe386520</webElementGuid>
+      <webElementGuid>b4f0bdc2-f756-49c0-aaa2-76801192c0aa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='15a3ac82ffcc4d5f9935cd07ff1d48e7']/div/div/div</value>
-      <webElementGuid>bd297352-4c7b-4600-9e6a-9ba08f8fc69f</webElementGuid>
+      <webElementGuid>f7e36cfc-1a92-470d-9cdc-fb80ac818f6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ДЗО'])[1]/following::div[5]</value>
-      <webElementGuid>86e2750a-2b81-436d-828b-2e02fd28f98d</webElementGuid>
+      <webElementGuid>a8e6c8b7-2894-4dc2-a7e6-c690e2479b21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[4]/following::div[11]</value>
-      <webElementGuid>603955ba-309b-41a6-b321-c9237e3887c0</webElementGuid>
+      <webElementGuid>bb394a37-9957-42a3-95f7-73719da9e70f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбранные значения'])[4]/preceding::div[1]</value>
-      <webElementGuid>0b4660db-b92e-41b1-b879-702c43461c1f</webElementGuid>
+      <webElementGuid>21a95c61-96d5-4358-9550-af51aff64d3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[8]/div[2]/div/div/div/div</value>
-      <webElementGuid>7c44fda9-26d9-40fe-a505-6a65cbb76729</webElementGuid>
+      <webElementGuid>cd4a936f-3b68-4f9e-8cfb-ec208e6a66af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'ПАО Россети - РаспредКомплекс' or . = 'ПАО Россети - РаспредКомплекс')]</value>
-      <webElementGuid>b5a17a22-c0fa-4531-97cf-9b4a8f8c9ac6</webElementGuid>
+      <webElementGuid>5a94ec93-63ef-4be6-a44b-48e51daace99</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

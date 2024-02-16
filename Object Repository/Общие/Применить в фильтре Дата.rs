@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='6a78deb2fc8e416b84939195b00f5c43']/div/div[2]/div[4]/div[2]</value>
+         <value>//div[@id='widget-header-26f941b5797b4cbcba065228ffcc4e83']/a</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>e307eac8-73b8-4887-b998-34ba9b7a5612</webElementGuid>
+      <webElementGuid>f1ac68b1-5477-4c38-a78c-271ee0675b44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-apply-button button</value>
-      <webElementGuid>2b38e29e-5893-4bb8-a40b-e79ef5e22cc5</webElementGuid>
+      <webElementGuid>66b08fb0-9459-4a74-8ddd-7c6a3d494de0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Применить</value>
-      <webElementGuid>9398874b-a1fa-41b2-8e34-8ebf03fa2d00</webElementGuid>
+      <webElementGuid>0084eb54-d9cb-4b1b-b155-782b7cb208bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;5b695520ec3542ddafc9b4410a15dece&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-actions-buttons-container&quot;]/div[@class=&quot;rb-filter-apply-button button&quot;]</value>
-      <webElementGuid>d912effe-fb23-40fb-8446-a2028d509eaa</webElementGuid>
+      <webElementGuid>f75b4313-802d-4131-8030-5a1e8618f29f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='5b695520ec3542ddafc9b4410a15dece']/div/div[2]/div[4]/div[2]</value>
-      <webElementGuid>93dde519-acab-4db3-b0eb-1f17b47e29b0</webElementGuid>
+      <webElementGuid>d8264309-daaa-4487-90a4-70011f611181</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Отмена'])[5]/following::div[1]</value>
-      <webElementGuid>7847d8b4-2972-44f8-89e6-dcb2ed2248ab</webElementGuid>
+      <webElementGuid>4f4f57be-b43d-419d-995f-fb10dcd3ca51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Снять выделение'])[5]/following::div[16]</value>
-      <webElementGuid>4f32e0a2-d044-429d-b52b-eb247a3f48ef</webElementGuid>
+      <webElementGuid>5f71c9a5-55e3-4413-a5c2-999c38434351</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[6]/preceding::div[16]</value>
-      <webElementGuid>511dd212-2151-48ee-a26a-3ba9354fa852</webElementGuid>
+      <webElementGuid>46d2d23f-ae96-4fff-8612-f5ce9e5cc10a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Фильтр - копия 1'])[1]/preceding::div[24]</value>
-      <webElementGuid>83577172-c5ec-4d35-b95c-800989048739</webElementGuid>
+      <webElementGuid>07c1264c-cad9-4f07-b550-2d1c3d6fb1ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div[2]/div/div/div[2]/div[4]/div[2]</value>
-      <webElementGuid>b996d637-3a06-499c-85ad-4780d8d8d41e</webElementGuid>
+      <webElementGuid>548fb5f4-7c0c-472b-8507-f66a6b749f6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Применить' or . = 'Применить')]</value>
-      <webElementGuid>23c72958-d8e8-4640-bc35-0a2674113c55</webElementGuid>
+      <webElementGuid>d3ab0167-09d6-4dbc-9ee7-251b6e2006f8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
