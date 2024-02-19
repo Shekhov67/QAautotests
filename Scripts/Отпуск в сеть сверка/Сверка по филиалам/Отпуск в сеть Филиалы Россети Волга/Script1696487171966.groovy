@@ -41,7 +41,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Мородовэнерго'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -82,7 +82,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Оренбургэнерго'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -123,7 +123,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Пензаэнерго'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -164,7 +164,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Самарские РС'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -205,7 +205,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Саратовские РС'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -246,7 +246,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ульяновские РС'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -287,7 +287,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Чувашэнерго'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -308,7 +308,6 @@ scanErr = ScanErrors(page)
 WebUI.closeBrowser()
 
 static def OpenBrowser() {
-	
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -316,7 +315,6 @@ static def OpenBrowser() {
     WebUI.delay(10)
 
     if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-		
         WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
         WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
@@ -325,32 +323,28 @@ static def OpenBrowser() {
 
         WebUI.delay(10)
     } else {
-		
         WebUI.refresh()
-		
-		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-		
-		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-		
-		WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
     }
-    
-    
 }
 
-
 static def SelectDzo() {
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
+	WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/РаспредКомплекс'))
+	WebUI.click(findTestObject('Отпуск в сеть сверка/РаспредКомплекс'))
 }
 
 static def ScanErrors(def path) {
@@ -484,19 +478,5 @@ static def WriteToExcel2(def err) {
     n = (n + 1)
 
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePathFilials, workbook01)
-}
-
-static def Raspred() {
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
-
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
-
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
-
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать РаспредКомплекс'))
 }
 

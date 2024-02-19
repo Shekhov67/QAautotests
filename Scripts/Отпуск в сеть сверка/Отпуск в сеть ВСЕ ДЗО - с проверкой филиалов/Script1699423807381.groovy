@@ -29,7 +29,7 @@ println(otpuskVSeti)
 
 raspred = Raspred()
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 def selectDate = SelectDate()
 
@@ -60,7 +60,7 @@ selectDzo = SelectDzo()
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать АО Тываэнерго'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -91,7 +91,7 @@ selectDzo = SelectDzo()
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать АО Чеченэнерго'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -122,7 +122,7 @@ selectDzo = SelectDzo()
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Волга'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -170,7 +170,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Кубань'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -205,7 +205,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Росссети Ленэнерго(ГК)'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -240,7 +240,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Московский регион'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -288,7 +288,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Северный Кавказ(ГК)'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -336,7 +336,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Северо-Запад'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -384,7 +384,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Сибирь(ГК)'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -432,7 +432,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Томск'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -467,7 +467,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Тюмень'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -502,7 +502,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Урал(ГК)'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -546,7 +546,7 @@ WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
 
 WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
 
@@ -556,7 +556,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/Магистр
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети ФСК ЕЭС'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -591,7 +591,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Центр'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -639,7 +639,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Центр и Приволжье(ГК)'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -687,7 +687,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Юг(ГК)'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -735,7 +735,7 @@ WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до �
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Янтарь'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
 selectDate = SelectDate()
 
@@ -756,7 +756,6 @@ scanErr = ScanErrors(page)
 WebUI.closeBrowser()
 
 static def OpenBrowser() {
-	
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
@@ -764,7 +763,6 @@ static def OpenBrowser() {
     WebUI.delay(10)
 
     if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-		
         WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
         WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
@@ -773,29 +771,26 @@ static def OpenBrowser() {
 
         WebUI.delay(10)
     } else {
-		
         WebUI.refresh()
-		
-		WebUI.delay(10)
-		
-		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-		
-		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-		
-		WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.delay(10)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
     }
-    
-    
 }
 
 static def SelectDzo() {
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -803,43 +798,23 @@ static def SelectDzo() {
 }
 
 static def SelectDate() {
-    WebUI.click(findTestObject('Общие в сеть/Фильтр Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре Дата'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2023 год'), 30)
 
-    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/2023 год'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Выбрать 2023год'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/4 квартал 2023'), 30)
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
-    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 2 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 3 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/раскрыть 4 квартал 2023'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), 0)
-
-    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ноябрь 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
+    def scanErr = ScanErrors(def path)
 }
 
 static def ScanErrors(def path) {
@@ -979,13 +954,13 @@ static def WriteToExcel2(def err) {
 }
 
 static def Raspred() {
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 

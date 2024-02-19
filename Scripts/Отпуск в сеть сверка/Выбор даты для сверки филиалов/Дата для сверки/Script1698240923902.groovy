@@ -23,42 +23,20 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 def selectDate = SelectDate()
 
 static def SelectDate() {
-    WebUI.click(findTestObject('Общие в сеть/Фильтр Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре Дата'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2023 год'), 30)
 
-    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/2023 год'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Выбрать 2023год'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/4 квартал 2023'), 30)
-
-    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 2 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 3 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/раскрыть 4 квартал 2023'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), 0)
-
-    WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ноябрь 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре Дата'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
 
