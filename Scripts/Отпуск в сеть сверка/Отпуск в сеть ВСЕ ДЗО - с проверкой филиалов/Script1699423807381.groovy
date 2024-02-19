@@ -776,6 +776,8 @@ static def OpenBrowser() {
 		
         WebUI.refresh()
 		
+		WebUI.delay(10)
+		
 		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 		
 		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))

@@ -26,7 +26,6 @@ def test1 = Test1()
 def test2 = Test2()
 
 static def OpenBrowser() {
-	
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
@@ -34,7 +33,6 @@ static def OpenBrowser() {
     WebUI.delay(10)
 
     if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-		
         WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
         WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
@@ -43,24 +41,24 @@ static def OpenBrowser() {
 
         WebUI.delay(10)
     } else {
-		
         WebUI.refresh()
-		
-		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-		
-		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-		
-		WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.delay(10)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
     }
-    
-    
 }
+
 static def SelectDzo() {
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
 
@@ -78,31 +76,9 @@ static def SelectDate() {
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Выбрать 2023 год'))
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать 3 квартал'))
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
 static def ScannErrors(def path) {

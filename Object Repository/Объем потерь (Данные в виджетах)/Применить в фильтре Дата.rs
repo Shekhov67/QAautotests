@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Применить в фильтре ДЗО</name>
+   <name>Применить в фильтре Дата</name>
    <tag></tag>
-   <elementGuidId>4e215c97-3780-41aa-9ee7-b291303f76c1</elementGuidId>
+   <elementGuidId>fd1dd6e4-532c-484f-b94e-4040c8d99e6d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='f3be791022124236a2a450289f7e4952']/div/div[2]/div[4]/div[2]</value>
+         <value>//div[@id='26f941b5797b4cbcba065228ffcc4e83']/div/div[2]/div[4]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>86ea64b3-1294-4a6c-92bd-0dde03761505</webElementGuid>
+      <webElementGuid>c8d59fc5-d8b6-4903-8066-a8f6bcea00b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-apply-button button</value>
-      <webElementGuid>4e5c0975-d21c-4c46-b52e-7c8924f5e721</webElementGuid>
+      <webElementGuid>4ad288bb-cfa6-467d-875e-38f52c0bce40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,63 +38,63 @@
       <name>text</name>
       <type>Main</type>
       <value>Применить</value>
-      <webElementGuid>984afbdd-9aad-40e2-a694-3a675dbd21a9</webElementGuid>
+      <webElementGuid>f7684e94-1b6e-4a56-b105-6ad5b559a0b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;15a3ac82ffcc4d5f9935cd07ff1d48e7&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-actions-buttons-container&quot;]/div[@class=&quot;rb-filter-apply-button button&quot;]</value>
-      <webElementGuid>9295aa13-10e8-499c-997e-892c1206e262</webElementGuid>
+      <value>id(&quot;5b695520ec3542ddafc9b4410a15dece&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-actions-buttons-container&quot;]/div[@class=&quot;rb-filter-apply-button button&quot;]</value>
+      <webElementGuid>f8e456a8-71a2-47ac-83e2-8fe5a341432f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='15a3ac82ffcc4d5f9935cd07ff1d48e7']/div/div[2]/div[4]/div[2]</value>
-      <webElementGuid>e4c2e10a-f4e1-41c5-8d60-25bf5a9980aa</webElementGuid>
+      <value>//div[@id='5b695520ec3542ddafc9b4410a15dece']/div/div[2]/div[4]/div[2]</value>
+      <webElementGuid>b584cda0-84d8-4930-99a6-b6b62ca5a828</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Отмена'])[4]/following::div[1]</value>
-      <webElementGuid>3a65e755-1fbc-47c1-91a3-db7548e36b8c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Отмена'])[5]/following::div[1]</value>
+      <webElementGuid>7fba6ee8-b239-46dd-835e-f34582d26b4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Россети Янтарь'])[2]/following::div[3]</value>
-      <webElementGuid>51a5c4c9-230f-4d8c-a0a7-dfd5e2524652</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Снять выделение'])[5]/following::div[16]</value>
+      <webElementGuid>32e7f8af-54cd-4fca-ad0a-41fbd3b6410d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[5]/preceding::div[16]</value>
-      <webElementGuid>6291e4e3-ed70-48b6-8aaf-746cf0fc5c6b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[6]/preceding::div[16]</value>
+      <webElementGuid>df176cd3-2088-4d34-b94d-5af46d90588f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Дата'])[1]/preceding::div[24]</value>
-      <webElementGuid>8c502bf1-5f3f-4ceb-8c73-6714a17c828c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Фильтр - копия 1'])[1]/preceding::div[24]</value>
+      <webElementGuid>a7b812d7-cafe-4548-9496-7a0f0ca8eac0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[8]/div[2]/div/div/div[2]/div[4]/div[2]</value>
-      <webElementGuid>79a45564-7ca6-4dd9-830d-c0cb0094ebc3</webElementGuid>
+      <value>//div[10]/div[2]/div/div/div[2]/div[4]/div[2]</value>
+      <webElementGuid>946f4a15-d8f5-4fad-b8f9-cbd4130e58bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Применить' or . = 'Применить')]</value>
-      <webElementGuid>0b29ce3f-6ce7-41d2-94d9-b3b856e1b0ec</webElementGuid>
+      <webElementGuid>7a0c2bc4-f829-47b3-a349-01ebc58ae685</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

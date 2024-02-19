@@ -3,15 +3,15 @@
    <description></description>
    <name>Снять выделения в фильтре ДЗО</name>
    <tag></tag>
-   <elementGuidId>d55feedd-3a4c-4135-975f-0b2f1f10ac94</elementGuidId>
+   <elementGuidId>3f819cce-c83a-4d0b-a519-05b809f6acd1</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='0fa20cd03044408393d5eb59f7bb571c']/div/div[2]/div[2]/div[2]</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>div.rb-filter-body-container.opened > div.rb-filter-selection-buttons-container > div.rb-filter-unselect-all-button.button</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='f3be791022124236a2a450289f7e4952']/div/div[2]/div[2]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>3c4d4e83-7e7b-406f-be66-559e31664277</webElementGuid>
+      <webElementGuid>005a1aaf-4350-41d1-84ef-60acd140b90d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-unselect-all-button button</value>
-      <webElementGuid>49587ce2-834a-4c3f-94de-1d2486ef99eb</webElementGuid>
+      <webElementGuid>3b6a9936-5a8f-4168-9e2b-e643723a9ea6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Снять выделение</value>
-      <webElementGuid>971e0797-bf4e-4760-9d45-ef1c499ce909</webElementGuid>
+      <webElementGuid>146f1378-62a5-4830-b0f6-e95dce16b49b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;15a3ac82ffcc4d5f9935cd07ff1d48e7&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-selection-buttons-container&quot;]/div[@class=&quot;rb-filter-unselect-all-button button&quot;]</value>
-      <webElementGuid>4c5d353f-7cba-4737-8432-9c5d9757c455</webElementGuid>
+      <webElementGuid>4ef24123-99dd-4446-976d-f0b104f37a8c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='15a3ac82ffcc4d5f9935cd07ff1d48e7']/div/div[2]/div[2]/div[2]</value>
-      <webElementGuid>fc929057-6eb2-4c0b-bbea-bc19292b6fe2</webElementGuid>
+      <webElementGuid>eb674c0c-5279-46c4-97fd-d6f790810328</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбрать отображаемые'])[4]/following::div[1]</value>
-      <webElementGuid>8843f0ad-d76b-478a-a73e-dc2cee97a182</webElementGuid>
+      <webElementGuid>926a6d28-31e2-4aec-9440-48f1f66adf53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='РаспредКомплекс'])[1]/following::div[3]</value>
-      <webElementGuid>ccc7814f-fa2b-447d-946f-7475066c71f4</webElementGuid>
+      <webElementGuid>fefad2ec-e546-4db4-8117-cc08aa9def7a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ПАО Россети'])[1]/preceding::div[1]</value>
-      <webElementGuid>9275c7ca-6cb5-4795-b9ae-b250fe5f6eaa</webElementGuid>
+      <webElementGuid>07ec8168-902f-460b-896f-2b428e749804</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Магистральные сети'])[1]/preceding::div[3]</value>
-      <webElementGuid>84d97303-95cf-4fef-af2e-b24770066d81</webElementGuid>
+      <webElementGuid>21b629d5-0719-4c91-9691-2e1ae81ba7b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[8]/div[2]/div/div/div[2]/div[2]/div[2]</value>
-      <webElementGuid>aaf3f88c-ae6f-4c07-965a-d188e3db8e05</webElementGuid>
+      <webElementGuid>d21831c3-2c8d-42c3-bb14-7e12f5b4a048</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Снять выделение' or . = 'Снять выделение')]</value>
-      <webElementGuid>68c9a438-1cbc-4cdd-9317-c5501ca17ff5</webElementGuid>
+      <webElementGuid>6e4003c6-4b30-4163-b0db-04ecae272d76</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
