@@ -34,11 +34,11 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 
 WebUI.click(findTestObject('Общие в сеть/button_'))
 
-WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
 def scan = ScanErrors()
 
@@ -53,6 +53,8 @@ println(a0)
 println(a0.length())
 
 int numA = a0.length()
+
+int numA0 = a0.length() * 2
 
 String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -82,7 +84,7 @@ println(a3.length())
 
 int numA3 = a3.length()
 
-int numA03 = a3.length() * 4
+int numA03 = a3.length()  + numA02 + numA0
 
 println(numA03)
 

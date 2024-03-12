@@ -31,21 +31,36 @@ static def Test1() {
 
     WebUI.openBrowser('')
 
-    WebUI.refresh()
-
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
-    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+    WebUI.delay(5)
 
-    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
-    WebUI.click(findTestObject('Общие/button_'))
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+        WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+        WebUI.delay(5)
+    } else {
+        WebUI.refresh()
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+        WebUI.delay(5)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
+}
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -65,7 +80,32 @@ static def Test1() {
 
     println(f)
 
+        WebUI.openBrowser('')
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+    WebUI.delay(5)
+
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.delay(5)
+    } else {
+        WebUI.refresh()
+
+        WebUI.delay(5)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
+
 
     WebUI.delay(10)
 
@@ -89,7 +129,7 @@ static def Test1() {
         def f01 = f1)
 
     WebUI.closeBrowser()
-}
+
 
 static def WriteToExcel(def widget, def month) {
     String sheetName = 'List1'

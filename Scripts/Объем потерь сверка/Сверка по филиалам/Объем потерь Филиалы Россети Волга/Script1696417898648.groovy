@@ -41,7 +41,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Мородовэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -102,7 +102,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Оренбургэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -163,7 +163,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Пензаэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -224,7 +224,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Самарские РС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -285,7 +285,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Саратовские РС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -346,7 +346,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ульяновские РС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -407,7 +407,7 @@ WebUI.scrollToElement(findTestObject('Объем потерь (Данные в �
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Чувашэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -448,44 +448,39 @@ WebUI.deleteAllCookies()
 WebUI.closeBrowser()
 
 static def OpenBrowser() {
-	
-	WebUI.openBrowser('')
+    WebUI.openBrowser('')
 
-	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
-	WebUI.delay(10)
+    WebUI.delay(10)
 
-	if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-		
-		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
-		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 
-		WebUI.click(findTestObject('Общие в сеть/button_'))
+        WebUI.click(findTestObject('Общие в сеть/button_'))
 
-		WebUI.delay(10)
-	} else {
-		
-		WebUI.refresh()
-		
-		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-		
-		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-		
-		WebUI.click(findTestObject('Общие в сеть/button_'))
-	}
-	
-	
+        WebUI.delay(10)
+    } else {
+        WebUI.refresh()
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
 }
 
 static def SelectDzo() {
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -593,7 +588,7 @@ static def WriteToExcel(def file, def page, def path) {
 
     path = path.replaceAll('Объем потерь сверка/Данные со страницы Объем потерь/', '')
 
-    String dZO = WebUI.getText(findTestObject('Общие/Фильтр ДЗО'))
+    String dZO = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
     println(dZO)
 
@@ -633,7 +628,7 @@ static def WriteToExcel2(def err, def page) {
 
     int n = data.getRowNumbers() + 1
 
-    String dZO = WebUI.getText(findTestObject('Общие/Фильтр ДЗО'))
+    String dZO = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
     String year = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
@@ -662,21 +657,5 @@ static def WriteToExcel2(def err, def page) {
 
         WebUI.closeBrowser()
     }
-}
-
-static def Raspred() {
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
-
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
-
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
-
-    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
-
-    WebUI.click(findTestObject('Объем потерь сверка/Выбрать РаспердКомплекс'))
-
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
 }
 

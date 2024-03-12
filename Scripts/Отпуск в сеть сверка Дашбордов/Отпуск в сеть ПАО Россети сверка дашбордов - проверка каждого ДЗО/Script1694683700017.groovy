@@ -263,19 +263,31 @@ static def Test1() {
     WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
+        WebUI.openBrowser('')
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
-    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+    WebUI.delay(10)
 
-    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
-    WebUI.click(findTestObject('Общие в сеть/button_'))
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+        WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+        WebUI.delay(10)
+    } else {
+        WebUI.refresh()
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+        WebUI.delay(10)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
 
     def scan = ScanErrors()
 
@@ -290,6 +302,8 @@ static def Test1() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -319,7 +333,7 @@ static def Test1() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -330,7 +344,31 @@ static def Test1() {
     println(a3)
 
     'БАЛАНСЫ'
+        WebUI.openBrowser('')
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
+
+    WebUI.delay(10)
+
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.delay(10)
+    } else {
+        WebUI.refresh()
+
+        WebUI.delay(10)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
 
     WebUI.delay(10)
 
@@ -411,13 +449,13 @@ static def Test2() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -425,7 +463,7 @@ static def Test2() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать АО Тываэнерго'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -442,6 +480,8 @@ static def Test2() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -471,7 +511,7 @@ static def Test2() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -573,13 +613,13 @@ static def Test3() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -587,7 +627,7 @@ static def Test3() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать АО Чеченэнерго'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -604,6 +644,8 @@ static def Test3() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -633,7 +675,7 @@ static def Test3() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -735,13 +777,13 @@ static def Test4() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -753,7 +795,7 @@ static def Test4() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Волга'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -770,6 +812,8 @@ static def Test4() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -799,7 +843,7 @@ static def Test4() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -905,13 +949,13 @@ static def Test5() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -923,7 +967,7 @@ static def Test5() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Кубань'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -940,6 +984,8 @@ static def Test5() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -969,7 +1015,7 @@ static def Test5() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -1075,13 +1121,13 @@ static def Test6() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -1093,7 +1139,7 @@ static def Test6() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Росссети Ленэнерго(ГК)'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1110,6 +1156,8 @@ static def Test6() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1139,7 +1187,7 @@ static def Test6() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -1245,13 +1293,13 @@ static def Test7() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -1263,7 +1311,7 @@ static def Test7() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Московский регион'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1280,6 +1328,8 @@ static def Test7() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1309,7 +1359,7 @@ static def Test7() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -1415,13 +1465,13 @@ static def Test8() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -1433,7 +1483,7 @@ static def Test8() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Северный Кавказ(ГК)'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1450,6 +1500,8 @@ static def Test8() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1479,7 +1531,7 @@ static def Test8() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -1585,13 +1637,13 @@ static def Test9() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -1603,7 +1655,7 @@ static def Test9() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Северо-Запад'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1620,6 +1672,8 @@ static def Test9() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1649,7 +1703,7 @@ static def Test9() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -1755,13 +1809,13 @@ static def Test10() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -1773,7 +1827,7 @@ static def Test10() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Сибирь(ГК)'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1790,6 +1844,8 @@ static def Test10() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1819,7 +1875,7 @@ static def Test10() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -1925,13 +1981,13 @@ static def Test11() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -1943,7 +1999,7 @@ static def Test11() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Томск'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1960,6 +2016,8 @@ static def Test11() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1989,7 +2047,7 @@ static def Test11() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -2095,13 +2153,13 @@ static def Test12() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -2113,7 +2171,7 @@ static def Test12() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Тюмень'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -2130,6 +2188,8 @@ static def Test12() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2159,7 +2219,7 @@ static def Test12() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -2265,13 +2325,13 @@ static def Test13() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -2283,7 +2343,7 @@ static def Test13() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Урал(ГК)'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -2300,6 +2360,8 @@ static def Test13() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2329,7 +2391,7 @@ static def Test13() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -2435,13 +2497,13 @@ static def Test14() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -2453,7 +2515,7 @@ static def Test14() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Центр'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -2470,6 +2532,8 @@ static def Test14() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2499,7 +2563,7 @@ static def Test14() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -2605,13 +2669,13 @@ static def Test15() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -2623,7 +2687,7 @@ static def Test15() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Центр и Приволжье(ГК)'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -2640,6 +2704,8 @@ static def Test15() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2669,7 +2735,7 @@ static def Test15() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -2775,13 +2841,13 @@ static def Test16() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -2793,7 +2859,7 @@ static def Test16() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Юг(ГК)'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -2810,6 +2876,8 @@ static def Test16() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2839,7 +2907,7 @@ static def Test16() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -2945,13 +3013,13 @@ static def Test17() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -2963,7 +3031,7 @@ static def Test17() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети Янтарь'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -2980,6 +3048,8 @@ static def Test17() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -3009,7 +3079,7 @@ static def Test17() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 
@@ -3115,13 +3185,13 @@ static def Test18() {
 
     WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
@@ -3142,6 +3212,8 @@ static def Test18() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -3171,7 +3243,7 @@ static def Test18() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length()  + numA02 + numA0
 
     println(numA03)
 

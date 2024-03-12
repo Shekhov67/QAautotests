@@ -203,6 +203,8 @@ static def Test1() {
     println(a0.length())
 
     int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -230,9 +232,9 @@ static def Test1() {
 
     println(a3.length())
 
-    int numA3 = a3.length()
+    int numA3 = a3.length() 
 
-    int numA03 = a3.length() * 4
+    int numA03 = a3.length() + numA02 + numA0
 
     println(numA03)
 
@@ -252,6 +254,8 @@ static def Test1() {
     WebUI.click(findTestObject('Отпуск из сети (БАЛАНСЫ)/применить в фильтре ДЗО'))
 
     WebUI.delay(15)
+	
+	println('БАЛАНСЫ')
 
     String b = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
 

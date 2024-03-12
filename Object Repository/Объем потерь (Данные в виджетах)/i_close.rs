@@ -6,12 +6,12 @@
    <elementGuidId>2c67809a-9d09-4958-8b1e-de11b447ccab</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='26f941b5797b4cbcba065228ffcc4e83']/div/div/i[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#5b695520ec3542ddafc9b4410a15dece > div.rb-filter-container.not-selectable.rb-filter-multi-selection > div.rb-filter-header-container > i.fa.fa-times.rb-filter-header-close</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='6a78deb2fc8e416b84939195b00f5c43']/div/div/i[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>9ea71665-a90d-4038-a582-b991af889e3d</webElementGuid>
+      <webElementGuid>b18c2635-8665-4a98-84d4-b04af0d08c8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fa fa-times rb-filter-header-close</value>
-      <webElementGuid>4392f35d-18b7-463b-9d0e-fca6cab94ab8</webElementGuid>
+      <webElementGuid>c4448d57-8473-498c-b417-f455f7d98b2e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Очистить все выбранные значения</value>
-      <webElementGuid>8d565076-82da-459d-aaa7-0bdd55978e84</webElementGuid>
+      <webElementGuid>7ada0e08-1b64-401f-a547-0b573ef519cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;5b695520ec3542ddafc9b4410a15dece&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-header-container&quot;]/i[@class=&quot;fa fa-times rb-filter-header-close&quot;]</value>
-      <webElementGuid>0b6bef1e-5790-4890-856a-fa195a420050</webElementGuid>
+      <webElementGuid>ddbf49e4-477b-4f26-800f-17fb2bb34ae7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='5b695520ec3542ddafc9b4410a15dece']/div/div/i[2]</value>
-      <webElementGuid>750d27f1-661f-4719-bf56-23fe71b427fd</webElementGuid>
+      <webElementGuid>de428739-d060-41d5-950a-a2d906ddb1d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div[2]/div/div/div/i[2]</value>
-      <webElementGuid>3d106a5f-f0ff-4d99-8d32-ad0e3f79391a</webElementGuid>
+      <webElementGuid>f33cef5a-77e8-4bac-9cba-aa9259682702</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//i[@title = 'Очистить все выбранные значения']</value>
-      <webElementGuid>af383f23-2590-41c8-9aa4-656c27f8f4ff</webElementGuid>
+      <webElementGuid>dfb5d8e9-205e-44e5-abd3-c5e08e4bfd62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

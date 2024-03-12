@@ -34,7 +34,7 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 
 WebUI.click(findTestObject('Общие/button_'))
 
-def date = SelectDate()
+//def date = SelectDate()
 
 def dzo = SelectDzo()
 

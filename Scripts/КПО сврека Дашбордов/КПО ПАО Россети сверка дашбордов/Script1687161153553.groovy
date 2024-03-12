@@ -54,33 +54,23 @@ static def VyruchkaVseToggleMln1() {
 
     WebUI.click(findTestObject('КПО/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/2023 год'))
+    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
-
-    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+    WebUI.click(findTestObject('КПО/раскрыть 1 квартла 2024'))
 
-    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/Январь 2024'), 30)
 
-    WebUI.click(findTestObject('КПО/Декабрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Январь 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -197,112 +187,112 @@ static def VyruchkaVseToggleMln1() {
 
     println(с1)
 
-    if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
+if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: ВЫполнение плановых показателй')
+        def write = WriteToExcel(String widget = 'Виджет: ВЫполнение плановых показателй', String dzo = 'ПАО Россети')
     }
     
     if (WebUI.verifyEqual(c, с1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'ПАО Россети')
     }
     
     if (WebUI.verifyEqual(d, d1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Центр и Приволжье')
     }
     
     if (WebUI.verifyEqual(e, e1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Центр')
     }
     
     if (WebUI.verifyEqual(f, f1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Чеченэнерго')
     }
     
     if (WebUI.verifyEqual(g, g1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Кубань')
     }
     
     if (WebUI.verifyEqual(m, m1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Ленэнерго(ГК)')
     }
     
     if (WebUI.verifyEqual(n, n1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Москвоский регион')
     }
     
     if (WebUI.verifyEqual(o, o1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Северный Кавказ(ГК)')
     }
     
     if (WebUI.verifyEqual(p, p1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Северо-Запад')
     }
     
     if (WebUI.verifyEqual(r, r1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Сибирь(ГК)')
     }
     
     if (WebUI.verifyEqual(s, s1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Томск')
     }
     
     if (WebUI.verifyEqual(t, t1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Тюмень')
     }
     
     if (WebUI.verifyEqual(u, u1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Тываэнерго')
     }
     
     if (WebUI.verifyEqual(y, y1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Юг(ГК)')
     }
     
     if (WebUI.verifyEqual(z, z1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Урал(ГК)')
     }
     
     if (WebUI.verifyEqual(x, x1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Волга')
     }
     
     if (WebUI.verifyEqual(w, w1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Янтарь')
     }
     
     WebUI.closeBrowser()
@@ -896,33 +886,23 @@ static def VyruchkaVseToggleProc4() {
 
     WebUI.click(findTestObject('КПО/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/2023 год'))
+    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
-
-    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+    WebUI.click(findTestObject('КПО/раскрыть 1 квартла 2024'))
 
-    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/Январь 2024'), 30)
 
-    WebUI.click(findTestObject('КПО/Декабрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Январь 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -1044,109 +1024,109 @@ static def VyruchkaVseToggleProc4() {
     if (WebUI.verifyEqual(a, b) && WebUI.verifyEqual(a1, b1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: ВЫполнение плановых показателй')
+        def write = WriteToExcel(String widget = 'Виджет: ВЫполнение плановых показателй', String dzo = 'ПАО Россети')
     }
     
     if (WebUI.verifyEqual(c, с1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'ПАО Россети')
     }
     
     if (WebUI.verifyEqual(d, d1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Центр и Приволжье')
     }
     
     if (WebUI.verifyEqual(e, e1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Центр')
     }
     
     if (WebUI.verifyEqual(f, f1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Чеченэнерго')
     }
     
     if (WebUI.verifyEqual(g, g1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Кубань')
     }
     
     if (WebUI.verifyEqual(m, m1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Ленэнерго(ГК)')
     }
     
     if (WebUI.verifyEqual(n, n1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Москвоский регион')
     }
     
     if (WebUI.verifyEqual(o, o1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Северный Кавказ(ГК)')
     }
     
     if (WebUI.verifyEqual(p, p1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Северо-Запад')
     }
     
     if (WebUI.verifyEqual(r, r1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Сибирь(ГК)')
     }
     
     if (WebUI.verifyEqual(s, s1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Томск')
     }
     
     if (WebUI.verifyEqual(t, t1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Тюмень')
     }
     
     if (WebUI.verifyEqual(u, u1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Тываэнерго')
     }
     
     if (WebUI.verifyEqual(y, y1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Юг(ГК)')
     }
     
     if (WebUI.verifyEqual(z, z1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Урал(ГК)')
     }
     
     if (WebUI.verifyEqual(x, x1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Волга')
     }
     
     if (WebUI.verifyEqual(w, w1)) {
         println('GOOD')
     } else {
-        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска')
+        def write = WriteToExcel(String widget = 'Виджет: Отклонение котлового полезного отпуска', String dzo = 'Россети Янтарь')
     }
     
     WebUI.closeBrowser()
@@ -1706,7 +1686,7 @@ static def VyruchkaTwoToggleProc6() {
     WebUI.closeBrowser()
 }
 
-static def WriteToExcel(def widget) {
+static def WriteToExcel(def widget, def dzo) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -1740,14 +1720,16 @@ static def WriteToExcel(def widget) {
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+	
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, dzo)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, year)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, widget)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, widget)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
 
     n = (n + 1)
 

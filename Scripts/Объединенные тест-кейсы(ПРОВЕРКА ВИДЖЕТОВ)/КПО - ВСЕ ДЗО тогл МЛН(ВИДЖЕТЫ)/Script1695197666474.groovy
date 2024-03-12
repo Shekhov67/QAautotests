@@ -77,6 +77,10 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
+    WebUI.scrollToElement(findTestObject('КПО/Мордовэнерго'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     WebUI.click(findTestObject('КПО/Мордовэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
@@ -1215,10 +1219,6 @@ static def VariantFilter2() {
 
     def scan = ScanErrors()
 
-    WebUI.click(findTestObject('КПО/i__close'))
-
-    scan = ScanErrors()
-
     WebUI.deleteAllCookies()
 }
 
@@ -1231,33 +1231,23 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('КПО/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('КПО/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
-    WebUI.click(findTestObject('КПО/2023 год'))
+    WebUI.click(findTestObject('КПО/2024 год'))
 
-    WebUI.scrollToElement(findTestObject('КПО/4 квартал 23 года'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2023'))
-
-    WebUI.click(findTestObject('КПО/раскрыть 4 квартал 2023'))
-
-    WebUI.scrollToElement(findTestObject('КПО/Октябрь 2023'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/Октябрь 2023'))
+    WebUI.click(findTestObject('КПО/раскрыть 1 квартла 2024'))
 
-    WebUI.click(findTestObject('КПО/Ноябрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/Январь 2024'), 30)
 
-    WebUI.click(findTestObject('КПО/Декабрь 2023'))
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Январь 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 

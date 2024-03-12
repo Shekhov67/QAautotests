@@ -75,13 +75,13 @@ static def Test1() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -89,7 +89,7 @@ static def Test1() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать АО Тываэнерго'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -174,13 +174,13 @@ static def Test2() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -188,7 +188,7 @@ static def Test2() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать АО Чеченэнерго'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -269,13 +269,13 @@ static def Test3() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -283,7 +283,7 @@ static def Test3() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Волга'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -364,13 +364,13 @@ static def Test4() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -382,7 +382,7 @@ static def Test4() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Кубань'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -467,13 +467,13 @@ static def Test5() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -485,7 +485,7 @@ static def Test5() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Росссети Ленэнерго(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -570,13 +570,13 @@ static def Test6() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -588,7 +588,7 @@ static def Test6() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Московский регион'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -673,13 +673,13 @@ static def Test7() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -691,7 +691,7 @@ static def Test7() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Северный Кавказ(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -776,13 +776,13 @@ static def Test8() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -794,7 +794,7 @@ static def Test8() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Северо-Запад'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -879,13 +879,13 @@ static def Test9() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -897,7 +897,7 @@ static def Test9() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Сибирь(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -982,13 +982,13 @@ static def Test10() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1000,7 +1000,7 @@ static def Test10() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Томск'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1085,13 +1085,13 @@ static def Test11() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1103,7 +1103,7 @@ static def Test11() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Тюмень'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1188,13 +1188,13 @@ static def Test12() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1206,7 +1206,7 @@ static def Test12() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Урал(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1291,13 +1291,13 @@ static def Test13() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1305,7 +1305,7 @@ static def Test13() {
 
     WebUI.click(findTestObject('Объем потерь сверка/Россети ФСК ЕЭС'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1386,13 +1386,13 @@ static def Test14() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1404,7 +1404,7 @@ static def Test14() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1489,13 +1489,13 @@ static def Test15() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1507,7 +1507,7 @@ static def Test15() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр и Приволжье(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1592,13 +1592,13 @@ static def Test16() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1610,7 +1610,7 @@ static def Test16() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Юг(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 
@@ -1695,13 +1695,13 @@ static def Test17() {
 
     WebUI.click(findTestObject('Общие/button_'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗОО'))
 
     WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
@@ -1713,7 +1713,7 @@ static def Test17() {
 
     WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Янтарь'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.delay(10)
 

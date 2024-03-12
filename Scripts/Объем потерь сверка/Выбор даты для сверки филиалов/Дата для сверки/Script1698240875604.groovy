@@ -27,33 +27,24 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь сверка/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать 3 квартал'))
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/1 квартал'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь сверка/1 квартал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Январь'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+    WebUI.click(findTestObject('Объем потерь сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
+

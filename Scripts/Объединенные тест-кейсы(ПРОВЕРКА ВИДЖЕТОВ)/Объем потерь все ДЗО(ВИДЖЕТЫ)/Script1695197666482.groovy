@@ -35,7 +35,6 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 WebUI.click(findTestObject('Общие/button_'))
 
 def selectDate = SelectDate()
-
 //def actualDate = ActualDate()
 def testing1 = Testing1()
 
@@ -47,26 +46,27 @@ WebUI.closeBrowser( //в соответствии с текущим месяце
     // Возвращает текущую дату
     //Дата для сравнения
     // Возвращает текущую дату
-    ) //Дата для сравнения
+    //Дата для сравнения
+    )
 
 static def Testing1() {
     def oneAndScan = FirstStepAndScanErrors()
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать АО Тываэнерго'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать АО Чеченэнерго'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Волга'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -78,7 +78,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Мородовэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -90,7 +90,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Оренбургэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -102,7 +102,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Пензаэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -114,7 +114,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Самарские РС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -126,7 +126,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Саратовские РС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -138,7 +138,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ульяновские РС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -150,7 +150,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Чувашэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -160,7 +160,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Кубань'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -176,7 +176,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Кубаньэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -186,7 +186,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Росссети Ленэнерго(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -202,7 +202,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ленэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -212,7 +212,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Московский регион'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -228,7 +228,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Московская область'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -244,7 +244,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/г.Москва'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -254,7 +254,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Северный Кавказ(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -270,7 +270,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО Дагестанская сетевая компания'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -286,7 +286,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Дагэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -302,7 +302,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ингушэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -318,7 +318,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Каббалкэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -334,7 +334,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Карачаево-Черкесскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -350,7 +350,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Севкавказэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -366,7 +366,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ставропльэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -376,7 +376,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Северо-Запад'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -392,7 +392,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Архангельский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -408,7 +408,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Архэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -424,7 +424,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Вологодский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -440,7 +440,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Карельский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -456,7 +456,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Карелэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -472,7 +472,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Колэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -488,7 +488,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Комиэнергго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -504,7 +504,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Мурманский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -520,7 +520,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Новгородский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -536,7 +536,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Новгородэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -552,7 +552,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Псковский филиал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -568,7 +568,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Псковэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -584,7 +584,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Резерв'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -600,7 +600,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/филиал в республике Коми'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -610,7 +610,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Сибирь(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -626,7 +626,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Алтайэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -642,7 +642,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Бурятэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -658,7 +658,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/ГАЭС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -674,7 +674,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Красноярскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -690,7 +690,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Кузбасэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -706,7 +706,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Кузбасэнерго-РЭС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -722,7 +722,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Омскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -738,7 +738,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Хакасэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -754,7 +754,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Читаэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -764,7 +764,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Томск'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -780,7 +780,7 @@ static def Testing1() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Томская распределительная компания'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 }
 
 static def Testing2() {
@@ -792,7 +792,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Тюмень'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -808,7 +808,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Тюмень'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -818,7 +818,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Урал(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -834,7 +834,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО ЕЭСК'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -850,7 +850,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Пермэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -866,7 +866,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Свердловэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -882,7 +882,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Челябэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -890,7 +890,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Россети ФСК ЕЭС'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -900,7 +900,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Центр и Приволжье(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -916,7 +916,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО Свет'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -932,7 +932,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Владимирэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -948,7 +948,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ивэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -964,7 +964,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Калугаэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -980,7 +980,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Кировэенрго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -996,7 +996,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Мариэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1012,7 +1012,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Нижновэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1028,7 +1028,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Рязаньэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1044,7 +1044,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Тулэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1060,7 +1060,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Удмуртэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1070,7 +1070,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Центр'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1086,7 +1086,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Белгородэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1102,7 +1102,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Брянскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1118,7 +1118,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Воронежэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1134,7 +1134,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Костромаэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1150,7 +1150,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Курскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1166,7 +1166,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Липецкэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1182,7 +1182,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Орелэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1198,7 +1198,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Смоленскэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1214,7 +1214,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Тамбовэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1230,7 +1230,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Тверьэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1246,7 +1246,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ярэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1256,7 +1256,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Юг(ГК)'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1272,7 +1272,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/АО ВМЭС'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1288,7 +1288,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Астраханьэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1304,7 +1304,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Волгоградэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1320,7 +1320,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Калмэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1336,7 +1336,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ростовэнерго'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1346,7 +1346,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Янтарь'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     oneAndScan = FirstStepAndScanErrors()
 
@@ -1362,7 +1362,7 @@ static def Testing2() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Янтарь'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     def scan = ScanErrors()
 }
@@ -1376,9 +1376,9 @@ static def FirstStepAndScanErrors() {
 static def FirstStep() {
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
@@ -1392,35 +1392,25 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь сверка/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), 30)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-    WebUI.click(findTestObject('Объем потерь сверка/Выбрать 1 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь сверка/выбрать 2 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/выбрать 3 квартал'))
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/4 квартал 2023'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/1 квартал'), 30)
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Объем потерь сверка/1 квартал'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Январь'), 30)
 
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-    WebUI.click(findTestObject('Общие/Применить в фильтре Дата'))
+    WebUI.click(findTestObject('Объем потерь сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
 static def ScanErrors() {

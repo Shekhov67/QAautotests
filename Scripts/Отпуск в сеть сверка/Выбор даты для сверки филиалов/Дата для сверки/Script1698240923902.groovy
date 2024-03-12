@@ -31,11 +31,23 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Выбрать 2023год'))
+    WebUI.click(findTestObject('Отпуск в сеть сверка/2024 год'))
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/1 квартал'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/1 квартал'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Январь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
