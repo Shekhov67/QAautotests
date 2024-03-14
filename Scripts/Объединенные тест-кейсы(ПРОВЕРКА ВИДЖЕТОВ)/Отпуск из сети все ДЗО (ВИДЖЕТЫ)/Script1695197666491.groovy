@@ -34,8 +34,7 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 
 WebUI.click(findTestObject('Общие/button_'))
 
-//def date = SelectDate()
-
+def date = SelectDate()
 def dzo = SelectDzo()
 
 def test1 = Testing1()
@@ -1247,33 +1246,23 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/2023 год'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/2024 год'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/2023 год'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск из сети(виджеты)/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/4 квартал 23 года'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Выбрать 1 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Выбрать 2 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/выбрать 3 квартал 2023'))
-
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/раскрыть 4 квартал 2023'))
-
-    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/Октябрь 2023'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/раскрыть 1 квартал'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Октябрь 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск из сети(виджеты)/раскрыть 1 квартал'))
 
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Ноябрь 2023'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/Январь'), 30)
 
-    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Декабрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/применить в фильтре Дата'))
 }

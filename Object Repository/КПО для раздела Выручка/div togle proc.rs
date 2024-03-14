@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ПАО Россети</name>
+   <name>div togle proc</name>
    <tag></tag>
-   <elementGuidId>74ec2545-1dd9-4641-ad7d-94f1c4c5eb71</elementGuidId>
+   <elementGuidId>7e9cb929-6873-4de3-8667-11a9e0e1eef1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='82b9fa4e01294e968fc7662ac3d04273']/div</value>
+         <value>//div[29]/div[2]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>705d01f2-53a4-4b76-94f2-16abdd0b89d7</webElementGuid>
+      <webElementGuid>5038ffaf-29ff-4ab7-9545-8bd506655842</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;82b9fa4e01294e968fc7662ac3d04273&quot;)/div[1]</value>
-      <webElementGuid>23c8fb8c-d1f0-4f73-80fc-8726913b3b55</webElementGuid>
+      <webElementGuid>e29d6971-d1b3-4d6a-9608-8026019f6dbb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='82b9fa4e01294e968fc7662ac3d04273']/div</value>
-      <webElementGuid>9fa506eb-a789-4224-b9d2-52c78f4f4caf</webElementGuid>
+      <webElementGuid>385cd194-682b-4f74-af9a-c041d4e3ee1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -46,22 +46,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[29]/div[2]/div/div</value>
-      <webElementGuid>d0b5b43e-354f-4061-8924-855331068345</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='5195de9ab2cf459e8c675d3617047a56']/div</value>
-      <webElementGuid>1adbe746-09a0-40bc-972c-02682ad9a4bc</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[9]/div[2]/div/div</value>
-      <webElementGuid>40025c54-b471-4ed3-aa49-cd541e6bca82</webElementGuid>
+      <webElementGuid>0bedf8f1-a278-409f-9a41-2dcb52573e8b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
