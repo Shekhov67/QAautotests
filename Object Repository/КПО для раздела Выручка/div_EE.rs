@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='3e7962f07e2646e98fe700b2b75ce631']/div/div[2]/div[4]/ul/li[2]/div/div</value>
+         <value>//div[4]/ul/li[2]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c37c6d9d-f067-4cb3-b6a4-b718bc4f6353</webElementGuid>
+      <webElementGuid>3bb73457-885d-4a4b-a00f-00f0646b9ad9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-list-item-text</value>
-      <webElementGuid>f33f9c5b-4f42-4360-ab83-6ee8383cb621</webElementGuid>
+      <webElementGuid>54701e2e-dfd9-4407-8911-d38a44769d34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Объёмы реализации передачи э/э</value>
-      <webElementGuid>a7525e75-5847-45da-b7eb-ba8b0cfdccb0</webElementGuid>
+      <webElementGuid>99e04899-a1b5-480a-9863-e4afd93b8be8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;3e7962f07e2646e98fe700b2b75ce631&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
-      <webElementGuid>ee4711dc-d2c3-4758-a399-4b875d622324</webElementGuid>
+      <webElementGuid>9f522d25-29f3-4083-a308-cc7f3625fa9f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='3e7962f07e2646e98fe700b2b75ce631']/div/div[2]/div[4]/ul/li[2]/div/div</value>
-      <webElementGuid>691ce710-e6ba-4ec8-8bc3-ba12c1db63bc</webElementGuid>
+      <webElementGuid>195b447f-d335-4e1b-a38a-8db102f40ed8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ОБЪЁМ ЭЛЕКТРОЭНЕРГИИ, внутренний оборот'])[3]/following::div[2]</value>
-      <webElementGuid>c77241d6-962e-4821-9e31-02b93d597465</webElementGuid>
+      <webElementGuid>84c39091-a583-4260-a3e7-c974898ee0a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Снять выделение'])[2]/following::div[5]</value>
-      <webElementGuid>61d37812-5388-4ef3-b5f1-4003d1cbb56a</webElementGuid>
+      <webElementGuid>f469d5ff-ec6b-4031-b31f-0333c3ac6542</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Отмена'])[2]/preceding::div[1]</value>
-      <webElementGuid>7d286544-d5bc-4092-8717-69cbe02efcdf</webElementGuid>
+      <webElementGuid>b7fb7201-54f2-49dc-b303-2bffd0aed1f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Применить'])[2]/preceding::div[2]</value>
-      <webElementGuid>8d0a5253-e9d8-4e2b-bdc8-e3a059032448</webElementGuid>
+      <webElementGuid>efed9915-0edb-4477-b1fa-23719eedf095</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Объёмы реализации передачи э/э']/parent::*</value>
-      <webElementGuid>1dc359b0-06ba-4e65-af22-2127f1aa993f</webElementGuid>
+      <webElementGuid>6c556d2b-772f-48a5-a1ef-23f51c678d4e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/ul/li[2]/div/div</value>
-      <webElementGuid>3a0568d1-9d77-47db-a5ea-17c3832d43d5</webElementGuid>
+      <webElementGuid>99eb1ddf-cf7e-4eae-9b75-b64b9dd8618d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Объёмы реализации передачи э/э' or . = 'Объёмы реализации передачи э/э')]</value>
-      <webElementGuid>27c6063a-596f-43ed-bb82-b4bcd502a9b6</webElementGuid>
+      <webElementGuid>3d80c80f-d1fe-40c2-9c0a-a79f2bebf1b7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

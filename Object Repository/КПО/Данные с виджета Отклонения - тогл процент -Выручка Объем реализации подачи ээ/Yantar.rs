@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CentIPriv</name>
+   <name>Yantar</name>
    <tag></tag>
-   <elementGuidId>605b9d4a-af79-47c6-94cc-bffca24a4e13</elementGuidId>
+   <elementGuidId>54a53bb4-d982-4233-ab62-aeb6a7d25561</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[15]/span</value>
+         <value>//div[17]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1f8a5f51-cf4f-4d06-84a0-4f670e7fe660</webElementGuid>
+      <webElementGuid>64de3fea-1989-4caf-8f4b-358791220a48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,15 +29,15 @@
       <name>data-z-index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>292c2445-3066-4eba-8980-170a04e6d767</webElementGuid>
+      <webElementGuid>ac3f4c13-984c-48a6-a2c1-a32299732144</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>743</value>
-      <webElementGuid>238733ad-ba13-4493-893a-3855b46165ba</webElementGuid>
+      <value>-2</value>
+      <webElementGuid>d3253727-61bb-49f7-90e8-c9575036f1de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,70 +45,70 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;highcharts-ly53q9p-8&quot;)/div[@class=&quot;highcharts-data-labels highcharts-series-0 highcharts-bar-series highcharts-tracker highcharts-series-hover&quot;]/div[@class=&quot;highcharts-label highcharts-data-label highcharts-data-label-color-undefined highcharts-tracker highcharts-drilldown-data-label&quot;]/span[1]</value>
-      <webElementGuid>a4d0833f-fc91-42d0-bc51-d7da21adee8d</webElementGuid>
+      <webElementGuid>97b982d9-b067-4d85-92bd-b84374c6829e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='highcharts-ly53q9p-8']/div/div[14]/span</value>
-      <webElementGuid>2caa0666-a0f8-41fa-893e-0f6632b77480</webElementGuid>
+      <value>//div[@id='highcharts-ly53q9p-8']/div/div[16]/span</value>
+      <webElementGuid>f3a86282-dfd9-4a7b-98e2-8c61134ced36</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='- 250 млн. кВтч.'])[1]/following::span[14]</value>
-      <webElementGuid>d336ac98-87a0-4c3e-a55c-0294ddf3d3f7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='- 250 млн. кВтч.'])[1]/following::span[16]</value>
+      <webElementGuid>a2840f01-a3f5-4e65-9474-cecd41df4377</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='- 500 млн. кВтч.'])[1]/following::span[14]</value>
-      <webElementGuid>87f1071e-d09c-4cb6-a0fa-b185bc5f334d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='- 500 млн. кВтч.'])[1]/following::span[16]</value>
+      <webElementGuid>4646f6df-2e21-46b3-91f1-2c60d45069af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[23]/preceding::span[3]</value>
-      <webElementGuid>7d1c7f93-a91c-4b7e-ae95-591352b4a5a7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[23]/preceding::span[1]</value>
+      <webElementGuid>90ac1384-f1c4-46d3-848c-2d0c72e99a80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Статус данных - ТАБЛИЦА'])[1]/preceding::span[3]</value>
-      <webElementGuid>42453886-9701-4af9-bc03-f2da7a2799ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Статус данных - ТАБЛИЦА'])[1]/preceding::span[1]</value>
+      <webElementGuid>3eb9f89f-05d3-4d63-8b33-80803b618c21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='743']/parent::*</value>
-      <webElementGuid>e0053d4e-600a-4963-af26-e2e6c4fca752</webElementGuid>
+      <value>//*/text()[normalize-space(.)='-2']/parent::*</value>
+      <webElementGuid>496a8fba-df5f-447f-8ccc-7953047c4953</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[45]/div[2]/div/div/div/div[14]/span</value>
-      <webElementGuid>34d910e4-e929-4341-b8db-e619bcf9ad9a</webElementGuid>
+      <value>//div[45]/div[2]/div/div/div/div[16]/span</value>
+      <webElementGuid>5a211c17-e6b7-42a2-9019-9b214290a12e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = '743' or . = '743')]</value>
-      <webElementGuid>3726276d-e676-48f9-9e90-f8091dbff962</webElementGuid>
+      <value>//span[(text() = '-2' or . = '-2')]</value>
+      <webElementGuid>4415f242-8176-4245-93d4-b0f4dce6ede9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

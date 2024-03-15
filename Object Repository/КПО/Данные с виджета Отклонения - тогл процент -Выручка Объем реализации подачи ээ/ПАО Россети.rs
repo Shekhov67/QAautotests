@@ -3,15 +3,15 @@
    <description></description>
    <name>ПАО Россети</name>
    <tag></tag>
-   <elementGuidId>74ec2545-1dd9-4641-ad7d-94f1c4c5eb71</elementGuidId>
+   <elementGuidId>63271b00-f8b4-4a96-a416-4dfe40f63425</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#82b9fa4e01294e968fc7662ac3d04273 > div</value>
+         <value>#5195de9ab2cf459e8c675d3617047a56 > div</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[25]/div[2]/div/div/div/div/span</value>
+         <value>//div[13]/div[2]/div/div/div/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,39 +22,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>6782c3cb-6c9d-4278-9666-73080f63f284</webElementGuid>
+      <webElementGuid>0a2eef55-0a9a-41d4-8833-115ef8f4a15b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;82b9fa4e01294e968fc7662ac3d04273&quot;)/div[1]</value>
-      <webElementGuid>7b328865-337a-4f8f-8037-0c5285b39141</webElementGuid>
+      <value>id(&quot;5195de9ab2cf459e8c675d3617047a56&quot;)/div[1]</value>
+      <webElementGuid>6f85a3c7-c7f1-4652-a808-55d417915d3b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='82b9fa4e01294e968fc7662ac3d04273']/div</value>
-      <webElementGuid>35714e9a-a98f-44d4-9cf3-f967e9919be2</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[29]/div[2]/div/div</value>
-      <webElementGuid>d2984dbd-a30a-4c23-9809-f506aa3a8b55</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
       <value>//div[@id='5195de9ab2cf459e8c675d3617047a56']/div</value>
-      <webElementGuid>c99c420f-6707-43ae-a4a4-44182f46a9fb</webElementGuid>
+      <webElementGuid>b5731dda-084c-474d-b7a1-bce17db1c115</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,6 +46,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[9]/div[2]/div/div</value>
-      <webElementGuid>a7fbaa56-4e45-4d37-96a0-3ee7c28083ad</webElementGuid>
+      <webElementGuid>70f5c23e-3c58-45cd-8d2d-1b8526702f7d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
