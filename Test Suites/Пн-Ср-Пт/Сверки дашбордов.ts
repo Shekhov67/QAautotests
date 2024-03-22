@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>75d901b7-a267-47df-8364-7a24a4fc1574</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/КПО сврека Дашбордов/КПО ПАО Россети сверка дашбордов</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
