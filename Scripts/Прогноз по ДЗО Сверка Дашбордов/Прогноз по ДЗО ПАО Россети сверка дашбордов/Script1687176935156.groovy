@@ -37,7 +37,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String planFact
 
-    String year = '2023 год'
+    String year = '2024 год'
 
     WebUI.openBrowser('')
 
@@ -142,7 +142,7 @@ def Test(def run, def todaysDate, def widget) {
 
     println(a)
 
-    int i = a.indexOf('2023 год')
+    int i = a.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -170,7 +170,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String a1 = WebUI.getText(findTestObject('Прогноз по ДЗО/Данные с виджета Выручка'))
 
-    i = a1.indexOf('2023 год')
+    i = a1.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -198,7 +198,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String a2 = WebUI.getText(findTestObject('Прогноз по ДЗО/Данные с виджета Отклонения'))
 
-    i = a2.indexOf('2023 год')
+    i = a2.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -226,7 +226,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String a3 = WebUI.getText(findTestObject('Прогноз по ДЗО/Данные с виджета Выручка Отклонения'))
 
-    i = a3.indexOf('2023 год')
+    i = a3.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -383,7 +383,7 @@ def Test(def run, def todaysDate, def widget) {
 
     println(b)
 
-    i = b.indexOf('2023 год')
+    i = b.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -413,7 +413,7 @@ def Test(def run, def todaysDate, def widget) {
 
     println(b1)
 
-    i = b1.indexOf('2023 год')
+    i = b1.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -443,7 +443,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String b2 = WebUI.getText(findTestObject('Прогноз по ДЗО стресс сценарий/Данные с виджета Отклонения'))
 
-    i = b2.indexOf('2023 год')
+    i = b2.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -471,7 +471,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String b3 = WebUI.getText(findTestObject('Прогноз по ДЗО стресс сценарий/Данные с виджета Выручка Отклонения'))
 
-    i = b3.indexOf('2023 год')
+    i = b3.indexOf('2024 год')
 
     if (i > -1) {
         i = (i + 9)
