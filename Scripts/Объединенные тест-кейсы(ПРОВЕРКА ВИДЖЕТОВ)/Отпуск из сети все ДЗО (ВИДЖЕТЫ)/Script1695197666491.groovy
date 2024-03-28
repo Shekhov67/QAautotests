@@ -35,6 +35,7 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 WebUI.click(findTestObject('Общие/button_'))
 
 def date = SelectDate()
+
 def dzo = SelectDzo()
 
 def test1 = Testing1()
@@ -1263,6 +1264,8 @@ static def SelectDate() {
     WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/применить в фильтре Дата'))
 }

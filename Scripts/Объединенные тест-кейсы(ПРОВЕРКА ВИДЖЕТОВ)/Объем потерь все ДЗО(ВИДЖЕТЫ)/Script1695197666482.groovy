@@ -35,6 +35,7 @@ WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test D
 WebUI.click(findTestObject('Общие/button_'))
 
 def selectDate = SelectDate()
+
 //def actualDate = ActualDate()
 def testing1 = Testing1()
 
@@ -1409,6 +1410,8 @@ static def SelectDate() {
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
     WebUI.click(findTestObject('Объем потерь сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Объем потерь сверка/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
