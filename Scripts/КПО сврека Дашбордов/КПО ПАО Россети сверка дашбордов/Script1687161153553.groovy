@@ -76,6 +76,8 @@ static def VyruchkaVseToggleMln1() {
 
     WebUI.click(findTestObject('КПО/Январь 2024'))
 
+    WebUI.click(findTestObject('КПО/Февраль 2024'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -365,6 +367,8 @@ static def VyruchkaOneToggleMln2() {
 
     WebUI.click(findTestObject('КПО/Январь 2024'))
 
+    WebUI.click(findTestObject('КПО/Февраль 2024'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -527,6 +531,8 @@ static def VyruchkaTwoToggleMln3() {
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('КПО/Январь 2024'))
+
+    WebUI.click(findTestObject('КПО/Февраль 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -824,6 +830,8 @@ static def VyruchkaVseToggleProc4() {
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('КПО/Январь 2024'))
+
+    WebUI.click(findTestObject('КПО/Февраль 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -1129,6 +1137,8 @@ static def VyruchkaOneToggleProc5() {
 
     WebUI.click(findTestObject('КПО/Январь 2024'))
 
+    WebUI.click(findTestObject('КПО/Февраль 2024'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -1261,8 +1271,8 @@ static def VyruchkaTwoToggleProc6() {
     WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
 
     WebUI.click(findTestObject('Object Repository/КПО/button_'))
-	
-	WebUI.click(findTestObject('КПО/тогл ПРОЦЕНТ'))
+
+    WebUI.click(findTestObject('КПО/тогл ПРОЦЕНТ'))
 
     WebUI.click(findTestObject('КПО/фильтр Выручка'))
 
@@ -1297,6 +1307,8 @@ static def VyruchkaTwoToggleProc6() {
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('КПО/Январь 2024'))
+
+    WebUI.click(findTestObject('КПО/Февраль 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
