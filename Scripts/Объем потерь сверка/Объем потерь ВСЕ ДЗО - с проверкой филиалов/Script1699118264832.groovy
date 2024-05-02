@@ -121,6 +121,8 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.click(findTestObject('Объем потерь сверка/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
@@ -344,43 +346,41 @@ static def Test0() {
 
     println(pageDataString)
 
-    if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-			println(fileDataString)
-		
-			def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-			path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-			pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-				0, percentPoter.length())
-		
-			fileDataString = percentPoter
-		
-			def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-		
-			def scanErr = ScannErrors(path)
-		
-			WebUI.deleteAllCookies()
-		
-			WebUI.closeBrowser()
-	}
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
+    
     WebUI.closeBrowser()
 }
 
-static def Test1() { 
-	 '1'
+static def Test1() {
+    '1'
     def start = OpenBrowser()
 
     def obemPoter = findTestData('Test Data').getValue(2, 76)
@@ -404,45 +404,42 @@ static def Test1() {
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
     def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-			println(fileDataString)
-		
-			def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-			path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-			pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-				0, percentPoter.length())
-		
-			fileDataString = percentPoter
-		
-			def checkPercents = CheckPercents( pageString = pageDataString,  fileString = fileDataString, path)
-		
-			def scanErr = ScannErrors(path)
-		
-			WebUI.deleteAllCookies()
-		
-			WebUI.closeBrowser()
-	}
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 static def Test2() {
-	   '2'
+    '2'
     def start = OpenBrowser()
 
     def obemPoter = findTestData('Test Data').getValue(2, 81)
@@ -464,48 +461,44 @@ static def Test2() {
     def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-			println(fileDataString)
-		
-			def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-			path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-			pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-				0, percentPoter.length())
-		
-			fileDataString = percentPoter
-		
-			def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-		
-			def scanErr = ScannErrors(path)
-		
-			WebUI.deleteAllCookies()
-		
-			WebUI.closeBrowser()
-		
-	}
+    def pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
-static def Test3() { 
-	   '3'
+static def Test3() {
+    '3'
     def start = OpenBrowser()
 
     def obemPoter = findTestData('Test Data').getValue(2, 73)
@@ -529,62 +522,58 @@ static def Test3() {
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
     def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-			
-		pageDataString = WebUI.getText(findTestObject(path))
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-        0, percentPoter.length())
+    println(pageDataString)
 
-		fileDataString = percentPoter
-
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-    if (check == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), [:], 
-            FailureHandling.CONTINUE_ON_FAILURE)
-    } else if (checkPercents == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), [:], 
-            FailureHandling.CONTINUE_ON_FAILURE)
-    } else {
-        println('End case DZO')
-
-        def scanErr = ScannErrors(path)
-
-        WebUI.deleteAllCookies()
-
+    if (pageDataString == null) {
         WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path))
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
     }
-		
-	}
 }
-    
+
 static def Test4() {
-'4'
+    '4'
     def start = OpenBrowser()
 
     def obemPoter = findTestData('Test Data').getValue(2, 82)
@@ -610,50 +599,46 @@ static def Test4() {
     def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0, 
-        obemPoter.length())
+    def pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
-    def fileDataString = obemPoter
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-    println(fileDataString)
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
 
-    def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        println(pageDataString)
 
-    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+        def fileDataString = obemPoter
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-        0, percentPoter.length())
+        println(fileDataString)
 
-    fileDataString = percentPoter
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
 
-    def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    def scanErr = ScannErrors(path)
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
 
-    WebUI.deleteAllCookies()
+        fileDataString = percentPoter
 
-    WebUI.closeBrowser()
-		
-	}
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
-static def Test5() { 
-	'5'
+static def Test5() {
+    '5'
     def start = OpenBrowser()
 
     def obemPoter = findTestData('Test Data').getValue(2, 84)
@@ -680,45 +665,41 @@ static def Test5() {
 
     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0, 
-        obemPoter.length())
+    def pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
-    def fileDataString = obemPoter
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-    println(fileDataString)
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
 
-    def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        println(pageDataString)
 
-    path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+        def fileDataString = obemPoter
 
-    pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-        0, percentPoter.length())
+        println(fileDataString)
 
-    fileDataString = percentPoter
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
 
-    def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-    def scanErr = ScannErrors(path)
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
 
-    WebUI.deleteAllCookies()
+        fileDataString = percentPoter
 
-    WebUI.closeBrowser()
-		
-	}
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 static def Test6() {
@@ -751,70 +732,66 @@ static def Test6() {
 
     def pageDataString = WebUI.getText(findTestObject(path))
 
-    println( pageDataString)
+    println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-			0, percentPoter.length())
-	
-		fileDataString = percentPoter
-	
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-		
-
-    if (check == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
-            [:], FailureHandling.CONTINUE_ON_FAILURE)
-    } else if (checkPercents == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
-            [:], FailureHandling.CONTINUE_ON_FAILURE)
-    } else {
-        println('End case DZO')
-
-        def scanErr = ScannErrors(path)
-
-        WebUI.deleteAllCookies()
-
+    if (pageDataString == null) {
         WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
     }
-}
 }
 
 static def Test7() {
     '7'
     def start = OpenBrowser()
 
-     def obemPoter = findTestData('Test Data').getValue(2, 80)
+    def obemPoter = findTestData('Test Data').getValue(2, 80)
 
     println(obemPoter)
 
-     def percentPoter = findTestData('Test Data').getValue(3, 80)
+    def percentPoter = findTestData('Test Data').getValue(3, 80)
 
     println(percentPoter)
 
-     def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
     WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/выбрать Россети Северный Кавказ(ГК)'), 30)
 
@@ -824,71 +801,67 @@ static def Test7() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-     def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-     def write2 = WriteToExcel2( def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-     def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-     def pageDataString = WebUI.getText(findTestObject(path))
-	 
-	 println(pageDataString)
+    def pageDataString = WebUI.getText(findTestObject(path))
 
+    println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		return 
-		
-		WebUI.closeBrowser()
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		 def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		 def check = Check( def pageString = pageDataString,  def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-			
-		pageDataString = WebUI.getText(findTestObject(path))
-			
-		println(pageDataString)
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-        0, percentPoter.length())
-
-    fileDataString = percentPoter
-
-     def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-    if (check == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
-            [:], FailureHandling.CONTINUE_ON_FAILURE)
-    } else if (checkPercents == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
-            [:], FailureHandling.CONTINUE_ON_FAILURE)
-    } else {
-        println('End case DZO')
-
-         def scanErr = ScannErrors(path)
-
-        WebUI.deleteAllCookies()
-
+    if (pageDataString == null) {
+        return 
+        
         WebUI.closeBrowser()
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path))
+
+        println(pageDataString)
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
     }
-}
 }
 
 static def Test8() {
-   '8'
+    '8'
     def start = OpenBrowser()
 
     def obemPoter = findTestData('Test Data').getValue(2, 74)
@@ -919,48 +892,186 @@ static def Test8() {
 
     println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-			
-		pageDataString = WebUI.getText(findTestObject(path))
-			
-		println(pageDataString)
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-        0, percentPoter.length())
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-    fileDataString = percentPoter
-
-    def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-    if (check == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
-            [:], FailureHandling.CONTINUE_ON_FAILURE)
-    } else if (checkPercents == false) {
-        println('Start filial')
-
-        WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
-            [:], FailureHandling.CONTINUE_ON_FAILURE)
+        return 
     } else {
-        println('End case DZO')
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path))
+
+        println(pageDataString)
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
+    }
+}
+
+static def Test9() {
+    '9'
+    def start = OpenBrowser()
+
+    def obemPoter = findTestData('Test Data').getValue(2, 75)
+
+    println(obemPoter)
+
+    def percentPoter = findTestData('Test Data').getValue(3, 75)
+
+    println(percentPoter)
+
+    def filterDzo = SelectDzo()
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Сибирь (ГК)'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Сибирь(ГК)'))
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+
+    def selectDate = SelectDate()
+
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    def pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
+    }
+}
+
+static def Test10() {
+    '10'
+    def start = OpenBrowser()
+
+    def obemPoter = findTestData('Test Data').getValue(2, 77)
+
+    println(obemPoter)
+
+    def percentPoter = findTestData('Test Data').getValue(3, 77)
+
+    println(percentPoter)
+
+    def filterDzo = SelectDzo()
+
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Центр'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Томск'))
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+
+    def selectDate = SelectDate()
+
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+
+    def pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
         def scanErr = ScannErrors(path)
 
@@ -970,696 +1081,519 @@ static def Test8() {
     }
 }
 
-}
-
-static def Test9() {
-	'9'
-	def start = OpenBrowser()
-
-	def obemPoter = findTestData('Test Data').getValue(2, 75)
-
-	println(obemPoter)
-
-	def percentPoter = findTestData('Test Data').getValue(3, 75)
-
-	println(percentPoter)
-
-	def filterDzo = SelectDzo()
-
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Россети Сибирь (ГК)'), 30)
-
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Сибирь(ГК)'))
-
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
-
-	def selectDate = SelectDate()
-
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
-
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-
-	def pageDataString = WebUI.getText(findTestObject(path))
-
-	println(pageDataString)
-
-	if(pageDataString == null) {
-		
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
-			0, obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-			0, percentPoter.length())
-
-		fileDataString = percentPoter
-
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-		if (check == false) {
-			println('Start filial')
-
-			WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'),
-				[:], FailureHandling.CONTINUE_ON_FAILURE)
-		} else if (checkPercents == false) {
-			println('Start filial')
-
-			WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'),
-				[:], FailureHandling.CONTINUE_ON_FAILURE)
-		} else {
-			println('End case DZO')
-
-			def scanErr = ScannErrors(path)
-
-			WebUI.deleteAllCookies()
-
-			WebUI.closeBrowser()
-		}
-	}	
-}
-	
-static def Test10() { 
-	'10'
-	def start = OpenBrowser()
-
-	def obemPoter = findTestData('Test Data').getValue(2, 77)
-
-	println(obemPoter)
-
-	def percentPoter = findTestData('Test Data').getValue(3, 77)
-
-	println(percentPoter)
-
-	def filterDzo = SelectDzo()
-
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Центр'), 30)
-
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
-
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Томск'))
-
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
-
-	def selectDate = SelectDate()
-
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
-
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-			0, percentPoter.length())
-		
-		fileDataString = percentPoter
-		
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-		
-		def scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
-		
-	}	
-}		
-
 static def Test11() {
-	'11'
-	def start = OpenBrowser()
+    '11'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 85)
+    def obemPoter = findTestData('Test Data').getValue(2, 85)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 85)
+    def percentPoter = findTestData('Test Data').getValue(3, 85)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Центр'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Центр'), 30)
 
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Тюмень'))
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Тюмень'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
+    def pageDataString = WebUI.getText(findTestObject(path))
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-		
-		def fileDataString = obemPoter
-		
-		println(fileDataString)
-		
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-		
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-			0, percentPoter.length())
-		
-		fileDataString = percentPoter
-		
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-		
-		def scanErr = ScannErrors(path)
-		
-		WebUI.deleteAllCookies()
-		
-		WebUI.closeBrowser()
-		
-	}
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 static def Test12() {
-	'12'
-	def start = OpenBrowser()
+    '12'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 78)
+    def obemPoter = findTestData('Test Data').getValue(2, 78)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 78)
+    def percentPoter = findTestData('Test Data').getValue(3, 78)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Центр'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Центр'), 30)
 
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Урал(ГК)'))
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Урал(ГК)'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	def pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-		obemPoter.length())
+    def pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+        0, obemPoter.length())
 
-	println(pageDataString)
+    println(pageDataString)
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-	
-		println(pageDataString)
-	
-		def fileDataString = obemPoter
-	
-		println(fileDataString)
-	
-		def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
-	
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-		
-		pageDataString = WebUI.getText(findTestObject(path))
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-		0, percentPoter.length())
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-	fileDataString = percentPoter
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
 
-	def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        println(pageDataString)
 
-	if (check == false) {
-		println('Start filial')
+        def fileDataString = obemPoter
 
-		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'),
-			[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else if (checkPercents == false) {
-		println('Start filial')
+        println(fileDataString)
 
-		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'),
-			[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-		println('End case DZO')
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
 
-		def scanErr = ScannErrors(path)
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-		WebUI.deleteAllCookies()
+        pageDataString = WebUI.getText(findTestObject(path))
 
-		WebUI.closeBrowser()
-	}
-		
-	}
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
+    }
 }
 
 static def Test13() {
-	'13'
-	def start = OpenBrowser()
+    '13'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 88)
+    def obemPoter = findTestData('Test Data').getValue(2, 88)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 88)
+    def percentPoter = findTestData('Test Data').getValue(3, 88)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
-	WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
+    WebUI.click(findTestObject('Объем потерь сверка/ПАО Росссети'))
 
-	WebUI.click(findTestObject('Объем потерь сверка/Магистральные сети'))
+    WebUI.click(findTestObject('Объем потерь сверка/Магистральные сети'))
 
-	WebUI.click(findTestObject('Объем потерь сверка/Россети ФСК ЕЭС'))
+    WebUI.click(findTestObject('Объем потерь сверка/Россети ФСК ЕЭС'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
+    def pageDataString = WebUI.getText(findTestObject(path))
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-		obemPoter.length())
+    println(pageDataString)
 
-	println(pageDataString)
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-	def fileDataString = obemPoter
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
 
-	println(fileDataString)
+        println(pageDataString)
 
-	def check = Check( def pageString = pageDataString,  def fileString = fileDataString, path)
+        def fileDataString = obemPoter
 
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+        println(fileDataString)
 
-	pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-		0, percentPoter.length())
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
 
-	fileDataString = percentPoter
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-	def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
 
-	def scanErr = ScannErrors(path)
+        fileDataString = percentPoter
 
-	WebUI.deleteAllCookies()
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.closeBrowser()
-		
-	}
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
-	
+
 static def Test14() {
-	'14'
-	def start = OpenBrowser()
+    '14'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 71)
+    def obemPoter = findTestData('Test Data').getValue(2, 71)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 71)
+    def percentPoter = findTestData('Test Data').getValue(3, 71)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр'))
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-	
-		println(pageDataString)
-	
-		def fileDataString = obemPoter
-	
-		println(fileDataString)
-	
-		def check = Check( def pageString = pageDataString,  def fileString = fileDataString, path)
-	
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-	
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-			0, percentPoter.length())
-	
-		fileDataString = percentPoter
-	
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-	
-		if (check == false) {
-			println('Start filial')
-	
-			WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), [:],
-				FailureHandling.CONTINUE_ON_FAILURE)
-		} else if (checkPercents == false) {
-			println('Start filial')
-	
-			WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), [:],
-				FailureHandling.CONTINUE_ON_FAILURE)
-		} else {
-			println('End case DZO')
-	
-			def scanErr = ScannErrors(path)
-	
-			WebUI.deleteAllCookies()
-	
-			WebUI.closeBrowser()
-		}
-		
-	}
-}	
+    def pageDataString = WebUI.getText(findTestObject(path))
+
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        println(pageDataString)
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        if (check == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
+
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
+    }
+}
 
 static def Test15() {
-	'15'
-	def start = OpenBrowser()
+    '15'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 72)
+    def obemPoter = findTestData('Test Data').getValue(2, 72)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 72)
+    def percentPoter = findTestData('Test Data').getValue(3, 72)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр и Приволжье(ГК)'))
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Центр и Приволжье(ГК)'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-		obemPoter.length())
+    def pageDataString = WebUI.getText(findTestObject(path))
 
-	println(pageDataString)
+    println(pageDataString)
 
-	def fileDataString = obemPoter
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-	println(fileDataString)
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
 
-	def check = Check( def pageString = pageDataString,  def fileString = fileDataString, path)
+        println(pageDataString)
 
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+        def fileDataString = obemPoter
 
-	pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-		0, percentPoter.length())
+        println(fileDataString)
 
-	fileDataString = percentPoter
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
 
-	def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-	if (check == false) {
-		println('Start filial')
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
 
-		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'),
-			[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else if (checkPercents == false) {
-		println('Start filial')
+        fileDataString = percentPoter
 
-		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'),
-			[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-		println('End case DZO')
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
-		def scanErr = ScannErrors(path)
+        if (check == false) {
+            println('Start filial')
 
-		WebUI.deleteAllCookies()
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
 
-		WebUI.closeBrowser()
-	}
-		
-	}
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
+    }
 }
 
 static def Test16() {
-		'16'
-	def start = OpenBrowser()
+    '16'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 79)
+    def obemPoter = findTestData('Test Data').getValue(2, 79)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 79)
+    def percentPoter = findTestData('Test Data').getValue(3, 79)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Юг(ГК)'))
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Юг(ГК)'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
-	
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-		obemPoter.length())
+    def pageDataString = WebUI.getText(findTestObject(path))
 
-	println(pageDataString)
+    println(pageDataString)
 
-	def fileDataString = obemPoter
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
 
-	println(fileDataString)
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
 
-	def check = Check(def pageString = pageDataString,  def fileString = fileDataString, path)
+        println(pageDataString)
 
-	path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+        def fileDataString = obemPoter
 
-	pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-		0, percentPoter.length())
+        println(fileDataString)
 
-	fileDataString = percentPoter
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
 
-	def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-	if (check == false) {
-		println('Start filial')
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
 
-		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), [:],
-			FailureHandling.CONTINUE_ON_FAILURE)
-	} else if (checkPercents == false) {
-		println('Start filial')
+        fileDataString = percentPoter
 
-		WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), [:],
-			FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-		println('End case DZO')
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
 
-		def scanErr = ScannErrors(path)
+        if (check == false) {
+            println('Start filial')
 
-		WebUI.deleteAllCookies()
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else if (checkPercents == false) {
+            println('Start filial')
 
-		WebUI.closeBrowser()
-	}
-		
+            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), 
+                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        } else {
+            println('End case DZO')
+
+            def scanErr = ScannErrors(path)
+
+            WebUI.deleteAllCookies()
+
+            WebUI.closeBrowser()
+        }
+    }
 }
-}
-	
+
 static def Test17() {
-'17'
-	def start = OpenBrowser()
+    '17'
+    def start = OpenBrowser()
 
-	def obemPoter = findTestData('Test Data').getValue(2, 86)
+    def obemPoter = findTestData('Test Data').getValue(2, 86)
 
-	println(obemPoter)
+    println(obemPoter)
 
-	def percentPoter = findTestData('Test Data').getValue(3, 86)
+    def percentPoter = findTestData('Test Data').getValue(3, 86)
 
-	println(percentPoter)
+    println(percentPoter)
 
-	def filterDzo = SelectDzo()
+    def filterDzo = SelectDzo()
 
-	WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/Россети Янтарь'), 30)
 
-	WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
 
-	WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Янтарь'))
+    WebUI.click(findTestObject('Объем потерь сверка/выбрать Россети Янтарь'))
 
-	WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 
-	def selectDate = SelectDate()
+    def selectDate = SelectDate()
 
-	def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
 
-	def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-	def pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
+    def pageDataString = WebUI.getText(findTestObject(path))
 
-	if(pageDataString == null) {
-		
-		WebUI.closeBrowser()
-		
-		return
-		
-	}else {
-		
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(0,
-			obemPoter.length())
-			
-		def fileDataString = obemPoter
-			
-		println(fileDataString)
-			
-		def check = Check( def pageString = pageDataString,  def fileString = fileDataString, path)
-			
-		path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
-			
-		pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-				0, percentPoter.length())
-			
-		fileDataString = percentPoter
-			
-		def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-			
-		def scanErr = ScannErrors(path)
-			
-		WebUI.deleteAllCookies()
-			
-		WebUI.closeBrowser()
-		
-	}
-	
-	}
+    println(pageDataString)
+
+    if (pageDataString == null) {
+        WebUI.closeBrowser()
+
+        return 
+    } else {
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+            0, obemPoter.length())
+
+        def fileDataString = obemPoter
+
+        println(fileDataString)
+
+        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+
+        path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
+
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
+
+        fileDataString = percentPoter
+
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+
+        def scanErr = ScannErrors(path)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
+}
+

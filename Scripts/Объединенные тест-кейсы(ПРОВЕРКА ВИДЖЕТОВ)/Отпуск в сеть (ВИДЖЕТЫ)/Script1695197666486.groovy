@@ -1271,6 +1271,8 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Март'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
 
@@ -1343,104 +1345,19 @@ static def WriteToExcel(def page) {
 
     def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-    if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, planFact)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, itogBalanc)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, date)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
+    n = (n + 1)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
-
-        n = (n + 1)
-
-        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-    } else {
-        if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, planFact)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, itogBalanc)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
-
-            n = (n + 1)
-
-            ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-        } else {
-            if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, planFact)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, itogBalanc)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
-
-                n = (n + 1)
-
-                ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-            } else {
-                if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, planFact)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, itogBalanc)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
-
-                    n = (n + 1)
-
-                    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                } else {
-                    if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, planFact)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, itogBalanc)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, date)
-
-                        n = (n + 1)
-
-                        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                    }
-                }
-            }
-        }
-    }
+    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
+    
 }
 

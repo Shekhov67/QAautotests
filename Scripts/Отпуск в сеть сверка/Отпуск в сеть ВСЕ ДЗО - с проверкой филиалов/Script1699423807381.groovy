@@ -103,22 +103,18 @@ pageDataString = WebUI.getText(findTestObject(path))
 
 println(pageDataString)
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	WebUI.closeBrowser()
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    WebUI.closeBrowser()
 }
 
 '3'
@@ -140,37 +136,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-		println('Start filial')
-	
-		WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Волга'), [:],
-			FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-		println('End case DZO')
-	
-		scanErr = ScanErrors(page)
-	
-		WebUI.deleteAllCookies()
-	
-		WebUI.closeBrowser()
-	}
-	
-	
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Волга'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 WebUI.closeBrowser()
@@ -198,22 +188,17 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
 }
-	
 
 '5'
 openBrwsr = OpenBrowser()
@@ -238,25 +223,19 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	WebUI.closeBrowser()
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    WebUI.closeBrowser()
 }
-
-
 
 '6'
 openBrwsr = OpenBrowser()
@@ -281,37 +260,32 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-    println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-    WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Москвоский регион'), 
-        [:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-    println('End case DZO')
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
     scanErr = ScanErrors(page)
 
-    WebUI.deleteAllCookies()
+    if (check == false) {
+        println('Start filial')
 
-    WebUI.closeBrowser()
-	}
-	
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Москвоский регион'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
-
 
 '7'
 openBrwsr = OpenBrowser()
@@ -336,35 +310,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Северный Кавказ(ГК)'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Северный Кавказ(ГК)'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 WebUI.closeBrowser()
@@ -392,35 +362,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Северо-Запад'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Северо-Запад'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 '9'
@@ -446,35 +412,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Сибирь(ГК)'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Сибирь(ГК)'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 '10'
@@ -500,22 +462,18 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	WebUI.closeBrowser()
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    WebUI.closeBrowser()
 }
 
 '11'
@@ -541,22 +499,18 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	WebUI.closeBrowser()
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    WebUI.closeBrowser()
 }
 
 '12'
@@ -582,37 +536,32 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Урал(ГК)'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Урал(ГК)'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
-
 
 '13'
 openBrwsr = OpenBrowser()
@@ -643,22 +592,18 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	WebUI.closeBrowser()
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    WebUI.closeBrowser()
 }
 
 '14'
@@ -684,35 +629,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Центр'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Центр'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 '15'
@@ -738,35 +679,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Центр и Приволжье(ГК)'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Центр и Приволжье(ГК)'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 '16'
@@ -792,35 +729,31 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	if (check == false) {
-	println('Start filial')
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
 
-	WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Юг(ГК)'),
-		[:], FailureHandling.CONTINUE_ON_FAILURE)
-	} else {
-	println('End case DZO')
+    println(fileDataString)
 
-	scanErr = ScanErrors(page)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.deleteAllCookies()
+    scanErr = ScanErrors(page)
 
-	WebUI.closeBrowser()
-	}
-	
+    if (check == false) {
+        println('Start filial')
+
+        WebUI.callTestCase(findTestCase('Отпуск в сеть сверка/Сверка по филиалам/Отпуск в сеть Филиалы Россети Юг(ГК)'), 
+            [:], FailureHandling.CONTINUE_ON_FAILURE)
+    } else {
+        println('End case DZO')
+
+        scanErr = ScanErrors(page)
+
+        WebUI.deleteAllCookies()
+
+        WebUI.closeBrowser()
+    }
 }
 
 '17'
@@ -846,22 +779,18 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 pageDataString = WebUI.getText(findTestObject(path))
 
-if(pageDataString == null) {
-	
-	WebUI.closeBrowser()
-	
-	
-}else {
-	
-	fileDataString = otpuskVSeti
-	
-	println(fileDataString)
-	
-	check = Check(pageString = pageDataString, fileString = fileDataString, path)
-	
-	scanErr = ScanErrors(page)
-	
-	WebUI.closeBrowser()
+if (pageDataString == null) {
+    WebUI.closeBrowser()
+} else {
+    fileDataString = otpuskVSeti
+
+    println(fileDataString)
+
+    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(page)
+
+    WebUI.closeBrowser()
 }
 
 static def OpenBrowser() {
@@ -932,6 +861,8 @@ static def SelectDate() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
@@ -1028,8 +959,6 @@ static def WriteToExcel(def file, def page, def typeData = 'Отпуск в се
     n = (n + 1)
 
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-	
-	
 }
 
 static def WriteToExcel2(def err) {

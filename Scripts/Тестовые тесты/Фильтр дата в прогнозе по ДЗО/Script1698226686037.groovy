@@ -26,9 +26,9 @@ WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц')
 
 WebUI.click(findTestObject('Прогноз по ДЗО/Январь'))
 
-def variant = varianttFilter()
+WebUI.click(findTestObject('Прогноз по ДЗО/Февраль'))
 
-/*WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
+def variant = varianttFilter() /*WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/Февраль'))
 
