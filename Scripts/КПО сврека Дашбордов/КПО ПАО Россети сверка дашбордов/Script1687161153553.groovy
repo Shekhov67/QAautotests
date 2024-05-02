@@ -78,6 +78,8 @@ static def VyruchkaVseToggleMln1() {
 
     WebUI.click(findTestObject('КПО/Февраль 2024'))
 
+    WebUI.click(findTestObject('КПО/Март 2024'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -368,6 +370,8 @@ static def VyruchkaOneToggleMln2() {
     WebUI.click(findTestObject('КПО/Январь 2024'))
 
     WebUI.click(findTestObject('КПО/Февраль 2024'))
+
+    WebUI.click(findTestObject('КПО/Март 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -832,6 +836,8 @@ static def VyruchkaVseToggleProc4() {
     WebUI.click(findTestObject('КПО/Январь 2024'))
 
     WebUI.click(findTestObject('КПО/Февраль 2024'))
+
+    WebUI.click(findTestObject('КПО/Март 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
@@ -1309,6 +1315,8 @@ static def VyruchkaTwoToggleProc6() {
     WebUI.click(findTestObject('КПО/Январь 2024'))
 
     WebUI.click(findTestObject('КПО/Февраль 2024'))
+
+    WebUI.click(findTestObject('КПО/Март 2024'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 

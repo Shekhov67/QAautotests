@@ -184,77 +184,56 @@ static def WriteToExcel2(def page) {
 
     def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-    if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
 
-        n = (n + 1)
+    n = (n + 1)
 
-        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
+    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 
-        WebUI.closeBrowser()
-    } else {
-        if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+    WebUI.closeBrowser()
+    
+}
 
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-            ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-            n = (n + 1)
-
-            ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-        } else {
-            if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-                n = (n + 1)
-
-                ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-            } else {
-                if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-                    n = (n + 1)
-
-                    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                } else {
-                    if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
-
-                        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
-
-                        n = (n + 1)
-
-                        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-                    }
-                }
-            }
-        }
-    }
+static def WriteToExcelIsNull(def page) {
+	
+	String sheetName = 'List1'
+	
+		def data = findTestData('Test Data')
+	
+		int n = data.getRowNumbers() + 1
+	
+		String dZO = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
+	
+		String year = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
+	
+		println(year)
+	
+		String dashboardName = 'Отпуск в сеть'
+	
+		def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
+	
+		def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
+	
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+	
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+	
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+	
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
+	
+		n = (n + 1)
+	
+		ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
+	
+		WebUI.closeBrowser()
+	
 }
 
 static def Test1() {
@@ -263,7 +242,7 @@ static def Test1() {
     WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
-        WebUI.openBrowser('')
+    WebUI.openBrowser('')
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
@@ -288,7 +267,7 @@ static def Test1() {
 
         WebUI.click(findTestObject('Общие в сеть/button_'))
     }
-
+    
     def scan = ScanErrors()
 
     String a = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a1'))
@@ -302,8 +281,8 @@ static def Test1() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -323,28 +302,42 @@ static def Test1() {
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
 
-    println(a03)
+    	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
+		
+	println(a03)
+		
+	String a3 = a03.replaceAll('\\s+', '')
+		
+	println(a3)
+		
+	println(a3.length())
+		
+	int numA3 = a3.length()
+		
+	int numA03 = (a3.length() + numA02) + numA0
 
-    String a3 = a03.replaceAll('\\s+', '')
+	
+	println(numA03)
+	
+	println(a0)
+	
+	println(a2)
+	
+	println(a3)
+		
 
-    println(a3)
-
-    println(a3.length())
-
-    int numA3 = a3.length()
-
-    int numA03 = a3.length()  + numA02 + numA0
-
-    println(numA03)
-
-    println(a0)
-
-    println(a2)
-
-    println(a3)
+    
 
     'БАЛАНСЫ'
-        WebUI.openBrowser('')
+    WebUI.openBrowser('')
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
@@ -369,7 +362,7 @@ static def Test1() {
 
         WebUI.click(findTestObject('Общие в сеть/button_'))
     }
-
+    
     WebUI.delay(10)
 
     String b = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
@@ -480,8 +473,8 @@ static def Test2() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -501,25 +494,36 @@ static def Test2() {
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
 
-    println(a03)
+    	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
+		
+	println(a03)
+		
+	String a3 = a03.replaceAll('\\s+', '')
+		
+	println(a3)
+		
+	println(a3.length())
+		
+	int numA3 = a3.length()
+		
+	int numA03 = (a3.length() + numA02) + numA0
 
-    String a3 = a03.replaceAll('\\s+', '')
-
-    println(a3)
-
-    println(a3.length())
-
-    int numA3 = a3.length()
-
-    int numA03 = a3.length()  + numA02 + numA0
-
-    println(numA03)
-
-    println(a0)
-
-    println(a2)
-
-    println(a3)
+	
+	println(numA03)
+	
+	println(a0)
+	
+	println(a2)
+	
+	println(a3)
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
@@ -532,7 +536,7 @@ static def Test2() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/tuv'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -644,8 +648,8 @@ static def Test3() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -665,25 +669,36 @@ static def Test3() {
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
 
-    println(a03)
+    	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
+		
+	println(a03)
+		
+	String a3 = a03.replaceAll('\\s+', '')
+		
+	println(a3)
+		
+	println(a3.length())
+		
+	int numA3 = a3.length()
+		
+	int numA03 = (a3.length() + numA02) + numA0
 
-    String a3 = a03.replaceAll('\\s+', '')
-
-    println(a3)
-
-    println(a3.length())
-
-    int numA3 = a3.length()
-
-    int numA03 = a3.length()  + numA02 + numA0
-
-    println(numA03)
-
-    println(a0)
-
-    println(a2)
-
-    println(a3)
+	
+	println(numA03)
+	
+	println(a0)
+	
+	println(a2)
+	
+	println(a3)
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
@@ -696,7 +711,7 @@ static def Test3() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/chech'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -812,8 +827,8 @@ static def Test4() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -833,25 +848,36 @@ static def Test4() {
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
 
-    println(a03)
+    	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
+		
+	println(a03)
+		
+	String a3 = a03.replaceAll('\\s+', '')
+		
+	println(a3)
+		
+	println(a3.length())
+		
+	int numA3 = a3.length()
+		
+	int numA03 = (a3.length() + numA02) + numA0
 
-    String a3 = a03.replaceAll('\\s+', '')
-
-    println(a3)
-
-    println(a3.length())
-
-    int numA3 = a3.length()
-
-    int numA03 = a3.length()  + numA02 + numA0
-
-    println(numA03)
-
-    println(a0)
-
-    println(a2)
-
-    println(a3)
+	
+	println(numA03)
+	
+	println(a0)
+	
+	println(a2)
+	
+	println(a3)
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
@@ -868,7 +894,7 @@ static def Test4() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/volga'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -984,8 +1010,8 @@ static def Test5() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1004,6 +1030,16 @@ static def Test5() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -1015,7 +1051,7 @@ static def Test5() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1040,7 +1076,7 @@ static def Test5() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/kub'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -1156,8 +1192,8 @@ static def Test6() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1176,6 +1212,16 @@ static def Test6() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -1187,7 +1233,7 @@ static def Test6() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1212,7 +1258,7 @@ static def Test6() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/len'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -1328,8 +1374,8 @@ static def Test7() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1348,6 +1394,16 @@ static def Test7() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -1359,7 +1415,7 @@ static def Test7() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1384,7 +1440,7 @@ static def Test7() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/MR'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -1500,8 +1556,8 @@ static def Test8() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1520,6 +1576,16 @@ static def Test8() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -1531,7 +1597,7 @@ static def Test8() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1556,7 +1622,7 @@ static def Test8() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/sevkav'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -1672,8 +1738,8 @@ static def Test9() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1692,6 +1758,16 @@ static def Test9() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -1703,7 +1779,7 @@ static def Test9() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1728,7 +1804,7 @@ static def Test9() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/seveeroZapad'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -1844,8 +1920,8 @@ static def Test10() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -1864,6 +1940,16 @@ static def Test10() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -1875,7 +1961,7 @@ static def Test10() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1900,7 +1986,7 @@ static def Test10() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/sibir'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -2016,8 +2102,8 @@ static def Test11() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2036,6 +2122,16 @@ static def Test11() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -2047,7 +2143,7 @@ static def Test11() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2072,7 +2168,7 @@ static def Test11() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/tomsk'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -2188,8 +2284,8 @@ static def Test12() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2208,6 +2304,16 @@ static def Test12() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -2219,7 +2325,7 @@ static def Test12() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2244,7 +2350,7 @@ static def Test12() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/tumen'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -2360,8 +2466,8 @@ static def Test13() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2380,6 +2486,16 @@ static def Test13() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -2391,7 +2507,7 @@ static def Test13() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2416,7 +2532,7 @@ static def Test13() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/ural'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -2532,8 +2648,8 @@ static def Test14() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2552,6 +2668,16 @@ static def Test14() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -2563,7 +2689,7 @@ static def Test14() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2588,7 +2714,7 @@ static def Test14() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/Россети Центр'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -2704,8 +2830,8 @@ static def Test15() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2724,6 +2850,16 @@ static def Test15() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -2735,7 +2871,7 @@ static def Test15() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2760,7 +2896,7 @@ static def Test15() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/Россети Центр и Приволжье'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -2876,8 +3012,8 @@ static def Test16() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -2896,6 +3032,16 @@ static def Test16() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -2907,7 +3053,7 @@ static def Test16() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2932,7 +3078,7 @@ static def Test16() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/ug'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -3048,8 +3194,8 @@ static def Test17() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -3068,6 +3214,16 @@ static def Test17() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -3079,7 +3235,7 @@ static def Test17() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -3104,7 +3260,7 @@ static def Test17() {
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/yantar'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
@@ -3199,6 +3355,8 @@ static def Test18() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Россети ФСК ЕЭС'))
 
+    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
+
     def scan = ScanErrors()
 
     String a = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a1'))
@@ -3212,8 +3370,8 @@ static def Test18() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
 
@@ -3232,6 +3390,16 @@ static def Test18() {
     println(numA02)
 
     String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	if(a03==null) {
+		
+		println('нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		def writeNull = WriteToExcelIsNull(def page = 'нет данных в виджете Отпуск в сеть в третьем столбце(отображается как текущий год)')
+		
+		return  a03 = 0
+		
+	}
 
     println(a03)
 
@@ -3243,7 +3411,7 @@ static def Test18() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length()  + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -3263,6 +3431,8 @@ static def Test18() {
     WebUI.click(findTestObject('Отпуск в сеть сверка/Магистральные сети'))
 
     WebUI.click(findTestObject('Отпуск в сеть Балансы/FSK'))
+
+    WebUI.click(findTestObject('Отпуск в сеть Балансы/применить в фльтре ДЗО Балансы'))
 
     WebUI.delay(10)
 
