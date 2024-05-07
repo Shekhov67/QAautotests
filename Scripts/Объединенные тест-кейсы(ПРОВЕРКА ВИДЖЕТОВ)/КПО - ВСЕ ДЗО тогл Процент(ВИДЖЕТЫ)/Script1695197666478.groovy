@@ -149,6 +149,10 @@ static def Testing1() {
 
     selectKpo = SelektKpoAndFirstStep()
 
+    WebUI.scrollToElement(findTestObject('КПО/выбрать Россети Кубань'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     WebUI.click(findTestObject('КПО/выбрать Россети Кубань'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
@@ -577,7 +581,7 @@ static def Testing1() {
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
-    WebUI.click(findTestObject('КПО/Россети Тюмень(верхний уровень)'))
+    WebUI.click(findTestObject('КПО/Россети Тюмень'))
 
     WebUI.click(findTestObject('КПО/Россети Тюмень(нижний уровень)'))
 
