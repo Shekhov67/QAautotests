@@ -46,4 +46,11 @@
       <testCaseId>Test Cases/Опуск из сети - Сверка ДАШБОРДОВ/Отпуск из сети РОССЕТИ</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b3391375-7b06-4226-8ee5-4f645bf00f78</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

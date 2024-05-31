@@ -26,9 +26,9 @@ WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц')
 
 WebUI.click(findTestObject('Прогноз по ДЗО/Январь'))
 
-WebUI.click(findTestObject('Прогноз по ДЗО/Февраль'))
+def variant = varianttFilter()
 
-def variant = varianttFilter() /*WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
+WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/Февраль'))
 
@@ -40,95 +40,7 @@ WebUI.click(findTestObject('Прогноз по ДЗО/Март'))
 
 variant = varianttFilter()
 
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Апрель'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Май'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Июнь'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Июль'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Июль'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Август'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Август'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Август'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Август'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Сентябрь'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Октябрь'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Октябрь'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ноябрь'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Ноябрь'))
-
-variant = varianttFilter()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Декабрь'), 30)
-
-WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Декабрь'))
-
-variant = varianttFilter()*/
-
-static def varianttFilter() {
+def varianttFilter() {
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Тип показателя откланений'))
 
     WebUI.click(findTestObject('Прогноз по ДЗО/выбрать ПЛАН'))

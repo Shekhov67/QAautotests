@@ -1257,21 +1257,19 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/2024 год'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/1 квартал'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/1 квартал'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/1 квартал'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Январь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/2 квартал 2024'), 0)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Март'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Апрель'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
@@ -1358,6 +1356,5 @@ static def WriteToExcel(def page) {
     n = (n + 1)
 
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
-    
 }
 
