@@ -196,10 +196,10 @@ static def Test1() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -229,7 +229,7 @@ static def Test1() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -290,7 +290,7 @@ static def Test1() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -356,8 +356,8 @@ static def Test2() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -387,7 +387,7 @@ static def Test2() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -458,7 +458,7 @@ static def Test2() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -524,8 +524,8 @@ static def Test3() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -555,7 +555,7 @@ static def Test3() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -626,7 +626,7 @@ static def Test3() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -692,8 +692,8 @@ static def Test4() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -723,7 +723,7 @@ static def Test4() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -794,7 +794,7 @@ static def Test4() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -864,8 +864,8 @@ static def Test5() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -895,7 +895,7 @@ static def Test5() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -970,7 +970,7 @@ static def Test5() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -1040,8 +1040,8 @@ static def Test6() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -1071,7 +1071,7 @@ static def Test6() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1146,7 +1146,7 @@ static def Test6() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -1216,8 +1216,8 @@ static def Test7() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -1247,7 +1247,7 @@ static def Test7() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1322,7 +1322,7 @@ static def Test7() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -1392,8 +1392,8 @@ static def Test8() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -1423,7 +1423,7 @@ static def Test8() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1498,7 +1498,7 @@ static def Test8() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -1568,8 +1568,8 @@ static def Test9() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -1599,7 +1599,7 @@ static def Test9() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1674,7 +1674,7 @@ static def Test9() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -1744,8 +1744,8 @@ static def Test10() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -1775,7 +1775,7 @@ static def Test10() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -1850,7 +1850,7 @@ static def Test10() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -1920,8 +1920,8 @@ static def Test11() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -1951,7 +1951,7 @@ static def Test11() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2026,7 +2026,7 @@ static def Test11() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -2096,8 +2096,8 @@ static def Test12() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -2127,7 +2127,7 @@ static def Test12() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2202,7 +2202,7 @@ static def Test12() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -2272,8 +2272,8 @@ static def Test13() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -2303,7 +2303,7 @@ static def Test13() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2378,7 +2378,7 @@ static def Test13() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -2446,8 +2446,8 @@ static def Test14() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -2477,7 +2477,7 @@ static def Test14() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2548,7 +2548,7 @@ static def Test14() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -2618,8 +2618,8 @@ static def Test15() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -2649,7 +2649,7 @@ static def Test15() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2724,7 +2724,7 @@ static def Test15() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -2794,8 +2794,8 @@ static def Test16() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -2825,7 +2825,7 @@ static def Test16() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -2900,7 +2900,7 @@ static def Test16() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -2970,8 +2970,8 @@ static def Test17() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -3001,7 +3001,7 @@ static def Test17() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -3076,7 +3076,7 @@ static def Test17() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 
@@ -3146,8 +3146,8 @@ static def Test18() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -3177,7 +3177,7 @@ static def Test18() {
 
     int numA3 = a3.length()
 
-    int numA03 = a3.length() + numA02 + numA0
+    int numA03 = (a3.length() + numA02) + numA0
 
     println(numA03)
 
@@ -3252,7 +3252,7 @@ static def Test18() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println(b03)
 

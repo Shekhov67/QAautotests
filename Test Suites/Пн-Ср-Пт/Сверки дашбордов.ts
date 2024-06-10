@@ -21,15 +21,15 @@
    <testCaseLink>
       <guid>2a56465b-a6b6-4ca7-8a83-fa9fd298f603</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3498839b-f7b7-4d58-b392-ad0f4b158573</guid>
+      <guid>5e162841-dc4e-416c-bf5d-fe4066d0263c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Прогноз по ДЗО Сверка Дашбордов/Прогноз по ДЗО ПАО Россети сверка дашбордов</testCaseId>
+      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -47,10 +47,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3391375-7b06-4226-8ee5-4f645bf00f78</guid>
+      <guid>3498839b-f7b7-4d58-b392-ad0f4b158573</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО</testCaseId>
+      <testCaseId>Test Cases/Прогноз по ДЗО Сверка Дашбордов/Прогноз по ДЗО ПАО Россети сверка дашбордов</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

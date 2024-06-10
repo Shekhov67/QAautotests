@@ -174,7 +174,8 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Россети Северо-Запад'), 30)
+WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть Россети Кубань'), 
+    30)
 
 WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
 
@@ -209,7 +210,8 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Россети Северо-Запад'), 30)
+WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть Россети Ленэнерго(ГК)'), 
+    30)
 
 WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
 
@@ -246,7 +248,8 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Россети Северо-Запад'), 30)
+WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть Россети Московский регион'), 
+    30)
 
 WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
 
@@ -296,7 +299,8 @@ println(otpuskVSeti)
 
 selectDzo = SelectDzo()
 
-WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Россети Северо-Запад'), 30)
+WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть Россети Северо-Запад'), 
+    30)
 
 WebUI.scrollToElement(findTestObject('Общие в сеть/скролл до фильтра дата'), 30)
 
@@ -846,27 +850,23 @@ static def SelectDate() {
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2024 год'), 30)
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
     WebUI.click(findTestObject('Отпуск в сеть сверка/2024 год'))
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/1 квартал'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/1 квартал'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Январь'), 30)
+    WebUI.scrollToElement(findTestObject('Объем потерь сверка/2 квартал 2024'), 30)
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Февраль'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Март'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Апрель'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     def scanErr = ScanErrors(def path)
 }
@@ -940,7 +940,7 @@ static def WriteToExcel(def file, def page, def typeData = 'Отпуск в се
 
     String filtrYear = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    String year = '2023'
+    String year = '2024'
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 

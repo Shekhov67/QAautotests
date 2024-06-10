@@ -203,8 +203,8 @@ static def Test1() {
     println(a0.length())
 
     int numA = a0.length()
-	
-	int numA0 = a0.length() * 2
+
+    int numA0 = a0.length() * 2
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
@@ -222,27 +222,23 @@ static def Test1() {
 
     println(numA02)
 
-    String a03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a3'))
+    String a3 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a3'))
 
-    println(a03)
+    println('a3: ' + a3)
+	
+	a3 = a3.substring(a3.indexOf('из сети') + 7, a3.indexOf('2023/2024'))
+	
+	a3 = a3.replaceAll('\\s+', '')
 
-    String a3 = a03.replaceAll('\\s+', '')
-
-    println(a3)
-
-    println(a3.length())
-
-    int numA3 = a3.length() 
-
-    int numA03 = a3.length() + numA02 + numA0
-
-    println(numA03)
-
+    int i = a3.length()/2
+	
+	a3 = a3.substring(i)
+    
     println(a0)
 
     println(a2)
 
-    println(a3)
+    println('a3: ' + a3)
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 8))
@@ -254,8 +250,8 @@ static def Test1() {
     WebUI.click(findTestObject('Отпуск из сети (БАЛАНСЫ)/применить в фильтре ДЗО'))
 
     WebUI.delay(15)
-	
-	println('БАЛАНСЫ')
+
+    println('БАЛАНСЫ')
 
     String b = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
 
@@ -297,24 +293,26 @@ static def Test1() {
         def write = WriteToExcel(a2, numberB2, v)
     }
     
-    String b03 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b3 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
-    println(b03)
+    println('b3: ' + b3)
+	
+	b3 = b3.substring(b3.indexOf('из сети') + 7, b3.indexOf('2023/2024'))
+	
+	b3 = b3.replaceAll('\\s+', '')
 
-    String b3 = b03.replaceAll('\\D+', '')
+    i = b3.length()/2
+	
+	b3 = b3.substring(i)
+    
+    println('b3: ' + b3)
 
-    println(b3)
-
-    String numberB3 = b3.substring(numA03).substring(0, numA3)
-
-    println(numberB3)
-
-    if (WebUI.verifyEqual(a3, numberB3)) {
+    if (WebUI.verifyEqual(a3, b3)) {
         println('GOOD')
     } else {
         String v = 'Виджет отпуск из сети'
 
-        def write = WriteToExcel(a3, numberB3, v)
+        def write = WriteToExcel(a3, b3, v)
     }
     
     WebUI.closeBrowser()

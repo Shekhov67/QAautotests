@@ -79,109 +79,107 @@ static def Testing1() {
 
     WebUI.scrollToElement(findTestObject('КПО/Мордовэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Мордовэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
     WebUI.scrollToElement(findTestObject('КПО/Чувашэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Оренбургэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Чувашэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Пензаэнерго'), 30)
 
     WebUI.click(findTestObject('КПО/Пензаэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Чувашэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Самарские РС'), 30)
 
     WebUI.click(findTestObject('КПО/Самарские РС'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Чувашэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Ульяновские РС'), 30)
 
     WebUI.click(findTestObject('КПО/Ульяновские РС'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
     WebUI.scrollToElement(findTestObject('КПО/Чувашэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Чувашэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/выбрать Россети Кубань'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/выбрать Россети Кубань'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
+    WebUI.scrollToElement(findTestObject('КПО/Россети Кубань'), 30)
+
     WebUI.click(findTestObject('КПО/Россети Кубань'))
-
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Кубаньэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Ленэнерго(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Ленэнерго (ГК)'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Ленэнерго(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Ленэнерго(ГК)'))
 
@@ -189,11 +187,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Ленэнерго(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Ленэнерго(ГК)'))
 
@@ -201,21 +199,21 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Московский регион'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Московский регион'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Московский регион'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Московский регион'))
 
@@ -223,11 +221,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Московский регион'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Московский регион'))
 
@@ -235,21 +233,33 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Северный-Кавказ(ГК)'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
+
+    WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
+
+    WebUI.click(findTestObject('КПО/Дагестанская энергосбытовая компания'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
+    selectKpo = SelektKpoAndFirstStep()
+
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
 
@@ -257,11 +267,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
 
@@ -269,11 +279,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
 
@@ -281,11 +291,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
 
@@ -293,11 +303,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
 
@@ -305,37 +315,35 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северный-Кавказ(ГК)'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северный-Кавказ(ГК)'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Ставропольэнерго'), 30)
 
     WebUI.click(findTestObject('КПО/Ставропольэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Северо-Запад'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
@@ -343,11 +351,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
@@ -355,11 +363,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
@@ -367,23 +375,23 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
-    WebUI.click(findTestObject('КПО/Колэнерго'))
+    WebUI.click(findTestObject('КПО/Мурманский филиал'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
@@ -391,54 +399,49 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Колэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Псковский филиал'), 30)
 
     WebUI.click(findTestObject('КПО/Псковский филиал'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
-    WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Россети Северо-Запад'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
-    '11111111111111111111111111111111111111111111'
     WebUI.click(findTestObject('КПО/Россети Северо-Запад'))
 
-    WebUI.scrollToElement(findTestObject('КПО/Колэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/филиал в Республике Коми'), 30)
 
     WebUI.click(findTestObject('КПО/филиал в Республике Коми'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Сибирь(ГК)'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
@@ -446,11 +449,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
@@ -458,11 +461,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
@@ -470,11 +473,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
@@ -482,11 +485,11 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
@@ -494,69 +497,63 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
     WebUI.scrollToElement(findTestObject('КПО/Омскэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Омскэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
     WebUI.scrollToElement(findTestObject('КПО/Хакасэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Хакасэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Сибирь (ГК)'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Россети Сибирь (ГК)'))
 
     WebUI.scrollToElement(findTestObject('КПО/Читаэнерго'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Читаэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Томск'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Томск'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Томск'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Томск'))
 
@@ -564,27 +561,29 @@ static def Testing1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Тюмень(верхний уровень)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Тюмень'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Тюмень(верхний уровень)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Тюмень'))
 
     WebUI.click(findTestObject('КПО/Россети Тюмень(нижний уровень)'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -594,19 +593,15 @@ static def Testing1() {
 static def Testing2() {
     WebUI.scrollToElement(findTestObject('КПО/Россети Урал(ГК)'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/выбрать Россети Урал(ГК)'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     def selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Урал(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Урал(ГК)'))
 
@@ -614,11 +609,11 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Урал(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Урал(ГК)'))
 
@@ -626,11 +621,11 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Урал(ГК)'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Урал(ГК)'))
 
@@ -638,21 +633,21 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/выбрать Россети Центр'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -660,11 +655,11 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -672,17 +667,19 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
     WebUI.click(findTestObject('КПО/Воронежэнерго'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -694,9 +691,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Костромаэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -708,15 +705,13 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Курскэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -724,15 +719,13 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Липецкэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -740,15 +733,13 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Орелэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -756,15 +747,13 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Смоленскэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -772,15 +761,13 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Тамбовэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -788,15 +775,13 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Тверьэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
     WebUI.scrollToElement(findTestObject('КПО/Россети Центр'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Россети Центр'))
 
@@ -804,9 +789,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Ярэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -814,9 +799,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/выбрать Россети Центр и Приволжье(ГК)'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -826,9 +811,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Владимирэненрго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -838,9 +823,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Ивэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -852,9 +837,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Калугаэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -866,9 +851,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Кировэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -880,9 +865,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Мариэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -892,13 +877,11 @@ static def Testing2() {
 
     WebUI.scrollToElement(findTestObject('КПО/Нижновэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Нижновэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -908,13 +891,11 @@ static def Testing2() {
 
     WebUI.scrollToElement(findTestObject('КПО/Рязаньэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Рязаньэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -924,13 +905,11 @@ static def Testing2() {
 
     WebUI.scrollToElement(findTestObject('КПО/Тулэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Тулэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -940,13 +919,11 @@ static def Testing2() {
 
     WebUI.scrollToElement(findTestObject('КПО/Удмуртэнерго'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/Удмуртэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -954,9 +931,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/выбрать Россети Юг(ГК)'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -966,9 +943,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/АО ВМЭС'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -980,9 +957,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Астраханьэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -994,9 +971,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Волгоградэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -1008,9 +985,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Калмэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 
@@ -1022,9 +999,9 @@ static def Testing2() {
 
     WebUI.click(findTestObject('КПО/Ростовэнерго'))
 
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     selectKpo = SelektKpoAndFirstStep()
 }
@@ -1255,6 +1232,8 @@ static def SelectDate() {
     WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.deleteAllCookies()
 }

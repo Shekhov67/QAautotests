@@ -76,6 +76,8 @@ static def VyruchkaVseToggleMln1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
     WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
@@ -365,6 +367,8 @@ static def VyruchkaOneToggleMln2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
     WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
@@ -527,6 +531,8 @@ static def VyruchkaTwoToggleMln3() {
     WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
@@ -824,6 +830,8 @@ static def VyruchkaVseToggleProc4() {
     WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
@@ -1129,6 +1137,8 @@ static def VyruchkaOneToggleProc5() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
     WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
@@ -1297,6 +1307,8 @@ static def VyruchkaTwoToggleProc6() {
     WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
 
