@@ -6,11 +6,12 @@
    <elementGuidId>f7cfb0cd-ea4a-463e-b4ca-3e1e86b02089</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[@id='va-widgets-container']/div[46]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[3]/span</value>
+         <key>CSS</key>
+         <value>#widget-5d0c57b0323f4b90b7d05f1539b400b0</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,95 +21,164 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>828c1582-6ca6-49e3-aa43-3c0e665bc8c0</webElementGuid>
+      <value>div</value>
+      <webElementGuid>c794f02e-d6db-4a76-8379-919a88d696d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-z-index</name>
+      <name>class</name>
       <type>Main</type>
-      <value>1</value>
-      <webElementGuid>a620216a-12fe-4685-bac4-ca66e854a441</webElementGuid>
+      <value>va-widget</value>
+      <webElementGuid>7483c838-aea9-4510-91a8-c86b759e104f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bind</name>
+      <type>Main</type>
+      <value>attr: { id: 'widget-' + guid() }, css: { selected: isSelected() &amp;&amp; isEditing(), draggable: isEditing(), 'position-locked': positionLocked() },  style: { width: width() + 'px', height: height() + 'px', left: x() + 'px', top: y() + 'px', 'border': frame.enabled() ? '1px solid ' + frame.style.color() : '', cursor: $parent.isEditing() ? 'pointer' : 'default', 'z-index': computedZIndex(), 'border-radius': frame.style.radius() + 'px', 'box-shadow': boxShadow.x() + 'px' + ' ' + boxShadow.y() + 'px' + ' ' + boxShadow.blur() + 'px' + ' ' + boxShadow.spread() + 'px' + ' ' + boxShadow.color()}</value>
+      <webElementGuid>38ace741-3911-4058-9905-0761fa5787c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>widget-5d0c57b0323f4b90b7d05f1539b400b0</value>
+      <webElementGuid>47a377f2-9bf7-405e-a172-47144bab283f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>501 254 174 </value>
-      <webElementGuid>da70da5a-36f6-4c2c-9dd8-9ed7f3416c11</webElementGuid>
+      <value>
+
+                            
+                                
+                            
+                            
+                                Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения по отпуску в сеть1 497 964​1 497 9642023/20240250 000500 000750 0001 000 0001 250 0001 500 0001 750 0002023/2024Отклонение:  1 497 964
+
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                            
+                        </value>
+      <webElementGuid>4e3149e3-4c6e-4261-9114-917d94b82ee5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;highcharts-x1459rj-87&quot;)/div[@class=&quot;highcharts-data-labels highcharts-series-0 highcharts-column-series highcharts-tracker highcharts-series-hover&quot;]/div[@class=&quot;highcharts-label highcharts-data-label highcharts-data-label-color-undefined highcharts-tracker highcharts-drilldown-data-label&quot;]/span[1]</value>
-      <webElementGuid>9e432b53-2789-41d0-9f59-06f2854fb8db</webElementGuid>
+      <value>id(&quot;widget-5d0c57b0323f4b90b7d05f1539b400b0&quot;)</value>
+      <webElementGuid>f2056301-74d6-41df-9dd4-61e82e6d8e7c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='widget-5d0c57b0323f4b90b7d05f1539b400b0']</value>
+      <webElementGuid>fd44c2c6-b24f-4c8e-ad50-a0bbfcd28e6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='highcharts-x1459rj-87']/div/div[3]/span</value>
-      <webElementGuid>247458ed-417e-4854-9b77-89fc15f2f89d</webElementGuid>
+      <value>//div[@id='va-widgets-container']/div[46]</value>
+      <webElementGuid>111cbb87-eb69-4e46-94b1-f3253380eb15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Факт'])[4]/following::span[3]</value>
-      <webElementGuid>bb8e1a59-6114-4581-bbec-3cb2c5250258</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[23]/following::div[5]</value>
+      <webElementGuid>dcdc1977-b5de-4780-be3e-a64c73c17c1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created with Highcharts 9.0.1'])[2]/following::span[3]</value>
-      <webElementGuid>6ba35c00-1041-47a7-be8a-8c73caa476fc</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[20]/preceding::span[1]</value>
-      <webElementGuid>6ffdca13-2bb5-4d97-a442-3bc19dd8a70d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Текст 1 - копия'])[1]/preceding::span[1]</value>
-      <webElementGuid>42b6e6b2-bb17-43fe-bb12-e433cd45572d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='501 254 174']/parent::*</value>
-      <webElementGuid>01379dce-1713-40e9-b874-6a85154e0ba0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Отклонение:'])[1]/following::div[24]</value>
+      <webElementGuid>781c1cf4-c2af-4e9a-a0b8-d147d2a013fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/span</value>
-      <webElementGuid>16bed816-5ed4-4e75-a928-8e31edb26d14</webElementGuid>
+      <value>//div[46]</value>
+      <webElementGuid>0e524582-9a63-4ad0-adcc-51ffdee251cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = '501 254 174 ' or . = '501 254 174 ')]</value>
-      <webElementGuid>e1eabfdc-db52-4cbb-9218-d906cda89a67</webElementGuid>
+      <value>//div[@id = 'widget-5d0c57b0323f4b90b7d05f1539b400b0' and (text() = '
+
+                            
+                                
+                            
+                            
+                                Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения по отпуску в сеть1 497 964​1 497 9642023/20240250 000500 000750 0001 000 0001 250 0001 500 0001 750 0002023/2024Отклонение:  1 497 964
+
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                            
+                        ' or . = '
+
+                            
+                                
+                            
+                            
+                                Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения по отпуску в сеть1 497 964​1 497 9642023/20240250 000500 000750 0001 000 0001 250 0001 500 0001 750 0002023/2024Отклонение:  1 497 964
+
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                            
+                        ')]</value>
+      <webElementGuid>dce22e4f-7a20-4fe1-a586-331f7128ee58</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

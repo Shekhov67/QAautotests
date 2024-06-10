@@ -25,141 +25,213 @@ WebUI.openBrowser('')
 
 WebUI.refresh()
 
-'БЛОК РУКОВОДИТЕЛЕЙ'
-WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
+Test()
 
-WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+def Test() {
+	'БЛОК РУКОВОДИТЕЛЕЙ'
+	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
+	
+	WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+	
+	WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	
+	WebUI.click(findTestObject('Общие в сеть/button_'))
+	
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
+	
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
+	
+	WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	def scan = ScanErrors()
+	
+	String a = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a1'))
+	
+	println(a)
+	
+	String a0 = a.replaceAll('\\s+', '')
+	
+	println(a0)
+	
+	println(a0.length())
+	
+	int numA = a0.length()
+	
+	int numA0 = a0.length() * 2
+	
+	String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
+	
+	println(a02)
+	
+	String a2 = a02.replaceAll('\\s+', '')
+	
+	println(a2)
+	
+	println(a2.length())
+	
+	int numA2 = a2.length()
+	
+	int numA02 = a2.length() * 2
+	
+	println(numA02)
+	
+	String a3 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
+	
+	println(a3)
+	
+	a3 = a3.substring((a3.indexOf('в сеть')+6), a3.indexOf('2023/2024'))
+	
+	a3 = a3.replaceAll('\\s+', '')
+	
+	println(a3)
+	
+	println(a3.length())
+	
+	int i = a3.length()/2
+	
+	a3 = a3.substring(i)
+	
+	println(a3)
+	
+	String a4 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a4'))
+	
+	println(a4)
+	
+	a4 = a4.substring((a4.indexOf('в сеть')+6), a4.indexOf('2023/2024'))
+	
+	a4 = a4.replaceAll('\\s+', '')
+	
+	println(a4)
+	
+	println(a4.length())
+	
+	i = a4.length()/2
+	
+	a4 = a4.substring(i)
+	
+	println(a0)
+	
+	println(a2)
+	
+	println(a3)
+	
+	println(a4)
+	
+	'БАЛАНСЫ'
+	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
+	
+	WebUI.delay(10)
+	
+	String b = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
+	
+	println(b)
+	
+	String b1 = b.replaceAll('\\D+', '')
+	
+	println(b1)
+	
+	String numberB = StringUtils.substring(b1, 0, numA)
+	
+	println(numberB)
+	
+	String b02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
+	
+	println(b02)
+	
+	String b2 = b02.replaceAll('\\D+', '')
+	
+	println(b2)
+	
+	String numberB2 = b2.substring(numA02).substring(0, numA2)
+	
+	println(numberB2)
+	
+	String b3 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/b3'))
+	
+	println(b3)
+	
+	b3 = b3.substring((b3.indexOf('в сеть')+6), b3.indexOf('2023/2024'))
+	
+	b3 = b3.replaceAll('\\s+', '')
+	
+	println(b3)
+	
+	println(b3.length())
+	
+	i = b3.length()/2
+	
+	b3 = b3.substring(i)
+	
+	String b4 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/b4'))
+	
+	b4 = b4.substring((b4.indexOf('в сеть')+6), b4.indexOf('2023/2024'))
+	
+	b4 = b4.replaceAll('\\s+', '')
+	
+	println(b4)
+	
+	println(b4.length())
+	
+	i = b4.length()/2
+	
+	b4 = b4.substring(i)
+	
+	println(numberB2)
+	
+	println(b2)
+	
+	println(b3)
+	
+	println(b4)
+	
+	if (WebUI.verifyEqual(a0, numberB)) {
+		println('GOOD')
+	} else {
+		String v = 'Виджет отпуск в сеть'
+		
+		a = a0
+		b = numberB
+	
+		def write = WriteToExcel(a, b, v)
+	}
+	
+	if (WebUI.verifyEqual(a2, numberB2)) {
+		println('GOOD')
+	} else {
+		String v = 'Виджет отпуск в сеть'
+		
+		a = a2
+		b = numberB2
+	
+		def write = WriteToExcel(a, b, v)
+	}
+	
+	if (WebUI.verifyEqual(a3, b3)) {
+		println('GOOD')
+	} else {
+		String v = 'Отклонения по отпуску в сеть, тыс. кВт-ч'
+		
+		a = a3
+		
+		b = b3
+	
+		def write = WriteToExcel(a, b, v)
+	}
+	
+	if (WebUI.verifyEqual(a4, b4)) {
+	    println('GOOD')
+	} else {
+		a = a4
+		b = b4
+		
+	    v = 'Отклонения по отпуску в сеть, %'
+	
+	    def write = WriteToExcel(a, b, v)
+	}
 
-WebUI.click(findTestObject('Общие в сеть/button_'))
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
-
-def scan = ScanErrors()
-
-String a = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a1'))
-
-println(a)
-
-String a0 = a.replaceAll('\\s+', '')
-
-println(a0)
-
-println(a0.length())
-
-int numA = a0.length()
-
-int numA0 = a0.length() * 2
-
-String a02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a2'))
-
-println(a02)
-
-String a2 = a02.replaceAll('\\s+', '')
-
-println(a2)
-
-println(a2.length())
-
-int numA2 = a2.length()
-
-int numA02 = a2.length() * 2
-
-println(numA02)
-
-String a03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Page_Visiology Platform/a3'))
-
-println(a03)
-
-String a3 = a03.replaceAll('\\s+', '')
-
-println(a3)
-
-println(a3.length())
-
-int numA3 = a3.length()
-
-int numA03 = a3.length()  + numA02 + numA0
-
-println(numA03)
-
-println(a0)
-
-println(a2)
-
-println(a3)
-
-'БАЛАНСЫ'
-WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
-
-WebUI.delay(10)
-
-String b = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
-
-println(b)
-
-String b1 = b.replaceAll('\\D+', '')
-
-println(b1)
-
-String numberB = StringUtils.substring(b1, 0, numA)
-
-println(numberB)
-
-if (WebUI.verifyEqual(a0, numberB)) {
-    println('GOOD')
-} else {
-    String v = 'Виджет отпуск в сеть'
-
-    def write = WriteToExcel(a0, numberB, v)
 }
-
-String b02 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
-
-println(b02)
-
-String b2 = b02.replaceAll('\\D+', '')
-
-println(b2)
-
-String numberB2 = b2.substring(numA02).substring(0, numA2)
-
-println(numberB2)
-
-if (WebUI.verifyEqual(a2, numberB2)) {
-    println('GOOD')
-} else {
-    String v = 'Виджет отпуск в сеть'
-
-    def write = WriteToExcel(a2, numberB2, v)
-}
-
-String b03 = WebUI.getText(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/данные с виджета в блоке Балансы'))
-
-println(b03)
-
-String b3 = b03.replaceAll('\\D+', '')
-
-println(b3)
-
-String numberB3 = b3.substring(numA03).substring(0, numA3)
-
-println(numberB3)
-
-if (WebUI.verifyEqual(a3, numberB3)) {
-    println('GOOD')
-} else {
-    String v = 'Виджет отпуск в сеть'
-
-    def write = WriteToExcel(a3, numberB3, v)
-}
-
 WebUI.closeBrowser()
+
 
 static def WriteToExcel(def a, def b, def v) {
     String sheetName = 'List1'

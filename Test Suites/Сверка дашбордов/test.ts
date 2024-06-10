@@ -22,7 +22,7 @@
       <guid>b093a826-edde-4b37-b838-b026fe2c4960</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО</testCaseId>
+      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО (Старый)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#widget-f219d67a5c6647dc8a67666556487e17</value>
+         <value>svg.highcharts-root</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Отпуск из сети'])[3]/following::*[name()='svg'][1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Отпуск из сети'])[1]/following::*[name()='svg'][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,156 +21,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>6067ee80-abe8-4434-a993-b4745009aa80</webElementGuid>
+      <value>svg</value>
+      <webElementGuid>6e92881f-8fcb-48a0-b69a-acf4decc19c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>version</name>
+      <type>Main</type>
+      <value>1.1</value>
+      <webElementGuid>837ec983-ce50-49b1-8ce3-66470d4cdcbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>va-widget</value>
-      <webElementGuid>a7449884-adf0-43a4-b8cb-6ec4d9b172b4</webElementGuid>
+      <value>highcharts-root</value>
+      <webElementGuid>8ffe9b53-f049-4844-bb38-ada789fc7895</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-bind</name>
+      <name>xmlns</name>
       <type>Main</type>
-      <value>attr: { id: 'widget-' + guid() }, css: { selected: isSelected() &amp;&amp; isEditing(), draggable: isEditing(), 'position-locked': positionLocked() },  style: { width: width() + 'px', height: height() + 'px', left: x() + 'px', top: y() + 'px', 'border': frame.enabled() ? '1px solid ' + frame.style.color() : '', cursor: $parent.isEditing() ? 'pointer' : 'default', 'z-index': computedZIndex(), 'border-radius': frame.style.radius() + 'px', 'box-shadow': boxShadow.x() + 'px' + ' ' + boxShadow.y() + 'px' + ' ' + boxShadow.blur() + 'px' + ' ' + boxShadow.spread() + 'px' + ' ' + boxShadow.color()}</value>
-      <webElementGuid>2b5f559a-43a4-4652-828d-ded1cd28acdd</webElementGuid>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>5c846a5b-0282-45b1-a28c-13179886720b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>width</name>
       <type>Main</type>
-      <value>widget-f219d67a5c6647dc8a67666556487e17</value>
-      <webElementGuid>ceb91e3f-fb6d-4e68-a757-1212b920f51f</webElementGuid>
+      <value>920</value>
+      <webElementGuid>0264281d-70b8-41c5-b774-313cec66f7e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>875</value>
+      <webElementGuid>d30bb34f-db0d-4d8d-a5b0-bfff5979b29b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 920 875</value>
+      <webElementGuid>060aff51-5b27-4d6e-800f-375db3e15f3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-
-                            
-                                
-                            
-                            
-                                Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения по отпуску из сети5 895 266​5 895 266-802 380​-802 3802021/20222022/2023-2 000 00002 000 0004 000 0006 000 0008 000 0002021/2022Отклонение:  5 895 266
-
-                                
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                
-                            
-                        </value>
-      <webElementGuid>a6ae2d8d-6bc8-4ee3-87a0-7fc2015404e5</webElementGuid>
+      <value>Created with Highcharts 9.0.182 542 315​82 542 31583 822 847​83 822 847Факт2023 год2024 год0 10 000 20 000 30 000 40 000 50 000 60 000 70 000 80 000 90 000 2024: 83 822 846,84</value>
+      <webElementGuid>5bc9f931-6e9d-4e5e-bb75-1cbf390deb63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;widget-f219d67a5c6647dc8a67666556487e17&quot;)</value>
-      <webElementGuid>1d6a1f55-dfa7-4010-82ce-6b2479a3f8d0</webElementGuid>
+      <value>id(&quot;highcharts-w73mycw-0&quot;)/svg[@class=&quot;highcharts-root&quot;]</value>
+      <webElementGuid>acb1f2bc-8cde-4668-a142-7696f7af64be</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@id='widget-f219d67a5c6647dc8a67666556487e17']</value>
-      <webElementGuid>056c4035-3b38-47d1-8e45-7a5cb2f6ca60</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='va-widgets-container']/div[26]</value>
-      <webElementGuid>1bfe7f71-a488-4ad5-aad9-3a2f94bd372c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Отпуск из сети'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>7b031304-fabe-4e81-88e7-f37152940418</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[13]/following::div[5]</value>
-      <webElementGuid>4cb4f429-2ff1-40b4-80a7-bb727288ee90</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[26]</value>
-      <webElementGuid>f532f6df-28d3-4a39-91fc-5743ba868a2a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[12]/following::*[name()='svg'][1]</value>
+      <webElementGuid>b339cc13-7186-4c0f-81f6-f7ab6a372953</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[@id = 'widget-f219d67a5c6647dc8a67666556487e17' and (text() = '
-
-                            
-                                
-                            
-                            
-                                Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения по отпуску из сети5 895 266​5 895 266-802 380​-802 3802021/20222022/2023-2 000 00002 000 0004 000 0006 000 0008 000 0002021/2022Отклонение:  5 895 266
-
-                                
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                
-                            
-                        ' or . = '
-
-                            
-                                
-                            
-                            
-                                Created with Highcharts 9.0.1●● Отклонения, тыс. кВт⋅чтыс. кВт⋅чОтклонения по отпуску из сети5 895 266​5 895 266-802 380​-802 3802021/20222022/2023-2 000 00002 000 0004 000 0006 000 0008 000 0002021/2022Отклонение:  5 895 266
-
-                                
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                
-                            
-                        ')]</value>
-      <webElementGuid>bad49a72-921e-4677-99da-91c178f335db</webElementGuid>
+      <value>//svg[(text() = 'Created with Highcharts 9.0.182 542 315​82 542 31583 822 847​83 822 847Факт2023 год2024 год0 10 000 20 000 30 000 40 000 50 000 60 000 70 000 80 000 90 000 2024: 83 822 846,84' or . = 'Created with Highcharts 9.0.182 542 315​82 542 31583 822 847​83 822 847Факт2023 год2024 год0 10 000 20 000 30 000 40 000 50 000 60 000 70 000 80 000 90 000 2024: 83 822 846,84')]</value>
+      <webElementGuid>df9521af-96af-4624-84be-c92701a2f746</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

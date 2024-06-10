@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='b716a34f34104b64924eef1e74886d04']/div/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='ДЗО'])[1]/following::div[4]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>a93e4e19-2428-4ba3-9287-4ce8b6357682</webElementGuid>
+      <webElementGuid>084f81b8-4d41-4b51-ac8a-48c7f97e1b81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-header-container</value>
-      <webElementGuid>800de8de-c30f-44c8-b7e1-28099cbeb61b</webElementGuid>
+      <webElementGuid>693693ec-342e-4fd4-a48f-b415da1ef52b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ПАО Россети - РаспредКомплекс - АО «Тываэнерго»</value>
-      <webElementGuid>ba05a8a8-ff51-43df-b2d0-7714015c4168</webElementGuid>
+      <webElementGuid>18db401d-381d-46b8-8564-a63a2b8112ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;b716a34f34104b64924eef1e74886d04&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-header-container&quot;]</value>
-      <webElementGuid>1a79df97-2582-47a1-8e0c-c5cb94a60310</webElementGuid>
+      <webElementGuid>807b92ed-4fdb-4183-bef3-2195bccbf7e0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='b716a34f34104b64924eef1e74886d04']/div/div</value>
-      <webElementGuid>4a8780d3-6357-4894-a50e-653089205491</webElementGuid>
+      <webElementGuid>5742db5e-e4b2-4ef6-ad2a-1f7521df60e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ДЗО'])[1]/following::div[4]</value>
-      <webElementGuid>e2631217-18d1-446b-9eb1-1225e2bafbb5</webElementGuid>
+      <webElementGuid>673e19a0-d57d-4b6b-88fa-ee8c8ebd13b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[5]/following::div[10]</value>
-      <webElementGuid>da8b12ca-3e78-4ba7-b698-5b4c69b0eaf5</webElementGuid>
+      <webElementGuid>e00d31d4-447a-4db3-bfc8-8df23f76184f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбранные значения'])[4]/preceding::div[2]</value>
-      <webElementGuid>5e8c805a-5ba5-4217-8767-96849026fa55</webElementGuid>
+      <webElementGuid>a496f3dc-fbcb-4f28-81be-417902992232</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div[2]/div/div/div</value>
-      <webElementGuid>8139f616-3d59-48e7-97a0-0b6a17222691</webElementGuid>
+      <webElementGuid>568156e1-9462-48be-a461-1e36352d05d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'ПАО Россети - РаспредКомплекс - АО «Тываэнерго»' or . = 'ПАО Россети - РаспредКомплекс - АО «Тываэнерго»')]</value>
-      <webElementGuid>07e81b60-279f-48cc-b5d9-19983c508e85</webElementGuid>
+      <webElementGuid>80c5cf51-e3c8-462e-bb16-fa920d96ca22</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

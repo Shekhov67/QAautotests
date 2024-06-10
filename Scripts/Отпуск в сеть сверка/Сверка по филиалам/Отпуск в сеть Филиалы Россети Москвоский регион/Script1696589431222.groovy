@@ -218,7 +218,7 @@ static def WriteToExcel(def file, def page, def typeData = 'Отпуск в се
 
     String filtrYear = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    String year = '2023'
+    String year = '2024'
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='b716a34f34104b64924eef1e74886d04']/div/div[2]/div[3]/ul/li/ul/li[2]/ul/li[3]/div/i</value>
+         <value>//li[2]/ul/li[3]/div/i</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>ef2e7908-f96a-4f81-b55a-48787a5d9985</webElementGuid>
+      <webElementGuid>28a0a8c7-2a0b-49f7-a463-626fc646c7c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fa fa-square-o rb-filter-list-item-icon</value>
-      <webElementGuid>37f08e80-36e4-4d63-96f1-bb3489fe3696</webElementGuid>
+      <webElementGuid>b0cf05d6-ea52-4943-ab5c-ad95630d4090</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;b716a34f34104b64924eef1e74886d04&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/i[@class=&quot;fa fa-square-o rb-filter-list-item-icon&quot;]</value>
-      <webElementGuid>3a6c89d3-413c-446e-9020-2d20d498ddd0</webElementGuid>
+      <webElementGuid>2a23afb9-11c7-4319-a0bb-c37503fa5a4d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='b716a34f34104b64924eef1e74886d04']/div/div[2]/div[3]/ul/li/ul/li[2]/ul/li[3]/div/i</value>
-      <webElementGuid>ed5a45d2-54be-4f2a-8f18-92d07c24a8c1</webElementGuid>
+      <webElementGuid>88297b2c-2cf1-47db-9405-03d3f60d6640</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +53,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/ul/li[3]/div/i</value>
-      <webElementGuid>58f0b3d5-07af-4565-a3e4-86d383e2007d</webElementGuid>
+      <webElementGuid>e125a3cd-42e3-4368-b616-b90486b10de0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
