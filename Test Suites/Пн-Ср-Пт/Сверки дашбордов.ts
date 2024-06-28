@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2a56465b-a6b6-4ca7-8a83-fa9fd298f603</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Отпуск в сеть сверка Дашбордов/Отпуск в сеть ПАО Россети сверка дашбордов - проверка каждого ДЗО</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5e162841-dc4e-416c-bf5d-fe4066d0263c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
