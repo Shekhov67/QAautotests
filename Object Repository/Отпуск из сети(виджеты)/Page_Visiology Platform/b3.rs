@@ -6,12 +6,12 @@
    <elementGuidId>c7f713aa-ed34-40a6-89d0-2d8f60a421f2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#widget-43b6a1d8cd4f45878b565e6bee1b77a1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='va-widgets-container']/div[28]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#widget-43b6a1d8cd4f45878b565e6bee1b77a1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>cb7acb2e-50bc-4000-82ac-6241af73d092</webElementGuid>
+      <webElementGuid>ce0ec3af-f5dd-44b0-a402-827743782abb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>va-widget</value>
-      <webElementGuid>8dbcb8c9-f8e5-4258-8505-13f0a55da63f</webElementGuid>
+      <webElementGuid>aa74723b-4262-4bb0-ab50-b31dcd62a3bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-bind</name>
       <type>Main</type>
       <value>attr: { id: 'widget-' + guid() }, css: { selected: isSelected() &amp;&amp; isEditing(), draggable: isEditing(), 'position-locked': positionLocked() },  style: { width: width() + 'px', height: height() + 'px', left: x() + 'px', top: y() + 'px', 'border': frame.enabled() ? '1px solid ' + frame.style.color() : '', cursor: $parent.isEditing() ? 'pointer' : 'default', 'z-index': computedZIndex(), 'border-radius': frame.style.radius() + 'px', 'box-shadow': boxShadow.x() + 'px' + ' ' + boxShadow.y() + 'px' + ' ' + boxShadow.blur() + 'px' + ' ' + boxShadow.spread() + 'px' + ' ' + boxShadow.color()}</value>
-      <webElementGuid>f5f7efa4-6c66-4183-959f-63dda744ff0d</webElementGuid>
+      <webElementGuid>421e376f-80c0-46c2-9af0-a3e875e1c594</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>widget-43b6a1d8cd4f45878b565e6bee1b77a1</value>
-      <webElementGuid>e26bb51b-1f33-4f8b-a3eb-2ef5a8d4cd37</webElementGuid>
+      <webElementGuid>d041b4a3-7160-4ab6-92fe-7b6b75990ae7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
                                 
                             
                         </value>
-      <webElementGuid>a50c84dc-1bc8-4ea4-825e-64b1460944f6</webElementGuid>
+      <webElementGuid>dba75d77-b06c-49ed-b193-211d9b31cf17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;widget-43b6a1d8cd4f45878b565e6bee1b77a1&quot;)</value>
-      <webElementGuid>25c34124-3190-4fa1-aa99-cd31f9c1a3ba</webElementGuid>
+      <webElementGuid>11521819-d72b-40a0-898c-4699e16ade68</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='widget-43b6a1d8cd4f45878b565e6bee1b77a1']</value>
-      <webElementGuid>d9d9997e-17e3-4333-b5b1-bd26c01f3785</webElementGuid>
+      <webElementGuid>3b5fee90-97ed-4d6a-ac23-678afaf39b4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='va-widgets-container']/div[28]</value>
-      <webElementGuid>9f8a89eb-3eae-4816-b3e8-ee2c23c884e7</webElementGuid>
+      <webElementGuid>e64a3588-4fe1-46cb-9ca2-2ee3d49be353</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[14]/following::div[5]</value>
-      <webElementGuid>a467ae0d-e45f-43cc-b2e6-e4f09939a65b</webElementGuid>
+      <webElementGuid>09ffe435-f282-4c44-af1e-20bfc2ba1ec7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Отклонение:'])[1]/following::div[24]</value>
-      <webElementGuid>e87426f0-21b2-4b9c-a18a-cd6851b5e664</webElementGuid>
+      <webElementGuid>266f3ba8-bd98-4dd1-b9bd-3b7a46a35baf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[28]</value>
-      <webElementGuid>3a784cd0-04c5-4cc0-9017-6f384e17e50e</webElementGuid>
+      <webElementGuid>00b01efc-6506-4dc5-bce2-f820600941ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -179,6 +179,6 @@
                                 
                             
                         ')]</value>
-      <webElementGuid>434e3bfb-557a-4a57-949e-c0fc036e841d</webElementGuid>
+      <webElementGuid>3864518b-f622-4392-8e3c-bcbdd6990a14</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

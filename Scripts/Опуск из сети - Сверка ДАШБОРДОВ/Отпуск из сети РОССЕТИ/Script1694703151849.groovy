@@ -194,11 +194,11 @@ static def Test1() {
 
     String a = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a1'))
 
-    println(a)
+    println('а = ' + a)
 
     String a0 = a.replaceAll('\\s+', '')
 
-    println(a0)
+    println('а0 = ' + a0)
 
     println(a0.length())
 
@@ -208,11 +208,11 @@ static def Test1() {
 
     String a02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a2'))
 
-    println(a02)
+    println('а02 = ' + a02)
 
     String a2 = a02.replaceAll('\\s+', '')
 
-    println(a2)
+    println('а2 = ' + a2)
 
     println(a2.length())
 
@@ -220,20 +220,20 @@ static def Test1() {
 
     int numA02 = a2.length() * 2
 
-    println(numA02)
+    println('numA02 = ' + numA02)
 
     String a3 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a3'))
 
     println('a3: ' + a3)
-	
-	a3 = a3.substring(a3.indexOf('из сети') + 7, a3.indexOf('2023/2024'))
-	
-	a3 = a3.replaceAll('\\s+', '')
 
-    int i = a3.length()/2
-	
-	a3 = a3.substring(i)
-    
+    a3 = a3.substring(a3.indexOf('из сети') + 7, a3.indexOf('2023/2024'))
+
+    a3 = a3.replaceAll('\\s+', '')
+
+    int i = a3.length() / 2
+
+    a3 = a3.substring(i)
+
     println(a0)
 
     println(a2)
@@ -267,13 +267,15 @@ static def Test1() {
 
     if (WebUI.verifyEqual(a0, numberB)) {
         println('GOOD')
+		println(a0 + numberB)
+		
     } else {
         String v = 'Виджет отпуск из сети'
 
         def write = WriteToExcel(a0, numberB, v)
     }
     
-    String b02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ'))
+    String b02 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Данные с виджета в блоке БАЛАНСЫ 2'))
 
     println(b02)
 
@@ -287,6 +289,7 @@ static def Test1() {
 
     if (WebUI.verifyEqual(a2, numberB2)) {
         println('GOOD')
+		println(a2 + numberB2)
     } else {
         String v = 'Виджет отпуск из сети'
 
@@ -296,19 +299,20 @@ static def Test1() {
     String b3 = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/b3'))
 
     println('b3: ' + b3)
-	
-	b3 = b3.substring(b3.indexOf('из сети') + 7, b3.indexOf('2023/2024'))
-	
-	b3 = b3.replaceAll('\\s+', '')
 
-    i = b3.length()/2
-	
-	b3 = b3.substring(i)
-    
+    b3 = b3.substring(b3.indexOf('из сети') + 7, b3.indexOf('2023/2024'))
+
+    b3 = b3.replaceAll('\\s+', '')
+
+    i = (b3.length() / 2)
+
+    b3 = b3.substring(i)
+
     println('b3: ' + b3)
 
     if (WebUI.verifyEqual(a3, b3)) {
         println('GOOD')
+		println(a3 + b3)
     } else {
         String v = 'Виджет отпуск из сети'
 
