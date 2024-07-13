@@ -47,6 +47,8 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь сверка/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
