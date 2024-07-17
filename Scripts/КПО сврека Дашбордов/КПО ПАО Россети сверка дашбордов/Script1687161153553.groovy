@@ -135,7 +135,7 @@ static def VyruchkaVseToggleMln1() {
     'ВЫРУЧКА'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
 
-    WebUI.delay(15)
+    WebUI.delay(30)
 
     if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
         WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
@@ -404,7 +404,7 @@ static def VyruchkaOneToggleMln2() {
     'ВЫРУЧКА'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
 
-    WebUI.delay(15)
+    WebUI.delay(30)
 
     if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
         WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
@@ -595,7 +595,7 @@ static def VyruchkaTwoToggleMln3() {
     'ВЫРУЧКА'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
 
-    WebUI.delay(15)
+    WebUI.delay(30)
 
     if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
         WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
@@ -898,7 +898,7 @@ static def VyruchkaVseToggleProc4() {
     'ВЫРУЧКА'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
 
-    WebUI.delay(15)
+    WebUI.delay(30)
 
     if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
         WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
@@ -1180,7 +1180,7 @@ static def VyruchkaOneToggleProc5() {
     'ВЫРУЧКА'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
 
-    WebUI.delay(15)
+    WebUI.delay(30)
 
     if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
         WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))
@@ -1379,7 +1379,7 @@ static def VyruchkaTwoToggleProc6() {
     'ВЫРУЧКА'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 2))
 
-    WebUI.delay(15)
+    WebUI.delay(30)
 
     if (WebUI.verifyTextPresent('Просьба обратить внимание', true) == true) {
         WebUI.click(findTestObject('КПО для раздела Выручка/закрыть уведомление'))

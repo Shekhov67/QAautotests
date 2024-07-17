@@ -27,77 +27,81 @@ String dZOBR
 
 String dZOBB
 
+int a
+
+int b
+
 dZO = 'ПАО Россети'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'ФСК ЕЭС'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Тываэнерго'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Чеченэнерго'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Волга'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Кубань'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Росссети Ленэнерго(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Московский регион'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Северный Кавказ(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Северо-Запад'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Сибирь(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Томск'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Тюмень'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Урал(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Центр'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Центр и Приволжье(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Юг(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Янтарь'
 
-Test(dZO, dZOBR, dZOBB)
+Test(a, b ,dZO, dZOBR, dZOBB)
 
 static void DZOChange1(def dZO, def dZOBR, def dZOBB) {
     if (dZO == 'ПАО Россети') {
@@ -317,8 +321,7 @@ static void DZOChange2(def dZO, def dZOBR, def dZOBB) {
     if (dZO == 'Россети Сибирь(ГК)') {
         println(dZO)
 
-        WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть Россети Сибирь(ГК)'), 
-            30)
+        WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
 
         WebUI.click(findTestObject('Отпуск в сеть Балансы/sibir'))
     }
@@ -380,7 +383,7 @@ static void DZOChange2(def dZO, def dZOBR, def dZOBB) {
     }
 }
 
-def Test(def dZO, def dZOBR, def dZOBB) {
+def Test(def a, def b, def dZO, def dZOBR, def dZOBB) {
     int i
 
     String a1
@@ -394,13 +397,44 @@ def Test(def dZO, def dZOBR, def dZOBB) {
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
 
-    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.click(findTestObject('Общие в сеть/button_'))
-
     WebUI.delay(20)
+
+	if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+		WebUI.click(findTestObject('Общие в сеть/button_'))
+
+		WebUI.delay(30)
+	} else {
+		WebUI.refresh()
+
+		WebUI.delay(30)
+
+		if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+	
+			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	
+			WebUI.click(findTestObject('Общие в сеть/button_'))
+	
+			WebUI.delay(30)
+		} else {
+			WebUI.refresh()
+	
+			WebUI.delay(30)
+	
+			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+	
+			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	
+			WebUI.click(findTestObject('Общие в сеть/button_'))
+		}
+		
+	}
+	
+	WebUI.delay(30)
 
     ChangeDateBR()
 
@@ -444,9 +478,27 @@ def Test(def dZO, def dZOBR, def dZOBB) {
 
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
+	
+	WebUI.delay(30)
 
-    WebUI.delay(30)
+	if (WebUI.verifyElementPresent(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'), 30) == false) {
+	
+		WebUI.refresh()
 
+		WebUI.delay(30)
+
+		if (WebUI.verifyElementPresent(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'), 30) == false) {
+		
+			WebUI.refresh()
+	
+			WebUI.delay(30)
+	
+		}
+		
+	}
+	
+	WebUI.delay(30)
+	
     ChangeDateBB()
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/фильтр ДЗО в Блоке Балансы'))
@@ -515,9 +567,9 @@ def Test(def dZO, def dZOBR, def dZOBB) {
         } else {
             String v = 'Виджет отпуск в сеть'
 
-            String a = a1
+            a = a1.toInteger()
 
-            String b = b1
+            b = b1.toInteger()
 
             WriteToExcel(a, b, v, dZO)
         }
@@ -600,6 +652,7 @@ def ChangeDateBB() {
 }
 
 static def WriteToExcel(def a, def b, def v, def dZO) {
+	
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
