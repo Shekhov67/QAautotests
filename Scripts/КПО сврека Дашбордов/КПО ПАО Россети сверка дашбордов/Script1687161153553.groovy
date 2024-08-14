@@ -50,33 +50,7 @@ static def VyruchkaVseToggleMln1() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    def date = SelectDate()
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
@@ -341,36 +315,6 @@ static def VyruchkaOneToggleMln2() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('Object Repository/КПО/фильтр ДЗО'))
@@ -378,6 +322,8 @@ static def VyruchkaOneToggleMln2() {
     WebUI.click(findTestObject('КПО/снять выделения в фильтре ДЗО'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
+
+    def date = SelectDate()
 
     WebUI.delay(5)
 
@@ -508,35 +454,7 @@ static def VyruchkaTwoToggleMln3() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    def date = SelectDate()
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
@@ -809,35 +727,7 @@ static def VyruchkaVseToggleProc4() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    def date = SelectDate()
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
@@ -1117,35 +1007,7 @@ static def VyruchkaOneToggleProc5() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    def date = SelectDate()
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
@@ -1290,35 +1152,7 @@ static def VyruchkaTwoToggleProc6() {
 
     WebUI.click(findTestObject('КПО/применить в фильтре Выручка'))
 
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
-
-    WebUI.click(findTestObject('КПО/фильтр Дата'))
-
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
-
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+    def date = SelectDate()
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
@@ -1640,5 +1474,43 @@ static def WriteToExcel(def widget, def dzo, def togle) {
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 
     WebUI.acceptAlert()
+}
+
+static def SelectDate() {
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.click(findTestObject('КПО/снять выделения в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+
+    WebUI.click(findTestObject('КПО/фильтр Дата'))
+
+    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
+
+    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('КПО/раскрыть 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('КПО/Апрель 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('КПО/Май 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('КПО/Июнь 2024'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
+
+    WebUI.click(findTestObject('КПО/Июнь 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 }
 
