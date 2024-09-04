@@ -28,7 +28,7 @@
    <testCaseLink>
       <guid>50215b61-563d-400b-a04a-f94bf3e4b76e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Сверка Дашбордов/Прогноз по ДЗО ПАО Россети сверка дашбордов</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

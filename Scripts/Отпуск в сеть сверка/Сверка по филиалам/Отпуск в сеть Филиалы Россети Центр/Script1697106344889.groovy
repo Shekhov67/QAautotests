@@ -449,7 +449,7 @@ WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/�
 
 WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Тверьэнерго'))
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ярэнерго'))
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
@@ -472,36 +472,48 @@ scanErr = ScanErrors(page)
 WebUI.closeBrowser()
 
 static def OpenBrowser() {
+    WebUI.openBrowser('')
+
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
+
+    WebUI.delay(10)
+
 	
-	WebUI.openBrowser('')
-
-	WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
-
-	WebUI.delay(10)
-
 	if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-		
 		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
 		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 
 		WebUI.click(findTestObject('Общие в сеть/button_'))
 
-		WebUI.delay(10)
+		WebUI.delay(30)
 	} else {
-		
 		WebUI.refresh()
-		
-		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-		
-		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-		
-		WebUI.click(findTestObject('Общие в сеть/button_'))
-	}
-	
-	
-}
 
+		WebUI.delay(30)
+
+		if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+	
+			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	
+			WebUI.click(findTestObject('Общие в сеть/button_'))
+	
+			WebUI.delay(30)
+		} else {
+			WebUI.refresh()
+	
+			WebUI.delay(30)
+	
+			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+	
+			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+	
+			WebUI.click(findTestObject('Общие в сеть/button_'))
+		}
+		
+	}
+}
 
 static def SelectDzo() {
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
@@ -649,6 +661,4 @@ static def WriteToExcel2(def err) {
 
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePathFilials, workbook01)
 }
-
-
 
