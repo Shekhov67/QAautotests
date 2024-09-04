@@ -1238,6 +1238,12 @@ static def SelectDate() {
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
     WebUI.click(findTestObject('КПО/Июнь 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+	
+	WebUI.scrollToElement(findTestObject('КПО/3 квартал 2024 раскрыть'), 30)
+	
+	WebUI.click(findTestObject('КПО/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
+	
+	WebUI.click(findTestObject('КПО/Июль 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 

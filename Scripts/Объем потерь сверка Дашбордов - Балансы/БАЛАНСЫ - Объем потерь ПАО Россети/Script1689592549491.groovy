@@ -22,6 +22,79 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 def test1 = Test1()
 
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
+
+WebUI.delay(50)
+
+String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
+
+println(a)
+
+String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
+
+println(b)
+
+String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
+
+println(e)
+
+String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
+
+println(f)
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
+
+WebUI.delay(5)
+
+if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.click(findTestObject('Общие в сеть/button_'))
+
+    WebUI.delay(5)
+} else {
+    WebUI.refresh()
+
+    WebUI.delay(5)
+
+    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+    WebUI.click(findTestObject('Общие в сеть/button_'))
+}
+
+WebUI.delay(50)
+
+String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
+
+println(a1)
+
+String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
+
+println(b1)
+
+String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
+
+println(e1)
+
+String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
+
+println(f1)
+
+def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
+    def f01 = f1)
+
+WebUI.closeBrowser()
+
 static def Test1() {
     String widget
 
@@ -55,81 +128,6 @@ static def Test1() {
         WebUI.click(findTestObject('Общие в сеть/button_'))
     }
 }
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Снять выделения в фильтре ДЗО'))
-
-    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
-
-    WebUI.delay(10)
-
-    String a = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок руководителя)1'))
-
-    println(a)
-
-    String b = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок руководителя)1'))
-
-    println(b)
-
-    String e = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь'))
-
-    println(e)
-
-    String f = WebUI.getText(findTestObject('Объем потерь сверка/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь'))
-
-    println(f)
-
-        WebUI.openBrowser('')
-
-    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 4))
-
-    WebUI.delay(5)
-
-    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-
-        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-
-        WebUI.click(findTestObject('Общие в сеть/button_'))
-
-        WebUI.delay(5)
-    } else {
-        WebUI.refresh()
-
-        WebUI.delay(5)
-
-        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-
-        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-
-        WebUI.click(findTestObject('Общие в сеть/button_'))
-    }
-
-
-    WebUI.delay(10)
-
-    String a1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Объем потерь (Блок Балансы)'))
-
-    println(a1)
-
-    String b1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Уровень потерь (Блок Балансы)'))
-
-    println(b1)
-
-    String e1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонение объема потерь(Блок Балансы)'))
-
-    println(e1)
-
-    String f1 = WebUI.getText(findTestObject('Объем потерь сверка - Балансы/Данные со страницы Объем потерь/Данные с виджета Отклонения уровня потерь(Блок Балансы)'))
-
-    println(f1)
-
-    def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
-        def f01 = f1)
-
-    WebUI.closeBrowser()
-
 
 static def WriteToExcel(def widget, def month) {
     String sheetName = 'List1'

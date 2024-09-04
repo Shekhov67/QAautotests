@@ -574,14 +574,6 @@ otpuskVSeti = findTestData('Test Data').getValue(4, 88)
 
 println(otpuskVSeti)
 
-WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
-
-WebUI.click(findTestObject('Общие в сеть/Снять выделения в фильтре ДЗО'))
-
-WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
-
-WebUI.click(findTestObject('Общие в сеть/Фильтр ДЗО'))
-
 WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/Магистральные сети'))

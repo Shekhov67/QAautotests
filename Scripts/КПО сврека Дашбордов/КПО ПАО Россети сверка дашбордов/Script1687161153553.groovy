@@ -36,13 +36,11 @@ static def VyruchkaVseToggleMln1() {
     WebUI.openBrowser('')
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
+    WebUI.delay(5)
+
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    def opnbrws = OpnBrws()
 
     WebUI.click(findTestObject('КПО/фильтр Выручка'))
 
@@ -301,11 +299,7 @@ static def VyruchkaOneToggleMln2() {
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    def opnbrws = OpnBrws()
 
     WebUI.click(findTestObject('КПО/фильтр Выручка'))
 
@@ -442,11 +436,7 @@ static def VyruchkaTwoToggleMln3() {
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    def opnbrws = OpnBrws()
 
     WebUI.click(findTestObject('КПО/фильтр Выручка'))
 
@@ -713,11 +703,7 @@ static def VyruchkaVseToggleProc4() {
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    def opnbrws = OpnBrws()
 
     WebUI.click(findTestObject('КПО/тогл ПРОЦЕНТ'))
 
@@ -991,11 +977,7 @@ static def VyruchkaOneToggleProc5() {
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    def opnbrws = OpnBrws()
 
     WebUI.click(findTestObject('КПО/тогл ПРОЦЕНТ'))
 
@@ -1136,11 +1118,7 @@ static def VyruchkaTwoToggleProc6() {
     'БЛОК РУКОВОДИТЕЛЕЙ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 1))
 
-    WebUI.setText(findTestObject('Object Repository/КПО/input__password'), findTestData('Test Data').getValue(6, 1))
-
-    WebUI.setText(findTestObject('Object Repository/КПО/input__username'), findTestData('Test Data').getValue(5, 1))
-
-    WebUI.click(findTestObject('Object Repository/КПО/button_'))
+    def opnbrws = OpnBrws()
 
     WebUI.click(findTestObject('КПО/тогл ПРОЦЕНТ'))
 
@@ -1453,21 +1431,19 @@ static def WriteToExcel(def widget, def dzo, def togle) {
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dzo)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, dzo)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, filtrVrch)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, filtrVrch)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, year)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, page)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, widget)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, widget)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, togle)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, togle)
-
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 8, date)
+    ExcelKeywords.setValueToCellByIndex(sheet01, n, 7, date)
 
     n = (n + 1)
 
@@ -1511,6 +1487,34 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('КПО/Июнь 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('КПО/3 квартал 2024 раскрыть'), 30)
+
+    WebUI.click(findTestObject('КПО/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('КПО/Июль 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
+}
+
+static def OpnBrws() {
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+
+        WebUI.delay(5)
+    } else {
+        WebUI.refresh()
+
+        WebUI.delay(5)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
 }
 

@@ -193,7 +193,7 @@ static void DZOChange1(def dZO, def dZOBR, def dZOBB) {
     if (dZO == 'Россети Тюмень') {
         println(dZO)
 
-        WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Северо-Запад'), 30)
+        WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Россети Тюмень'), 30)
 
         WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать Тюмень'))
     }
@@ -389,19 +389,33 @@ def Test(def dZO, def dZOBR, def dZOBB) {
 
     WebUI.openBrowser('')
 
+    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
+
     WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
-    WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 5))
+    WebUI.delay(5)
 
-    WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+    if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
-    WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 
-    WebUI.click(findTestObject('Общие в сеть/button_'))
+        WebUI.click(findTestObject('Общие в сеть/button_'))
 
-    WebUI.delay(20)
+        WebUI.delay(5)
+    } else {
+        WebUI.refresh()
 
+        WebUI.delay(5)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
+    }
+    
     ChangeDateBR()
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
@@ -445,7 +459,7 @@ def Test(def dZO, def dZOBR, def dZOBB) {
     'БАЛАНСЫ'
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 6))
 
-    WebUI.delay(30)
+    WebUI.delay(20)
 
     ChangeDateBB()
 
@@ -568,6 +582,14 @@ def ChangeDateBR() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
 
@@ -607,6 +629,14 @@ def ChangeDateBB() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
