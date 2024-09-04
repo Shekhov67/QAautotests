@@ -236,28 +236,11 @@ static def OpenBrowser() {
 		
 		WebUI.refresh()
 		
-		WebUI.delay(10)
+		WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 		
-		if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-	
-			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-	
-			WebUI.click(findTestObject('Общие в сеть/button_'))
-	
-			WebUI.delay(15)
-		} else {
-			WebUI.refresh()
-	
-			WebUI.delay(15)
-	
-			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-	
-			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-	
-			WebUI.click(findTestObject('Общие в сеть/button_'))
-		}
+		WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
 		
+		WebUI.click(findTestObject('Общие в сеть/button_'))
 	}
 	
 	

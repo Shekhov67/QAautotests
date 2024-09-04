@@ -61,7 +61,7 @@ static def OpenBrowser() {
 
     WebUI.navigateToUrl(findTestData('Test Data').getValue(7, 3))
 
-    WebUI.delay(15)
+    WebUI.delay(5)
 
     if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
         WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -70,32 +70,17 @@ static def OpenBrowser() {
 
         WebUI.click(findTestObject('Общие в сеть/button_'))
 
-        WebUI.delay(15)
+        WebUI.delay(5)
     } else {
-		
-		WebUI.refresh()
-		
-		WebUI.delay(10)
-		
-		if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
-			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-	
-			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-	
-			WebUI.click(findTestObject('Общие в сеть/button_'))
-	
-			WebUI.delay(15)
-		} else {
-			WebUI.refresh()
-	
-			WebUI.delay(15)
-	
-			WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
-	
-			WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
-	
-			WebUI.click(findTestObject('Общие в сеть/button_'))
-		}
+        WebUI.refresh()
+
+        WebUI.delay(5)
+
+        WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
+
+        WebUI.setText(findTestObject('Общие/input__password'), findTestData('Test Data').getValue(6, 1))
+
+        WebUI.click(findTestObject('Общие в сеть/button_'))
     }
 }
 
