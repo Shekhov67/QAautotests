@@ -574,6 +574,14 @@ otpuskVSeti = findTestData('Test Data').getValue(4, 88)
 
 println(otpuskVSeti)
 
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
+
+WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр ДЗО'))
+
 WebUI.click(findTestObject('Отпуск в сеть сверка/ПАО Росссети'))
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/Магистральные сети'))
@@ -863,6 +871,14 @@ static def SelectDate() {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
