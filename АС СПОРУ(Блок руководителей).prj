@@ -4,9 +4,12 @@
    <name>АС СПОРУ(Блок руководителей)</name>
    <tag></tag>
    <UUID>5ca80658-1669-4d64-b109-9897b4eab128</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>9.5.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\shekhov-aa\Desktop\АС СПОРУ(Блок руководителей)\АС СПОРУ(Блок руководителей).prj</projectFileLocation>
+   <projectFileLocation>C:\Users\Daria\git\QAautotests1\АС СПОРУ(Блок руководителей).prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
