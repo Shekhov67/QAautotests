@@ -4,5 +4,6 @@
    <name>БАЛАНСЫ - Объем потерь ПАО Россети</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>740c864a-766b-45ad-ab31-aecc66b4ddc3</testCaseGuid>
 </TestCaseEntity>

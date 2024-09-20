@@ -20,6 +20,15 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+String a0
+String b0
+String e0
+String f0
+String a01
+String b01
+String e01
+String f01
+
 def test1 = Test1()
 
 WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
@@ -90,8 +99,7 @@ String f1 = WebUI.getText(findTestObject('Объем потерь сверка -
 
 println(f1)
 
-def compromision = Compromosion(def a0 = a, def b0 = b, def e0 = e, def f0 = f, def a01 = a1, def b01 = b1, def e01 = e1, 
-    def f01 = f1)
+def compromision = Comparison(a0 = a, b0 = b, e0 = e, df0 = f, a01 = a1, b01 = b1, e01 = e1, f01 = f1)
 
 WebUI.closeBrowser()
 
@@ -173,7 +181,7 @@ static def WriteToExcel(def widget, def month) {
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 }
 
-static def Compromosion(def a0, def b0, def e0, def f0, def a01, def b01, def e01, def f01) {
+static def Comparison(def a0, def b0, def e0, def f0, def a01, def b01, def e01, def f01) {
     if (WebUI.verifyEqual(a0, a01)) {
         println('GOOD')
     } else {

@@ -23,6 +23,16 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 '0'
 def openBrwsr = OpenBrowser()
 
+boolean check
+
+String page
+
+String path =''
+
+String file =''
+
+String typeData
+
 String otpuskVSeti = findTestData('Test Data').getValue(4, 87)
 
 println(otpuskVSeti)
@@ -31,7 +41,7 @@ raspred = Raspred()
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-def selectDate = SelectDate()
+def selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -43,9 +53,9 @@ fileDataString = otpuskVSeti
 
 println(fileDataString)
 
-def check = Check(pageString = pageDataString, fileString = fileDataString, path)
+check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-def scanErr = ScanErrors(def page)
+def scanErr = ScanErrors(file, page, path)
 
 WebUI.closeBrowser()
 
@@ -62,11 +72,11 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
-scanErr = ScanErrors(page)
+scanErr = ScanErrors(file, page, path)
 
 pageDataString = WebUI.getText(findTestObject(path))
 
@@ -76,9 +86,9 @@ fileDataString = otpuskVSeti
 
 println(fileDataString)
 
-check = Check(pageString = pageDataString, fileString = fileDataString, path)
+check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-scanErr = ScanErrors(page)
+scanErr = ScanErrors(file, page, path)
 
 WebUI.closeBrowser()
 
@@ -95,7 +105,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -110,9 +120,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     WebUI.closeBrowser()
 }
@@ -130,7 +140,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -143,9 +153,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -155,7 +165,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -183,7 +193,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -196,9 +206,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 }
 
 '5'
@@ -219,7 +229,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -232,9 +242,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     WebUI.closeBrowser()
 }
@@ -257,7 +267,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -270,9 +280,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -282,7 +292,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -308,7 +318,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -321,9 +331,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -333,7 +343,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -360,7 +370,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -373,9 +383,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -385,7 +395,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -410,7 +420,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть сверка/применить в фльтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -423,9 +433,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -435,7 +445,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -460,7 +470,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -473,9 +483,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     WebUI.closeBrowser()
 }
@@ -497,7 +507,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -510,9 +520,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     WebUI.closeBrowser()
 }
@@ -534,7 +544,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -547,9 +557,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -559,7 +569,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -590,7 +600,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -603,9 +613,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     WebUI.closeBrowser()
 }
@@ -627,7 +637,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -640,9 +650,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -652,7 +662,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -677,7 +687,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -690,9 +700,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -702,7 +712,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -727,7 +737,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -740,9 +750,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     if (check == false) {
         println('Start filial')
@@ -752,7 +762,7 @@ if (pageDataString == null) {
     } else {
         println('End case DZO')
 
-        scanErr = ScanErrors(page)
+        scanErr = ScanErrors(file, page, path)
 
         WebUI.deleteAllCookies()
 
@@ -777,7 +787,7 @@ WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать
 
 WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре ДЗО'))
 
-selectDate = SelectDate()
+selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
@@ -790,9 +800,9 @@ if (pageDataString == null) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-    scanErr = ScanErrors(page)
+    scanErr = ScanErrors(file, page, path)
 
     WebUI.closeBrowser()
 }
@@ -839,7 +849,7 @@ static def SelectDzo() {
     WebUI.click(findTestObject('Отпуск в сеть сверка/РаспредКомплекс'))
 }
 
-static def SelectDate() {
+static def SelectDate(def file, def page, def path) {
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/снять выделения в фильтре Дата'))
@@ -884,24 +894,24 @@ static def SelectDate() {
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    def scanErr = ScanErrors(def path)
+    def scanErr = ScanErrors(file, page, path)
 }
 
-static def ScanErrors(def path) {
+static def ScanErrors(def file, def page, def path) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'нет данных', path)
+        def write = WriteToExcel(file = '', page = 'нет данных', path)
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Ошибка запроса данных', path)
+        def write = WriteToExcel(file = '', page = 'Ошибка запроса данных', path)
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Произошла ошибка при выполнении пользовательского кода', path)
+        def write = WriteToExcel(file = '', page = 'Произошла ошибка при выполнении пользовательского кода', path)
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'У виджета нет данных', path)
+        def write = WriteToExcel(file = '', page = 'У виджета нет данных', path)
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Некорректные фильтры', path)
+        def write = WriteToExcel(file = '', page = 'Некорректные фильтры', path)
     }
 }
 
-static def Check(def pageString, def fileString, def path) {
+static def Check(def typeData, def pageString, def fileString, def path) {
     pageString = pageString.replaceAll('\\s+', '')
 
     int page = pageString.toInteger()
@@ -921,7 +931,7 @@ static def Check(def pageString, def fileString, def path) {
     if (WebUI.verifyEqual(page1, file) == true) {
         return true
     } else {
-        def write = WriteToExcel(file, page, def typeData = 'Отпуск в сеть', path)
+        def write = WriteToExcel(file, page, typeData = 'Отпуск в сеть', path)
 
         return false
     }

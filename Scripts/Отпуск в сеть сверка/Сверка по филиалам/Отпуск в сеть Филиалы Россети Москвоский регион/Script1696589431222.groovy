@@ -20,6 +20,14 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+
+
+String file
+
+String path
+
+String page
+
 '1'
 openBrwsr = OpenBrowser()
 
@@ -57,7 +65,7 @@ println(fileDataString)
 
 check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-scanErr = ScanErrors(def page)
+scanErr = ScanErrors(file, page, path)
 
 WebUI.closeBrowser()
 
@@ -102,7 +110,7 @@ println(fileDataString)
 
 check = Check(pageString = pageDataString, fileString = fileDataString, path)
 
-scanErr = ScanErrors(page)
+scanErr = ScanErrors(file, page, path)
 
 WebUI.closeBrowser()
 
@@ -152,18 +160,19 @@ static def SelectDzo() {
     WebUI.click(findTestObject('Отпуск в сеть сверка/РаспредКомплекс'))
 }
 
-static def ScanErrors(def path) {
-    if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'нет данных', path)
-    } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Ошибка запроса данных', path)
-    } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Произошла ошибка при выполнении пользовательского кода', path)
-    } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'У виджета нет данных', path)
-    } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel(def file = '', def page = 'Некорректные фильтры', path)
-    }
+
+static def ScanErrors(def file, def page, def path) {
+	if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
+		def write = WriteToExcel(file = '', page = 'нет данных', path)
+	} else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
+		def write = WriteToExcel(file = '', page = 'Ошибка запроса данных', path)
+	} else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
+		def write = WriteToExcel(file = '', page = 'Произошла ошибка при выполнении пользовательского кода', path)
+	} else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
+		def write = WriteToExcel(file = '', page = 'У виджета нет данных', path)
+	} else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
+		def write = WriteToExcel(file = '', page = 'Некорректные фильтры', path)
+	}
 }
 
 static def Check(def pageString, def fileString, def path) {

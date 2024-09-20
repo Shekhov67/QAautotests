@@ -21,10 +21,12 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import org.apache.commons.lang3.StringUtils as StringUtils
 
-'ВСЕ ДЗО'
-def test1 = Test1()
+String page
 
-static def WriteToExcel(def a, def b, def v) {
+'ВСЕ ДЗО'
+def test1 = Test1(page)
+
+static def WriteToExcel(def a, def b, def v, def page) {
     String sheetName = 'List1'
 
     def data = findTestData('Test Data')
@@ -39,7 +41,7 @@ static def WriteToExcel(def a, def b, def v) {
 
     String dashboardName = 'Отпуск из сети'
 
-    String page = 'Данные не  совпадают'
+    page = 'Данные не  совпадают'
 
     def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
 
@@ -64,17 +66,17 @@ static def WriteToExcel(def a, def b, def v) {
     ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 }
 
-static def ScanErrors() {
+static def ScanErrors(def page) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel2(def page = 'У виджета нет данных')
+        def write = WriteToExcel2(page = 'У виджета нет данных')
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel2(def page = 'Ошибка запроса данных')
+        def write = WriteToExcel2(page = 'Ошибка запроса данных')
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel2(def page = 'Произошла ошибка при выполнении пользовательского кода')
+        def write = WriteToExcel2(page = 'Произошла ошибка при выполнении пользовательского кода')
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel2(def page = 'У виджета нет данных')
+        def write = WriteToExcel2(page = 'У виджета нет данных')
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel2(def page = 'Некорректные фильтры')
+        def write = WriteToExcel2(page = 'Некорректные фильтры')
     }
 }
 
@@ -170,7 +172,7 @@ static def WriteToExcel2(def page) {
     }
 }
 
-static def Test1() {
+static def Test1(def page) {
     WebUI.openBrowser('')
 
     WebUI.refresh()
@@ -190,7 +192,7 @@ static def Test1() {
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/применить в фильтре ДЗО'))
 
-    def scan = ScanErrors()
+    def scan = ScanErrors(page)
 
     String a = WebUI.getText(findTestObject('Отпуск из сети(виджеты)/Page_Visiology Platform/a1'))
 

@@ -20,6 +20,14 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+String err
+
+String typeDate
+
+String pageString
+
+String fileString
+
 '1'
 start = OpenBrowser()
 
@@ -49,7 +57,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-scanErr = ScannErrors(path = 'Нет данных')
+scanErr = ScannErrors(path = 'Нет данных', err)
 
 if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
     print('Сверка с ПБЭ')
@@ -65,7 +73,7 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate)
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -74,7 +82,7 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     fileDataString = percentPoter
 
-    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate)
 } else {
     print('Данные не отображются')
 
@@ -114,7 +122,7 @@ WebUI.click(findTestObject('Объем потерь (Данные в видже�
 
 WebUI.callTestCase(findTestCase('Объем потерь сверка/Выбор даты для сверки филиалов/Дата для сверки'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-scanErr = ScannErrors(path = 'Нет данных')
+scanErr = ScannErrors(path = 'Нет данных', err)
 
 if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
     print('Сверка с ПБЭ')
@@ -130,7 +138,7 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     println(fileDataString)
 
-    check = Check(pageString = pageDataString, fileString = fileDataString, path)
+    check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate)
 
     path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -139,7 +147,7 @@ if (WebUI.verifyTextNotPresent('нет данных', true) == true) {
 
     fileDataString = percentPoter
 
-    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+    checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate)
 } else {
     print('Данные не отображются')
 
@@ -195,177 +203,183 @@ static def SelectDzo() {
     WebUI.click(findTestObject('Объем потерь сверка/РаспредКомплекс'))
 }
 
-static def ScannErrors(def path) {
-    if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel2(def page = 'нет данных', path)
-    } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel2(def page = 'Ошибка запроса данных', path)
-    } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel2(def page = 'Произошла ошибка при выполнении пользовательского кода', path)
-    } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel2(def page = 'У виджета нет данных', path)
-    } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel2(def page = 'Некорректные фильтры', path)
-    }
+static def ScannErrors(def path, def err) {
+	if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
+		def write = WriteToExcel2(err = 'нет данных')
+	} else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
+		def write = WriteToExcel2(err = 'Ошибка запроса данных')
+	} else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
+		def write = WriteToExcel2(err = 'Произошла ошибка при выполнении пользовательского кода')
+	} else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
+		def write = WriteToExcel2(err = 'У виджета нет данных')
+	} else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
+		def write = WriteToExcel2(err = 'Некорректные фильтры')
+	}
 }
 
-static def Check(def pageString, def fileString, def path) {
-    pageString = pageString.replaceAll('\\s+', '')
+static def Check(def pageString, def fileString, def path, def typeDate) {
+	pageString = pageString.replaceAll('\\s+', '')
 
-    int page = pageString.toInteger()
+	int page = pageString.toInteger()
 
-    int page1
+	int page1
 
-    int file = fileString.toInteger()
+	int file = fileString.toInteger()
 
-    if (page == file) {
-        page1 = page
-    } else if (page > file) {
-        page1 = (page - 1)
-    } else if (page < file) {
-        page1 = (page + 1)
-    }
-    
-    if (WebUI.verifyEqual(page1, file) == true) {
-    } else {
-        def write = WriteToExcel(file, page, path)
-    }
+	if (page == file) {
+		page1 = page
+	} else if (page > file) {
+		page1 = (page - 1)
+	} else if (page < file) {
+		page1 = (page + 1)
+	}
+	
+	if (WebUI.verifyEqual(page1, file) == true) {
+
+	} else {
+		def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
+
+	}
 }
 
-static def CheckPercents(def pageString, def fileString, def path) {
-    println(pageString)
+static def CheckPercents(def pageString, def fileString, def path, def typeDate) {
+	println(pageString)
 
-    int i = pageString.length()
+	int i = pageString.length()
 
-    println(i)
+	println(i)
 
-    if (i > 4) {
-        String first = pageString.charAt(0)
+	if (i > 4) {
+		String first = pageString.charAt(0)
 
-        String second = pageString.charAt(1)
+		String second = pageString.charAt(1)
 
-        String third = pageString.charAt(2)
+		String third = pageString.charAt(2)
 
-        String fourth = pageString.charAt(3)
+		String fourth = pageString.charAt(3)
 
-        String fifth = pageString.charAt(4)
+		String fifth = pageString.charAt(4)
 
-        pageString = ((((first + second) + third) + fourth) + fifth)
+		pageString = ((((first + second) + third) + fourth) + fifth)
 
-        pageString = pageString.trim()
+		pageString = pageString.trim()
 
-        println(pageString)
-    } else {
-        pageString = pageString.trim()
+		println(pageString)
+	} else {
+		pageString = pageString.trim()
 
-        println(pageString)
-    }
-    
-    double page = pageString.toDouble()
+		println(pageString)
+	}
+	
+	double page = pageString.toDouble()
 
-    println(page)
+	println(page)
 
-    String ii = fileString
+	String ii = fileString
 
-    double file = Double.parseDouble(ii.replace(',', '.'))
+	double file = Double.parseDouble(ii.replace(',', '.'))
 
-    println(file)
+	println(file)
 
-    if (WebUI.verifyEqual(page, file) == true) {
-    } else {
-        def write = WriteToExcel(file, page, path)
-    }
+	if (WebUI.verifyEqual(page, file) == true) {
+
+	} else {
+		def write = WriteToExcel(file, page, path, typeDate = 'Уровень потерь')
+	
+	}
 }
 
-static def WriteToExcel(def file, def page, def path) {
-    String sheetName = 'List1'
 
-    def data = findTestData('Test Data')
+static def WriteToExcel(def file, def page, def path, def typeDate) {
+	String sheetName = 'List1'
 
-    int n = data.getRowNumbers() + 1
+	def data = findTestData('Test Data')
 
-    String dashboardName = 'Объем потерь'
+	int n = data.getRowNumbers() + 1
 
-    def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePathFilials)
+	String dashboardName = 'Объем потерь'
 
-    def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
+	def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
 
-    println(n)
+	def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-    println(path)
+	println(n)
 
-    path = path.replaceAll('Объем потерь сверка/Данные со страницы Объем потерь/', '')
+	println(path)
 
-    String dZO = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
+	path = path.replaceAll('Объем потерь сверка/Данные со страницы Объем потерь/', '')
 
-    println(dZO)
+	String dZO = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
-    Date d = new Date()
+	println(dZO)
 
-    SimpleDateFormat format1
+	println(typeDate)
 
-    format1 = new SimpleDateFormat('dd.MM.yyyy')
+	Date d = new Date()
 
-    String date = format1.format(d)
+	SimpleDateFormat format1
 
-    println(date)
+	format1 = new SimpleDateFormat('dd.MM.yyyy')
 
-    String year = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+	String date = format1.format(d)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+	println(date)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+	String year = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, file)
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, file)
 
-    ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, page)
 
-    n = (n + 1)
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, year)
 
-    ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePathFilials, workbook01)
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 5, date)
+
+	ExcelKeywords.setValueToCellByIndex(sheet01, n, 6, typeDate)
+
+	n = (n + 1)
+
+	ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 }
 
-static def WriteToExcel2(def err, def page) {
-    String sheetName = 'List1'
+static def WriteToExcel2(def err) {
+	String sheetName = 'List1'
 
-    def data = findTestData('Test Data')
+	def data = findTestData('Test Data')
 
-    int n = data.getRowNumbers() + 1
+	int n = data.getRowNumbers() + 1
 
-    String dZO = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
+	String dZO = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр ДЗО'))
 
-    String year = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
+	String year = WebUI.getText(findTestObject('Объем потерь (Данные в виджетах)/фильтр Дата'))
 
-    println(year)
+	println(year)
 
-    String dashboardName = 'Объем потерь'
+	String dashboardName = 'Объем потерь'
 
-    def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePathFilials)
+	def workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelFilePath)
 
-    def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
+	def sheet01 = ExcelKeywords.getExcelSheet(workbook01, sheetName)
 
-    if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
+	if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 1, dZO)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 2, year)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
+		ExcelKeywords.setValueToCellByIndex(sheet01, n, 3, err)
 
-        ExcelKeywords.setValueToCellByIndex(sheet01, n, 4, page)
+		n = (n + 1)
 
-        n = (n + 1)
+		ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePath, workbook01)
 
-        ExcelKeywords.saveWorkbook(GlobalVariable.excelFilePathFilials, workbook01)
-
-        WebUI.closeBrowser()
-    }
+		WebUI.closeBrowser()
+	}
 }
-
 
 

@@ -4,5 +4,6 @@
    <name>Отпуск в сеть Филиалы Россети Волга</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>66e8240f-dff6-4b9d-a05a-e6d27aa5a455</testCaseGuid>
 </TestCaseEntity>

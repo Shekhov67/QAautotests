@@ -20,41 +20,51 @@ import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-def test0 = Test0()
+String err
 
-def test1 = Test1()
+String typeDate
 
-def test2 = Test2()
+String pageString
 
-def test3 = Test3()
+String fileString
 
-def test4 = Test4()
+int filials = 0
 
-def test5 = Test5()
+def test0 = Test0(err, typeDate, pageString, fileString, filials)
 
-def test6 = Test6()
+def test1 = Test1(err, typeDate, pageString, fileString, filials)
 
-def test7 = Test7()
+def test2 = Test2(err, typeDate, pageString, fileString, filials)
 
-def test8 = Test8()
+def test3 = Test3(err, typeDate, pageString, fileString, filials)
 
-def test9 = Test9()
+def test4 = Test4(err, typeDate, pageString, fileString, filials)
 
-def test10 = Test10()
+def test5 = Test5(err, typeDate, pageString, fileString, filials)
 
-def test11 = Test11()
+def test6 = Test6(err, typeDate, pageString, fileString, filials)
 
-def test12 = Test12()
+def test7 = Test7(err, typeDate, pageString, fileString, filials)
 
-def test13 = Test13()
+def test8 = Test8(err, typeDate, pageString, fileString, filials)
 
-def test14 = Test14()
+def test9 = Test9(err, typeDate, pageString, fileString, filials)
 
-def test15 = Test15()
+def test10 = Test10(err, typeDate, pageString, fileString, filials)
 
-def test16 = Test16()
+def test11 = Test11(err, typeDate, pageString, fileString, filials)
 
-def test17 = Test17()
+def test12 = Test12(err, typeDate, pageString, fileString, filials)
+
+def test13 = Test13(err, typeDate, pageString, fileString, filials)
+
+def test14 = Test14(err, typeDate, pageString, fileString, filials)
+
+def test15 = Test15(err, typeDate, pageString, fileString, filials)
+
+def test16 = Test16(err, typeDate, pageString, fileString, filials)
+
+def test17 = Test17(err, typeDate, pageString, fileString, filials)
 
 static def OpenBrowser() {
     WebUI.openBrowser('')
@@ -142,21 +152,21 @@ static def SelectDate() {
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
-static def ScannErrors(def path) {
+static def ScannErrors(def path, def err) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel2(def err = 'нет данных')
+        def write = WriteToExcel2(err = 'нет данных')
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel2(def err = 'Ошибка запроса данных')
+        def write = WriteToExcel2(err = 'Ошибка запроса данных')
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel2(def err = 'Произошла ошибка при выполнении пользовательского кода')
+        def write = WriteToExcel2(err = 'Произошла ошибка при выполнении пользовательского кода')
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel2(def err = 'У виджета нет данных')
+        def write = WriteToExcel2(err = 'У виджета нет данных')
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel2(def err = 'Некорректные фильтры')
+        def write = WriteToExcel2(err = 'Некорректные фильтры')
     }
 }
 
-static def Check(def pageString, def fileString, def path) {
+static def Check(def pageString, def fileString, def path, def typeDate, def filials) {
     pageString = pageString.replaceAll('\\s+', '')
 
     int page = pageString.toInteger()
@@ -174,15 +184,16 @@ static def Check(def pageString, def fileString, def path) {
     }
     
     if (WebUI.verifyEqual(page1, file) == true) {
-        return true
-    } else {
-        def write = WriteToExcel(file, page, path, def typeDate = 'Объем потерь')
 
-        return false
-    }
+	} else {
+		def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
+
+		filials = 1
+		
+	}
 }
 
-static def CheckPercents(def pageString, def fileString, def path) {
+static def CheckPercents(def pageString, def fileString, def path, def typeDate, def filials) {
     println(pageString)
 
     int i = pageString.length()
@@ -222,12 +233,14 @@ static def CheckPercents(def pageString, def fileString, def path) {
     println(file)
 
     if (WebUI.verifyEqual(page, file) == true) {
-        return true
-    } else {
-        def write = WriteToExcel(file, page, path, def typeDate = 'Уровень потерь')
 
-        return false
-    }
+    } else {
+   
+		def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
+
+		filials = 1
+		
+	}
 }
 
 static def WriteToExcel(def file, def page, def path, def typeDate) {
@@ -338,7 +351,7 @@ static def Raspred() {
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре ДЗО'))
 }
 
-static def Test0() {
+static def Test0(def err, def typeDate, def pageString, def fileString, def filials) {
     '0'
     def start = OpenBrowser()
 
@@ -354,18 +367,17 @@ static def Test0() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -374,7 +386,7 @@ static def Test0() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -383,9 +395,9 @@ static def Test0() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -395,7 +407,7 @@ static def Test0() {
     WebUI.closeBrowser()
 }
 
-static def Test1() {
+static def Test1(def err, def typeDate, def pageString, def fileString, def filials) {
     '1'
     def start = OpenBrowser()
 
@@ -415,18 +427,17 @@ static def Test1() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -435,18 +446,17 @@ static def Test1() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
-            0, percentPoter.length())
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(0, percentPoter.length())
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -454,7 +464,7 @@ static def Test1() {
     }
 }
 
-static def Test2() {
+static def Test2(def err, def typeDate, def pageString, def fileString, def filials) {
     '2'
     def start = OpenBrowser()
 
@@ -474,18 +484,18 @@ static def Test2() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -494,7 +504,7 @@ static def Test2() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -503,9 +513,9 @@ static def Test2() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -513,7 +523,8 @@ static def Test2() {
     }
 }
 
-static def Test3() {
+static def Test3(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '3'
     def start = OpenBrowser()
 
@@ -533,18 +544,18 @@ static def Test3() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -553,7 +564,7 @@ static def Test3() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -564,22 +575,21 @@ static def Test3() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-        if (check == false) {
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
+		
+		println('filials: ' + filials)
+		
+        if (f > 0) {
             println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
+       
         } else {
+
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -588,7 +598,7 @@ static def Test3() {
     }
 }
 
-static def Test4() {
+static def Test4(def err, def typeDate, def pageString, def fileString, def filials) {
     '4'
     def start = OpenBrowser()
 
@@ -612,18 +622,18 @@ static def Test4() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -634,7 +644,7 @@ static def Test4() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -643,9 +653,9 @@ static def Test4() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -653,7 +663,7 @@ static def Test4() {
     }
 }
 
-static def Test5() {
+static def Test5(def err, def typeDate, def pageString, def fileString, def filials) {
     '5'
     def start = OpenBrowser()
 
@@ -677,18 +687,18 @@ static def Test5() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -699,7 +709,7 @@ static def Test5() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -708,9 +718,9 @@ static def Test5() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -718,7 +728,8 @@ static def Test5() {
     }
 }
 
-static def Test6() {
+static def Test6(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '6'
     def start = OpenBrowser()
 
@@ -742,18 +753,18 @@ static def Test6() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -762,7 +773,7 @@ static def Test6() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -771,22 +782,21 @@ static def Test6() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
+	
+		
+		if (f > 0) {
+			println('Start filial')
 
-        if (check == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -795,7 +805,8 @@ static def Test6() {
     }
 }
 
-static def Test7() {
+static def Test7(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '7'
     def start = OpenBrowser()
 
@@ -819,16 +830,16 @@ static def Test7() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
-        return 
+        
         
         WebUI.closeBrowser()
     } else {
@@ -839,7 +850,7 @@ static def Test7() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -852,22 +863,19 @@ static def Test7() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-        if (check == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
+			
+		if (f > 0) {
+			println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -876,7 +884,8 @@ static def Test7() {
     }
 }
 
-static def Test8() {
+static def Test8(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '8'
     def start = OpenBrowser()
 
@@ -900,18 +909,18 @@ static def Test8() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -920,7 +929,7 @@ static def Test8() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -933,22 +942,22 @@ static def Test8() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        if (check == false) {
-            println('Start filial')
+		
+		if (f > 0) {
+			println('Start filial')
 
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+
+			
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -957,7 +966,8 @@ static def Test8() {
     }
 }
 
-static def Test9() {
+static def Test9(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '9'
     def start = OpenBrowser()
 
@@ -981,18 +991,18 @@ static def Test9() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1001,7 +1011,7 @@ static def Test9() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1010,22 +1020,22 @@ static def Test9() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        if (check == false) {
-            println('Start filial')
+		
+		if (f > 0) {
+			println('Start filial')
 
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+
+			
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -1034,7 +1044,7 @@ static def Test9() {
     }
 }
 
-static def Test10() {
+static def Test10(def err, def typeDate, def pageString, def fileString, def filials) {
     '10'
     def start = OpenBrowser()
 
@@ -1058,18 +1068,18 @@ static def Test10() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1078,7 +1088,7 @@ static def Test10() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1087,9 +1097,9 @@ static def Test10() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -1097,7 +1107,7 @@ static def Test10() {
     }
 }
 
-static def Test11() {
+static def Test11(def err, def typeDate, def pageString, def fileString, def filials) {
     '11'
     def start = OpenBrowser()
 
@@ -1121,18 +1131,18 @@ static def Test11() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1141,7 +1151,7 @@ static def Test11() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1150,9 +1160,9 @@ static def Test11() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -1160,7 +1170,8 @@ static def Test11() {
     }
 }
 
-static def Test12() {
+static def Test12(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '12'
     def start = OpenBrowser()
 
@@ -1184,11 +1195,11 @@ static def Test12() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
+    String pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
         0, obemPoter.length())
 
     println(pageDataString)
@@ -1196,7 +1207,7 @@ static def Test12() {
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1207,7 +1218,7 @@ static def Test12() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1218,22 +1229,21 @@ static def Test12() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
+		
+		if (f > 0) {
+			println('Start filial')
 
-        if (check == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+
+			
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -1242,7 +1252,7 @@ static def Test12() {
     }
 }
 
-static def Test13() {
+static def Test13(def err, def typeDate, def pageString, def fileString, def filials) {
     '13'
     def start = OpenBrowser()
 
@@ -1272,18 +1282,18 @@ static def Test13() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1294,7 +1304,7 @@ static def Test13() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1303,9 +1313,9 @@ static def Test13() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 
@@ -1313,7 +1323,8 @@ static def Test13() {
     }
 }
 
-static def Test14() {
+static def Test14(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '14'
     def start = OpenBrowser()
 
@@ -1337,18 +1348,18 @@ static def Test14() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1359,7 +1370,7 @@ static def Test14() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1368,22 +1379,22 @@ static def Test14() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        if (check == false) {
-            println('Start filial')
+		
+		if (f > 0) {
+			println('Start filial')
 
+			
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+
+			
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -1392,7 +1403,8 @@ static def Test14() {
     }
 }
 
-static def Test15() {
+static def Test15(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '15'
     def start = OpenBrowser()
 
@@ -1416,18 +1428,18 @@ static def Test15() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1438,7 +1450,7 @@ static def Test15() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1447,22 +1459,21 @@ static def Test15() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
-
-        if (check == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
+		
+		println('filials: ' + filials)
+		
+		if (f > 0) {
+			println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+      
         } else {
+			
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -1471,7 +1482,8 @@ static def Test15() {
     }
 }
 
-static def Test16() {
+static def Test16(def err, def typeDate, def pageString, def fileString, def filials) {
+	int f
     '16'
     def start = OpenBrowser()
 
@@ -1495,18 +1507,18 @@ static def Test16() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1517,7 +1529,7 @@ static def Test16() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        f = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1526,22 +1538,22 @@ static def Test16() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
+		
+		println('filials: ' + filials)
+		
+		if (f > 0) {
+			println('Start filial')
 
-        if (check == false) {
-            println('Start filial')
-
-            WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), 
-                [:], FailureHandling.CONTINUE_ON_FAILURE)
-        } else if (checkPercents == false) {
-            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
+        
         } else {
+			
             println('End case DZO')
 
-            def scanErr = ScannErrors(path)
+            def scanErr = ScannErrors(path, err)
 
             WebUI.deleteAllCookies()
 
@@ -1550,7 +1562,7 @@ static def Test16() {
     }
 }
 
-static def Test17() {
+static def Test17(def err, def typeDate, def pageString, def fileString, def filials) {
     '17'
     def start = OpenBrowser()
 
@@ -1574,18 +1586,18 @@ static def Test17() {
 
     def selectDate = SelectDate()
 
-    def write2 = WriteToExcel2(def err = 'Сверка не прошла')
+    def write2 = WriteToExcel2(err = 'Сверка не прошла')
 
-    def path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
+    String path = 'Объем потерь сверка/Данные со страницы Объем потерь/Объем потерь АО Тываэнерго'
 
-    def pageDataString = WebUI.getText(findTestObject(path))
+    String pageDataString = WebUI.getText(findTestObject(path))
 
     println(pageDataString)
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
 
-        return 
+        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1594,7 +1606,7 @@ static def Test17() {
 
         println(fileDataString)
 
-        def check = Check(def pageString = pageDataString, def fileString = fileDataString, path)
+        def check = Check(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
@@ -1603,9 +1615,9 @@ static def Test17() {
 
         fileDataString = percentPoter
 
-        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path)
+        def checkPercents = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-        def scanErr = ScannErrors(path)
+        def scanErr = ScannErrors(path, err)
 
         WebUI.deleteAllCookies()
 

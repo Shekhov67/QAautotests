@@ -4,5 +4,6 @@
    <name>Отпуск в сеть Филиалы Россети Северо-Запад</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>10c3dd17-4c2c-4708-8e17-3f0769408a3c</testCaseGuid>
 </TestCaseEntity>
