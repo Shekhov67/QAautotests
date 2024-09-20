@@ -21,6 +21,10 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import org.apache.commons.lang3.StringUtils as StringUtils
 
+String pageBR
+
+String pageBB
+
 String dZO
 
 String dZOBR
@@ -29,75 +33,75 @@ String dZOBB
 
 dZO = 'ПАО Россети'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'ФСК ЕЭС'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Тываэнерго'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Чеченэнерго'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Волга'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Кубань'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Росссети Ленэнерго(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Московский регион'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Северный Кавказ(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Северо-Запад'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Сибирь(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Томск'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Тюмень'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Урал(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Центр'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Центр и Приволжье(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Юг(ГК)'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 dZO = 'Россети Янтарь'
 
-Test(dZO, dZOBR, dZOBB)
+Test(pageBR, pageBB, dZO, dZOBR, dZOBB)
 
 static void DZOChange1(def dZO, def dZOBR, def dZOBB) {
     if (dZO == 'ПАО Россети') {
@@ -380,7 +384,7 @@ static void DZOChange2(def dZO, def dZOBR, def dZOBB) {
     }
 }
 
-def Test(def dZO, def dZOBR, def dZOBB) {
+def Test(def pageBR, def pageBB, def dZO, def dZOBR, def dZOBB) {
     int i
 
     String a1
@@ -394,7 +398,7 @@ def Test(def dZO, def dZOBR, def dZOBB) {
     WebUI.refresh()
 
     'БЛОК РУКОВОДИТЕЛЕЙ'
-    WebUI.delay(5)
+    WebUI.delay(20)
 
     if (WebUI.verifyElementText(findTestObject('Общие/button_'), 'Вход') == true) {
         WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
@@ -403,11 +407,11 @@ def Test(def dZO, def dZOBR, def dZOBB) {
 
         WebUI.click(findTestObject('Общие в сеть/button_'))
 
-        WebUI.delay(5)
+        WebUI.delay(20)
     } else {
         WebUI.refresh()
 
-        WebUI.delay(5)
+        WebUI.delay(20)
 
         WebUI.setText(findTestObject('Общие/input__username'), findTestData('Test Data').getValue(5, 1))
 
@@ -493,21 +497,21 @@ def Test(def dZO, def dZOBR, def dZOBB) {
         String v = 'Виджет отпуск в сеть'
 
         if (a1 == null) {
-            WriteToExcel2(def pageBR = 'У виджета нет данных', def pageBB = 'У виджета нет данных', dZO, v)
+            WriteToExcel2(pageBR = 'У виджета нет данных', pageBB = 'У виджета нет данных', dZO, v)
         } else if (a1.contains('У виджета нет данных')) {
-            WriteToExcel2(def pageBR = 'У виджета нет данных', def pageBB = 'У виджета нет данных', dZO, v)
+            WriteToExcel2(pageBR = 'У виджета нет данных', pageBB = 'У виджета нет данных', dZO, v)
         } else {
-            WriteToExcel2(def pageBR = a1, def pageBB = 'У виджета нет данных', dZO, v)
+            WriteToExcel2(pageBR = a1, pageBB = 'У виджета нет данных', dZO, v)
         }
     } else if (b1.contains('нет данных')) {
         String v = 'Виджет отпуск в сеть'
 
         if (a1 == null) {
-            WriteToExcel2(def pageBR = 'У виджета нет данных', def pageBB = 'У виджета нет данных', dZO, v)
+            WriteToExcel2(pageBR = 'У виджета нет данных', pageBB = 'У виджета нет данных', dZO, v)
         } else if (a1.contains('У виджета нет данных')) {
-            WriteToExcel2(def pageBR = 'У виджета нет данных', def pageBB = 'У виджета нет данных', dZO, v)
+            WriteToExcel2(pageBR = 'У виджета нет данных', pageBB = 'У виджета нет данных', dZO, v)
         } else {
-            WriteToExcel2(def pageBR = a1, def pageBB = 'У виджета нет данных', dZO, v)
+            WriteToExcel2(pageBR = a1, pageBB = 'У виджета нет данных', dZO, v)
         }
     } else {
         b1 = b1.substring(b1.indexOf('в сеть') + 6, b1.indexOf('Факт'))
