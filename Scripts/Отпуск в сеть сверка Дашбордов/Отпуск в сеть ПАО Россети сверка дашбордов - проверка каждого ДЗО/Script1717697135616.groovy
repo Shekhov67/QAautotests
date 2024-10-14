@@ -570,21 +570,7 @@ def ChangeDateBR() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь сверка/2 квартал 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Апрель'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Май'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Июнь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), 30)
 
@@ -593,6 +579,12 @@ def ChangeDateBR() {
     WebUI.click(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Август 2024'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Август 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }
@@ -618,21 +610,7 @@ def ChangeDateBB() {
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('Объем потерь сверка/2 квартал 2024'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Апрель'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Май'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Июнь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть сверка/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), 30)
 
@@ -641,6 +619,12 @@ def ChangeDateBB() {
     WebUI.click(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Август 2024'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Август 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }

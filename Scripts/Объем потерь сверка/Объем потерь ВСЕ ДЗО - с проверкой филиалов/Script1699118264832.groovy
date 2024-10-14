@@ -149,6 +149,12 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/Август'), 30)
+
+    WebUI.scrollToElement(findTestObject('Объем потерь (Данные в виджетах)/скролл'), 30)
+
+    WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Август'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
@@ -184,13 +190,11 @@ static def Check(def pageString, def fileString, def path, def typeDate, def fil
     }
     
     if (WebUI.verifyEqual(page1, file) == true) {
+    } else {
+        def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
 
-	} else {
-		def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
-
-		filials = 1
-		
-	}
+        filials = 1
+    }
 }
 
 static def CheckPercents(def pageString, def fileString, def path, def typeDate, def filials) {
@@ -233,14 +237,11 @@ static def CheckPercents(def pageString, def fileString, def path, def typeDate,
     println(file)
 
     if (WebUI.verifyEqual(page, file) == true) {
-
     } else {
-   
-		def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
+        def write = WriteToExcel(file, page, path, typeDate = 'Объем потерь')
 
-		filials = 1
-		
-	}
+        filials = 1
+    }
 }
 
 static def WriteToExcel(def file, def page, def path, def typeDate) {
@@ -377,7 +378,6 @@ static def Test0(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -437,7 +437,6 @@ static def Test1(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -450,7 +449,8 @@ static def Test1(def err, def typeDate, def pageString, def fileString, def fili
 
         path = 'Объем потерь сверка/Данные со страницы Объем потерь/Уровень потерь АО Тываэнерго'
 
-        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(0, percentPoter.length())
+        pageDataString = WebUI.getText(findTestObject(path)).replace('Уровень потерь', '').replaceAll('\\s+', '').substring(
+            0, percentPoter.length())
 
         fileDataString = percentPoter
 
@@ -494,8 +494,6 @@ static def Test2(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -524,7 +522,8 @@ static def Test2(def err, def typeDate, def pageString, def fileString, def fili
 }
 
 static def Test3(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '3'
     def start = OpenBrowser()
 
@@ -554,8 +553,6 @@ static def Test3(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -576,17 +573,15 @@ static def Test3(def err, def typeDate, def pageString, def fileString, def fili
         fileDataString = percentPoter
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
-		
-		println('filials: ' + filials)
-		
+
+        println('filials: ' + filials)
+
         if (f > 0) {
             println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Волга'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-       
         } else {
-
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -632,8 +627,6 @@ static def Test4(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -697,8 +690,6 @@ static def Test5(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -729,7 +720,8 @@ static def Test5(def err, def typeDate, def pageString, def fileString, def fili
 }
 
 static def Test6(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '6'
     def start = OpenBrowser()
 
@@ -763,8 +755,6 @@ static def Test6(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -783,17 +773,13 @@ static def Test6(def err, def typeDate, def pageString, def fileString, def fili
         fileDataString = percentPoter
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
-	
-		
-		if (f > 0) {
-			println('Start filial')
 
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Московский регион'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -806,7 +792,8 @@ static def Test6(def err, def typeDate, def pageString, def fileString, def fili
 }
 
 static def Test7(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '7'
     def start = OpenBrowser()
 
@@ -839,8 +826,6 @@ static def Test7(def err, def typeDate, def pageString, def fileString, def fili
     println(pageDataString)
 
     if (pageDataString == null) {
-        
-        
         WebUI.closeBrowser()
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
@@ -864,15 +849,13 @@ static def Test7(def err, def typeDate, def pageString, def fileString, def fili
         fileDataString = percentPoter
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
-			
-		if (f > 0) {
-			println('Start filial')
+
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северный Кавказ'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -885,7 +868,8 @@ static def Test7(def err, def typeDate, def pageString, def fileString, def fili
 }
 
 static def Test8(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '8'
     def start = OpenBrowser()
 
@@ -919,8 +903,6 @@ static def Test8(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -944,17 +926,12 @@ static def Test8(def err, def typeDate, def pageString, def fileString, def fili
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-		
-		if (f > 0) {
-			println('Start filial')
-
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Северо-Запад'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-
-			
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -967,7 +944,8 @@ static def Test8(def err, def typeDate, def pageString, def fileString, def fili
 }
 
 static def Test9(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '9'
     def start = OpenBrowser()
 
@@ -1001,8 +979,6 @@ static def Test9(def err, def typeDate, def pageString, def fileString, def fili
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1022,17 +998,12 @@ static def Test9(def err, def typeDate, def pageString, def fileString, def fili
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-		
-		if (f > 0) {
-			println('Start filial')
-
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Сибирь(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-
-			
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -1078,8 +1049,6 @@ static def Test10(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1141,8 +1110,6 @@ static def Test11(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1171,7 +1138,8 @@ static def Test11(def err, def typeDate, def pageString, def fileString, def fil
 }
 
 static def Test12(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '12'
     def start = OpenBrowser()
 
@@ -1206,8 +1174,6 @@ static def Test12(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1230,17 +1196,13 @@ static def Test12(def err, def typeDate, def pageString, def fileString, def fil
         fileDataString = percentPoter
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
-		
-		if (f > 0) {
-			println('Start filial')
 
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Урал(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-
-			
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -1292,8 +1254,6 @@ static def Test13(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1324,7 +1284,8 @@ static def Test13(def err, def typeDate, def pageString, def fileString, def fil
 }
 
 static def Test14(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '14'
     def start = OpenBrowser()
 
@@ -1358,8 +1319,6 @@ static def Test14(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1381,17 +1340,12 @@ static def Test14(def err, def typeDate, def pageString, def fileString, def fil
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
 
-		
-		if (f > 0) {
-			println('Start filial')
+        if (f > 0) {
+            println('Start filial')
 
-			
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-
-			
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -1404,7 +1358,8 @@ static def Test14(def err, def typeDate, def pageString, def fileString, def fil
 }
 
 static def Test15(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '15'
     def start = OpenBrowser()
 
@@ -1438,8 +1393,6 @@ static def Test15(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1460,17 +1413,15 @@ static def Test15(def err, def typeDate, def pageString, def fileString, def fil
         fileDataString = percentPoter
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
-		
-		println('filials: ' + filials)
-		
-		if (f > 0) {
-			println('Start filial')
+
+        println('filials: ' + filials)
+
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Центр и Приволжье(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-      
         } else {
-			
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -1483,7 +1434,8 @@ static def Test15(def err, def typeDate, def pageString, def fileString, def fil
 }
 
 static def Test16(def err, def typeDate, def pageString, def fileString, def filials) {
-	int f
+    int f
+
     '16'
     def start = OpenBrowser()
 
@@ -1517,8 +1469,6 @@ static def Test16(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())
@@ -1539,18 +1489,15 @@ static def Test16(def err, def typeDate, def pageString, def fileString, def fil
         fileDataString = percentPoter
 
         f = CheckPercents(pageString = pageDataString, fileString = fileDataString, path, typeDate, filials)
-		
-		println('filials: ' + filials)
-		
-		if (f > 0) {
-			println('Start filial')
 
+        println('filials: ' + filials)
+
+        if (f > 0) {
+            println('Start filial')
 
             WebUI.callTestCase(findTestCase('Объем потерь сверка/Сверка по филиалам/Объем потерь Филиалы Россети Юг(ГК)'), 
                 [:], FailureHandling.CONTINUE_ON_FAILURE)
-        
         } else {
-			
             println('End case DZO')
 
             def scanErr = ScannErrors(path, err)
@@ -1596,8 +1543,6 @@ static def Test17(def err, def typeDate, def pageString, def fileString, def fil
 
     if (pageDataString == null) {
         WebUI.closeBrowser()
-
-        
     } else {
         pageDataString = WebUI.getText(findTestObject(path)).replace('Объем потерь', '').replaceAll('\\s+', '').substring(
             0, obemPoter.length())

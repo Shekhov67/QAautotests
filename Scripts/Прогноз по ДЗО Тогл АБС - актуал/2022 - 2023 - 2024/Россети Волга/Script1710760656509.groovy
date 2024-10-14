@@ -104,6 +104,7 @@ selectDate = SelectDate()
 
 WebUI.closeBrowser()
 
+'111111111111'
 openBrowser = OpenBrowser()
 
 WebUI.click(findTestObject('Прогноз по ДЗО/тогл на МЛН'))

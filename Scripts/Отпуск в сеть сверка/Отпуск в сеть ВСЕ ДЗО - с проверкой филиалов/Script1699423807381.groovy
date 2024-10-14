@@ -27,9 +27,9 @@ boolean check
 
 String page
 
-String path =''
+String path = ''
 
-String file =''
+String file = ''
 
 String typeData
 
@@ -889,6 +889,12 @@ static def SelectDate(def file, def page, def path) {
     WebUI.click(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Август 2024'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Август 2024'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
