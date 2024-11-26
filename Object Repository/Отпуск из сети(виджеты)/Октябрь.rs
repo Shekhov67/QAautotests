@@ -3,7 +3,7 @@
    <description></description>
    <name>Октябрь</name>
    <tag></tag>
-   <elementGuidId>3220543b-466b-4924-b967-c75f329535d6</elementGuidId>
+   <elementGuidId>11771fbc-1e07-47e6-b4be-d406471433c4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>f09867c9-9117-41a4-b905-b7fdb692124d</webElementGuid>
+      <webElementGuid>2ff3b9ab-b052-4012-ba5a-4a0974fa48d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-list-item-text</value>
-      <webElementGuid>28b1af0b-c2c7-4c3a-bc7a-534c26ff928f</webElementGuid>
+      <webElementGuid>e24ce195-786c-45ff-b19f-9709c743eda3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,23 +38,23 @@
       <name>text</name>
       <type>Main</type>
       <value>Октябрь</value>
-      <webElementGuid>771ccc89-1ebf-430d-bd57-d5f6d4b7b1fa</webElementGuid>
+      <webElementGuid>c693ab5f-c955-4936-90c2-fdde80aae102</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fafa4cbc65434c04b8ebb4e926fc9108&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
-      <webElementGuid>cec97fd5-9ed9-4339-befb-b9616fd7bf04</webElementGuid>
+      <value>id(&quot;67523015184c434083eefb26fbf720c0&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
+      <webElementGuid>2d418efe-6a1c-4cc2-8ac8-e0b83f0a32e4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='fafa4cbc65434c04b8ebb4e926fc9108']/div/div[2]/div[3]/ul/li[7]/ul/li[4]/ul/li/div/div</value>
-      <webElementGuid>84807e5d-c6e2-43e3-8f5a-7635966ee789</webElementGuid>
+      <value>//div[@id='67523015184c434083eefb26fbf720c0']/div/div[2]/div[3]/ul/li[7]/ul/li[4]/ul/li/div/div</value>
+      <webElementGuid>218ebef1-4dae-4be9-8a7f-8be0abbe94e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Снять выделение'])[5]/following::div[25]</value>
-      <webElementGuid>86eabd69-a7f0-4c21-aa99-c945886c5096</webElementGuid>
+      <webElementGuid>2ed24a59-93db-4f15-bf38-487d63225e0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбрать отображаемые'])[5]/following::div[26]</value>
-      <webElementGuid>925d4bf4-f39e-4c07-8b93-67a113aa31bf</webElementGuid>
+      <webElementGuid>f473b874-011e-4a24-b9e2-27986041f6fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ноябрь'])[1]/preceding::div[1]</value>
-      <webElementGuid>e58150ed-4aef-41bd-92ce-93767489eea5</webElementGuid>
+      <webElementGuid>7752920c-59bb-4e31-b52a-ad38c49fad27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Декабрь'])[1]/preceding::div[3]</value>
-      <webElementGuid>9e67efd7-675e-460d-a43e-50cd45bdefbc</webElementGuid>
+      <webElementGuid>b543c728-109a-4930-9e9a-57e0abbbda0a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[7]/ul/li[4]/ul/li/div/div</value>
-      <webElementGuid>2886f347-a6f3-403b-b073-139595aa3069</webElementGuid>
+      <webElementGuid>60a18fa2-0d47-440b-9207-d660c4abdd06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Октябрь' or . = 'Октябрь')]</value>
-      <webElementGuid>54c8d2d6-7529-4d3e-a989-b2208fcf8556</webElementGuid>
+      <webElementGuid>bf31fba3-8c74-4255-8c21-87f53835e057</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
