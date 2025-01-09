@@ -1279,6 +1279,12 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/Ноябрь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
+
+    WebUI.click(findTestObject('Отпуск из сети(виджеты)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/применить в фильтре Дата'))
 }
 

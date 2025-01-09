@@ -76,6 +76,12 @@ def Test(def run, def todaysDate, def widget) {
 
     WebUI.click(findTestObject('Прогноз по ДЗО/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
 
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ноябрь'), 30)
+
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
+    WebUI.click(findTestObject('Прогноз по ДЗО/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
