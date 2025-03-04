@@ -47,14 +47,14 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e99deafe-245a-4c76-842b-8f26deb40fc0</guid>
+      <guid>683d8952-d956-419e-903f-51d01cd8576e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Опуск из сети - Сверка ДАШБОРДОВ/Отпуск из сети ВСЕ ДЗО</testCaseId>
+      <testCaseId>Test Cases/Опуск из сети - Сверка ДАШБОРДОВ/Отпуск из сети РОССЕТИ</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d52a333f-3906-4151-95de-e7c7dbc22a0b</guid>
+      <guid>e2c982f6-aa15-4b82-8ae2-e2a23855c15b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Объем потерь сверка Дашбордов - Балансы/БАЛАНСЫ - Объем потерь ПАО Россети</testCaseId>

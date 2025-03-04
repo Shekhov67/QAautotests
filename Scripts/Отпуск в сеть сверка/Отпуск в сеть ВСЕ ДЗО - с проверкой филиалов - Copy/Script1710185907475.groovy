@@ -835,11 +835,11 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2024 год'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2025 год'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/2024 год'))
+    WebUI.click(findTestObject('Отпуск в сеть сверка/2025 год'))
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/1 квартал'), 30)
 

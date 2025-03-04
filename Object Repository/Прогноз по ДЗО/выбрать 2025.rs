@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>выбрать 2024</name>
+   <name>выбрать 2025</name>
    <tag></tag>
-   <elementGuidId>b38842db-5303-4fd1-bb87-886dccb7fb5e</elementGuidId>
+   <elementGuidId>883e452e-c89e-4420-8af5-c42fd8ce0650</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>3fb30038-f1e7-4c62-a707-b5471bbc8bba</webElementGuid>
+      <webElementGuid>94455791-b4e7-4cd2-a65d-1da5ba061e1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-list-item-text</value>
-      <webElementGuid>f31bc7a4-039a-4b24-99d6-5a4c424639f1</webElementGuid>
+      <webElementGuid>514eb043-9538-47bd-94fb-8ce72a93c763</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>2022</value>
-      <webElementGuid>fce77ba6-c4f7-4c14-a722-72836a265c6c</webElementGuid>
+      <webElementGuid>d4d25ae9-2acb-4405-9e97-f6f4f9773921</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;b7558950dfb7466282b29779ad8c5472&quot;)/div[@class=&quot;rb-filter-container not-selectable&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item selected&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
-      <webElementGuid>45dcc585-679e-4ec9-bc52-3b120ca0a868</webElementGuid>
+      <webElementGuid>11acd6ff-42bd-4c99-a582-08b465d6907b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='b7558950dfb7466282b29779ad8c5472']/div/div[2]/div[2]/ul/li[3]/div/div</value>
-      <webElementGuid>64389758-98fd-4d9e-8d67-e5b3e4dd67a1</webElementGuid>
+      <webElementGuid>9c2c9bfc-e058-4fef-a1b6-0f4d1ee15ad0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Исключить'])[2]/following::div[7]</value>
-      <webElementGuid>5181a689-dcf0-4ff7-bbbf-12c13abfcee7</webElementGuid>
+      <webElementGuid>dc795326-f58d-409b-9912-6b47716348c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Включить'])[2]/following::div[7]</value>
-      <webElementGuid>94c97fe8-7880-4629-9603-da6599912fc1</webElementGuid>
+      <webElementGuid>b584d57f-2e4f-4292-99a6-99014c34b0a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[12]/preceding::div[18]</value>
-      <webElementGuid>b24bb365-ee82-4eca-9438-982fa64501e2</webElementGuid>
+      <webElementGuid>198bce94-fd88-4d08-9539-2ba0daa40a6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Динамика электропотребления, млн. кВт.ч. по ПАО Россети на 2022 год'])[1]/preceding::div[26]</value>
-      <webElementGuid>fb69b509-56c3-4c98-896a-148f5f0ffd91</webElementGuid>
+      <webElementGuid>a3704cd1-5847-46ca-bd99-78d58a5effdc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='2022']/parent::*</value>
-      <webElementGuid>3d782796-6578-4f30-b8d9-c43e014a8bd0</webElementGuid>
+      <webElementGuid>2b549d24-640f-4e0b-98a3-9e35785e940f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/div/div</value>
-      <webElementGuid>0457b0de-846c-46e2-9c29-148408901b54</webElementGuid>
+      <webElementGuid>dbf81a38-c63d-4520-854b-0c828fa6b569</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = '2022' or . = '2022')]</value>
-      <webElementGuid>0338f4a8-a039-483d-8dbd-784f7d5becad</webElementGuid>
+      <webElementGuid>af1fb1e1-b549-49a9-ba12-c55177f2f9ac</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

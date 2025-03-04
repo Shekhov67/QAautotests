@@ -31,39 +31,23 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2024 год'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/2025 год'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/2024 год'))
+    WebUI.click(findTestObject('Отпуск в сеть сверка/2025 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/1 квартал'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/1 квартал'))
 
-    WebUI.click(findTestObject('Отпуск в сеть сверка/выбрать 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/3 квартал 2024 раскрыть'), 30)
+    WebUI.scrollToElement(findTestObject('Отпуск в сеть сверка/Январь'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/выбрать 3 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/4 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/Ноябрь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
-
-    WebUI.click(findTestObject('Отпуск в сеть(виджеты)/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Январь'))
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 }

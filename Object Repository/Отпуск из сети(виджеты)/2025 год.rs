@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>выбрать 2024</name>
+   <name>2025 год</name>
    <tag></tag>
-   <elementGuidId>b38842db-5303-4fd1-bb87-886dccb7fb5e</elementGuidId>
+   <elementGuidId>db07b39e-0de1-43db-a258-fc94be144668</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='2024']/parent::*</value>
+         <value>//*/text()[normalize-space(.)='2025 год']/parent::*</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.rb-filter-body-container.opened > div.rb-filter-list-container > ul.rb-filter-list.rb-filter-root-list > li.rb-filter-list-item.selected > div.rb-filter-list-item-container > div.rb-filter-list-item-text</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>3fb30038-f1e7-4c62-a707-b5471bbc8bba</webElementGuid>
+      <webElementGuid>0266026b-879d-4ef6-8ee3-0ddc74fe1b28</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,86 +29,86 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-list-item-text</value>
-      <webElementGuid>f31bc7a4-039a-4b24-99d6-5a4c424639f1</webElementGuid>
+      <webElementGuid>84309af8-98f2-4ebb-b346-9b6a1e861370</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>2022</value>
-      <webElementGuid>fce77ba6-c4f7-4c14-a722-72836a265c6c</webElementGuid>
+      <value>2023 год</value>
+      <webElementGuid>17bf8e64-44e3-4991-a234-0cc226a28bb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;b7558950dfb7466282b29779ad8c5472&quot;)/div[@class=&quot;rb-filter-container not-selectable&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item selected&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
-      <webElementGuid>45dcc585-679e-4ec9-bc52-3b120ca0a868</webElementGuid>
+      <value>id(&quot;67523015184c434083eefb26fbf720c0&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent lazy-load&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
+      <webElementGuid>418b89cd-2d21-46a7-886f-154aed152cc5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='b7558950dfb7466282b29779ad8c5472']/div/div[2]/div[2]/ul/li[3]/div/div</value>
-      <webElementGuid>64389758-98fd-4d9e-8d67-e5b3e4dd67a1</webElementGuid>
+      <value>//div[@id='67523015184c434083eefb26fbf720c0']/div/div[2]/div[3]/ul/li[7]/div/div</value>
+      <webElementGuid>8b6b8df0-0ca3-438d-9d7f-1a0444c71423</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Исключить'])[2]/following::div[7]</value>
-      <webElementGuid>5181a689-dcf0-4ff7-bbbf-12c13abfcee7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Снять выделение'])[5]/following::div[15]</value>
+      <webElementGuid>1e9d4b98-7ea5-4252-b68c-4c3fbcc1c2d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Включить'])[2]/following::div[7]</value>
-      <webElementGuid>94c97fe8-7880-4629-9603-da6599912fc1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Выбрать отображаемые'])[5]/following::div[16]</value>
+      <webElementGuid>02c8380d-88b4-42ed-a000-6b94ffa659d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В начало'])[12]/preceding::div[18]</value>
-      <webElementGuid>b24bb365-ee82-4eca-9438-982fa64501e2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Отмена'])[5]/preceding::div[1]</value>
+      <webElementGuid>b2ce0530-7b08-4532-be3f-53218d7920d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Динамика электропотребления, млн. кВт.ч. по ПАО Россети на 2022 год'])[1]/preceding::div[26]</value>
-      <webElementGuid>fb69b509-56c3-4c98-896a-148f5f0ffd91</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Применить'])[5]/preceding::div[2]</value>
+      <webElementGuid>db8baaab-ec76-411f-aa21-178bba83b5cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='2022']/parent::*</value>
-      <webElementGuid>3d782796-6578-4f30-b8d9-c43e014a8bd0</webElementGuid>
+      <value>//*/text()[normalize-space(.)='2023 год']/parent::*</value>
+      <webElementGuid>209c9c3d-9d44-4be3-9480-518a3b84fec6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/div/div</value>
-      <webElementGuid>0457b0de-846c-46e2-9c29-148408901b54</webElementGuid>
+      <value>//div[3]/ul/li[7]/div/div</value>
+      <webElementGuid>4af458d5-7a62-45ec-a9e9-0a7ecb6d5262</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = '2022' or . = '2022')]</value>
-      <webElementGuid>0338f4a8-a039-483d-8dbd-784f7d5becad</webElementGuid>
+      <value>//div[(text() = '2023 год' or . = '2023 год')]</value>
+      <webElementGuid>43fa8ae1-58c9-4776-b016-79446b9788e0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

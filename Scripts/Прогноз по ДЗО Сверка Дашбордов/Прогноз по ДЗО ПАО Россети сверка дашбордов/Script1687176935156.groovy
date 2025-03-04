@@ -37,7 +37,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String planFact
 
-    String year = '2024 год'
+    String year = '2025 год'
 
     WebUI.openBrowser('')
 
@@ -54,33 +54,15 @@ def Test(def run, def todaysDate, def widget) {
 
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Год'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2024'))
+    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2025'))
 
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Месяц'))
 
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Апрель'), 30)
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Январь'), 30)
 
     WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/Апрель'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Май'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Ноябрь'), 30)
-
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Прогноз по ДЗО/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 
@@ -160,7 +142,7 @@ def Test(def run, def todaysDate, def widget) {
 
     println(a)
 
-    int i = a.indexOf('2024 год')
+    int i = a.indexOf('2025 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -216,7 +198,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String a2 = WebUI.getText(findTestObject('Прогноз по ДЗО/Данные с виджета Отклонения'))
 
-    i = a2.indexOf('2024 год')
+    i = a2.indexOf('2025 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -244,7 +226,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String a3 = WebUI.getText(findTestObject('Прогноз по ДЗО/Данные с виджета Выручка Отклонения'))
 
-    i = a3.indexOf('2024 год')
+    i = a3.indexOf('2025 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -277,27 +259,15 @@ def Test(def run, def todaysDate, def widget) {
 
     WebUI.click(findTestObject('Прогноз по ДЗО стресс сценарий/Фильтр Год'))
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2024'))
+    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2025'))
 
     WebUI.click(findTestObject('Прогноз по ДЗО стресс сценарий/Фильтр Месяц'))
 
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Апрель'), 30)
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/Январь'), 30)
 
-    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО стресс сценарий/скролл'), 30)
+    WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
-    WebUI.click(findTestObject('Прогноз по ДЗО/Апрель'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Май'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Июнь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Июль'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Август'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Сентябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('Прогноз по ДЗО/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Прогноз по ДЗО/Январь'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Прогноз по ДЗО стресс сценарий/Фильтр Составляющая плана'))
 
@@ -413,7 +383,7 @@ def Test(def run, def todaysDate, def widget) {
 
     println(b)
 
-    i = b.indexOf('2024 год')
+    i = b.indexOf('2025 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -443,7 +413,7 @@ def Test(def run, def todaysDate, def widget) {
 
     println(b1)
 
-    i = b1.indexOf('2024 год')
+    i = b1.indexOf('2025 год')
 
     if (i > -1) {
         i = (i + 9)
@@ -501,7 +471,7 @@ def Test(def run, def todaysDate, def widget) {
 
     String b3 = WebUI.getText(findTestObject('Прогноз по ДЗО стресс сценарий/Данные с виджета Выручка Отклонения'))
 
-    i = b3.indexOf('2024 год')
+    i = b3.indexOf('2025 год')
 
     if (i > -1) {
         i = (i + 9)

@@ -1471,37 +1471,23 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('КПО/фильтр Дата'))
 
-    WebUI.scrollToElement(findTestObject('КПО/2024 год'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Page_Visiology Platform/раскрыть 2025 год'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/2024 год'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('КПО/Page_Visiology Platform/раскрыть 2025 год'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.scrollToElement(findTestObject('КПО/раскрыть 1 квартла 2024'), 30)
+    WebUI.scrollToElement(findTestObject('КПО/Page_Visiology Platform/раскрыть 1 квартал 2025 года'), 30)
 
     WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.scrollToElement(findTestObject('КПО/выбрать 1 квартал 2024'), 30)
+    WebUI.click(findTestObject('КПО/Page_Visiology Platform/раскрыть 1 квартал 2025 года'))
 
-    WebUI.click(findTestObject('КПО/выбрать 1 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('КПО/Page_Visiology Platform/Январь 2025 года'), 30)
 
-    WebUI.click(findTestObject('КПО/выбрать 2 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('КПО/скролл Фильтр дата'), 30)
 
-    WebUI.click(findTestObject('КПО/выбрать 3 квартал 2024'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.click(findTestObject('КПО/4 квартал 2024 раскрыть'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/Октябрь'), 30)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
-    WebUI.click(findTestObject('КПО/Октябрь'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.scrollToElement(findTestObject('КПО/Ноябрь'), 0)
-
-    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
-
-    WebUI.click(findTestObject('КПО/Ноябрь'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('КПО/Page_Visiology Platform/Январь 2025 года'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 

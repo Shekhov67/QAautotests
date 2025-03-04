@@ -375,6 +375,12 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2024'))
 
+    selectMouth = SelectMouth()
+
+    WebUI.click(findTestObject('Прогноз по ДЗО/фильтр Год'))
+
+    WebUI.click(findTestObject('Прогноз по ДЗО/выбрать 2025'))
+
     WebUI.callTestCase(findTestCase('Тестовые тесты/Фильтр дата в прогнозе по ДЗО'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 }
 
