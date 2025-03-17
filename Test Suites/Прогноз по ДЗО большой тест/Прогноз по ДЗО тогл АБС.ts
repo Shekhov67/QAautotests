@@ -12,238 +12,273 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>b5caa274-b4e8-4bc7-95aa-48c4d85cb9ff</testSuiteGuid>
    <testCaseLink>
-      <guid>80fd3372-2a75-4696-bdd3-f5db3a89ce59</guid>
+      <guid>ea60fca1-352f-4d0d-aa7a-a787648b3b78</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/АО Тываэнерго</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fd6196de-caeb-4eeb-a78c-3689be3c636f</guid>
+      <guid>fffd70ba-7cbf-4ac3-8aec-cf683ede6487</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/АО Чеченэнерго</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8377ea4f-8f13-4b66-8434-7fb3bddf8e3c</guid>
+      <guid>b04fe807-e631-44e1-8703-387f3590dbd4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Волга</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e1274806-9217-47f5-a524-09d462d0a83a</guid>
+      <guid>a6fe24db-98a8-4c1f-91b2-7ddbeaf92b40</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Кубань</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1eb3687a-f674-4f5d-84a0-2a93ecd69696</guid>
+      <guid>1c0b4c68-e313-4cd9-a457-273776b0f741</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Ленэнерго(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>486f3fd1-9829-4fa3-a5ce-617ab9b6bb4a</guid>
+      <guid>fa1612b1-1631-46dc-889c-9f364971ba11</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Московский регион</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9597cd8c-76fb-4c2a-97ea-ece3faaf1fa5</guid>
+      <guid>1c1d3fb6-2e08-493c-b834-241c6f6d5b89</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Северный Кавказ(ГК) - Copy</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>47f639eb-3a02-4bc3-bdc9-b9bbbc9faae8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Северный Кавказ(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>29a49e45-15e2-4145-a183-86547002569f</guid>
+      <guid>01538ae6-30f1-4a25-94bb-b9b4e331de0b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Северо-Запад - Copy</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>92a9330b-d2b3-411a-aeef-40f38e75c031</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Северо-Запад</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5ec373eb-ee76-4cc8-8780-a183fd737e36</guid>
+      <guid>653947d8-39a7-4dda-a513-b4de9da87cab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Сибирь(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b599b2d6-13ae-417f-b9f7-e51418572b2e</guid>
+      <guid>a63fade5-4f1d-402f-9b0f-22ebf7b65e01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Томск</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6f3c730c-9941-4acb-b98a-f96b470cd811</guid>
+      <guid>71f21ea3-f4c5-48d8-a62c-4365b1c57a4b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Тюмень</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c4411f6a-7cce-4bbf-b930-62a3b182b3ba</guid>
+      <guid>8c21b44a-fe7b-43b0-8b00-fa2f5f258923</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Урал(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d23eec24-7902-4cc9-8512-f4277c1bbaf6</guid>
+      <guid>87b53ba5-b311-4955-aa10-5255f61ba074</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети ФСК ЕЭС</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5425dc6f-cc16-4f49-8ec0-5b7d5200faa0</guid>
+      <guid>0c045612-878f-403b-91dc-eb36dbee8293</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Центр и Приволжье(ГК) - Copy</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c8cffbd2-516e-44ce-8ca6-b2d6c223fb69</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Центр и Приволжье(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>02139ca7-52b7-4ba0-ab6c-8e595a74cec4</guid>
+      <guid>0c05cf1a-5725-4396-aafa-587fa87c3449</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Центр</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4cb407c8-341f-4f3c-bbbf-9e4edd2fb9eb</guid>
+      <guid>ecde9338-08cd-4b7d-907a-19a95a55b4de</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Юг(ГК) - Copy</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e6adb93-208b-4288-9a43-b50f4564a527</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Юг(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>aacb8912-7994-4368-8b2b-6b9c18a81d42</guid>
+      <guid>0fe1b7ad-fc6e-4248-82a7-4bede9ad8f28</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2020 - 2021/Россети Янтарь</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>546f213c-5e99-439c-8b83-aceff802e736</guid>
+      <guid>19abe670-e01e-440b-af9f-ccb3e17372f8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/АО РЭС</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fd322922-a388-47a7-9f37-bbc098ac2d22</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/АО Тываэнерго</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d9e5f9d2-82c0-4957-ad77-81fe313ef997</guid>
+      <guid>190f466a-b81e-463b-be8e-7f3c96df6165</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/АО Чеченэнерго</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>63cbb83b-599f-4bb7-b25d-e496cd2cea90</guid>
+      <guid>af5ecd4c-ec25-4418-aa63-979800ceac31</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Волга</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1c927f6f-f74a-4ced-ab7b-49f08ff65409</guid>
+      <guid>d78dfd96-af7b-44a9-9e4c-a08bb51dd7fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Кубань</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b90d8857-c323-4cee-a39d-48bca91de8df</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Ленэнерго(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1221e02a-4ae7-4255-a33b-9dc10ce6c791</guid>
+      <guid>71280d87-17ef-4b29-9335-ca19da50f8f1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Кубань</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4ba70f26-3e1e-4a21-81da-af7f83a3d5dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Московский регион</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>580a04cb-06da-4883-bf47-97cee5eac5b2</guid>
+      <guid>7e8f9699-14dd-4371-a565-6687aed9e21a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Северный Кавказ(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7b5559fa-2aed-4ba3-8213-a575d80e761e</guid>
+      <guid>32174925-328a-4ce1-a95d-4d518a685f74</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Северо-Запад</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>98d78b8f-e077-41d0-a697-03bd1077369d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Томск</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9f3ddc90-d778-49d6-ba09-5b75c7957e1b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Сибирь(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3cbc2dc0-b6b9-44e7-bf66-1acf5274443f</guid>
+      <guid>34fe8fa3-7f99-4ca6-b951-23509ffd3e94</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Тюмень</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Северо-Запад</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0001054e-7d47-4ca4-9037-f106b2f17e71</guid>
+      <guid>f8826731-31f5-4d21-916d-d914086648cb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Томск</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>26662202-3336-4c0d-9b07-57b79f1903f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Урал(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bb0ecbc2-3a4c-40e3-b855-26a96298cf17</guid>
+      <guid>f442b391-fec8-453f-b398-cbdea10b297d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Тюмень</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b80aa869-0695-4c75-957c-83c815166d58</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети ФСК ЕЭС</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ddade1db-f14e-403d-8db8-b1280400690c</guid>
+      <guid>0c0ab7a4-d6fa-41d4-a2f8-9072ca004b7e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Центр и Приволжье(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>efb9c7e3-e922-4a9e-8eb3-f2e0c0244711</guid>
+      <guid>82b89641-7ebb-4d14-b3b1-00e7c3cc3f47</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Центр</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9178f120-8d45-4a14-be5a-ba265beeb4c5</guid>
+      <guid>730caa8c-363e-4171-a275-c7756db0f1b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Юг(ГК)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>97fba89b-dedb-47ae-a045-c744087ea86b</guid>
+      <guid>741bd330-63f0-4e17-a533-9e10a53306b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Прогноз по ДЗО Тогл АБС - актуал/2022 - 2023 - 2024/Россети Янтарь</testCaseId>

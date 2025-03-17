@@ -45,19 +45,24 @@ def selectDate = SelectDate(file, page, path)
 
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
-pageDataString = WebUI.getText(findTestObject(path))
+if (WebUI.getText(findTestObject(path)) == null) {
+	println('Нет данных')
+	
+	WebUI.closeBrowser()
+} else {
+	
+	pageDataString = WebUI.getText(findTestObject(path))
+	
+	fileDataString = otpuskVSeti
 
-println(pageDataString)
+	println(fileDataString)
 
-fileDataString = otpuskVSeti
+	check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-println(fileDataString)
+	scanErr = ScanErrors(file, page, path)
 
-check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
-
-def scanErr = ScanErrors(file, page, path)
-
-WebUI.closeBrowser()
+	WebUI.closeBrowser()
+}
 
 '1'
 openBrwsr = OpenBrowser()
@@ -78,19 +83,24 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 
 scanErr = ScanErrors(file, page, path)
 
-pageDataString = WebUI.getText(findTestObject(path))
+if (WebUI.getText(findTestObject(path)) == null) {
+	println('Нет данных')
+	WebUI.closeBrowser()
+} else {
+	pageDataString = WebUI.getText(findTestObject(path))
+	
+	println(pageDataString)
+	
+	fileDataString = otpuskVSeti
 
-println(pageDataString)
+	println(fileDataString)
 
-fileDataString = otpuskVSeti
+	check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-println(fileDataString)
+	scanErr = ScanErrors(file, page, path)
 
-check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
-
-scanErr = ScanErrors(file, page, path)
-
-WebUI.closeBrowser()
+	WebUI.closeBrowser()
+}
 
 '2'
 openBrwsr = OpenBrowser()
@@ -952,7 +962,7 @@ static def WriteToExcel(def file, def page, def typeData = 'Отпуск в се
 
     String filtrYear = WebUI.getText(findTestObject('Отпуск в сеть(виджеты)/фильтр Дата'))
 
-    String year = '2024'
+    String year = '2025'
 
     ExcelKeywords.setValueToCellByIndex(sheet01, n, 0, dashboardName)
 

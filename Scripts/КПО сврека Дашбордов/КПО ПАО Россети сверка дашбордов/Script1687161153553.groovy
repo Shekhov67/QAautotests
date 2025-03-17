@@ -72,6 +72,8 @@ static def VyruchkaVseToggleMln1(def widget, def dzo, def togle) {
 
     String pao = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
 
+    String ao_res = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/AO_RES'))
+
     String tuv = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/tuv'))
 
     String chech = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/chech'))
@@ -135,6 +137,8 @@ static def VyruchkaVseToggleMln1(def widget, def dzo, def togle) {
 
     String pao1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
 
+    String ao_res1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/AO_RES'))
+
     String tuv1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/tuv'))
 
     String chech1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/chech'))
@@ -186,6 +190,12 @@ static def VyruchkaVseToggleMln1(def widget, def dzo, def togle) {
     } else {
         def write = WriteToExcel(widget = 'Виджет: Отклонение котлового полезного отпуска', dzo = 'ПАО Россети', togle = 
             'Переключатель на : МЛН')
+    }
+    
+    if (WebUI.verifyEqual(ao_res, ao_res1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel(widget = 'Виджет: Отклонение котлового полезного отпуска', dzo = 'АО РЭС', togle = 'Переключатель на : МЛН')
     }
     
     if (WebUI.verifyEqual(tuv, tuv1)) {
@@ -479,6 +489,8 @@ static def VyruchkaTwoToggleMln3(def widget, def dzo, def togle) {
 
     String pao = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
 
+    String ao_res = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/AO_RES'))
+
     String tuv = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/tuv'))
 
     String chech = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл млн/chech'))
@@ -550,6 +562,8 @@ static def VyruchkaTwoToggleMln3(def widget, def dzo, def togle) {
 
     String pao1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/ПАО Россети'))
 
+    String ao_res1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/AO_RES'))
+
     String tuv1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/tuv'))
 
     String chech1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл млн/chech'))
@@ -601,6 +615,12 @@ static def VyruchkaTwoToggleMln3(def widget, def dzo, def togle) {
     } else {
         def write = WriteToExcel(widget = 'Виджет: Отклонение котлового полезного отпуска', dzo = 'ПАО Россети', togle = 
             'Переключатель на : МЛН')
+    }
+    
+    if (WebUI.verifyEqual(ao_res, ao_res1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel(widget = 'Виджет: Отклонение котлового полезного отпуска', dzo = 'АО РЭС', togle = 'Переключатель на : МЛН')
     }
     
     if (WebUI.verifyEqual(tuv, tuv1)) {
@@ -759,6 +779,8 @@ static def VyruchkaVseToggleProc4(def widget, def dzo, def togle) {
 
     String pao = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
 
+    String ao_res = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/AO_RES'))
+
     String tuv = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/tuv'))
 
     String chech = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент/chech'))
@@ -824,6 +846,8 @@ static def VyruchkaVseToggleProc4(def widget, def dzo, def togle) {
 
     String pao1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/ПАО Россети'))
 
+    String ao_res1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/AO_RES'))
+
     String tuv1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/tuv'))
 
     String chech1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент/chech'))
@@ -875,6 +899,12 @@ static def VyruchkaVseToggleProc4(def widget, def dzo, def togle) {
     } else {
         def write = WriteToExcel(widget = 'Виджет: Отклонение котлового полезного отпуска', dzo = 'ПАО Россети', togle = 
             'Переключатель на : %')
+    }
+    
+    if (WebUI.verifyEqual(ao_res, ao_res1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel(widget = 'Виджет: Отклонение котлового полезного отпуска', dzo = 'АО РЭС', togle = 'Переключатель на : %')
     }
     
     if (WebUI.verifyEqual(tuv, tuv1)) {
@@ -1176,6 +1206,8 @@ static def VyruchkaTwoToggleProc6(def widget, def dzo, def togle) {
 
     String pao = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/ПАО Россети'))
 
+    String ao_res = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/AO_RES'))
+
     String tuv = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/tuv'))
 
     String chech = WebUI.getText(findTestObject('КПО/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/chech'))
@@ -1249,6 +1281,8 @@ static def VyruchkaTwoToggleProc6(def widget, def dzo, def togle) {
 
     String pao1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/ПАО Россети'))
 
+    String ao_res1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/AO_RES'))
+
     String tuv1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/tuv'))
 
     String chech1 = WebUI.getText(findTestObject('КПО для раздела Выручка/Данные с виджета Отклонения - тогл процент -Выручка Объем реализации подачи ээ/chech'))
@@ -1287,6 +1321,12 @@ static def VyruchkaTwoToggleProc6(def widget, def dzo, def togle) {
         println('GOOD')
     } else {
         def write = WriteToExcel(widget = 'Виджет: ВЫполнение плановых показателй', dzo = 'ПАО Россети', togle = 'Переключатель на : %')
+    }
+    
+    if (WebUI.verifyEqual(ao_res, ao_res1)) {
+        println('GOOD')
+    } else {
+        def write = WriteToExcel(widget = 'Виджет: ВЫполнение плановых показателй', dzo = 'АО РЭС', togle = 'Переключатель на : %')
     }
     
     if (WebUI.verifyEqual(tuv, tuv1)) {

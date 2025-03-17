@@ -62,9 +62,7 @@ WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россет
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
 
-WebUI.click(findTestObject('Прогноз по ДЗО/АО Тываэнерго'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/АО Тываэнерго(2 уровень)'))
+WebUI.click(findTestObject('Прогноз по ДЗО/АО РЭС'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
 
