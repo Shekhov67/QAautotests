@@ -1233,6 +1233,8 @@ static def SelectDate() {
 
     WebUI.click(findTestObject('КПО/Page_Visiology Platform/Январь 2025 года'))
 
+    WebUI.click(findTestObject('КПО/Февраль 2025'))
+
     WebUI.click(findTestObject('КПО/применить в фильтре Дата'))
 
     WebUI.deleteAllCookies()

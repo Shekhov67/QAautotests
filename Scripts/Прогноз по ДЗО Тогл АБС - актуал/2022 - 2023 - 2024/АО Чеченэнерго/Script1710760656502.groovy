@@ -44,34 +44,6 @@ def selectDate = SelectDate()
 
 WebUI.closeBrowser()
 
-openBrowser = OpenBrowser()
-
-WebUI.click(findTestObject('Прогноз по ДЗО/тогл на МЛН'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/снять выделенные в ФИЛЬТРЕ дзо'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
-
-WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/АО Чеченэнерго'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/Чеченэнерго'))
-
-WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
-
-selectDate = SelectDate()
-
-WebUI.closeBrowser( //////////////Запись даты
-    ///////////////
-    )
-
 static def ScanErrors() {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
         def write = WriteToExcel(def page = 'Нет данных')

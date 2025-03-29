@@ -36,6 +36,10 @@ WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россет
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
 
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/выбрать Россети Волга'), 30)
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
+
 WebUI.click(findTestObject('Прогноз по ДЗО/выбрать Россети Волга'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/применить в фильтре ДЗО'))
@@ -59,6 +63,8 @@ WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
 WebUI.click(findTestObject('Прогноз по ДЗО/Россети Волга'))
 
@@ -89,6 +95,8 @@ WebUI.click(findTestObject('Прогноз по ДЗО/фильтр ДЗО'))
 WebUI.doubleClick(findTestObject('Прогноз по ДЗО/ПАО Россети'))
 
 WebUI.click(findTestObject('Прогноз по ДЗО/РаспредКомплекс'))
+
+WebUI.scrollToElement(findTestObject('Прогноз по ДЗО/скролл'), 30)
 
 WebUI.click(findTestObject('Прогноз по ДЗО/Россети Волга'))
 
