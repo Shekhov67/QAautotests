@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='562268823f3e4bada54d4b03d810b308']/div/div[2]/div[3]/ul/li/ul/li/ul/li[3]/div/i</value>
+         <value>//li/ul/li[2]/ul/li[4]/div/i</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>fe01ba0a-e272-4f9e-b47e-112dccd1d37b</webElementGuid>
+      <webElementGuid>9b57143e-ed17-48e4-b331-c4e13fcd6263</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fa fa-square-o rb-filter-list-item-icon</value>
-      <webElementGuid>74d5512f-62d8-4d30-a721-4e67b919ff03</webElementGuid>
+      <webElementGuid>e7470f37-a08a-46ed-bddd-975cc76b0987</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;562268823f3e4bada54d4b03d810b308&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/i[@class=&quot;fa fa-square-o rb-filter-list-item-icon&quot;]</value>
-      <webElementGuid>e273a09d-1f01-4786-8e5e-9d65a8e4b321</webElementGuid>
+      <webElementGuid>abe2d51c-4219-4e10-944d-7c9ddcd313de</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='562268823f3e4bada54d4b03d810b308']/div/div[2]/div[3]/ul/li/ul/li/ul/li[3]/div/i</value>
-      <webElementGuid>8a878748-51ec-4b9c-beac-5b45c8686d8d</webElementGuid>
+      <webElementGuid>60035132-1540-443d-8036-81ea21e5687b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +54,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[11]/div[2]/div/div/div[2]/div[3]/ul/li/ul/li/ul/li[3]/div/i</value>
-      <webElementGuid>b7fa8aa5-6a00-4979-9ab8-68687d816035</webElementGuid>
+      <webElementGuid>5315b089-958c-420b-ab21-b20db1025d30</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

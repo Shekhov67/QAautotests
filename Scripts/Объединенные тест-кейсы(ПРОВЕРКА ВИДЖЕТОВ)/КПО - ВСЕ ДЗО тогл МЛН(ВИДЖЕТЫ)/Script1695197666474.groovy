@@ -71,15 +71,25 @@ static def Testing1(def page) {
 
     selectKpo = SelektKpoAndFirstStep(page)
 
+    WebUI.scrollToElement(findTestObject('КПО/Россети Волга'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     WebUI.click(findTestObject('КПО/выбрать Россети Волга'))
 
     WebUI.click(findTestObject('КПО/применить в фильтре ДЗО'))
 
     selectKpo = SelektKpoAndFirstStep(page)
 
+    WebUI.scrollToElement(findTestObject('КПО/Россети Волга'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
+
     WebUI.click(findTestObject('КПО/Россети Волга'))
 
     WebUI.scrollToElement(findTestObject('КПО/Мордовэнерго'), 30)
+
+    WebUI.scrollToElement(findTestObject('КПО/скролл Заголовок дашборда'), 30)
 
     WebUI.click(findTestObject('КПО/Мордовэнерго'))
 

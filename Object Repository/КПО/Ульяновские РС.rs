@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='562268823f3e4bada54d4b03d810b308']/div/div[2]/div[3]/ul/li/ul/li/ul/li[3]/ul/li[6]/div/div</value>
+         <value>//*/text()[normalize-space(.)='Ульяновские РС']/parent::*</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>4e6534dd-eea2-4f73-9856-427ae37c059e</webElementGuid>
+      <webElementGuid>9f7d43da-f776-4968-9d4f-e292b034db54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rb-filter-list-item-text</value>
-      <webElementGuid>646e9e19-eff6-41e8-afc5-322879fca0e3</webElementGuid>
+      <webElementGuid>62332111-f087-4e0a-96c5-5b02b7cfb2e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ульяновские РС</value>
-      <webElementGuid>d33061ca-fc81-48ac-a1a4-8fa22df17717</webElementGuid>
+      <webElementGuid>8562a3db-e96e-43e4-a498-fcbf30cb92f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;562268823f3e4bada54d4b03d810b308&quot;)/div[@class=&quot;rb-filter-container not-selectable rb-filter-multi-selection&quot;]/div[@class=&quot;rb-filter-body-container opened&quot;]/div[@class=&quot;rb-filter-list-container&quot;]/ul[@class=&quot;rb-filter-list rb-filter-root-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item rb-filter-list-item-parent&quot;]/ul[@class=&quot;rb-filter-list&quot;]/li[@class=&quot;rb-filter-list-item&quot;]/div[@class=&quot;rb-filter-list-item-container&quot;]/div[@class=&quot;rb-filter-list-item-text&quot;]</value>
-      <webElementGuid>68d84703-2533-4856-9dbd-43243697f558</webElementGuid>
+      <webElementGuid>8571d6da-222b-4fc2-9982-561516c95e3c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='562268823f3e4bada54d4b03d810b308']/div/div[2]/div[3]/ul/li/ul/li/ul/li[3]/ul/li[6]/div/div</value>
-      <webElementGuid>b1b2ca56-b3aa-4076-b683-a653dff17250</webElementGuid>
+      <webElementGuid>770dd913-bc8e-433c-b0c4-18752f9f8b22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Саратовские РС'])[1]/following::div[2]</value>
-      <webElementGuid>5e7c01d1-07f3-4c8e-9b64-b494bd3be212</webElementGuid>
+      <webElementGuid>ab3ca783-2e41-4e66-9543-de55ce6f0831</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Самарские РС'])[1]/following::div[4]</value>
-      <webElementGuid>9a15e0c4-1e75-4665-87ed-124fb392b0dd</webElementGuid>
+      <webElementGuid>54fcabff-1877-49ee-b564-5e07ef3f6d2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Чувашэнерго'])[1]/preceding::div[1]</value>
-      <webElementGuid>9c0bb67f-a830-40d4-a8d5-0f2fd343cb07</webElementGuid>
+      <webElementGuid>825fd93a-8239-47d5-b723-2f9158bc108e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Россети Кубань'])[1]/preceding::div[3]</value>
-      <webElementGuid>f4ae1db3-19ea-4678-9ba3-91fad225bfb4</webElementGuid>
+      <webElementGuid>5b406091-e84f-48d8-b82f-8a18e3b89016</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ульяновские РС']/parent::*</value>
-      <webElementGuid>e562af80-b519-467c-b36b-728a0b8ee018</webElementGuid>
+      <webElementGuid>64d9f3f6-e923-404b-87ba-4e02a76d4ba2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/ul/li[6]/div/div</value>
-      <webElementGuid>bbc6eb54-77d3-47dc-a6d4-53dee91c2493</webElementGuid>
+      <webElementGuid>ba96d02d-ae38-4a67-9975-d7b86d97b38d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Ульяновские РС' or . = 'Ульяновские РС')]</value>
-      <webElementGuid>98268e03-f1ec-44fb-9192-5e262a6f9d64</webElementGuid>
+      <webElementGuid>3dc2490c-0648-48a8-b27a-89efa9dd789d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
