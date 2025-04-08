@@ -1268,17 +1268,17 @@ static def SelectDate() {
     WebUI.click(findTestObject('Объем потерь (Данные в виджетах)/Применить в фильтре Дата'))
 }
 
-static def ScanErrors() {
+static def ScanErrors(def page) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel(def page = 'У виджета нет данных')
+        def write = WriteToExcel(page = 'Нет данных')
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel(def page = 'Ошибка запроса данных')
+        def write = WriteToExcel(page = 'Ошибка запроса данных')
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel(def page = 'Произошла ошибка при выполнении пользовательского кода')
+        def write = WriteToExcel(page = 'Произошла ошибка при выполнении пользовательского кода')
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel(def page = 'У виджета нет данных')
+        def write = WriteToExcel(page = 'У виджета нет данных')
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel(def page = 'Некорректные фильтры')
+        def write = WriteToExcel(page = 'Некорректные фильтры')
     }
 }
 

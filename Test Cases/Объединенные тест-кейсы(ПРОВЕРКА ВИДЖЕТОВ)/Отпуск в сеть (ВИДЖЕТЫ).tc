@@ -4,5 +4,6 @@
    <name>Отпуск в сеть (ВИДЖЕТЫ)</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>897f8135-aefe-475c-8b01-3fc81a02f865</testCaseGuid>
 </TestCaseEntity>

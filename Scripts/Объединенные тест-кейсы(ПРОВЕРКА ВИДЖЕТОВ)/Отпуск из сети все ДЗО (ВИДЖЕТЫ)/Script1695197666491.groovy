@@ -42,9 +42,11 @@ def test1 = Testing1()
 
 def test2 = Testing2()
 
+def page
+
 WebUI.closeBrowser()
 
-static def Testing1() {
+static def Testing1(def page) {
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/выбрать АО Тываэнерго'))
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/применить в фильтре ДЗО'))
@@ -518,7 +520,7 @@ static def Testing1() {
     errAndDzo = ErrorsAndDzo()
 }
 
-static def Testing2() {
+static def Testing2(def page) {
     WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/Россети Сибирь (ГК)'), 30)
 
     WebUI.scrollToElement(findTestObject('Отпуск из сети(виджеты)/скрол'), 30)
@@ -1218,13 +1220,13 @@ static def Testing2() {
     def scan = ScanErrors()
 }
 
-static def ErrorsAndDzo() {
+static def ErrorsAndDzo(def page) {
     def scan = ScanErrors()
 
     def dzo = SelectDzo()
 }
 
-static def SelectDzo() {
+static def SelectDzo(def page) {
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/фильтр ДЗО'))
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/снять выделения в фильтре ДЗО'))
@@ -1238,7 +1240,7 @@ static def SelectDzo() {
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/РаспредКомплекс'))
 }
 
-static def SelectDate() {
+static def SelectDate(def page) {
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/фильтр Дата'))
 
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/снять выделения в фильтре Дата'))
@@ -1270,17 +1272,17 @@ static def SelectDate() {
     WebUI.click(findTestObject('Отпуск из сети(виджеты)/применить в фильтре Дата'))
 }
 
-static def ScanErrors() {
+static def ScanErrors(def page) {
     if (WebUI.verifyTextNotPresent('нет данных', false) == false) {
-        def write = WriteToExcel(def page = 'У виджета нет данных')
+        def write = WriteToExcel(page = 'Нет данных')
     } else if (WebUI.verifyTextNotPresent('Ошибка запроса данных', false) == false) {
-        def write = WriteToExcel(def page = 'Ошибка запроса данных')
+        def write = WriteToExcel(page = 'Ошибка запроса данных')
     } else if (WebUI.verifyTextNotPresent('Произошла ошибка при выполнении пользовательского кода', false) == false) {
-        def write = WriteToExcel(def page = 'Произошла ошибка при выполнении пользовательского кода')
+        def write = WriteToExcel(page = 'Произошла ошибка при выполнении пользовательского кода')
     } else if (WebUI.verifyTextNotPresent('У виджета нет данных', false) == false) {
-        def write = WriteToExcel(def page = 'У виджета нет данных')
+        def write = WriteToExcel(page = 'У виджета нет данных')
     } else if (WebUI.verifyTextNotPresent('Некорректные фильтры', false) == false) {
-        def write = WriteToExcel(def page = 'Некорректные фильтры')
+        def write = WriteToExcel(page = 'Некорректные фильтры')
     }
 }
 

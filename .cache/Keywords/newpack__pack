@@ -1,16 +1,15 @@
 {
-  "keywordFileContentHash": "78CE7F840B89E093F20DDF3B60DF50C2",
+  "keywordFileContentHash": "14CCF4B7A3C8C2B2E56F2B3D543461FE",
   "keywordClasses": [
     {
       "name": "newpack.Test",
       "keywordMethods": [
         {
           "name": "hello",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
