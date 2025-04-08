@@ -46,22 +46,21 @@ def selectDate = SelectDate(file, page, path)
 path = 'Отпуск в сеть сверка/Данные со страницы Отпуск в сеть/Отпуск в сеть АО Тываэнерго'
 
 if (WebUI.getText(findTestObject(path)) == null) {
-	println('Нет данных')
-	
-	WebUI.closeBrowser()
+    println('Нет данных')
+
+    WebUI.closeBrowser()
 } else {
-	
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	fileDataString = otpuskVSeti
+    pageDataString = WebUI.getText(findTestObject(path))
 
-	println(fileDataString)
+    fileDataString = otpuskVSeti
 
-	check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
+    println(fileDataString)
 
-	scanErr = ScanErrors(file, page, path)
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
 
-	WebUI.closeBrowser()
+    scanErr = ScanErrors(file, page, path)
+
+    WebUI.closeBrowser()
 }
 
 '1'
@@ -84,22 +83,23 @@ path = 'Отпуск в сеть сверка/Данные со страницы
 scanErr = ScanErrors(file, page, path)
 
 if (WebUI.getText(findTestObject(path)) == null) {
-	println('Нет данных')
-	WebUI.closeBrowser()
+    println('Нет данных')
+
+    WebUI.closeBrowser()
 } else {
-	pageDataString = WebUI.getText(findTestObject(path))
-	
-	println(pageDataString)
-	
-	fileDataString = otpuskVSeti
+    pageDataString = WebUI.getText(findTestObject(path))
 
-	println(fileDataString)
+    println(pageDataString)
 
-	check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
+    fileDataString = otpuskVSeti
 
-	scanErr = ScanErrors(file, page, path)
+    println(fileDataString)
 
-	WebUI.closeBrowser()
+    check = Check(typeData, pageString = pageDataString, fileString = fileDataString, path)
+
+    scanErr = ScanErrors(file, page, path)
+
+    WebUI.closeBrowser()
 }
 
 '2'
@@ -885,6 +885,8 @@ static def SelectDate(def file, def page, def path) {
     WebUI.scrollToElement(findTestObject('Отпуск в сеть(виджеты)/скрол'), 30)
 
     WebUI.click(findTestObject('Отпуск в сеть сверка/Январь'))
+
+    WebUI.click(findTestObject('Отпуск в сеть сверка/Февраль'))
 
     WebUI.click(findTestObject('Отпуск в сеть(виджеты)/применить в фильтре Дата'))
 
